@@ -1,5 +1,5 @@
 add_namespace = drewsa
-country_event = {
+country_event = { State Of The Union
 	id = drewsa.1
 	title = drewsa.1.t
 	desc = drewsa.1.d
