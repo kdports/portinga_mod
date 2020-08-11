@@ -3,7 +3,7 @@ country_event = {
 	id = drewsa.1
 	title = drewsa.1.t
 	desc = drewsa.1.d
-	picture = GFX_report_event_usa_amelia_earhart_airplane
+	picture = GFX_news_event_017
 
 	fire_only_once = no
 	
