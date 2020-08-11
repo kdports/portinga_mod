@@ -9,7 +9,7 @@ country_event = {
 	
 	trigger = {
 		tag = USA
-		has_war = yes
+		
 		
 	}
 	
@@ -17,19 +17,11 @@ country_event = {
 		days = 30
 	}
 	
-	option = { # Let her join
+	option = { # The State Of Our Union Has Never Been Better!
 		name = usa.1.a
-		add_political_power = -10
-		add_ace = {
-			name = "Amelia"
-			surname = "Earhart"
-			callsign = "Revenant"
-			type = fighter_genius
-			is_female = yes
-		}
-		set_country_flag = amelia_active_ace
+		add_political_power = 50
+		
+		
 	}
-	option = { # Refuse
-		name = usa.1.b
+	
 	}
-}
