@@ -12,12 +12,12 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_postition = { x = 20 y = 1000 }
+	continuous_focus_position = { x = 20 y = 1000 }
 	
 	focus = {
 		id = CHL_begin_talks_with_the_unions
 		icon = GFX_goal_support_communism
-		mututally_exlusive = {
+		mutually_exclusive = {
 			focus = CHL_the_path_forward
 			focus = CHL_rally_the_right
 		}
@@ -38,17 +38,13 @@ focus_tree = {
 			has_government = communism
 		}
 		
-		cnacel if invalid = yes
-		continue_if_invaild = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_ideas = JAP_the_unthinkable_option
-			if = {
-		    	custom_effect_tooltip = available_political_advisor
-		    	show_ideas_tooltip = sanzo_nosaka
-			}
 			add_political_power = 200
 		}
 	}
@@ -88,7 +84,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CHL_begin_talks_with_the_unions
 		
-		Cost = 10
+		cost = 10
 		
 		ai_will_do = {
 			factor = 1
@@ -146,7 +142,12 @@ focus_tree = {
 	focus = {
 		id = CHL_embrace_marxism
 		icon = GFX_focus_jap_cast_the_die
+<<<<<<< HEAD
 		prerequisite = { focus = CHL_approach_the_working_class }		
+=======
+		prerequisite = { focus = CHL_approach_the_working_class }
+		
+>>>>>>> 3f71061e2cb3c47d414f12fe3045069b04653764
 		x = 1
 		y = 1
 		relative_position_id = CHL_approach_the_working_class		
@@ -175,9 +176,12 @@ focus_tree = {
 				ideology = communism
 				popularity = 100
 			}
+<<<<<<< HEAD
 			set_politics = {
 				ruling_party = communist
 			
+=======
+>>>>>>> 3f71061e2cb3c47d414f12fe3045069b04653764
 		}
 	}
 }
