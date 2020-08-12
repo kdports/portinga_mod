@@ -176,10 +176,11 @@ focus_tree = {
 
 			set_politics = {
 				ruling_party = communism
+			}
 		}
 	}
 	
-		focus = {
+	focus = {
 		id = CHL_strengthen_communist_ties
 		icon = GFX_goal_tfv_burn_the_royal_portraits
 		prerequisite = { focus = CHL_embrace_marxism }
