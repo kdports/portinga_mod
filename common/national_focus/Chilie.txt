@@ -142,12 +142,9 @@ focus_tree = {
 	focus = {
 		id = CHL_embrace_marxism
 		icon = GFX_focus_jap_cast_the_die
-<<<<<<< HEAD
-		prerequisite = { focus = CHL_approach_the_working_class }		
-=======
 		prerequisite = { focus = CHL_approach_the_working_class }
 		
->>>>>>> 3f71061e2cb3c47d414f12fe3045069b04653764
+
 		x = 1
 		y = 1
 		relative_position_id = CHL_approach_the_working_class		
@@ -176,12 +173,41 @@ focus_tree = {
 				ideology = communism
 				popularity = 100
 			}
-<<<<<<< HEAD
+
 			set_politics = {
-				ruling_party = communist
+				ruling_party = communism
+		}
+	}
+	
+		focus = {
+		id = CHL_strengthen_communist_ties
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		prerequisite = { focus = CHL_embrace_marxism }
+		x = -2
+		y = 1
+		relative_position_id =  CHL_embrace_marxism
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
 			
-=======
->>>>>>> 3f71061e2cb3c47d414f12fe3045069b04653764
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		
 		}
 	}
 }
