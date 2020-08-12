@@ -9,18 +9,11 @@ country_event = {
 	
 	trigger = {
 		original_tag = USA
-		has_political_power > 1
-		date = 1936.1.28
-		
-		 
-		
-		
+		date = 1936.1.2	
 	}
-
+	
 	option = {   
 		name = drewsa.1.a
-		add_political_power = 50
-		
-	
+		add_political_power = 50	
 	}
 }
