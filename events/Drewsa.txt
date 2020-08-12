@@ -1,27 +1,27 @@
 add_namespace = drewsa
-country_event = { State Of The Union
+country_event = { 
 	id = drewsa.1
 	title = drewsa.1.t
 	desc = drewsa.1.d
-	picture = GFX_news_event_017
+	picture = GFX_report_event_hitler_parade
 
-	fire_only_once = no
+	fire_only_once = yes
 	
 	trigger = {
-		tag = USA
+		original_tag = USA
+		has_political_power > 1
+		date = 1936.1.28
+		activate
+		 
 		
 		
 	}
 	
-	mean_time_to_happen = {
-		days = 30
-	}
 	
-	option = { # The State Of Our Union Has Never Been Better!
-		name = usa.1.a
+	
+	option = {   
+		name = drewsa.1.a
 		add_political_power = 50
 		
-		
-	}
 	
 	}
