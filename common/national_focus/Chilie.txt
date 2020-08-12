@@ -146,12 +146,10 @@ focus_tree = {
 	focus = {
 		id = CHL_embrace_marxism
 		icon = GFX_focus_jap_cast_the_die
-		prerequisite = { CHL_approach_the_working_class }
-		
+		prerequisite = { focus = CHL_approach_the_working_class }		
 		x = 1
 		y = 1
-		relative_position_id = CHL_approach_the_working_class
-		
+		relative_position_id = CHL_approach_the_working_class		
 
 		cost = 10
 
@@ -174,22 +172,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			set_political_party = {
-				ideology = fascism
+				ideology = communism
 				popularity = 100
 			}
-			create_country_leader = {
-					name = "Mohammed Zahir Shah"
-					desc = 
-			"POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-					picture = 
-			"Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
-					expire = "1965.1.1"
-					ideology = communism
-					traits = {
-		
-					}
-					
-				}
+			set_politics = {
+				ruling_party = communist
+			
 		}
 	}
 }
