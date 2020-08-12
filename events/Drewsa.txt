@@ -11,7 +11,9 @@ country_event = {
 		original_tag = USA
 		has_political_power > 1
 		date = 1936.1.28
-		activate
+		mean_time_to_happen = {
+				days = 1
+		}
 		 
 		
 		
