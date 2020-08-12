@@ -185,7 +185,7 @@ focus_tree = {
 		prerequisite = { focus = CHL_embrace_marxism }
 		x = -2
 		y = 1
-		relative_position_id =  CHL_embrace_marxism
+		relative_position_id = CHL_embrace_marxism
 		
 		cost = 10
 		
