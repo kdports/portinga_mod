@@ -3,13 +3,66 @@ country_event = {
 	id = drewsa.1
 	title = drewsa.1.t
 	desc = drewsa.1.d
-	picture = GFX_report_event_hitler_parade
+	picture = GFX_report_event_generic_communist_congress
 
-	fire_only_once = yes
+	fire_only_once = no
 	
 	trigger = {
 		original_tag = USA
-		date = 1936.1.2	
+		OR = {
+			AND = {
+				date > 1936.1.2	
+				date < 1936.1.29	
+			}
+			AND = {
+				date > 1937.1.7	
+				date < 1937.2.3	
+			}
+			AND = {
+				date > 1938.1.2	
+				date < 1938.1.29	
+			}
+			AND = {
+				date > 1939.1.2	
+				date < 1939.1.29	
+			}
+			AND = {
+				date > 1940.1.2	
+				date < 1940.1.29	
+			}
+			AND = {
+				date > 1941.1.2	
+				date < 1941.1.29	
+			}
+			AND = {
+				date > 1942.1.2	
+				date < 1942.1.29	
+			}
+			AND = {
+				date > 1943.1.2	
+				date < 1943.1.29	
+			}
+			AND = {
+				date > 1944.1.2	
+				date < 1944.1.29	
+			}
+			AND = {
+				date > 1945.1.2	
+				date < 1945.1.29	
+			}
+			AND = {
+				date > 1946.1.2	
+				date < 1946.1.29	
+			}
+			AND = {
+				date > 1947.1.2	
+				date < 1947.1.29	
+			}
+			AND = {
+				date > 1948.1.2	
+				date < 1948.1.29	
+			}
+		}
 	}
 	
 	option = {   
