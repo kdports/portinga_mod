@@ -181,7 +181,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHL_strengthen_communist_ties
+		id = CHL_purge_the_remants_of_democracy
 		icon = GFX_goal_tfv_burn_the_royal_portraits
 		prerequisite = { focus = CHL_embrace_marxism }
 		x = -2
@@ -208,11 +208,493 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = 100
 		
 		}
 	}
-}
+	
+	focus = {
+		id = CHL_rebuild_the_civil_service
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHL_purge_the_remants_of_democracy }
+		x = -1
+		y = 1
+		relative_position_id = CHL_purge_the_remants_of_democracy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = CHL_correct_democratic_misgivings
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = CHL_purge_the_remants_of_democracy }
+		x = 1
+		y = 1
+		relative_position_id = CHL_purge_the_remants_of_democracy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			has_stability < 0.9
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = JAP_reeducation_campaign
+		}
+	}
+	
+	focus = {
+		id = CHL_reignite_the_pacific_wars
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = CHL_rebuild_the_civil_service }
+		prerequisite = { focus = CHL_correct_democratic_misgivings }
+		x = 0
+		y = 2
+		relative_position_id = JAP_the_fate_of_the_imperial_family
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		will_lead_to_war_with = MAN
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			
+		}
+	
+	
+	focus = {
+		id = CHL_strike_peru
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = CHL_reignite_the_pacific_wars }
+		x = -2
+		y = 1
+		relative_position_id = CHL_reignite_the_pacific_wars
 		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			create_wargoal = {
+				target = PRU
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	
+	focus = {
+		id = CHL_strike_boliva
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = CHL_reignite_the_pacific_wars }
+		x = 2
+		y = 1
+		relative_position_id = CHL_reignite_the_pacific_wars
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			create_wargoal = {
+				target = BOL
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	
+	focus = {
+		id = CHL_strike_argentina
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = CHL_reignite_the_pacific_wars }
+		prerequisite = { focus = CHL_strike_peru }
+		prerequisite = { focus = CHL_strike_boliva}
+		x = 0
+		y = 1.5
+		relative_position_id = CHL_reignite_the_pacific_wars
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+		}
+		
+		bypass = {
+		
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			create_wargoal = {
+				target = ARG
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = CHL_reinvest_into_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = CHL_expand_the_sciences }
+		x = 0
+		y = 1
+		relative_position_id = CHL_expand_the_sciences
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			MAN = { is_subject_of = ROOT }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			CHL = {			
+				random_state = {
+					limit = {
+						has_state_flag = JAP_expand_manchurian_railways_Inf1
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_state = {
+					limit = {
+						has_state_flag = JAP_expand_manchurian_railways_Inf2
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			CHL = {
+				random_owned_controlled_state = {
+					limit = {
+						is_fully_controlled_by = PREV						
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf1
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_fully_controlled_by = PREV						
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf2
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CHL_fund_the_military
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = CHL_reinvest_into_infrastructure}
+		x = -1
+		y = 1
+		relative_position_id = CHL_reinvest_into_infrastructure
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			CHL = {			
+				random_state = {
+					limit = {
+						has_state_flag = JAP_expand_manchurian_railways_Inf1
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+				random_state = {
+					limit = {
+						has_state_flag = JAP_expand_manchurian_railways_Inf2
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			CHL = {
+				random_owned_controlled_state = {
+					limit = {
+						is_fully_controlled_by = PREV						
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf1
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_fully_controlled_by = PREV						
+						free_building_slots = {
+							building = arms_factory
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf2
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CHL_make_more_jobs
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = CHL_reinvest_into_infrastructure}
+		x = 1
+		y = 1
+		relative_position_id = CHL_reinvest_into_infrastructure
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			CHL = {			
+				random_state = {
+					limit = {
+						has_state_flag = JAP_expand_manchurian_railways_Inf1
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_state = {
+					limit = {
+						has_state_flag = JAP_expand_manchurian_railways_Inf2
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			CHL = {
+				random_owned_controlled_state = {
+					limit = {
+						is_fully_controlled_by = PREV						
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf1
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_fully_controlled_by = PREV						
+						free_building_slots = {
+							building = industrial_complex
+							size > 3
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf2
+				}
+			}
+		}
+	}
+}
+			
 		
 		
 		
