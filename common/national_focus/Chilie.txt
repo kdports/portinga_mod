@@ -294,7 +294,6 @@ focus_tree = {
 
 		available = {
 			
-			}
 		}
 
 		bypass = {			
@@ -309,6 +308,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 		}
+	}	
 	
 	
 	focus = {
@@ -696,7 +696,10 @@ focus_tree = {
 	focus = {
 		id = CHL_the_path_forward
 		icon = GFX_goal_support_democracy
-		mutually_exclusive = { focus = CHL_rally_the_right = CHL_begin_talks_with_the_unions}
+		mutually_exclusive = { 
+			focus = CHL_rally_the_right 
+			focus = CHL_begin_talks_with_the_unions
+		}
 		x = 4
 		y = 0
 		relative_position_id = CHL_begin_talks_with_the_unions
@@ -760,8 +763,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		complete_tooltip = {
-		}
 			random_state = {
 				limit = {
 					has_state_flag = JAP_zaibatsus_factories
@@ -787,12 +788,13 @@ focus_tree = {
 				add_idea = JAP_nationalize_the_zaibatsus				
 			}
 		}
+	}
 	
 	focus = {
 		id = CHL_industrial_research
 		icon = GFX_focus_research
 		prerequisite = { focus = CHL_the_path_forward }
-		x = 3
+		x = 4
 		y = 2
 		relative_position_id = CHL_the_path_forward
 
