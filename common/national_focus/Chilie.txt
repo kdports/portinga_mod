@@ -794,8 +794,8 @@ focus_tree = {
 		id = CHL_industrial_research
 		icon = GFX_focus_research
 		prerequisite = { focus = CHL_the_path_forward }
-		x = 4
-		y = 2
+		x = 2
+		y = 1
 		relative_position_id = CHL_the_path_forward
 
 		cost = 10
@@ -826,9 +826,94 @@ focus_tree = {
 		id = CHL_increase_military_spending
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = CHL_arsenal_of_democracy }
-		x = 3
+		x = 1
 		y = 1
 		relative_position_id = CHL_arsenal_of_democracy
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_manpower = 15000
+		}
+	}
+	
+	focus = {
+		id = CHL_preach_democratic_values
+		icon = JAP_rekindle_the_old_alliance
+		prerequisite = { focus = CHL_increase_military_spending }
+		x = 1
+		y = 1
+		relative_position_id = CHL_increase_military_spending
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = .2
+		}
+	}
+	
+	focus = {
+		id = CHL_rekindle_the_old_alliance
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = CHL_preach_democratic_values }
+		x = 0
+		y = 1
+		relative_position_id = CHL_preach_democratic_values
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+			is_subject = no
+			ARG = {
+				
+			NOT = { has_war_with = ARG }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+				set_rule = { can_create_factions = yes }
+				create_faction = CHL_the_old_alliance
+				ARG = { country_event = generic.5 }
+			
+		}
 	}
 }
 			
