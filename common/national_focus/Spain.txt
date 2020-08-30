@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 20
-			tag = SPR
+			tag = CHL
 		}
 	}
 	
@@ -15,10 +15,11 @@ focus_tree = {
 	continuous_focus_position = { x = 20 y = 1000 }
 	
 	focus = {
-		id = SPR_expand_industry
+		id = CHL_begin_talks_with_the_unions
 		icon = GFX_goal_support_communism
 		mutually_exclusive = {
-			
+			focus = CHL_the_path_forward
+			focus = CHL_rally_the_right
 		}
 		x = 3
 		y = 0
@@ -26,7 +27,7 @@ focus_tree = {
 		cost = 10
 		
 		ai_will_do = {
-			factor = 3
+			factor = 2
 		}
 		
 		available = {
@@ -34,7 +35,7 @@ focus_tree = {
 		}
 		
 		bypass = {
-			
+			has_government = communism
 		}
 		
 		cancel_if_invalid = yes
@@ -43,27 +44,18 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-				province = 
-			}	
-			add_building_construction = {
-				type = industrial_complex
-				level = 3
-				instant_build = yes
-			}
+			add_ideas = JAP_the_unthinkable_option
+			add_political_power = 200
 		}
 	}
 	
 	focus = {
-		id = SPR_invest_in_the_colonies
+		id = CHL_approach_the_working_class
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = SPR_expand_industry }
+		prerequisite = { focus = CHL_begin_talks_with_the_unions }
 		x = -1
 		y = 1
-		relative_position_id = SPR_expand_industry
+		relative_position_id = CHL_begin_talks_with_the_unions
 
 		cost = 10
 		
@@ -80,36 +72,17 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_building_construction = {
-				type = infastructure
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infastructure
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infastrucutre
-				level = 2
-				instant_build = yes
-			}
+			add_manpower = 10000
 		}
 	}
 	
 	focus= {
-		id = SPR_centralise_the_arms_industry
+		id = CHL_expand_urban_areas
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SPR_expand_industry }
+		prerequisite = { focus = CHL_begin_talks_with_the_unions }
 		x = 1
 		y = 1
-		relative_position_id = SPR_expand_industry
+		relative_position_id = CHL_begin_talks_with_the_unions
 		
 		cost = 10
 		
@@ -122,7 +95,7 @@ focus_tree = {
 		}
 
 		bypass = {
-				
+			has_government = communism			
 		}
 
 		cancel_if_invalid = yes
@@ -130,17 +103,17 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 3 }
+			add_offsite_building = { type = arms_factory level = 2 }
 		}
 	}
 	
 	focus = {
-		id = SPR_expand_the_sciences
+		id = CHL_expand_the_sciences
 		icon = GFX_focus_research
-		prerequisite = { focus = SPR_expand_urban_areas }
+		prerequisite = { focus = CHL_expand_urban_areas }
 		x = 1
 		y = 1
-		relative_position_id = SPR_expand_urban_areas
+		relative_position_id = CHL_expand_urban_areas
 
 		cost = 10
 
@@ -167,14 +140,14 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = SPR_embrace_marxism
+		id = CHL_embrace_marxism
 		icon = GFX_focus_jap_cast_the_die
-		prerequisite = { focus = SPR_approach_the_working_class }
+		prerequisite = { focus = CHL_approach_the_working_class }
 		
 
 		x = 1
 		y = 1
-		relative_position_id = SPR_approach_the_working_class		
+		relative_position_id = CHL_approach_the_working_class		
 
 		cost = 10
 
@@ -208,12 +181,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_purge_the_remants_of_democracy
+		id = CHL_purge_the_remants_of_democracy
 		icon = GFX_goal_tfv_burn_the_royal_portraits
-		prerequisite = { focus = SPR_embrace_marxism }
+		prerequisite = { focus = CHL_embrace_marxism }
 		x = -2
 		y = 1
-		relative_position_id = SPR_embrace_marxism
+		relative_position_id = CHL_embrace_marxism
 		
 		cost = 10
 		
@@ -241,12 +214,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_rebuild_the_civil_service
+		id = CHL_rebuild_the_civil_service
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = SPR_purge_the_remants_of_democracy }
+		prerequisite = { focus = CHL_purge_the_remants_of_democracy }
 		x = -1
 		y = 1
-		relative_position_id = SPR_purge_the_remants_of_democracy
+		relative_position_id = CHL_purge_the_remants_of_democracy
 
 		cost = 10
 
@@ -273,12 +246,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_correct_democratic_misgivings
+		id = CHL_correct_democratic_misgivings
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = SPR_purge_the_remants_of_democracy }
+		prerequisite = { focus = CHL_purge_the_remants_of_democracy }
 		x = 1
 		y = 1
-		relative_position_id = SPR_purge_the_remants_of_democracy
+		relative_position_id = CHL_purge_the_remants_of_democracy
 
 		cost = 10
 
@@ -305,13 +278,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_unite_communist_south_america
+		id = CHL_unite_communist_south_america
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = SPR_rebuild_the_civil_service }
-		prerequisite = { focus = SPR_correct_democratic_misgivings }
+		prerequisite = { focus = CHL_rebuild_the_civil_service }
+		prerequisite = { focus = CHL_correct_democratic_misgivings }
 		x = 0
 		y = 2
-		relative_position_id = SPR_purge_the_remants_of_democracy
+		relative_position_id = CHL_purge_the_remants_of_democracy
 
 		cost = 10
 
@@ -339,12 +312,12 @@ focus_tree = {
 	
 	
 	focus = {
-		id = SPR_strike_peru
+		id = CHL_strike_peru
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = SPR_unite_communist_south_america }
+		prerequisite = { focus = CHL_unite_communist_south_america }
 		x = -2
 		y = 1
-		relative_position_id = SPR_unite_communist_south_america
+		relative_position_id = CHL_unite_communist_south_america
 		
 		cost = 10
 		
@@ -376,12 +349,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_strike_boliva
+		id = CHL_strike_boliva
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = SPR_unite_communist_south_america }
+		prerequisite = { focus = CHL_unite_communist_south_america }
 		x = 2
 		y = 1
-		relative_position_id = SPR_unite_communist_south_america
+		relative_position_id = CHL_unite_communist_south_america
 		
 		cost = 10
 		
@@ -413,14 +386,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_strike_argentina
+		id = CHL_strike_argentina
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = SPR_unite_communist_south_america }
-		prerequisite = { focus = SPR_strike_peru }
-		prerequisite = { focus = SPR_strike_boliva}
+		prerequisite = { focus = CHL_unite_communist_south_america }
+		prerequisite = { focus = CHL_strike_peru }
+		prerequisite = { focus = CHL_strike_boliva}
 		x = 0
 		y = 1.5
-		relative_position_id = SPR_unite_communist_south_america
+		relative_position_id = CHL_unite_communist_south_america
 		
 		cost = 10
 		
@@ -451,12 +424,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SPR_reinvest_into_infrastructure
+		id = CHL_reinvest_into_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = SPR_expand_the_sciences }
+		prerequisite = { focus = CHL_expand_the_sciences }
 		x = 0
 		y = 1
-		relative_position_id = SPR_expand_the_sciences
+		relative_position_id = CHL_expand_the_sciences
 
 		cost = 10
 
@@ -478,7 +451,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			SPR = {			
+			CHL = {			
 				random_state = {
 					limit = {
 						has_state_flag = JAP_expand_manchurian_railways_Inf1
@@ -503,7 +476,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SPR = {
+			CHL = {
 				random_owned_controlled_state = {
 					limit = {
 						is_fully_controlled_by = PREV						
@@ -541,12 +514,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_fund_the_military
+		id = CHL_fund_the_military
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = SPR_reinvest_into_infrastructure}
+		prerequisite = { focus = CHL_reinvest_into_infrastructure}
 		x = -1
 		y = 1
-		relative_position_id = SPR_reinvest_into_infrastructure
+		relative_position_id = CHL_reinvest_into_infrastructure
 
 		cost = 10
 
@@ -568,7 +541,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			SPR = {			
+			CHL = {			
 				random_state = {
 					limit = {
 						has_state_flag = JAP_expand_manchurian_railways_Inf1
@@ -593,7 +566,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SPR = {
+			CHL = {
 				random_owned_controlled_state = {
 					limit = {
 						is_fully_controlled_by = PREV						
@@ -631,12 +604,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_make_more_jobs
+		id = CHL_make_more_jobs
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = SPR_reinvest_into_infrastructure}
+		prerequisite = { focus = CHL_reinvest_into_infrastructure}
 		x = 1
 		y = 1
-		relative_position_id = SPR_reinvest_into_infrastructure
+		relative_position_id = CHL_reinvest_into_infrastructure
 
 		cost = 10
 
@@ -658,7 +631,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			SPR = {			
+			CHL = {			
 				random_state = {
 					limit = {
 						has_state_flag = JAP_expand_manchurian_railways_Inf1
@@ -683,7 +656,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SPR = {
+			CHL = {
 				random_owned_controlled_state = {
 					limit = {
 						is_fully_controlled_by = PREV						
@@ -721,15 +694,15 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_the_path_forward
+		id = CHL_the_path_forward
 		icon = GFX_goal_support_democracy
 		mutually_exclusive = { 
-			focus = SPR_rally_the_right 
-			focus = SPR_begin_talks_with_the_unions
+			focus = CHL_rally_the_right 
+			focus = CHL_begin_talks_with_the_unions
 		}
 		x = 4
 		y = 0
-		relative_position_id = SPR_begin_talks_with_the_unions
+		relative_position_id = CHL_begin_talks_with_the_unions
 
 		cost = 10
 
@@ -763,12 +736,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_arsenal_of_democracy
+		id = CHL_arsenal_of_democracy
 		icon = GFX_focus_jap_zaibatsu
-		prerequisite = { focus = SPR_the_path_forward }
+		prerequisite = { focus = CHL_the_path_forward }
 		x = -1
 		y = 1
-		relative_position_id = SPR_the_path_forward
+		relative_position_id = CHL_the_path_forward
 
 		cost = 10
 
@@ -818,12 +791,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_industrial_research
+		id = CHL_industrial_research
 		icon = GFX_focus_research
-		prerequisite = { focus = SPR_the_path_forward }
+		prerequisite = { focus = CHL_the_path_forward }
 		x = 2
 		y = 1
-		relative_position_id = SPR_the_path_forward
+		relative_position_id = CHL_the_path_forward
 
 		cost = 10
 
@@ -850,12 +823,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_increase_military_spending
+		id = CHL_increase_military_spending
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = SPR_arsenal_of_democracy }
+		prerequisite = { focus = CHL_arsenal_of_democracy }
 		x = 1
 		y = 1
-		relative_position_id = SPR_arsenal_of_democracy
+		relative_position_id = CHL_arsenal_of_democracy
 		
 		cost = 10
 		
@@ -877,12 +850,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_preach_democratic_values
+		id = CHL_preach_democratic_values
 		icon = JAP_rekindle_the_old_alliance
-		prerequisite = { focus = SPR_increase_military_spending }
+		prerequisite = { focus = CHL_increase_military_spending }
 		x = 1
 		y = 1
-		relative_position_id = SPR_increase_military_spending
+		relative_position_id = CHL_increase_military_spending
 		
 		cost = 10
 		
@@ -906,12 +879,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_rekindle_the_old_alliance
+		id = CHL_rekindle_the_old_alliance
 		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = SPR_preach_democratic_values }
+		prerequisite = { focus = CHL_preach_democratic_values }
 		x = 0
 		y = 1
-		relative_position_id = SPR_preach_democratic_values
+		relative_position_id = CHL_preach_democratic_values
 		cost = 10
 
 		ai_will_do = {
@@ -937,7 +910,7 @@ focus_tree = {
 
 		completion_reward = {
 				set_rule = { can_create_factions = yes }
-				create_faction = SPR_the_old_alliance
+				create_faction = CHL_the_old_alliance
 				ARG = { country_event = generic.5 }
 			
 		}
