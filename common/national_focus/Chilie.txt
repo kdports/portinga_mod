@@ -135,17 +135,49 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_expand_the_sciences
+		id = SPR_further_spainsh_discovery
 		icon = GFX_focus_research
-		prerequisite = { focus = SPR_expand_urban_areas }
+		prerequisite = { focus = SPR_centralise_the_arms_industry }
 		x = 1
 		y = 1
-		relative_position_id = SPR_expand_urban_areas
+		relative_position_id = SPR_centralise_the_arms_industry
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 4
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_idea = spanish_research
+		}
+	}
+	
+	focus = {
+		id = SPR_expand_the_sciences
+		icon = GFX_focus_research
+		prerequisite = { focus = SPR_further_spainsh_discovery }
+		x = 1
+		y = 1
+		relative_position_id = SPR_further_spainsh_discovery
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
 		}
 
 		available = {
@@ -167,14 +199,14 @@ focus_tree = {
 	}
 		
 	focus = {
-		id = SPR_embrace_marxism
+		id = SPR_create_the_autovias
 		icon = GFX_focus_jap_cast_the_die
-		prerequisite = { focus = SPR_approach_the_working_class }
+		prerequisite = { focus = SPR_further_spainsh_discovery }
 		
 
 		x = 1
 		y = 1
-		relative_position_id = SPR_approach_the_working_class		
+		relative_position_id = SPR_further_spainsh_discovery	
 
 		cost = 10
 
@@ -187,7 +219,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_government = communism			
+					
 		}
 
 		cancel_if_invalid = yes
@@ -196,24 +228,25 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			set_political_party = {
-				ideology = communism
-				popularity = 100
-			}
-
-			set_politics = {
-				ruling_party = communism
-			}
+			add_building_construction = {
+				type = infastructure
+				level = 1
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+    }
+}
 		}
 	}
 	
 	focus = {
-		id = SPR_purge_the_remants_of_democracy
+		id = SPR_create_the_future
 		icon = GFX_goal_tfv_burn_the_royal_portraits
-		prerequisite = { focus = SPR_embrace_marxism }
+		prerequisite = { focus = SPR_centralise_the_arms_industry }
 		x = -2
 		y = 1
-		relative_position_id = SPR_embrace_marxism
+		relative_position_id = SPR_centralise_the_arms_industry
 		
 		cost = 10
 		
@@ -235,18 +268,18 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 75
 		
 		}
 	}
 	
 	focus = {
-		id = SPR_rebuild_the_civil_service
+		id = SPR_civilian_industry
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = SPR_purge_the_remants_of_democracy }
+		prerequisite = { focus = SPR_create_the_future }
 		x = -1
 		y = 1
-		relative_position_id = SPR_purge_the_remants_of_democracy
+		relative_position_id = SPR_create_the_future
 
 		cost = 10
 
@@ -268,7 +301,49 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_stability = 0.1
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				province = 2999
+			}
+		}
+	}
+	
+	focus = {
+		id = SPR_military_industry
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SPR_create_the_future }
+		x = -1
+		y = 1
+		relative_position_id = SPR_create_the_future
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				province = 2999
+			}
 		}
 	}
 	

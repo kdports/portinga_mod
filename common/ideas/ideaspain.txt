@@ -1,0 +1,24 @@
+ideas = { spainish_research
+    country = { SPR
+
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+               
+            }
+            research_bonus = {
+                infantry_tech_category = 0.2
+               
+            }
+        }
+    }
+}
