@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+		high_prestige = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.05
+				max_dig_in = 10
+			}
+			research_bonus = {
+				infantry_tech_category = 0.1
+				support_demolitions_tech_category = 0.1
+			}
+		}
+	}
+}
