@@ -1,5 +1,5 @@
-ideas = { spainish_research
-    country = { SPR
+ideas = { #spainish_research
+    country = { #SPR
 
 
             allowed = {
