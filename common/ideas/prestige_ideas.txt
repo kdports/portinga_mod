@@ -54,7 +54,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				resistance_growth = 0.15
+				resistance_growth = 0.05
 				compliance_gain = 0.05
 				conscription = 0.005
 			}
@@ -73,7 +73,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				resistance_growth = 0.4
+				resistance_growth = 0.3
 				compliance_gain = -0.15
 				resistance_damage_to_garrison = 0.2
 				conscription = -0.005
