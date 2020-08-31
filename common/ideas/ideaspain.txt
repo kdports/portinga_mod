@@ -1,6 +1,6 @@
 ideas = { 
     country = { 
-		SPR_spanish_research = {
+		spanish_research = {
 
 
             allowed = {

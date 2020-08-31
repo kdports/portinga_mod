@@ -43,19 +43,22 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			41 = {
 			add_building_construction = {
 				type = arms_factory
 				level = 2
 				instant_build = yes
-				province = 
+				id = 3938
 			}	
 			add_building_construction = {
 				type = industrial_complex
 				level = 3
 				instant_build = yes
+				id = 3938
+			}
 			}
 		}
-	}
+	}			
 	
 	focus = {
 		id = SPR_invest_in_the_colonies
@@ -80,26 +83,35 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			513 = {
 			add_building_construction = {
-				type = infastructure
+				type = infrastructure
 				level = 2
 				instant_build = yes
 			}
+			}
+			462 = {
 			add_building_construction = {
-				type = infastructure
+				type = infrastructure
 				level = 1
 				instant_build = yes
 			}
+			}
+			665 = {
 			add_building_construction = {
-				type = infastructure
+				type = infrastructure
 				level = 2
 				instant_build = yes
 			}
+			}
+			461 = {
 			add_building_construction = {
-				type = infastrucutre
+				type = infrastructure
 				level = 2
 				instant_build = yes
 			}
+			}
+			
 		}
 	}
 	
@@ -162,7 +174,17 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_idea = spanish_research
+			add_tech_bonus = {
+				bonus = 7
+				uses = 1
+				category = infantry_tech
+			}
+			add_tech_bonus = {
+				bonus = 30
+				uses = 1
+				category = industry
+			}
+			
 		}
 	}
 	
@@ -204,7 +226,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_further_spainsh_discovery }
 		
 
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = SPR_further_spainsh_discovery	
 
@@ -228,17 +250,23 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_building_construction = {
-				type = infastructure
-				level = 1
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_border = yes
-    }
-}
+			SPR = {
+				all_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						
+						}
+					}
+				}
+			}
 		}
-	}
+	}	
+	
 	
 	focus = {
 		id = SPR_create_the_future
@@ -277,10 +305,10 @@ focus_tree = {
 		id = SPR_civilian_industry
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = SPR_create_the_future }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = SPR_create_the_future
-		mutually_exclusive = SPR_military_industry
+		mutually_exclusive = { focus = SPR_military_industry }
 
 		cost = 10
 
@@ -293,7 +321,7 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			
 		}
 
 		cancel_if_invalid = yes
@@ -302,11 +330,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_building_construction = {
+			165 = {
+				add_building_construction = {
 				type = industrial_complex
 				level = 2
 				instant_build = yes
-				province = 2999
+				
+				}
 			}
 		}
 	}
@@ -315,10 +345,10 @@ focus_tree = {
 		id = SPR_military_industry
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = SPR_create_the_future }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SPR_create_the_future
-		mutually_exclusive = SPR_civilian_industry
+		mutually_exclusive = { focus = SPR_civilian_industry }
 
 		cost = 10
 
@@ -340,11 +370,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-				province = 2999
+			171 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				
+				}
 			}
 		}
 	}
@@ -409,9 +441,11 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			add_war_support = 0.2
+			add_war_support = 0.1
 		}
-	}	
+	}
+		
+	
 	
 	
 	
