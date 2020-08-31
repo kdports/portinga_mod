@@ -1,0 +1,11 @@
+﻿l_english:
+  max_prestige:0 "Global Hegemon"
+  max_prestige_desc:0 "None stand above us! Our power and might have reached their peak, meaning we must focus our efforts on maintaining our global hegemony."
+  high_prestige:0 "High Prestige"
+  high_prestige_desc:0 "Our country’s history and actions have made us a well-known and globally recognized power. Only a few can claim superiority to our might, a situation which we’ll work hard to change."
+  med_prestige:0 "Medium Prestige"
+  med_prestige_desc:0 "We tread a solemn path as a middle-of-the-road nation. Other nations tend to disregard us, but at least we have some international respect."
+  low_prestige:0 "Low Prestige"
+  low_prestige_desc:0 "Hard times are upon us, and our peers have taken notice. Our nation is a joke in many diplomatic circles, seen as a bygone empire waiting to collapse. We’ll show them our place in the sun, but it will take time to regain our glory.\n\n§RFurther defeats place our country at risk of complete collapse!§!"
+  disaster_prestige:0 "Nos Delenda Est"
+  disaster_prestige_desc:0 "§RAll empires fall. Now, it seems, is our turn.§!"
