@@ -231,6 +231,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
 		completion_reward = {
 			every_controlled_state = {
 				add_building_construction = {
@@ -267,6 +269,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			every_controlled_state = {
@@ -306,6 +310,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.3
@@ -340,6 +346,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -376,6 +384,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -410,6 +420,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -448,6 +460,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -479,6 +493,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.7
@@ -499,7 +515,7 @@ focus_tree = {
 			y = 0
 		}
 		prerequisite = { focus = KEV_FRA_air_innovations }
-		mutually_exclusive = { focus = KEV_FRA_bomber_focus }
+		mutually_exclusive = { focus = KEV_FRA_direct_focus focus = KEV_FRA_naval_focus }
 		relative_position_id = KEV_FRA_air_innovations
 		cost = 7
 		ai_will_do = {
@@ -516,14 +532,16 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 0.8
 				uses = 1
 				category = light_fighter
 			}
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 0.8
 				uses = 1
 				category = cat_heavy_fighter
 			}
@@ -531,7 +549,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = KEV_FRA_bomber_focus
+		id = KEV_FRA_direct_focus
 		icon = GFX_focus_research
 
 		x = 0
@@ -541,7 +559,7 @@ focus_tree = {
 			y = 0
 		}
 		prerequisite = { focus = KEV_FRA_air_innovations }
-		mutually_exclusive = { focus = KEV_FRA_fighter_focus }
+		mutually_exclusive = { focus = KEV_FRA_fighter_focus focus = KEV_FRA_naval_focus }
 		relative_position_id = KEV_FRA_air_innovations
 		cost = 7
 		ai_will_do = {
@@ -558,16 +576,145 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 0.8
+				uses = 1
+				category = cas_bomber
+			}
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_naval_focus
+		icon = GFX_focus_research
+
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_air_innovations }
+		mutually_exclusive = { focus = KEV_FRA_fighter_focus focus = KEV_FRA_direct_focus }
+		relative_position_id = KEV_FRA_air_innovations
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.6
+				uses = 1
+				category = naval_air
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_strat_bomb_focus
+		icon = GFX_focus_research
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_fighter_focus focus = KEV_FRA_direct_focus}
+		mutually_exclusive = { focus = KEV_FRA_air_support_focus }
+		relative_position_id = KEV_FRA_direct_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
 				uses = 1
 				category = cat_strategic_bomber
 			}
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 1
-				category = tactical_bomber
+				category = strategic_destruction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_air_support_focus
+		icon = GFX_focus_research
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_fighter_focus focus = KEV_FRA_direct_focus}
+		mutually_exclusive = { focus = KEV_FRA_strat_bomb_focus }
+		relative_position_id = KEV_FRA_fighter_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_strategic_bomber
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = strategic_destruction_tree
 			}
 		}
 	}
