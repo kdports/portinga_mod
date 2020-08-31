@@ -9,6 +9,18 @@ on_actions = {
 					set_variable = { country_prestige_num = 0 }
 				}
 			}
+			SPR = {
+				set_variable = { country_prestige_num = 80 }
+			}
+			FRA = {
+				set_variable = { country_prestige_num = 50 }
+			}
+			ENG = {
+				set_variable = { country_prestige_num = 5 }
+			}
+			ETH = {
+				set_variable = { country_prestige_num = -26 }
+			}
 		}
 	}
 	on_monthly = {
@@ -18,7 +30,82 @@ on_actions = {
 					limit = {
 						is_ai = no
 					}
-					set_variable = { country_prestige_num = 0 }
+					if = {
+						limit = {
+							check_variable = { country_prestige_num > 100 }
+						}
+						add_ideas = {
+							country_prestige_num = 100
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { country_prestige_num < -100 }
+						}
+						add_ideas = {
+							country_prestige_num = -100
+						}
+					}
+					remove_ideas = {
+						max_prestige
+						high_prestige
+						med_prestige
+						low_prestige
+						disaster_prestige
+					}
+					if = {
+						limit = {
+							check_variable = { country_prestige_num > 75 }
+						}
+						add_ideas = {
+							max_prestige
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { country_prestige_num > 25 }
+							check_variable = { country_prestige_num < 76 }
+						}
+						add_ideas = {
+							high_prestige
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { country_prestige_num > -25 }
+							check_variable = { country_prestige_num < 26 }
+						}
+						add_ideas = {
+							med_prestige
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { country_prestige_num > -75 }
+							check_variable = { country_prestige_num < -25 }
+						}
+						add_ideas = {
+							low_prestige
+						}
+					}
+					else_if = {
+						limit = {
+							check_variable = { country_prestige_num < -74 }
+						}
+						add_ideas = {
+							disaster_prestige
+						}
+					}
+					if = {
+						limit = {
+							check_variable = { country_prestige_num < -74 }
+							has_civil_war = no
+						}
+						start_civil_war = {
+							ideology = fascism
+							size = 0.7
+						}
+					}
 				}
 			}
 		}

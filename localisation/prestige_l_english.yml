@@ -1,0 +1,15 @@
+﻿l_english:
+  max_prestige:0 "Global Hegemon"
+  max_prestige_desc:0 "None stand above us! Our power and might have reached their peak, meaning we must focus our efforts on maintaining our global hegemony."
+  high_prestige:0 "High Prestige"
+  high_prestige_desc:0 "Our country’s history and actions have made us a well-known and globally recognized power. Only a few can claim superiority to our might, a situation which we’ll work hard to change."
+  med_prestige:0 "Medium Prestige"
+  med_prestige_desc:0 "We tread a solemn path as a middle-of-the-road nation. Other nations tend to disregard us, but at least we have some international respect."
+  low_prestige:0 "Low Prestige"
+  low_prestige_desc:0 "Hard times are upon us, and our peers have taken notice. Our nation is a joke in many diplomatic circles, seen as a bygone empire waiting to collapse. We’ll show them our place in the sun, but it will take time to regain our glory.\n\n§RFurther defeats place our country at risk of complete collapse!§!"
+  disaster_prestige:0 "Nos Delenda Est"
+  disaster_prestige_desc:0 "§RAll empires fall. Now, it seems, is our turn.§!"
+
+  #Decisions
+  prestige_counter:0 "Our Prestige"
+  prestige_counter_desc:0 "Prestige is a measure of both our countries domestic and international reputation. Every month, our top advisors will reevaluate our prestige, which results in a §YNational Spirit§! that grants us either buffs or debuffs to areas such as resistance growth and conscription.\n\nAt prestige higher than 75, we are considered a §GHegemon§!. Between 75 and 25 we are considered a §BWorld Power§!. 25 to -25 prestige places us as a §YNondescript Power§!. Lower than -25 but higher than -75 puts us in the dangerous position of being a §OCollapsing Nation§!. Any lower will certainly lead to a §Rdisaster§!, and the end of our country as we know it!\n\nOur current prestige is [?country_prestige_num|*+0]."
