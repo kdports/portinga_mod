@@ -117,7 +117,7 @@ focus_tree = {
 	
 	focus= {
 		id = SPR_centralise_the_arms_industry
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_idea_generic_intel_bonus
 		prerequisite = { focus = SPR_expand_industry }
 		x = 1
 		y = 1
@@ -222,7 +222,7 @@ focus_tree = {
 		
 	focus = {
 		id = SPR_create_the_autovias
-		icon = GFX_focus_jap_cast_the_die
+		icon = GFX_decision_category_infiltration
 		prerequisite = { focus = SPR_further_spainsh_discovery }
 		
 
