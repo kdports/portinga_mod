@@ -21,7 +21,7 @@ focus_tree = {
 			
 		}
 		x = 3
-		y = 0
+		y = 1
 		
 		cost = 10
 		
@@ -444,7 +444,490 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 	}
+	
+	focus = {
+	id = SPR_air_innovations
+		icon = GFX_goal_FRA_air_force
+
+		prerequisite = { focus = SPR_rule_la_ceilo } 
+
+		x = 0 
+		y = 3
+		offset = {
+			x = 0
+			y = 2
+		}
+		relative_position_id = SPR_rule_la_ceilo
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	
+
+	focus = {
+		id = SPR_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_air_innovations }
 		
+		relative_position_id = SPR_air_innovations
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_direct_focus
+		icon = GFX_goal_generic_air_bomber
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_air_innovations }
+		mutually_exclusive = { focus = SPR_fighter_focus focus = SPR_naval_air_focus }
+		relative_position_id = SPR_air_innovations
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 1
+				category = cas_bomber
+			}
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_naval_air_focus
+		icon = GFX_goal_generic_air_naval_bomber
+
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_air_innovations }
+		mutually_exclusive = { focus = SPR_fighter_focus focus = SPR_direct_focus }
+		relative_position_id = SPR_air_innovations
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.6
+				uses = 1
+				category = naval_air
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_strat_bomb_focus
+		icon = GFX_goal_generic_air_doctrine
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_fighter_focus focus = SPR_direct_focus}
+		mutually_exclusive = { focus = SPR_air_support_focus }
+		relative_position_id = SPR_direct_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_strategic_bomber
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = strategic_destruction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_air_support_focus
+		icon = GFX_goal_generic_CAS
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_fighter_focus focus = SPR_direct_focus}
+		mutually_exclusive = { focus = SPR_strat_bomb_focus }
+		relative_position_id = SPR_fighter_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = battlefield_support_tree
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_naval_air_second
+		icon = GFX_goal_generic_navy_carrier
+
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_naval_air_focus }
+		prerequisite = { focus = SPR_naval_start }
+		relative_position_id = SPR_naval_air_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = naval_air
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_final_air
+		icon = GFX_goal_generic_air_production
+
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_air_support_focus focus = SPR_strat_bomb_focus }
+		prerequisite = { focus = SPR_air_bonus }
+		relative_position_id = SPR_strat_bomb_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = {
+				FRA_air_mastery
+			}
+		}
+	}
+	
+	focus = {
+		id = SPR_rule_la_ceilo
+		icon = GFX_goal_generic_air_production
+
+		x = 9
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		
+		relative_position_id = SPR_expand_industry
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_start_bombers
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_rule_la_ceilo }
+
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		
+		relative_position_id = SPR_rule_la_ceilo
+		mutually_exclusive = { focus = SPR_start_fighters }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	
+	focus = {
+		id = SPR_start_fighters
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_rule_la_ceilo }
+
+		x = 3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		
+		relative_position_id = SPR_rule_la_ceilo
+		mutually_exclusive = { focus = SPR_start_bombers }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_forward_fighter_research
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_start_fighters }
+
+		x = 
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		
+		relative_position_id = SPR_start_fighters
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	
+
+	}	
 	
 	
 	
