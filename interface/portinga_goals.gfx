@@ -13,4 +13,20 @@ spriteTypes = {
 		name = "GFX_goal_FRA_air_force"
 		texturefile = "gfx/interface/goals/r56_goal_FRA_air_force.dds"
 	}	
+	SpriteType = {
+		name = "GFX_FRA_VIC_Petain"
+		texturefile = "gfx/interface/goals/r56_goal_FRA_VIC_Petain.dds"
+	}	
+	SpriteType = {
+		name = "GFX_goal_FRA_defence"
+		texturefile = "gfx/interface/goals/r56_goal_FRA_defense.dds"
+	}	
+	SpriteType = {
+		name = "GFX_focus_por_support_mns"
+		texturefile = "gfx/interface/goals/focus_por_support_mns.dds"
+	}	
+	SpriteType = {
+		name = "GFX_goal_tank_hunt"
+		texturefile = "gfx/interface/goals/r56_goal_generic_tank_hunt.dds"
+	}	
 }
