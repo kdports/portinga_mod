@@ -9,4 +9,8 @@ spriteTypes = {
 		name = "GFX_eye_focus_banking"
 		texturefile = "gfx/interface/goals/r56_goal_generic_banking.dds"
 	}	
+	SpriteType = {
+		name = "GFX_goal_FRA_air_force"
+		texturefile = "gfx/interface/goals/r56_goal_FRA_air_force.dds"
+	}	
 }
