@@ -28,7 +28,7 @@ focus_tree = {
 		}
 		prerequisite = {}
 		mutually_exclusive = { }
-		cost = 5
+		cost = 1
 			ai_will_do = {
 			factor = 1
 		}
@@ -42,7 +42,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 
 		}
@@ -60,7 +60,7 @@ focus_tree = {
 		prerequisite = { focus = KEV_FRA_first_history }
 		mutually_exclusive = { }
 		relative_position_id = KEV_FRA_first_history
-		cost = 5
+		cost = 1
 			ai_will_do = {
 			factor = 1
 		}
@@ -74,7 +74,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 
 		}
@@ -92,7 +92,7 @@ focus_tree = {
 		prerequisite = { focus = KEV_FRA_second_history }
 		mutually_exclusive = { }
 		relative_position_id = KEV_FRA_second_history
-		cost = 5
+		cost = 1
 			ai_will_do = {
 			factor = 1
 		}
@@ -106,7 +106,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 
 		}
@@ -820,7 +820,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_FRA_naval_air_second
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_focus_generic_cruiser2
 
 		x = 1
 		y = 1
@@ -1217,6 +1217,11 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+
+		available = {
+			has_completed_focus = KEV_FRA_army_start
+		}
+
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1280,6 +1285,8 @@ focus_tree = {
 			has_dlc = "Man the Guns"
 		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
 		available_if_capitulated = yes
 
 		complete_tooltip = {
@@ -1342,15 +1349,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			every_controlled_state = {
-				add_building_construction = {
-					type = air_base
-					level = 3
-					instant_build = yes
-				}
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
 			}
 		}
 	}

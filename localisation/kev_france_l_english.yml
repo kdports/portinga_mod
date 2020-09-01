@@ -67,10 +67,13 @@
   KEV_FRA_antisub_focus_desc:0 ""
   KEV_FRA_amphibious_focus:0 "Hoo-ah!"
   KEV_FRA_amphibious_focus_desc:0 ""
-  KEV_FRA_antisub_second_focus:0 "Let's Play Minesweeper"
+  KEV_FRA_antisub_second_focus:0 "Minelaying Practices"
   KEV_FRA_antisub_second_focus_desc:0 ""
   KEV_FRA_repair_yards:0 "Increase Repair Capabilities"
   KEV_FRA_repair_yards_desc:0 ""
+
+  KEV_FRA_army_start:0 "Military Revitalization"
+  KEV_FRA_army_start_desc:0 ""
 
   ## Ideas
   FRA_air_mastery:0 "Production Shortcuts"
