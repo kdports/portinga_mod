@@ -1,0 +1,33 @@
+ideas = {
+	country = {
+		FRA_air_mastery = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				strat_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+	}
+}

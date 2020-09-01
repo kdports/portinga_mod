@@ -34,17 +34,13 @@ on_actions = {
 						limit = {
 							check_variable = { country_prestige_num > 100 }
 						}
-						add_ideas = {
-							country_prestige_num = 100
-						}
+						set_variable = { country_prestige_num = 100 }
 					}
 					if = {
 						limit = {
 							check_variable = { country_prestige_num < -100 }
 						}
-						add_ideas = {
-							country_prestige_num = -100
-						}
+						set_variable = { country_prestige_num = -100 }
 					}
 					remove_ideas = {
 						max_prestige

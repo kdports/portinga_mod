@@ -1,0 +1,16 @@
+###National Focuses Go Here
+
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_goal_recycling"
+		texturefile = "gfx/interface/goals/r56_goal_FRA_VIC_goal_recycling.dds"
+	}
+	spriteType = {
+		name = "GFX_eye_focus_banking"
+		texturefile = "gfx/interface/goals/r56_goal_generic_banking.dds"
+	}	
+	SpriteType = {
+		name = "GFX_goal_FRA_air_force"
+		texturefile = "gfx/interface/goals/r56_goal_FRA_air_force.dds"
+	}	
+}

@@ -1,0 +1,12 @@
+### Leaders Go Here
+
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_leader_beria" #Truly cursed
+		texturefile = "gfx/leaders/Portrait_Soviet_Lavrentiy_Beria.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_kerensky"
+		texturefile = "gfx/leaders/r56_portrait_SOV_Alexander_Kerensky.dds"
+	}	
+}
