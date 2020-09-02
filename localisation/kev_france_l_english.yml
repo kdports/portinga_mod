@@ -115,3 +115,21 @@
 
   # Tooltips
   1_FRA_pres_tt:0 "Adds §G5 Prestige§! to your country's total."
+  2_FRA_pres_tt:0 "Adds §G15 Prestige§! to your country's total."
+  3_FRA_pres_tt:0 "Subtracts §R25 Prestige§! to your country's total."
+  4_FRA_pres_tt:0 "We'll fight for every inch of land! No compromise, no retreat!"
+  5_FRA_pres_tt:0 "We'll negotiate the return of Piedmont for Italian concessions."
+  6_FRA_pres_tt:0 "A §Rpreemptive strike§! will be launched for Emilia! This is a risky maneuver, and could disasterously fail!"
+  7_FRA_pres_tt:0 "Subtracts §R40 Prestige§! to your country's total."
+  8_FRA_pres_tt:0 "Adds §G40 Prestige§! to your country's total."
+
+  # Flags
+  X14_wants_piedmont:0 "Italy has declared their ambitions!"
+  KEV_FRA_talk_italy:0 "We chose to negotiate for Piedmont"
+  KEV_FRA_fight_italy:0 "We chose to fight for Piedmont"
+
+  # Events
+  kev_france.1.t:0 ""
+  kev_france.1.d:0 ""
+  kev_france.1.a:0 "We Shall Never Surrender!"
+  kev_france.1.b:0 "We Surrender."

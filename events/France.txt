@@ -1,1 +1,57 @@
-﻿
+﻿add_namespace = kev_france
+
+# How To Train Your Italy
+country_event = {
+	id = kev_france.1
+	title = kev_france.1.t
+	desc = kev_france.1.d
+	picture = GFX_report_event_quit_india_movement
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Refuse to Negotiate
+		name = kev_france.1.a
+		add_timed_idea = {
+			idea = KEV_X14_fra_bonus
+			days = 200
+		}
+		add_to_variable = { country_prestige_num = 15 }
+		custom_effect_tooltip = 2_FRA_pres_tt
+		custom_effect_tooltip = 4_FRA_pres_tt
+	}
+	option = { #Negotiate
+		name = kev_france.1.b
+		add_to_variable = { country_prestige_num = -25 }
+		custom_effect_tooltip = 3_FRA_pres_tt
+		custom_effect_tooltip = 5_FRA_pres_tt
+		set_country_flag = KEV_FRA_talk_italy
+		clr_country_flag = KEV_FRA_fight_italy
+	}
+}
+
+country_event = { #Italy calls crusade
+	id = kev_france.2
+	title = kev_france.2.t
+	desc = kev_france.2.d
+	picture = GFX_report_event_quit_india_movement
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		date > 1937.3.1
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				tag = FRA
+			}
+			set_country_flag = KEV_FRA_fight_italy
+		}
+	}
+
+	option = { #Cool
+		name = kev_france.2.a
+	}
+}

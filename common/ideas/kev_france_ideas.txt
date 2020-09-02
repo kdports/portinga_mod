@@ -157,5 +157,64 @@ ideas = {
 				repair_speed_factor = 0.1
 			}
 		}
+
+		KEV_FRA_anti_italy = {
+
+			picture = generic_coastal_defense_ships
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		KEV_X14_fra_bonus = {
+
+			picture = generic_coastal_defense_ships
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				attack_bonus_against_cores = 0.3
+				army_core_defence_factor = -0.05
+			}
+		}
+
+		KEV_X14_fra_defence = {
+
+			picture = generic_coastal_defense_ships
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				attack_bonus_against_cores = 0.10
+				army_core_defence_factor = 0.15
+			}
+		}
 	}
 }

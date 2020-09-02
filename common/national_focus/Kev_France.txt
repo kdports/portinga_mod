@@ -2139,6 +2139,249 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 25
+			country_event = {
+				id = kev_france.1
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_italy_fight
+		icon = GFX_focus_fra_french_union
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_start }
+		mutually_exclusive = { focus = KEV_FRA_italy_talk }
+		relative_position_id = KEV_FRA_italy_start
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = false
+		}
+
+		bypass = {
+			FRA = {
+				has_country_flag = KEV_FRA_fight_italy
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_italy_fortify
+		icon = GFX_focus_fra_french_union
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_fight }
+		relative_position_id = KEV_FRA_italy_fight
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			292 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_move_industry
+		icon = GFX_focus_fra_french_union
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_fight }
+		relative_position_id = KEV_FRA_italy_fight
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			292 = {
+				add_building_construction = {
+					type = arms_factory
+					level = -3
+					instant_build = yes
+				}
+			}
+			235 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_prep_piedmont
+		icon = GFX_focus_fra_french_union
+		x = -1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_fight }
+		relative_position_id = KEV_FRA_italy_fight
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			FRA = {
+				add_timed_idea = {
+					idea = KEV_FRA_anti_italy
+					days = 200
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_preemptive_strike
+		icon = GFX_focus_fra_french_union
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_prep_piedmont }
+		relative_position_id = KEV_FRA_prep_piedmont
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			FRA = {
+				declare_war_on = {
+					target = X14
+					type = take_state
+				}
+			}
+			X14 = {
+				add_timed_idea = {
+					idea = KEV_X14_fra_defence
+					days = 80
+				}
+			}
+			custom_effect_tooltip = 6_FRA_pres_tt
+			set_country_flag = KEV_FRA_ita_offensive
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_italy_talk
+		icon = GFX_focus_fra_french_union
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_start }
+		mutually_exclusive = { focus = KEV_FRA_italy_fight }
+		relative_position_id = KEV_FRA_italy_start
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = false
+		}
+
+		bypass = {
+			FRA = {
+				has_country_flag = KEV_FRA_talk_italy
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
 		}
 	}
 }
