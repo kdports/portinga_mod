@@ -1,0 +1,80 @@
+add_namespace = ethiopia
+
+# The Future of Slavery
+country_event = {
+		id = ethiopia.1
+		title = ethiopia.1.t
+		desc = ethiopia.1.d
+		picture = GFX_report_event_quit_india_movement
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = ethiopia.1.1
+			swap_ideas = {
+				remove_idea = slavery_idea_1a
+				add_idea = slavery_idea_1b
+				}
+			add_stability = 0.04
+			}
+		option = {
+			name = ethiopia.1.2
+			swap_ideas = {
+				remove_idea = slavery_idea_1a
+				add_idea = slavery_idea_1c
+				}
+			}
+	}
+	
+country_event = {
+		id = ethiopia.slavery.revolt
+		title = ethiopia.slavery.revolt.t
+		desc = ethiopia.slavery.revolt.d
+		picture = GFX_report_event_quit_india_movement
+		fire_only_once = no
+		is_triggered_only = no
+		mean_time_to_happen = {
+			days = 900
+			modifier = {
+				factor = 0.66
+				OR = {
+					has_idea = slavery_idea_1c
+					has_idea = slavery_idea_1f
+				}
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_idea = slavery_idea_1b
+					has_idea = slavery_idea_1d
+					has_idea = slavery_idea_1e
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_idea = ETH_IDEA_ORGANIZED_LABOR
+				}
+			}
+		}
+		option = {
+			name = ethiopia.slavery.revolt.1
+			add_stability = -0.05
+		}
+	}
+country_event = {
+	id = zulu.rebellion
+	title = zulu.rebellion.t
+	desc = zulu.rebellion.d
+	picture = GFX_report_event_quit_india_movement
+	fire_only_once = yes
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 45
+	}
+	option = {
+		name = zulu.rebellion.1
+		add_stability = -0.1
+		add_ideas = { ETH_IDEA_ZULU_UPRISING }
+	}
+}
