@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = X34
+		owner = BAY
 		victory_points = {
 			11499 9 
 		}
@@ -19,6 +19,7 @@ state={
 
 		}
 		add_core_of = X34
+		add_core_of = BAY
 	}
 
 	provinces={

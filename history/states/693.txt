@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = TUR
+		owner = SOV
 		victory_points = {
 			11479 9 
 		}
@@ -20,7 +20,7 @@ state={
 
 		}
 		add_core_of = TUR
-		add_core_of = X26
+		add_core_of = SOV
 	}
 
 	provinces={

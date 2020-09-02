@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = MAN
+		owner = X08
 		victory_points = {
 			11948 4 
 		}
@@ -24,7 +24,7 @@ state={
 
 		}
 		add_core_of = JAP
-		add_core_of = MAN
+		add_core_of = X08
 	}
 
 	provinces={

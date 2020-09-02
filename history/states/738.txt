@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = X38
+		owner = AUS
 		victory_points = {
 			596 8 
 		}
@@ -19,6 +19,7 @@ state={
 
 		}
 		add_core_of = X38
+		add_core_of = AUS
 	}
 
 	provinces={

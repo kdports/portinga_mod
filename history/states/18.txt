@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = X03
+		owner = WGR
 		victory_points = {
 			6542 8 
 		}
@@ -19,6 +19,7 @@ state={
 
 		}
 		add_core_of = X03
+		add_core_of = WGR
 	}
 
 	provinces={

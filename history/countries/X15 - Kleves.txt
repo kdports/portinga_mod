@@ -61,6 +61,19 @@ add_tech_bonus = { name = air_doc_bonus bonus = 0.90 uses = 1 category = air_doc
 add_tech_bonus = { name = land_doc_bonus bonus = 0.90 uses = 1 category = land_doctrine }
 set_convoys = 0
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = X21
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = X21
+	}
+}
+
 
 set_politics = {
     ruling_party = absolutist

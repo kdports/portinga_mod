@@ -72,22 +72,27 @@ if = {
 		}
 	}
 	set_autonomy = {
-		target = X13
+		target = X37
 		autonomous_state = autonomy_sphereling
 		freedom_level = 0.009
 	}
-	set_autonomy = {
-		target = X18
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.63
-	}
-	set_autonomy = {
-		target = X41
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
+	#set_autonomy = {
+	#	target = X18
+	#	autonomous_state = autonomy_sphereling
+	#	freedom_level = 0.63
+	#}
+	#set_autonomy = {
+	#	target = X41
+	#	autonomous_state = autonomy_sphereling
+	#	freedom_level = 0.009
+	#}
     else = {
     }
+}
+
+declare_war_on = {
+	target = MAN
+	type = annex_everything
 }
 
 if = {

@@ -4,7 +4,7 @@ state={
 	name="STATE_226"
 
 	history={
-		owner = FRA
+		owner = ENG
 		victory_points = {
 			4723 4 
 		}
@@ -15,7 +15,7 @@ state={
 			air_base = 1
 
 		}
-		add_core_of = FRA
+		add_core_of = ENG
 	}
 
 	provinces={
