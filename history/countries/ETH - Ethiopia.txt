@@ -159,6 +159,7 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_amhara
+	slavery_idea_1a
 }
 set_stability = 0.60
 set_war_support = 0.59
