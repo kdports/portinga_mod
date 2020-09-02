@@ -1,0 +1,32 @@
+
+state={
+	id=336
+	name="STATE_336"
+	resources={
+		aluminium=8.000
+		chromium=13.000
+		steel=14.000
+	}
+
+	history={
+		owner = RAJ
+		victory_points = {
+			4883 4 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 2
+			air_base = 0
+
+		}
+		add_core_of = RAJ
+	}
+
+	provinces={
+		1510 1579 1622 4557 4883 7428 7430 7465 7497 7574 7619 8120 10030 10171 10401 10469 12375 12420 12480 12490 12781 
+	}
+	manpower=2741144
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

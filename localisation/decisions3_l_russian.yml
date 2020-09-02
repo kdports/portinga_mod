@@ -1,0 +1,3 @@
+﻿l_russian:
+ ENG_Naval_treaty_nation:10 "@ENG [ENG.GetName]"
+ FRA_Naval_treaty_nation:10 "@FRA [FRA.GetName]"

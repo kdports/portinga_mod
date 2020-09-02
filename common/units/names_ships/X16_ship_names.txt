@@ -1,0 +1,176 @@
+﻿X16_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+
+	prefix = ""
+	fallback_name = "Battleship BB-%d"
+
+	unique = {
+		"Alvear" "Argentina" "General Rosas" "Moreno" "Paz" "Presidente Avellaneda" "Río de la Plata" "Rivadavia" "San Martín" "Urquiza" "Yrigoyen" 
+	}
+}
+
+X16_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+
+	prefix = ""
+	fallback_name = "Battlecruiser BC-%d"
+
+	unique = {
+		"Almirante Brown" "Bouchard" "Campichuelo" "Cepeda" "De las Heras" "Federación" "Huamitá" "Independencia" "Júpiter" "Lavalle" "Libertad" "Marte" "Mercurio" "Neptuno" "Pavón" "Plutón" "Salado" "Salta" "Suipacha" "Thomas" 
+	}
+}
+
+X16_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+
+	prefix = ""
+	fallback_name = "Heavy Cruiser CA-%d"
+
+	unique = {
+		"América" "Aquíles" "Argentina" "Argonauta" "Furor" "Héroe" "Libertador" "Navegante" "Perla Negra" "Río de la Plata" "Salvador" "San Bernardo" "San Claudio" "San Honorato" "San Joaquín" "Santa Ana" "Santa María" "Santiago" "Terror" "Victoriosa" 
+	}
+}
+
+X16_CLAA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CLAA
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+
+	prefix = ""
+	fallback_name = "Light Cruiser CLAA-%d"
+
+	unique = {
+		"Bermejo" "Catamarca" "Constitución" "Córdoba" "Corrientes" "Entrerríos" "Jujuy" "La Plata" "La Rioja" "Mendoza" "Misiones" "Paraná" "Pilcomayo" "Rosario" "San Juan" "San Luis" "Santa Cruz" "Sol Argentino" "Tucumán" "Uruguay" 
+	}
+}
+
+X16_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+
+	prefix = ""
+	fallback_name = "Light Cruiser CL-%d"
+
+	unique = {
+		"Bermejo" "Catamarca" "Constitución" "Córdoba" "Corrientes" "Entrerríos" "Jujuy" "La Plata" "La Rioja" "Mendoza" "Misiones" "Paraná" "Pilcomayo" "Rosario" "San Juan" "San Luis" "Santa Cruz" "Sol Argentino" "Tucumán" "Uruguay" 
+	}
+}
+
+X16_CVL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CVL
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+
+	prefix = ""
+	fallback_name = "Carrier CVL-%d"
+
+	unique = {
+		"El Plata" "Formosa" "Gran Chaco" "La Pampa" "Lago Argentino" "Los Andes" "Mesopotamia" "Posadas" "Rawson" "Resistencia" "San Fernando del Valle" "San Miguel" "San Salvador" "Santa Rosa" "Sirena" "Somuncurá" "Tetis" "Tritón" "Viedma" "Vulcano" 
+	}
+}
+
+X16_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+
+	prefix = ""
+	fallback_name = "Carrier CV-%d"
+
+	unique = {
+		"El Plata" "Formosa" "Gran Chaco" "La Pampa" "Lago Argentino" "Los Andes" "Mesopotamia" "Posadas" "Rawson" "Resistencia" "San Fernando del Valle" "San Miguel" "San Salvador" "Santa Rosa" "Sirena" "Somuncurá" "Tetis" "Tritón" "Viedma" "Vulcano" 
+	}
+}
+
+X16_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+
+	prefix = ""
+	fallback_name = "Destroyer DD-%d"
+
+	unique = {
+		"Almirante Brown" "Álvarez Jonte" "Belgrano" "Buenos Aires" "Castelli" "Chichlana" "Garibaldi" "Güemes" "Liniers" "Matheu" "Mitre" "Nueve de Julio" "Paso" "Patagonia" "Patria" "Pueyrredón" "Roca" "San Martín" "Sarratea" "Veinticinco de Mayo" 
+	}
+}
+
+X16_DE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DE
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+
+	prefix = ""
+	fallback_name = "Destroyer Escort DE-%d"
+
+	unique = {
+		"Almirante Brown" "Álvarez Jonte" "Belgrano" "Buenos Aires" "Castelli" "Chichlana" "Garibaldi" "Güemes" "Liniers" "Matheu" "Mitre" "Nueve de Julio" "Paso" "Patagonia" "Patria" "Pueyrredón" "Roca" "San Martín" "Sarratea" "Veinticinco de Mayo" 
+	}
+}
+
+X16_MINELAYERS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_MINELAYERS
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
+
+	prefix = ""
+	fallback_name = "Minelayer CM-%d"
+
+	unique = {
+		"Bermejo" "Catamarca" "Constitución" "Córdoba" "Corrientes" "Entrerríos" "Jujuy" "La Plata" "La Rioja" "Mendoza" "Misiones" "Paraná" "Pilcomayo" "Rosario" "San Juan" "San Luis" "Santa Cruz" "Sol Argentino" "Tucumán" "Uruguay" 
+	}
+}
+
+X16_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { X16 }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+
+	prefix = ""
+	fallback_name = "Submarine SS-%d"
+
+	unique = {
+		"Azopardo" "Cervantes" "Espora" "Garay" "Hércules" "Heroína" "La Argentina" "La Libertad" "Murillo" "Parker" "Piedra Buena" "Presidente Sarmiento" "República" "Robinson" "Rondeau" "Rosales" "Saavedra" "Santísima Trinidad" "Sarandí" "Spiro" 
+	}
+}
+

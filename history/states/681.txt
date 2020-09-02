@@ -1,0 +1,36 @@
+
+state={
+	id=681
+	name="STATE_681"
+	resources={
+		aluminium=39.000
+		chromium=19.000
+		steel=15.000
+		tungsten=13.000
+	}
+
+	history={
+		owner = TUR
+		victory_points = {
+			4109 4 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 2
+			4109 = {
+				naval_base = 10
+			}
+			air_base = 0
+
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		976 1109 1205 3864 3988 4109 7127 11895 12001 
+	}
+	manpower=1671844
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,58 @@
+﻿X16 = {
+	battle_cruiser = {
+		prefix = ""
+		generic = { "Battlecruiser" }
+		unique = {
+			"Almirante Brown" "Bouchard" "Campichuelo" "Cepeda" "De las Heras" "Federación" "Huamitá" "Independencia" "Júpiter" "Lavalle" "Libertad" "Marte" "Mercurio" "Neptuno" "Pavón" "Plutón" "Salado" "Salta" "Suipacha" "Thomas" 
+		}
+	}
+
+	battleship = {
+		prefix = ""
+		generic = { "Battleship" }
+		unique = {
+			"Alvear" "Argentina" "General Rosas" "Moreno" "Paz" "Presidente Avellaneda" "Río de la Plata" "Rivadavia" "San Martín" "Urquiza" "Yrigoyen" 
+		}
+	}
+
+	carrier = {
+		prefix = ""
+		generic = { "Carrier" }
+		unique = {
+			"El Plata" "Formosa" "Gran Chaco" "La Pampa" "Lago Argentino" "Los Andes" "Mesopotamia" "Posadas" "Rawson" "Resistencia" "San Fernando del Valle" "San Miguel" "San Salvador" "Santa Rosa" "Sirena" "Somuncurá" "Tetis" "Tritón" "Viedma" "Vulcano" 
+		}
+	}
+
+	destroyer = {
+		prefix = ""
+		generic = { "Destroyer" }
+		unique = {
+			"Almirante Brown" "Álvarez Jonte" "Belgrano" "Buenos Aires" "Castelli" "Chichlana" "Garibaldi" "Güemes" "Liniers" "Matheu" "Mitre" "Nueve de Julio" "Paso" "Patagonia" "Patria" "Pueyrredón" "Roca" "San Martín" "Sarratea" "Veinticinco de Mayo" 
+		}
+	}
+
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"América" "Aquíles" "Argentina" "Argonauta" "Furor" "Héroe" "Libertador" "Navegante" "Perla Negra" "Río de la Plata" "Salvador" "San Bernardo" "San Claudio" "San Honorato" "San Joaquín" "Santa Ana" "Santa María" "Santiago" "Terror" "Victoriosa" 
+		}
+	}
+
+	light_cruiser = {
+		prefix = ""
+		generic = { "Light Cruiser" }
+		unique = {
+			"Bermejo" "Catamarca" "Constitución" "Córdoba" "Corrientes" "Entrerríos" "Jujuy" "La Plata" "La Rioja" "Mendoza" "Misiones" "Paraná" "Pilcomayo" "Rosario" "San Juan" "San Luis" "Santa Cruz" "Sol Argentino" "Tucumán" "Uruguay" 
+		}
+	}
+
+	submarine = {
+		prefix = ""
+		generic = { "Submarine" }
+		unique = {
+			"Azopardo" "Cervantes" "Espora" "Garay" "Hércules" "Heroína" "La Argentina" "La Libertad" "Murillo" "Parker" "Piedra Buena" "Presidente Sarmiento" "República" "Robinson" "Rondeau" "Rosales" "Saavedra" "Santísima Trinidad" "Sarandí" "Spiro" 
+		}
+	}
+
+}

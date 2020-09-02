@@ -1,0 +1,27 @@
+
+state={
+	id=652
+	name="STATE_652"
+
+	history={
+		owner = X31
+		victory_points = {
+			8099 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = X31
+	}
+
+	provinces={
+		4482 4549 4599 4958 5003 7491 7560 7924 8099 10357 10414 10742 12333 12491 
+	}
+	manpower=1730628
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

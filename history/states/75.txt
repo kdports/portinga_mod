@@ -1,0 +1,30 @@
+
+state={
+	id=75
+	name="STATE_75"
+	resources={
+		aluminium=2.000
+	}
+
+	history={
+		owner = X08
+		victory_points = {
+			1603 9 
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 8
+			arms_factory = 4
+			air_base = 4
+
+		}
+		add_core_of = X08
+	}
+
+	provinces={
+		1004 1139 1603 4114 4144 4606 6932 7074 7656 9958 10364 11931 
+	}
+	manpower=11424568
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=36
+	name="STATE_36"
+
+	history={
+		owner = BRA
+		victory_points = {
+			2152 9 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 9
+			arms_factory = 3
+			air_base = 4
+
+		}
+		add_core_of = BRA
+	}
+
+	provinces={
+		2152 2194 12901 
+	}
+	manpower=4900332
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

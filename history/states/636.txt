@@ -1,0 +1,35 @@
+
+state={
+	id=636
+	name="STATE_636"
+	resources={
+		steel=2.000
+		tungsten=5.000
+	}
+
+	history={
+		owner = SPR
+		victory_points = {
+			8204 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			2197 = {
+				naval_base = 4
+			}
+			air_base = 0
+
+		}
+		add_core_of = NZL
+		add_core_of = SPR
+	}
+
+	provinces={
+		2197 2203 4819 5195 7839 8204 8212 10650 12632 12966 12974 
+	}
+	manpower=472376
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

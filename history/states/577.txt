@@ -1,0 +1,31 @@
+
+state={
+	id=577
+	name="STATE_577"
+	resources={
+		rubber=0.000
+		steel=0.000
+	}
+
+	history={
+		owner = X29
+		victory_points = {
+			5030 3 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 1
+
+		}
+		add_core_of = X29
+	}
+
+	provinces={
+		5030 7596 10757 12414 
+	}
+	manpower=1396084
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

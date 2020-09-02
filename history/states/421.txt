@@ -1,0 +1,30 @@
+
+state={
+	id=421
+	name="STATE_421"
+	resources={
+		aluminium=14.000
+	}
+
+	history={
+		owner = X16
+		victory_points = {
+			8216 7 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 8
+			arms_factory = 0
+			air_base = 3
+
+		}
+		add_core_of = X16
+	}
+
+	provinces={
+		2136 2158 2179 8195 8216 8253 10964 11022 12928 12978 
+	}
+	manpower=4643632
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

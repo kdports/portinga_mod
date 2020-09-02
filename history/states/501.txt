@@ -1,0 +1,27 @@
+
+state={
+	id=501
+	name="STATE_501"
+
+	history={
+		owner = X27
+		victory_points = {
+			10472 12 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 5
+
+		}
+		add_core_of = X27
+	}
+
+	provinces={
+		10472 
+	}
+	manpower=841420
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

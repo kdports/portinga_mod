@@ -1,0 +1,51 @@
+
+state={
+	id=127
+	name="STATE_127"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			3152 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 1
+			3152 = {
+				naval_base = 4
+			}
+			air_base = 2
+
+		}
+		add_core_of = ENG
+		add_core_of = X26
+		SOV = {
+			set_province_controller = 83
+			set_province_controller = 496
+			set_province_controller = 567
+			set_province_controller = 3074
+			set_province_controller = 3152
+			set_province_controller = 9079
+			set_province_controller = 11426
+		}
+		X26 = {
+			set_province_controller = 308
+			set_province_controller = 3174
+			set_province_controller = 6178
+			set_province_controller = 6381
+			set_province_controller = 11291
+		}
+	}
+
+	provinces={
+		83 185 308 496 567 592 3074 3152 3174 4640 6099 6178 6201 6381 6408 9079 9221 9485 11057 11127 11291 11426 11443 
+	}
+	manpower=3164820
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=700
+	name="STATE_700"
+	resources={
+		aluminium=82.000
+		oil=6.000
+		steel=10.000
+	}
+
+	history={
+		owner = TUR
+		victory_points = {
+			8051 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 2
+			dockyard = 2
+			8051 = {
+				naval_base = 4
+			}
+			air_base = 1
+
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		2048 7960 8051 8108 10904 
+	}
+	manpower=2055304
+	buildings_max_level_factor=1.000
+	state_category=city
+}

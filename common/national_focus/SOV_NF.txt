@@ -1,0 +1,300 @@
+focus_tree = {
+	id = SOV_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = WarPropSOV
+		icon = GFX_goal_generic_propaganda
+		text = WarProp
+		x = 29
+		y = 0
+		cost = 10
+		available = {
+			threat > 0.000100
+		}
+		completion_reward = {
+		add_stability = 0.05
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = PrepInterSOV
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		text = PrepInter
+		prerequisite = { focus = WarPropSOV }
+		x = 0
+		y = 1
+		relative_position_id = WarPropSOV
+		cost = 10
+		available = {
+			threat > 0.000150
+		}
+		completion_reward = {
+		add_political_power = 120
+		set_rule = { can_send_volunteers = yes }
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = LimSOV
+		icon = GFX_goal_generic_more_territorial_claims
+		text = Lim
+		prerequisite = { focus = PrepInterSOV }
+		x = 0
+		y = 1
+		relative_position_id = PrepInterSOV
+		cost = 10
+		available = {
+			threat > 0.000250
+		}
+		completion_reward = {
+		add_ideas = limited_interventionism
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = WarPlanSOVWGR
+		icon = GFX_goal_generic_position_armies
+		text = WarPlanWGR
+		prerequisite = { focus = LimSOV }
+		bypass = {
+			has_war_with = WGR
+		}
+		x = -1
+		y = 1
+		relative_position_id = LimSOV
+		cost = 10
+		available = {
+			any_other_country = {
+				original_tag = WGR
+				exists = yes
+				NOT = { has_government = democratic } 
+				NOT = { is_in_faction_with = SOV }
+				OR = {
+					has_offensive_war = yes
+					has_added_tension_amount > 30
+				}
+			}
+		}
+		completion_reward = {
+		army_experience = 20
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = EmbargoSOVWGR
+		icon = GFX_goal_generic_trade
+		text = EmbargoWGR
+		prerequisite = { focus =  WarPlanSOVWGR }
+		bypass = {
+			has_war_with = WGR
+		}
+		x = 0
+		y = 1
+		relative_position_id = WarPlanSOVWGR
+		cost = 10
+		available = {
+			any_other_country = {
+				original_tag = WGR
+				exists = yes
+				NOT = { has_government = democratic } 
+				NOT = { is_in_faction_with = SOV }
+				OR = {
+					has_offensive_war = yes
+					has_added_tension_amount > 30
+					threat > 0.6
+				}
+			}
+		}
+		completion_reward = {
+			WGR = {
+				add_opinion_modifier = { target = SOV modifier = embargo }
+			}
+		}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = WARSOVWGR
+		icon = GFX_goal_support_democracy
+		text = WARWGR
+		prerequisite = { focus =  EmbargoSOVWGR }
+		bypass = {
+			has_war_with = WGR
+		}
+		x = 0
+		y = 1
+		relative_position_id = EmbargoSOVWGR
+		cost = 10
+		available = {
+			has_war = no
+			any_other_country = {
+				original_tag = WGR
+				exists = yes
+				NOT = { has_government = democratic } 
+				NOT = { is_in_faction_with = SOV }
+				OR = {
+					has_offensive_war = yes
+					has_added_tension_amount > 30
+					threat > 0.6
+				}
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+				type = puppet_wargoal_focus
+				target = WGR
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = WarPlanSOVUSA
+		icon = GFX_goal_generic_position_armies
+		text = WarPlanUSA
+		prerequisite = { focus = LimSOV }
+		bypass = {
+			has_war_with = USA
+		}
+		x = 1
+		y = 1
+		relative_position_id = LimSOV
+		cost = 10
+		available = {
+			any_other_country = {
+				original_tag = USA
+				exists = yes
+				NOT = { has_government = democratic } 
+				NOT = { is_in_faction_with = SOV }
+				OR = {
+					has_offensive_war = yes
+					has_added_tension_amount > 30
+				}
+			}
+		}
+		completion_reward = {
+		army_experience = 20
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = EmbargoSOVUSA
+		icon = GFX_goal_generic_trade
+		text = EmbargoUSA
+		prerequisite = { focus =  WarPlanSOVUSA }
+		bypass = {
+			has_war_with = USA
+		}
+		x = 0
+		y = 1
+		relative_position_id = WarPlanSOVUSA
+		cost = 10
+		available = {
+			any_other_country = {
+				original_tag = USA
+				exists = yes
+				NOT = { has_government = democratic } 
+				NOT = { is_in_faction_with = SOV }
+				OR = {
+					has_offensive_war = yes
+					has_added_tension_amount > 30
+					threat > 0.6
+				}
+			}
+		}
+		completion_reward = {
+			USA = {
+				add_opinion_modifier = { target = SOV modifier = embargo }
+			}
+		}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = WARSOVUSA
+		icon = GFX_goal_support_democracy
+		text = WARUSA
+		prerequisite = { focus =  EmbargoSOVUSA }
+		bypass = {
+			has_war_with = USA
+		}
+		x = 0
+		y = 1
+		relative_position_id = EmbargoSOVUSA
+		cost = 10
+		available = {
+			has_war = no
+			any_other_country = {
+				original_tag = USA
+				exists = yes
+				NOT = { has_government = democratic } 
+				NOT = { is_in_faction_with = SOV }
+				OR = {
+					has_offensive_war = yes
+					has_added_tension_amount > 30
+					threat > 0.6
+				}
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+				type = puppet_wargoal_focus
+				target = USA
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+}

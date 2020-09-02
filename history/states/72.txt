@@ -1,0 +1,33 @@
+
+state={
+	id=72
+	name="STATE_72"
+	resources={
+		chromium=17.000
+		steel=32.000
+	}
+
+	history={
+		owner = X08
+		victory_points = {
+			4677 6 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 1
+
+		}
+		add_core_of = MAN
+		add_core_of = X08
+		add_core_of = X13
+	}
+
+	provinces={
+		1666 1748 1761 1795 1805 1807 1826 4675 4677 4719 4726 4752 4762 4795 4821 4832 4855 4868 4881 7691 7725 7759 7772 7785 7786 7844 7851 7854 7889 10559 10565 10574 10583 10590 10608 10643 10667 10681 10714 12543 12556 12565 12591 12622 12641 12650 12660 12694 
+	}
+	manpower=3303520
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

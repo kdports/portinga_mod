@@ -1,0 +1,30 @@
+
+state={
+	id=589
+	name="STATE_589"
+
+	history={
+		owner = SPR
+		victory_points = {
+			9853 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			9853 = {
+				naval_base = 8
+			}
+			air_base = 0
+
+		}
+		add_core_of = SPR
+	}
+
+	provinces={
+		6915 9853 
+	}
+	manpower=499780
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=571
+	name="STATE_571"
+	resources={
+		oil=1.000
+	}
+
+	history={
+		owner = SAX
+		victory_points = {
+			6513 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = CZE
+		add_core_of = SAX
+	}
+
+	provinces={
+		526 6513 9375 11402 11468 11493 
+	}
+	manpower=1209864
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=308
+	name="STATE_308"
+	resources={
+		oil=11.000
+		rubber=2.000
+		steel=4.000
+	}
+
+	history={
+		owner = GUA
+		victory_points = {
+			12721 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 0
+			10895 = {
+				naval_base = 6
+			}
+			air_base = 0
+
+		}
+		add_core_of = GUA
+	}
+
+	provinces={
+		1945 1952 4946 7921 7973 8003 8057 10738 10853 10871 10895 12721 
+	}
+	manpower=2593836
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=37
+	name="STATE_37"
+	resources={
+		aluminium=4.000
+		rubber=17.000
+		steel=3.000
+		tungsten=2.000
+	}
+
+	history={
+		owner = BRA
+		victory_points = {
+			5220 32 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 7
+			arms_factory = 3
+			dockyard = 2
+			5220 = {
+				naval_base = 10
+			}
+			air_base = 10
+
+		}
+		add_core_of = BRA
+	}
+
+	provinces={
+		2035 2168 2214 5151 5220 8172 10874 10956 12853 12913 12933 12947 12999 
+	}
+	manpower=14059016
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

@@ -1,0 +1,121 @@
+﻿add_namespace = news
+
+news_event = {
+	id = news.500
+	title = "Belize formalizes alliance with New Zealand"
+	desc = "The leaders of both countries have announced their intent of military cooperation."
+	picture = news_event_generic_sign_treaty1
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}
+
+news_event = {
+	id = news.501
+	title = "Belize refuses the alliance offer of New Zealand"
+	desc = "The alliance negotiations ended in disagreement."
+	picture = news_event_generic_sign_treaty1
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}
+
+news_event = {
+	id = news.502
+	title = "Guyana formalizes alliance with New Zealand"
+	desc = "The leaders of both countries have announced their intent of military cooperation."
+	picture = news_event_generic_sign_treaty1
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}
+
+news_event = {
+	id = news.503
+	title = "Guyana refuses the alliance offer of New Zealand"
+	desc = "The alliance negotiations ended in disagreement."
+	picture = news_event_generic_sign_treaty1
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}
+
+news_event = {
+	id = news.504
+	title = "Belize formalizes alliance with America"
+	desc = "The leaders of both countries have announced their intent of military cooperation."
+	picture = news_event_generic_sign_treaty1
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}
+
+news_event = {
+	id = news.505
+	title = "Belize refuses the alliance offer of America"
+	desc = "The alliance negotiations ended in disagreement."
+	picture = news_event_generic_sign_treaty1
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}
+
+news_event = {
+	id = news.506
+	title = "Guyana formalizes alliance with America"
+	desc = "The leaders of both countries have announced their intent of military cooperation."
+	picture = news_event_generic_sign_treaty1
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}
+
+news_event = {
+	id = news.507
+	title = "Guyana refuses the alliance offer of America"
+	desc = "The alliance negotiations ended in disagreement."
+	picture = news_event_generic_sign_treaty1
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}
+}

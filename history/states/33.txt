@@ -1,0 +1,28 @@
+
+state={
+	id=33
+	name="STATE_33"
+
+	history={
+		owner = BRA
+		victory_points = {
+			10792 9 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 8
+			arms_factory = 4
+			air_base = 4
+
+		}
+		add_core_of = BRA
+		add_core_of = COS
+	}
+
+	provinces={
+		2007 10792 12729 12770 12825 
+	}
+	manpower=6562820
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

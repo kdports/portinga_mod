@@ -1,0 +1,35 @@
+
+state={
+	id=755
+	name="STATE_755"
+	resources={
+		chromium=3.000
+		steel=3.000
+		tungsten=10.000
+	}
+
+	history={
+		owner = X41
+		victory_points = {
+			11936 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			4379 = {
+				naval_base = 2
+			}
+			air_base = 0
+
+		}
+		add_core_of = X41
+	}
+
+	provinces={
+		1302 4379 4397 7280 9988 10016 11909 11936 12297 
+	}
+	manpower=1064064
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

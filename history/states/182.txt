@@ -1,0 +1,33 @@
+
+state={
+	id=182
+	name="STATE_182"
+	resources={
+		aluminium=1.000
+		rubber=1.000
+	}
+
+	history={
+		owner = ETH
+		victory_points = {
+			6039 1 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 0
+			5036 = {
+				naval_base = 6
+			}
+			air_base = 0
+
+		}
+	}
+
+	provinces={
+		1903 5036 6039 
+	}
+	manpower=462636
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

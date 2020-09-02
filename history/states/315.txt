@@ -1,0 +1,30 @@
+
+state={
+	id=315
+	name="STATE_315"
+	resources={
+		aluminium=37.000
+	}
+
+	history={
+		owner = GUY
+		victory_points = {
+			8107 8 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = GUY
+	}
+
+	provinces={
+		8107 
+	}
+	manpower=6832544
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

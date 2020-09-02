@@ -1,0 +1,31 @@
+
+state={
+	id=496
+	name="STATE_496"
+
+	history={
+		owner = X26
+		victory_points = {
+			6332 4 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			6332 = {
+				naval_base = 10
+			}
+			air_base = 1
+
+		}
+		add_core_of = ENG
+		add_core_of = X26
+	}
+
+	provinces={
+		281 348 395 3288 3384 6332 11265 
+	}
+	manpower=5314684
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

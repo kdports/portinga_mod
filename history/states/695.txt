@@ -1,0 +1,34 @@
+
+state={
+	id=695
+	name="STATE_695"
+	resources={
+		oil=24.000
+		steel=6.000
+	}
+
+	history={
+		owner = TUR
+		victory_points = {
+			12832 4 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			5005 = {
+				naval_base = 6
+			}
+			air_base = 1
+
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		5005 5089 10797 12832 
+	}
+	manpower=1641932
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

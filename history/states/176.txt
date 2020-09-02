@@ -1,0 +1,31 @@
+
+state={
+	id=176
+	name="STATE_176"
+	resources={
+		aluminium=0.000
+		rubber=0.000
+		steel=0.000
+	}
+
+	history={
+		owner = ETH
+		victory_points = {
+			8034 1 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 1
+
+		}
+	}
+
+	provinces={
+		8034 10831 
+	}
+	manpower=545048
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

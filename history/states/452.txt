@@ -1,0 +1,35 @@
+
+state={
+	id=452
+	name="STATE_452"
+	resources={
+		oil=3.000
+	}
+
+	history={
+		owner = X21
+		victory_points = {
+			6349 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 2
+			dockyard = 2
+			6349 = {
+				naval_base = 10
+			}
+			air_base = 1
+
+		}
+		add_core_of = X18
+		add_core_of = X21
+	}
+
+	provinces={
+		374 3271 3326 6218 6263 6298 6325 6349 9264 
+	}
+	manpower=2700744
+	buildings_max_level_factor=1.000
+	state_category=city
+}

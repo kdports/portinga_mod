@@ -1,0 +1,35 @@
+
+state={
+	id=113
+	name="STATE_113"
+	resources={
+		aluminium=9.000
+		steel=94.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			6384 7 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+			arms_factory = 4
+			dockyard = 2
+			11332 = {
+				naval_base = 10
+			}
+			air_base = 2
+
+		}
+		add_core_of = ENG
+	}
+
+	provinces={
+		219 3205 3311 6318 6335 6384 6399 9285 11332 
+	}
+	manpower=4125584
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

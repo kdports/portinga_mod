@@ -1,0 +1,27 @@
+
+state={
+	id=226
+	name="STATE_226"
+
+	history={
+		owner = FRA
+		victory_points = {
+			4723 4 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 1
+
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		4723 10640 12561 
+	}
+	manpower=1820324
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

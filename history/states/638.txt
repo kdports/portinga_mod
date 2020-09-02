@@ -1,0 +1,33 @@
+
+state={
+	id=638
+	name="STATE_638"
+	resources={
+		chromium=160.000
+		steel=4.000
+	}
+
+	history={
+		owner = SPR
+		victory_points = {
+			7622 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			7451 = {
+				naval_base = 8
+			}
+			air_base = 0
+
+		}
+	}
+
+	provinces={
+		1550 4476 4600 7451 7546 7590 7622 10374 10498 12347 
+	}
+	manpower=4977868
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

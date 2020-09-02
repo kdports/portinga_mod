@@ -1,0 +1,32 @@
+
+state={
+	id=311
+	name="STATE_311"
+
+	history={
+		owner = GUA
+		victory_points = {
+			1965 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 1
+			10889 = {
+				naval_base = 6
+			}
+			air_base = 0
+
+		}
+		add_core_of = GUA
+		add_core_of = X32
+	}
+
+	provinces={
+		1965 7913 8089 10732 10773 10889 12810 
+	}
+	manpower=6272752
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

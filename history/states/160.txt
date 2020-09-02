@@ -1,0 +1,26 @@
+
+state={
+	id=160
+	name="STATE_160"
+
+	history={
+		owner = ETH
+		victory_points = {
+			1473 1 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 1
+
+		}
+	}
+
+	provinces={
+		1473 3123 4897 4978 
+	}
+	manpower=413264
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=578
+	name="STATE_578"
+	resources={
+		rubber=1.000
+		steel=2.000
+		tungsten=7.000
+	}
+
+	history={
+		owner = X29
+		victory_points = {
+			4896 4 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = X29
+	}
+
+	provinces={
+		1640 4480 4896 7097 7101 7201 7279 7434 7665 9999 10006 10335 10517 10822 12017 12053 12310 12483 13143 
+	}
+	manpower=2338588
+	buildings_max_level_factor=1.000
+	state_category=town
+}

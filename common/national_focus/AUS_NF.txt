@@ -1,0 +1,105 @@
+focus_tree = {
+	id = AUS_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = NeighborWarBAYAUS
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarBAY
+		bypass = {
+			has_war_with = BAY
+		}
+		x = 28
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1939.7.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Bavaria" }
+			create_wargoal = {
+				type = annex_everything
+				target = BAY
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = BAY ratio < 0.8 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = CRO
+					has_war_with = SWI
+					has_war_with = X01
+					has_war_with = X03
+					has_war_with = X28
+					has_war_with = X34
+					has_war_with = X38
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NeighborWarCROAUS
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarCRO
+		bypass = {
+			has_war_with = CRO
+		}
+		x = 30
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1938.2.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Croatia" }
+			create_wargoal = {
+				type = annex_everything
+				target = CRO
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = CRO ratio < 0.8 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = BAY
+					has_war_with = SWI
+					has_war_with = X01
+					has_war_with = X03
+					has_war_with = X28
+					has_war_with = X34
+					has_war_with = X38
+				}
+			}
+		}
+	}
+
+}

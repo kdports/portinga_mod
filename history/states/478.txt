@@ -1,0 +1,27 @@
+
+state={
+	id=478
+	name="STATE_478"
+
+	history={
+		owner = NZL
+		victory_points = {
+			4421 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = NZL
+	}
+
+	provinces={
+		1286 1301 1329 1361 4304 4332 4352 4421 7251 7324 7339 7352 7412 10166 10206 12222 
+	}
+	manpower=719984
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

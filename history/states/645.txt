@@ -1,0 +1,31 @@
+
+state={
+	id=645
+	name="STATE_645"
+	resources={
+		chromium=3.000
+	}
+
+	history={
+		owner = X31
+		victory_points = {
+			7969 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = X27
+		add_core_of = X31
+	}
+
+	provinces={
+		7969 8093 10922 12704 12818 
+	}
+	manpower=3117316
+	buildings_max_level_factor=1.000
+	state_category=city
+}

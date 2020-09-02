@@ -1,0 +1,30 @@
+
+state={
+	id=384
+	name="STATE_384"
+
+	history={
+		owner = X14
+		victory_points = {
+			9904 12 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 3
+			9904 = {
+				naval_base = 10
+			}
+			air_base = 6
+
+		}
+		add_core_of = X14
+	}
+
+	provinces={
+		925 967 3885 6862 6926 9794 9904 11751 11790 11846 11861 
+	}
+	manpower=5385136
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

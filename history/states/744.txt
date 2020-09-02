@@ -1,0 +1,35 @@
+
+state={
+	id=744
+	name="STATE_744"
+	resources={
+		aluminium=7.000
+		steel=3.000
+	}
+
+	history={
+		owner = YUN
+		victory_points = {
+			1001 8 
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 5
+			arms_factory = 2
+			dockyard = 4
+			9953 = {
+				naval_base = 6
+			}
+			air_base = 2
+
+		}
+		add_core_of = YUN
+	}
+
+	provinces={
+		1001 1121 1146 1161 4001 4148 7181 9953 10008 10095 11913 
+	}
+	manpower=7357734
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

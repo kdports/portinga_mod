@@ -1,0 +1,24 @@
+
+state={
+	id=295
+	name="STATE_295"
+	resources={
+		aluminium=1.000
+		rubber=0.000
+		steel=4.000
+	}
+	impassable = yes
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = X14
+	}
+
+	provinces={
+		1897 1962 7943 8035 10771 10779 10838 
+	}
+	manpower=733920
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

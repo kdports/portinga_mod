@@ -1,0 +1,105 @@
+focus_tree = {
+	id = X21_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = X21
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = NeighborWarSAXX21
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarSAX
+		bypass = {
+			has_war_with = SAX
+		}
+		x = 28
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1940.1.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Saxony" }
+			create_wargoal = {
+				type = annex_everything
+				target = SAX
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = SAX ratio < 0.8 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = SHL
+					has_war_with = X10
+					has_war_with = X15
+					has_war_with = X18
+					has_war_with = X24
+					has_war_with = X35
+					has_war_with = X40
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NeighborWarSHLX21
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarSHL
+		bypass = {
+			has_war_with = SHL
+		}
+		x = 30
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1937.2.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Holstein" }
+			create_wargoal = {
+				type = annex_everything
+				target = SHL
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = SHL ratio < 0.8 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = SAX
+					has_war_with = X10
+					has_war_with = X15
+					has_war_with = X18
+					has_war_with = X24
+					has_war_with = X35
+					has_war_with = X40
+				}
+			}
+		}
+	}
+
+}

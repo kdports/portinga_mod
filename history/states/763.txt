@@ -1,0 +1,32 @@
+
+state={
+	id=763
+	name="STATE_763"
+	resources={
+		aluminium=2.000
+		oil=0.000
+		tungsten=9.000
+	}
+
+	history={
+		owner = AST
+		victory_points = {
+			5198 1 
+		}
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = AST
+	}
+
+	provinces={
+		1514 1557 1570 2116 2166 2187 2221 5198 5206 5227 8230 10336 10936 10941 10955 11006 12949 12957 
+	}
+	manpower=14000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

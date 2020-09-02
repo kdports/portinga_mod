@@ -1,0 +1,30 @@
+
+state={
+	id=649
+	name="STATE_649"
+	resources={
+		chromium=21.000
+	}
+
+	history={
+		owner = X31
+		victory_points = {
+			1479 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 1
+			air_base = 0
+
+		}
+		add_core_of = X31
+	}
+
+	provinces={
+		756 1479 1573 1576 1614 1632 4618 4629 7639 7682 7775 10205 10671 11687 12239 12465 12722 
+	}
+	manpower=4069420
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

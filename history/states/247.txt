@@ -1,0 +1,37 @@
+
+state={
+	id=247
+	name="STATE_247"
+	resources={
+		aluminium=1.000
+		oil=4.000
+		rubber=40.000
+		steel=0.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			4361 3 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 1
+			4361 = {
+				naval_base = 10
+			}
+			air_base = 0
+
+		}
+		add_core_of = FRA
+		add_core_of = X12
+	}
+
+	provinces={
+		1342 4320 4361 7308 7440 12138 12165 12209 
+	}
+	manpower=2207020
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=390
+	name="STATE_390"
+	resources={
+		steel=1.000
+	}
+
+	history={
+		owner = X14
+		victory_points = {
+			7992 3 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 0
+			7992 = {
+				naval_base = 10
+			}
+			air_base = 1
+
+		}
+		add_core_of = X14
+	}
+
+	provinces={
+		7992 10814 
+	}
+	manpower=1183476
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

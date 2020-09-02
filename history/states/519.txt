@@ -1,0 +1,28 @@
+
+state={
+	id=519
+	name="STATE_519"
+
+	history={
+		owner = SOV
+		victory_points = {
+			6354 8 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 9
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = SOV
+		add_core_of = X26
+	}
+
+	provinces={
+		289 323 342 358 406 3219 3331 3378 6220 6233 6249 6292 6326 6344 6354 6371 9241 9247 9288 9289 9323 9341 9342 9371 9396 11220 11230 11241 11271 11322 11355 11383 
+	}
+	manpower=5055380
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

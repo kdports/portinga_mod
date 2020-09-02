@@ -1,0 +1,30 @@
+
+state={
+	id=70
+	name="STATE_70"
+
+	history={
+		owner = CRO
+		victory_points = {
+			11581 9 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 0
+			591 = {
+				naval_base = 10
+			}
+			air_base = 5
+
+		}
+		add_core_of = CRO
+	}
+
+	provinces={
+		591 624 3592 3596 3601 3627 6611 6647 9595 9608 9611 11577 11581 11594 11901 
+	}
+	manpower=5161684
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=463
+	name="STATE_463"
+
+	history={
+		owner = X23
+		victory_points = {
+			373 6 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 2
+			373 = {
+				naval_base = 10
+			}
+			air_base = 2
+
+		}
+		add_core_of = X23
+	}
+
+	provinces={
+		373 
+	}
+	manpower=3789108
+	buildings_max_level_factor=1.000
+	state_category=city
+}

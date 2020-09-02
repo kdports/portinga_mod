@@ -1,0 +1,32 @@
+
+state={
+	id=761
+	name="STATE_761"
+	resources={
+		rubber=7.000
+		tungsten=6.000
+	}
+
+	history={
+		owner = X41
+		victory_points = {
+			10776 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = BRM
+		add_core_of = X41
+	}
+
+	provinces={
+		1114 1196 1383 1522 1653 4501 10346 10413 10776 12262 12282 
+	}
+	manpower=804248
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

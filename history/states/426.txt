@@ -1,0 +1,32 @@
+
+state={
+	id=426
+	name="STATE_426"
+	resources={
+		oil=2.000
+		steel=1.000
+		tungsten=15.000
+	}
+
+	history={
+		owner = X16
+		victory_points = {
+			2174 2 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 1
+			air_base = 1
+
+		}
+		add_core_of = BOL
+	}
+
+	provinces={
+		2174 10952 
+	}
+	manpower=3410420
+	buildings_max_level_factor=1.000
+	state_category=city
+}

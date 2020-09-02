@@ -1,0 +1,51 @@
+focus_tree = {
+	id = COS_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = COS
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = NeighborWarVENCOS
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarVEN
+		bypass = {
+			has_war_with = VEN
+		}
+		x = 28
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1937.1.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Venezuela" }
+			create_wargoal = {
+				type = annex_everything
+				target = VEN
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = VEN ratio < 0.8 }
+			}
+		}
+	}
+
+}

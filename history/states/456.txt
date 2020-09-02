@@ -1,0 +1,36 @@
+
+state={
+	id=456
+	name="STATE_456"
+	resources={
+		aluminium=5.000
+		steel=12.000
+	}
+
+	history={
+		owner = X21
+		victory_points = {
+			321 4 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 0
+			dockyard = 1
+			321 = {
+				naval_base = 8
+			}
+			air_base = 1
+
+		}
+		add_core_of = SAX
+		add_core_of = X40
+	}
+
+	provinces={
+		268 293 321 349 3258 3340 6282 6309 6334 6390 9277 9294 9306 9334 9361 9388 11276 11305 
+	}
+	manpower=5094060
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

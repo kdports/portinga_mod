@@ -1,0 +1,28 @@
+
+state={
+	id=142
+	name="STATE_142"
+
+	history={
+		owner = ENG
+		victory_points = {
+			7831 9 
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 9
+			arms_factory = 3
+			air_base = 4
+
+		}
+		add_core_of = ENG
+		add_core_of = USA
+	}
+
+	provinces={
+		720 954 1527 1604 1655 4508 4590 6737 7611 7626 7831 9450 9682 10339 10393 10457 10461 11589 12305 12312 12365 12368 12497 12697 
+	}
+	manpower=8194924
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

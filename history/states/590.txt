@@ -1,0 +1,36 @@
+
+state={
+	id=590
+	name="STATE_590"
+	resources={
+		aluminium=73.000
+		steel=2.000
+		tungsten=3.000
+	}
+
+	history={
+		owner = SPR
+		victory_points = {
+			758 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 1
+			758 = {
+				naval_base = 8
+			}
+			air_base = 0
+
+		}
+		add_core_of = SPR
+	}
+
+	provinces={
+		729 758 3729 3744 3761 6734 6749 6764 6955 9686 9689 9699 9703 9719 11675 11677 11688 11692 11707 11710 11840 13218 
+	}
+	manpower=2206792
+	buildings_max_level_factor=1.000
+	state_category=town
+}

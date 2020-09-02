@@ -1,0 +1,105 @@
+focus_tree = {
+	id = PHI_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PHI
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = NeighborWarBRMPHI
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarBRM
+		bypass = {
+			has_war_with = BRM
+		}
+		x = 28
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1937.1.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Burma" }
+			create_wargoal = {
+				type = annex_everything
+				target = BRM
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = BRM ratio < 0.8 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = JAP
+					has_war_with = X05
+					has_war_with = X06
+					has_war_with = X25
+					has_war_with = X33
+					has_war_with = X36
+					has_war_with = X41
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NeighborWarJAPPHI
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarJAP
+		bypass = {
+			has_war_with = JAP
+		}
+		x = 30
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1937.3.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Japan" }
+			create_wargoal = {
+				type = annex_everything
+				target = JAP
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = JAP ratio < 0.8 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = BRM
+					has_war_with = X05
+					has_war_with = X06
+					has_war_with = X25
+					has_war_with = X33
+					has_war_with = X36
+					has_war_with = X41
+				}
+			}
+		}
+	}
+
+}

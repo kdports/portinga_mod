@@ -1,0 +1,35 @@
+
+state={
+	id=58
+	name="STATE_58"
+	resources={
+		chromium=1.000
+		steel=1.000
+		tungsten=3.000
+	}
+
+	history={
+		owner = X06
+		victory_points = {
+			4334 8 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			4334 = {
+				naval_base = 10
+			}
+			air_base = 5
+
+		}
+		add_core_of = X06
+	}
+
+	provinces={
+		1248 1285 1300 1328 1396 1400 1423 1605 4223 4284 4334 4341 4363 4401 4405 7238 7271 7303 7331 7347 7380 10162 10180 10232 10261 12109 12133 12176 12204 12232 12288 
+	}
+	manpower=3128872
+	buildings_max_level_factor=1.000
+	state_category=city
+}

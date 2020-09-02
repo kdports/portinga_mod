@@ -1,0 +1,31 @@
+
+state={
+	id=363
+	name="STATE_363"
+	resources={
+		chromium=59.000
+	}
+
+	history={
+		owner = X13
+		victory_points = {
+			1269 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = AST
+		add_core_of = X13
+	}
+
+	provinces={
+		1042 1085 1237 1269 1370 4247 4252 4292 7390 7437 10291 10319 12120 12265 
+	}
+	manpower=283524
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
