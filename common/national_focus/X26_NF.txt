@@ -1,0 +1,97 @@
+focus_tree = {
+	id = X26_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = X26
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = NeighborWarCZEX26
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarCZE
+		bypass = {
+			has_war_with = CZE
+		}
+		x = 28
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1937.6.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Bohemia-Moravia" }
+			create_wargoal = {
+				type = annex_everything
+				target = CZE
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = CZE ratio < 0.8 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = SAX
+					has_war_with = X21
+					has_war_with = X40
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = NeighborWarSAXX26
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarSAX
+		bypass = {
+			has_war_with = SAX
+		}
+		x = 30
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1939.5.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Saxony" }
+			create_wargoal = {
+				type = annex_everything
+				target = SAX
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = SAX ratio < 0.8 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = CZE
+					has_war_with = X21
+					has_war_with = X40
+				}
+			}
+		}
+	}
+
+}

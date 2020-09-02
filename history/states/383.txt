@@ -1,0 +1,31 @@
+
+state={
+	id=383
+	name="STATE_383"
+
+	history={
+		owner = X14
+		victory_points = {
+			9907 6 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+			arms_factory = 1
+			dockyard = 1
+			6875 = {
+				naval_base = 10
+			}
+			air_base = 2
+
+		}
+		add_core_of = X14
+	}
+
+	provinces={
+		910 1616 6875 9750 9879 9907 11833 11889 
+	}
+	manpower=6575576
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

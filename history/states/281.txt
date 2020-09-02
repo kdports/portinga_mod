@@ -1,0 +1,32 @@
+
+state={
+	id=281
+	name="STATE_281"
+
+	history={
+		owner = FRA
+		victory_points = {
+			4155 7 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+			arms_factory = 2
+			dockyard = 1
+			4155 = {
+				naval_base = 10
+			}
+			air_base = 2
+
+		}
+		add_core_of = FRA
+		add_core_of = HAI
+	}
+
+	provinces={
+		1440 4155 
+	}
+	manpower=5782200
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

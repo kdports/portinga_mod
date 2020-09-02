@@ -1,0 +1,31 @@
+
+state={
+	id=515
+	name="STATE_515"
+
+	history={
+		owner = SOV
+		victory_points = {
+			11105 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+			arms_factory = 0
+			9206 = {
+				naval_base = 10
+			}
+			air_base = 2
+
+		}
+		add_core_of = ENG
+		add_core_of = SOV
+	}
+
+	provinces={
+		32 63 66 67 169 204 3009 3025 3050 3060 3061 3083 3117 3119 3122 3133 3137 3161 3172 3187 6009 6013 6047 6052 6066 6082 6108 6138 6141 6144 6150 6153 6163 6186 6198 9038 9094 9100 9105 9129 9150 9156 9160 9166 9167 9176 9183 9194 9206 9219 11033 11046 11056 11065 11066 11105 11126 11144 11156 11162 11172 11211 
+	}
+	manpower=3487684
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

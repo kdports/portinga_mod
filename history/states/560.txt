@@ -1,0 +1,27 @@
+
+state={
+	id=560
+	name="STATE_560"
+
+	history={
+		owner = SOV
+		victory_points = {
+			10607 3 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = SOV
+	}
+
+	provinces={
+		2972 4692 4859 10607 11328 13064 
+	}
+	manpower=1006552
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,332 @@
+focus_tree = {
+	id = USA_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = The_third_wayUSA
+		icon = GFX_goal_support_fascism
+		text = The_third_way
+		x = 29
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_named_threat = { threat = 2 name = The_third_way }
+			add_ideas = fascist_influence
+		}
+		ai_will_do = {
+		factor = 5
+		}
+	}
+
+	focus = {
+		id = mil_marchUSA
+		icon = GFX_goal_generic_allies_build_infantry
+		text = mil_march
+		prerequisite = { focus = The_third_wayUSA }
+		x = 0
+		y = 1
+		relative_position_id = The_third_wayUSA
+		cost = 10
+		completion_reward = {
+		army_experience = 20
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+	}
+		ai_will_do = {
+		factor = 5
+		}
+	}
+
+	focus = {
+		id = USA_anschluss_GUA
+		icon = GFX_goal_anschluss
+		text = _anschluss_GUA
+		prerequisite = { focus = mil_marchUSA }
+		x = 28
+		y = 2
+		cost = 10
+		available = {
+			GUA = {
+				is_in_faction = no
+			}
+			is_puppet = no
+			date > 1937.7.8
+		}
+		completion_reward = {
+			add_named_threat = { threat = 2 name = "Union with Guatemala" }
+			army_experience = 10
+			if = {
+				limit = {
+					country_exists = GUA
+				}
+				GUA = {
+					country_event = NFEvents.3
+				}
+			}
+		}
+		ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			date < 1937.6.6
+		}
+	}
+	}
+
+	focus = {
+		id = USA_anschluss_X22
+		icon = GFX_goal_anschluss
+		text = _anschluss_X22
+		prerequisite = { focus = mil_marchUSA }
+		x = 30
+		y = 2
+		cost = 10
+		available = {
+			X22 = {
+				is_in_faction = no
+			}
+			is_puppet = no
+			date > 1937.10.6
+		}
+		completion_reward = {
+			add_named_threat = { threat = 2 name = "Union with Navajo" }
+			army_experience = 10
+			if = {
+				limit = {
+					country_exists = X22
+				}
+				X22 = {
+					country_event = NFEvents.6
+				}
+			}
+		}
+		ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			date < 1937.6.6
+		}
+	}
+	}
+
+	focus = {
+		id = expand_the_reichUSA
+		icon = GFX_goal_generic_political_pressure
+		text = expand_the_reich
+		x = 32
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_named_threat = { threat = 3 name = expand_the_reich }
+			add_political_power = 150
+		}
+		ai_will_do = {
+		factor = 5
+		}
+	}
+
+	focus = {
+		id = USA_sudeten_X23
+		icon = GFX_goal_anschluss
+		text = _sudeten_X23
+		prerequisite = { focus = expand_the_reichUSA }
+		bypass = {
+  has_war_with = X23
+}
+		x = 32
+		y = 1
+		cost = 10
+		available = {
+			is_puppet = no
+			date > 1938.2.5
+		}
+		completion_reward = {
+			add_named_threat = { threat = 2 name = "Demand Territory from Newfoundland" }
+			army_experience = 10
+			if = {
+				limit = {
+					country_exists = X23
+				}
+				X23 = {
+					country_event = NFEvents.9
+				}
+			}
+		}
+		ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			date < 1937.6.6
+		}
+	}
+	}
+
+	focus = {
+		id = USA_finish_X23
+		icon = GFX_goal_generic_territory_or_war
+		text = _finish_X23
+		prerequisite = { focus =  USA_sudeten_X23 }
+		bypass = {
+		has_war_with = X23
+	}
+		x = 32
+		y = 2
+		cost = 10
+		available = {
+	X23 = { is_in_faction = no }
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "Fate of Newfoundland" }
+			create_wargoal = {
+				type = annex_everything
+				target = X23
+			}
+		}
+		ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			date < 1937.6.6
+		}
+	}
+	}
+
+	focus = {
+		id = Fas_SummitUSA
+		icon = GFX_goal_generic_allies_build_infantry
+		text = Fascist_Summit
+		x = 35
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "Call for the Fascist Summit" }
+			add_political_power = 150
+		}
+		ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 10
+			date > 1938.1.1
+		}
+	}
+	}
+
+	focus = {
+		id = Alliance_BLZUSA
+		icon = GFX_goal_generic_allies_build_infantry
+		text = Alliance_BLZ
+		prerequisite = { focus = Fas_SummitUSA }
+		bypass = {
+			OR = {
+				USA = { is_in_faction_with = BLZ}
+				has_war_with = BLZ
+				NOT = { country_exists = BLZ }
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = Fas_SummitUSA
+		cost = 10
+		available = {
+			OR = {
+				is_faction_leader = yes
+				is_in_faction = no
+			}
+	}
+		completion_reward = {
+			BLZ = {
+				country_event = { hours = 6 id = NFEvents.12 }
+				add_opinion_modifier = { target = USA modifier = positive_50 }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+	}
+	}
+
+	focus = {
+		id = Alliance_GUYUSA
+		icon = GFX_goal_generic_allies_build_infantry
+		text = Alliance_GUY
+		prerequisite = { focus = Fas_SummitUSA }
+		bypass = {
+			OR = {
+				USA = { is_in_faction_with = GUY}
+				has_war_with = GUY
+				NOT = { country_exists = GUY }
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = Fas_SummitUSA
+		cost = 10
+		available = {
+			OR = {
+				is_faction_leader = yes
+				is_in_faction = no
+			}
+	}
+		completion_reward = {
+			GUY = {
+				country_event = { hours = 6 id = NFEvents.13 }
+				add_opinion_modifier = { target = USA modifier = positive_50 }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+	}
+	}
+
+	focus = {
+		id = GP_WarBRAUSA
+		icon = GFX_goal_generic_major_war
+		text = GP_WarBRA
+		prerequisite = { focus = Alliance_BLZUSA }
+		prerequisite = { focus = Alliance_GUYUSA }
+		bypass = {
+		   has_war_with = BRA
+		}
+		x = 0
+		y = 2
+		relative_position_id = Fas_SummitUSA
+		cost = 10
+		available = {
+			has_war = no
+			date > 1939.7.7
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = "War with Brazil" }
+			declare_war_on = {
+				type = puppet_wargoal_focus
+				target = BRA
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+					factor = 0
+					strength_ratio = { tag = BRA ratio < 1 }
+			}
+		}
+	}
+
+}

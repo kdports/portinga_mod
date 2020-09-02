@@ -1,0 +1,32 @@
+
+state={
+	id=420
+	name="STATE_420"
+	resources={
+		aluminium=2.000
+		steel=2.000
+		tungsten=8.000
+	}
+
+	history={
+		owner = X16
+		victory_points = {
+			11001 7 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 7
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = X16
+	}
+
+	provinces={
+		2224 10944 10965 11001 
+	}
+	manpower=4873312
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

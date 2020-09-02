@@ -1,0 +1,36 @@
+
+state={
+	id=699
+	name="STATE_699"
+	resources={
+		aluminium=3.000
+		oil=3.000
+		steel=5.000
+	}
+
+	history={
+		owner = TUR
+		victory_points = {
+			12727 4 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			10791 = {
+				naval_base = 4
+			}
+			air_base = 1
+
+		}
+		add_core_of = TUR
+		add_core_of = YEM
+	}
+
+	provinces={
+		4932 5024 5081 5093 8004 8030 8060 8118 10791 10870 12727 12740 12768 12813 12870 
+	}
+	manpower=987284
+	buildings_max_level_factor=1.000
+	state_category=town
+}

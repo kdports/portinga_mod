@@ -1,0 +1,33 @@
+
+state={
+	id=12
+	name="STATE_12"
+	resources={
+		aluminium=1.000
+		steel=2.000
+		tungsten=2.000
+	}
+
+	history={
+		owner = AUS
+		victory_points = {
+			673 7 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 7
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = AUS
+		add_core_of = BAY
+	}
+
+	provinces={
+		671 673 688 3675 6678 6680 9633 9636 11618 11634 
+	}
+	manpower=6031664
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

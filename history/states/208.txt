@@ -1,0 +1,32 @@
+
+state={
+	id=208
+	name="STATE_208"
+	resources={
+		chromium=7.000
+	}
+
+	history={
+		owner = ETH
+		victory_points = {
+			8188 1 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 0
+			10993 = {
+				naval_base = 6
+			}
+			air_base = 0
+
+		}
+	}
+
+	provinces={
+		5128 5222 8188 10993 
+	}
+	manpower=3721308
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=572
+	name="STATE_572"
+
+	history={
+		owner = SAX
+		victory_points = {
+			6521 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = SAX
+	}
+
+	provinces={
+		375 3207 3312 3367 3499 6521 9428 11219 11444 11505 
+	}
+	manpower=1308068
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

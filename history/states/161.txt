@@ -1,0 +1,32 @@
+
+state={
+	id=161
+	name="STATE_161"
+	resources={
+		chromium=2.000
+		oil=1.000
+		rubber=0.000
+	}
+
+	history={
+		owner = ETH
+		victory_points = {
+			12806 3 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 1
+
+		}
+		add_core_of = ETH
+	}
+
+	provinces={
+		1914 2088 4918 7925 10743 10784 10795 12800 12806 12862 12887 
+	}
+	manpower=2571076
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

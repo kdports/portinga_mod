@@ -1,0 +1,35 @@
+
+state={
+	id=297
+	name="STATE_297"
+	resources={
+		oil=7.000
+		rubber=86.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			2184 5 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 2
+			dockyard = 1
+			7296 = {
+				naval_base = 10
+			}
+			air_base = 0
+
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		1225 1230 1304 1316 1416 2170 2184 2222 4279 4335 4409 5176 7227 7296 7424 8221 10138 10178 10266 10282 10310 12110 12129 12252 12280 12955 
+	}
+	manpower=3878756
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

@@ -28,7 +28,7 @@ focus_tree = {
 		}
 		prerequisite = {}
 		mutually_exclusive = { }
-		cost = 5
+		cost = 1
 			ai_will_do = {
 			factor = 1
 		}
@@ -42,7 +42,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 
 		}
@@ -60,7 +60,7 @@ focus_tree = {
 		prerequisite = { focus = KEV_FRA_first_history }
 		mutually_exclusive = { }
 		relative_position_id = KEV_FRA_first_history
-		cost = 5
+		cost = 1
 			ai_will_do = {
 			factor = 1
 		}
@@ -74,7 +74,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 
 		}
@@ -92,7 +92,7 @@ focus_tree = {
 		prerequisite = { focus = KEV_FRA_second_history }
 		mutually_exclusive = { }
 		relative_position_id = KEV_FRA_second_history
-		cost = 5
+		cost = 1
 			ai_will_do = {
 			factor = 1
 		}
@@ -106,7 +106,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 
 		}
@@ -161,7 +161,7 @@ focus_tree = {
 		prerequisite = { focus = KEV_FRA_replace_infrastructure }
 		mutually_exclusive = { focus = KEV_FRA_mil_build_focus }
 		relative_position_id = KEV_FRA_replace_infrastructure
-		cost = 10
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -176,14 +176,31 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			every_controlled_state = {
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_FRA_big_civ_build }
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 4
 					instant_build = yes
 				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = KEV_FRA_big_civ_build
 			}
 		}
 	}
@@ -200,7 +217,7 @@ focus_tree = {
 		prerequisite = { focus = KEV_FRA_replace_infrastructure }
 		mutually_exclusive = { focus = KEV_FRA_civ_build_focus }
 		relative_position_id = KEV_FRA_replace_infrastructure
-		cost = 10
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -215,14 +232,31 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			every_controlled_state = {
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_FRA_big_mil_build }
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
 					level = 4
 					instant_build = yes
 				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = KEV_FRA_big_mil_build
 			}
 		}
 	}
@@ -238,7 +272,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_mil_build_focus }
 		relative_position_id = KEV_FRA_mil_build_focus
-		cost = 10
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -253,14 +287,31 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			every_controlled_state = {
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_FRA_sml_civ_build }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = KEV_FRA_sml_civ_build
 			}
 		}
 	}
@@ -276,7 +327,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_civ_build_focus }
 		relative_position_id = KEV_FRA_civ_build_focus
-		cost = 10
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -291,14 +342,31 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			every_controlled_state = {
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_FRA_sml_civ_build }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = KEV_FRA_sml_civ_build
 			}
 		}
 	}
@@ -313,7 +381,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_mil_build_focus }
 		relative_position_id = KEV_FRA_mil_build_focus
-		cost = 10
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -331,7 +399,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			every_controlled_state = {
+			every_controlled_state = { #Placeholder for capital ID
 				add_building_construction = {
 					type = air_base
 					level = 3
@@ -352,7 +420,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_civ_build_focus }
 		relative_position_id = KEV_FRA_civ_build_focus
-		cost = 10
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -370,11 +438,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			every_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+			every_controlled_state = { #Placeholder for capital ID
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -392,7 +460,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_synth_build }
 		relative_position_id = KEV_FRA_synth_build
-		cost = 10
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -429,7 +497,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_airport_build }
 		relative_position_id = KEV_FRA_airport_build
-		cost = 10
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -466,7 +534,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_mil_build_sec_focus }
 		relative_position_id = KEV_FRA_mil_build_sec_focus
-		cost = 10
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -503,7 +571,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_civ_build_sec_focus }
 		relative_position_id = KEV_FRA_civ_build_sec_focus
-		cost = 10
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -600,6 +668,8 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine
 			}
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
 		}
 	}
 
@@ -820,7 +890,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_FRA_naval_air_second
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_focus_generic_cruiser2
 
 		x = 1
 		y = 1
@@ -859,6 +929,8 @@ focus_tree = {
 				uses = 1
 				category = fleet_in_being_tree
 			}
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
 		}
 	}
 
@@ -926,14 +998,41 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = {
-			every_controlled_state = {
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_FRA_naval_build }
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
 					level = 2
 					instant_build = yes
 				}
 			}
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = KEV_FRA_naval_build
+			}
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
 		}
 	}
 
@@ -1002,17 +1101,39 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = {
-			every_controlled_state = {
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_FRA_dockyard_expand_first }
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
 					level = 3
 					instant_build = yes
 				}
 			}
-			#Add ports here
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = KEV_FRA_dockyard_expand_first
+			}
 		}
 	}
 
@@ -1043,17 +1164,39 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		completion_reward = {
-			every_controlled_state = {
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_FRA_dockyard_expand_second }
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
 					level = 3
 					instant_build = yes
 				}
 			}
-			#Add ports here
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = KEV_FRA_dockyard_expand_second
+			}
 		}
 	}
 
@@ -1217,6 +1360,11 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+
+		available = {
+			has_completed_focus = KEV_FRA_army_start
+		}
+
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1265,9 +1413,64 @@ focus_tree = {
 	}
 
 	focus = {
+		id = KEV_FRA_repair_yards
+		prerequisite = { focus = KEV_FRA_carrier_focus focus = KEV_FRA_battleship_focus focus = KEV_FRA_destroyer_focus }
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 1
+		relative_position_id = KEV_FRA_carrier_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = ENG_expand_the_repair_yards_2dockyard }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_expand_the_repair_yards_2dockyard
+			}
+			add_ideas = ENG_expand_the_repair_yards
+		}
+	}
+
+	focus = {
 		id = KEV_FRA_army_start
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 30
+		x = 35
 		y = 3
 		offset = {
 			x = 0
@@ -1289,14 +1492,584 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_quality_focus
+		icon = GFX_focus_focus_fra_maquis
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_army_start }
+		mutually_exclusive = { focus = KEV_FRA_quantity_focus }
+		relative_position_id = KEV_FRA_army_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			army_experience = 5
+			add_ideas = FRA_gun_quality
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_quantity_focus
+		icon = GFX_focus_secret_rearmament
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_army_start }
+		mutually_exclusive = { focus = KEV_FRA_quality_focus }
+		relative_position_id = KEV_FRA_army_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			army_experience = 5
+			add_ideas = FRA_gun_quantity
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_support_equip_focus
+		icon = GFX_focus_por_support_mns
+		x = 4
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_army_start }
+		relative_position_id = KEV_FRA_army_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_artillery_research_focus
+		icon = GFX_goal_generic_army_artillery2
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_quality_focus focus = KEV_FRA_quantity_focus }
+		relative_position_id = KEV_FRA_quality_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.2
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_artillery_build_focus
+		icon = GFX_goal_generic_build_tank
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_artillery_research_focus }
+		relative_position_id = KEV_FRA_artillery_research_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = FRA_artillery_idea
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_at_research_focus
+		icon = GFX_goal_generic_army_artillery
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_quality_focus focus = KEV_FRA_quantity_focus }
+		relative_position_id = KEV_FRA_quality_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_anti_tank
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_at_build_focus
+		icon = GFX_goal_tank_hunt
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_at_research_focus }
+		relative_position_id = KEV_FRA_at_research_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = FRA_at_idea
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_aa_build_focus
+		icon = GFX_goal_generic_army_artillery
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_quality_focus focus = KEV_FRA_quantity_focus }
+		relative_position_id = KEV_FRA_quantity_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = FRA_aa_idea
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_petain_gambit
+		icon = GFX_FRA_VIC_Petain
+		x = -5
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_army_start }
+		mutually_exclusive = { focus = KEV_FRA_defense_plan }
+		relative_position_id = KEV_FRA_army_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			every_controlled_state = {
+			every_controlled_state = { #Placeholder for capital ID
 				add_building_construction = {
-					type = air_base
-					level = 3
+					type = bunker
+					level = 4
 					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_motorized_focus
+		prerequisite = { focus = KEV_FRA_petain_gambit }
+		icon = GFX_goal_generic_army_motorized
+		x = 0
+		y = 1
+		relative_position_id = KEV_FRA_petain_gambit
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_tank_focus
+		prerequisite = { focus = KEV_FRA_motorized_focus }
+		icon = GFX_goal_generic_army_tanks
+		x = -1
+		y = 1
+		relative_position_id = KEV_FRA_motorized_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_defense_plan
+		icon = GFX_goal_FRA_defence
+		x = -3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_army_start }
+		mutually_exclusive = { focus = KEV_FRA_petain_gambit }
+		relative_position_id = KEV_FRA_army_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_controlled_state = { #Placeholder for capital ID
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_bunker_build
+		icon = GFX_goal_generic_construct_military
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_defense_plan }
+		relative_position_id = KEV_FRA_defense_plan
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_controlled_state = { #Placeholder for capital ID
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_coastal_build
+		icon = GFX_focus_generic_coastal_fort
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_bunker_build }
+		relative_position_id = KEV_FRA_bunker_build
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			# UNFINISHED, WAIT TILL YOU KNOW STATE IDs THEN REFER TO GER_atlantikwall
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_antiair_buildings
+		icon = GFX_focus_generic_air_defense
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_bunker_build }
+		relative_position_id = KEV_FRA_bunker_build
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			# UNFINISHED, WAIT TILL YOU KNOW STATE IDs THEN REFER TO GER_atlantikwall
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_second_bunker_focus
+		icon = GFX_goal_generic_fortify_city
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_bunker_build }
+		relative_position_id = KEV_FRA_bunker_build
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
 				}
 			}
 		}
@@ -1305,7 +2078,7 @@ focus_tree = {
 	focus = {
 		id = KEV_FRA_politics_start
 		icon = GFX_focus_fra_french_union
-		x = 20
+		x = 19
 		y = 8
 		offset = {
 			x = 0

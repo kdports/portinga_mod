@@ -1,0 +1,31 @@
+
+state={
+	id=654
+	name="STATE_654"
+	resources={
+		steel=2.000
+	}
+
+	history={
+		owner = RAJ
+		victory_points = {
+			12717 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = X29
+		add_core_of = RAJ
+	}
+
+	provinces={
+		1978 4998 12717 
+	}
+	manpower=1033084
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

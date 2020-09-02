@@ -1,0 +1,28 @@
+GENERIC_ENG_OPERATIVE_CODENAME_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_OPERATIVES
+
+	for_countries = { AST BLZ BOL BRM CAL CRO CZE EGY ETH GEO GUA HUN KUR MAL NZL OMA PHI RAJ SWI TAH TRI TUR USA VEN X02 X04 X05 X06 X07 X11 X12 X13 X16 X17 X19 X20 X22 X23 X25 X27 X31 X32 X33 X36 X38 X39 YEM }
+
+	type = codename
+
+	fallback_name = "Agent %d"
+	unique = {
+		"Wolf"
+		"Sparrow"
+		"Hawk"
+		"Eagle"
+		"Snake"
+		"Bear"
+		"Tiger"
+		"Condor"
+		"Magpie"
+		"Turtle"
+		"Shark"
+		"Mouse"
+		"Hornet"
+		"Dragon"
+		"Butterfly"
+		"Stallion"
+		"Tomcat"
+	}
+}

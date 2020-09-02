@@ -1,0 +1,31 @@
+
+state={
+	id=509
+	name="STATE_509"
+	resources={
+		oil=91.000
+		steel=5.000
+	}
+
+	history={
+		owner = X27
+		victory_points = {
+			7661 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 1
+
+		}
+		add_core_of = X27
+	}
+
+	provinces={
+		1467 1536 1539 1610 4473 4614 7495 7661 9715 11674 11704 12434 
+	}
+	manpower=3154816
+	buildings_max_level_factor=1.000
+	state_category=city
+}

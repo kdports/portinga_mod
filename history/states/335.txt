@@ -1,0 +1,27 @@
+
+state={
+	id=335
+	name="STATE_335"
+
+	history={
+		owner = RAJ
+		victory_points = {
+			4967 4 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+
+		}
+		add_core_of = RAJ
+	}
+
+	provinces={
+		4967 
+	}
+	manpower=264340
+	buildings_max_level_factor=1.000
+	state_category=city
+}

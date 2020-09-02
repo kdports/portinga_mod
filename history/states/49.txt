@@ -1,0 +1,33 @@
+
+state={
+	id=49
+	name="STATE_49"
+	resources={
+		oil=2.000
+		steel=1.000
+		tungsten=29.000
+	}
+
+	history={
+		owner = X16
+		victory_points = {
+			5179 6 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 6
+			arms_factory = 1
+			air_base = 2
+
+		}
+		add_core_of = BOL
+		add_core_of = X16
+	}
+
+	provinces={
+		5179 10924 10938 10982 10987 12930 12973 
+	}
+	manpower=5379292
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

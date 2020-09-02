@@ -1,0 +1,31 @@
+
+state={
+	id=497
+	name="STATE_497"
+	resources={
+		steel=20.000
+	}
+
+	history={
+		owner = X26
+		victory_points = {
+			493 8 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 5
+			arms_factory = 5
+			air_base = 3
+
+		}
+		add_core_of = CZE
+		add_core_of = X26
+	}
+
+	provinces={
+		493 548 562 584 3458 3482 3497 3586 6401 6416 9439 9508 9546 11428 11430 11515 11532 
+	}
+	manpower=6864760
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

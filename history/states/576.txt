@@ -1,0 +1,31 @@
+
+state={
+	id=576
+	name="STATE_576"
+	resources={
+		rubber=8.000
+		tungsten=2.000
+	}
+
+	history={
+		owner = X29
+		victory_points = {
+			1319 5 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 1
+
+		}
+		add_core_of = X29
+	}
+
+	provinces={
+		1010 1319 1474 1884 4192 4325 4504 4532 4559 5009 5072 7446 7521 7549 7577 7606 7965 7976 8023 8095 9939 10616 10763 10819 10863 12789 12841 12898 
+	}
+	manpower=4498512
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

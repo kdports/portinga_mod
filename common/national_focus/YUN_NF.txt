@@ -1,0 +1,51 @@
+focus_tree = {
+	id = YUN_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = YUN
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = NeighborWarX41YUN
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarX41
+		bypass = {
+			has_war_with = X41
+		}
+		x = 28
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1937.11.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Yue" }
+			create_wargoal = {
+				type = annex_everything
+				target = X41
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = X41 ratio < 0.8 }
+			}
+		}
+	}
+
+}

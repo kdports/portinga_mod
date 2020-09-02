@@ -1,0 +1,31 @@
+
+state={
+	id=312
+	name="STATE_312"
+
+	history={
+		owner = GUA
+		victory_points = {
+			12753 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 1
+			12715 = {
+				naval_base = 6
+			}
+			air_base = 0
+
+		}
+		add_core_of = GUA
+	}
+
+	provinces={
+		1900 2021 4904 4965 12715 12753 12867 
+	}
+	manpower=4126420
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

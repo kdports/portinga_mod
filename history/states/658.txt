@@ -1,0 +1,32 @@
+
+state={
+	id=658
+	name="STATE_658"
+
+	history={
+		owner = X32
+		victory_points = {
+			10730 8 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			5066 = {
+				naval_base = 6
+			}
+			air_base = 5
+
+		}
+		add_core_of = GUA
+		add_core_of = X20
+		add_core_of = X32
+	}
+
+	provinces={
+		4887 5066 8032 8236 10730 10832 12712 
+	}
+	manpower=3297568
+	buildings_max_level_factor=1.000
+	state_category=city
+}

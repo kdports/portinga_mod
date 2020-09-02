@@ -1,0 +1,27 @@
+
+state={
+	id=317
+	name="STATE_317"
+
+	history={
+		owner = HAI
+		victory_points = {
+			10440 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = HAI
+	}
+
+	provinces={
+		10440 
+	}
+	manpower=1472476
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

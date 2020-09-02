@@ -1,0 +1,31 @@
+
+state={
+	id=460
+	name="STATE_460"
+	resources={
+		aluminium=6.000
+	}
+
+	history={
+		owner = X23
+		victory_points = {
+			4345 9 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 9
+			arms_factory = 2
+			dockyard = 1
+			air_base = 3
+
+		}
+		add_core_of = X23
+	}
+
+	provinces={
+		1284 1341 1356 1657 1764 3208 4305 4345 4417 4419 4422 4666 4769 7289 7291 7345 7364 7433 7435 7683 7807 7810 7875 7893 9601 10174 10230 10249 10320 10534 10700 10715 11902 12149 12205 12223 12276 12291 12600 
+	}
+	manpower=18482669
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

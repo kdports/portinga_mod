@@ -1,0 +1,33 @@
+
+state={
+	id=86
+	name="STATE_86"
+	resources={
+		aluminium=44.000
+		steel=136.000
+		tungsten=161.000
+	}
+
+	history={
+		owner = X09
+		victory_points = {
+			4607 12 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 8
+			arms_factory = 2
+			air_base = 8
+
+		}
+		add_core_of = USA
+		add_core_of = X09
+	}
+
+	provinces={
+		1663 1740 1756 1862 4521 4607 4668 4736 4742 4799 4816 4865 7756 7764 7818 7827 7879 10422 10582 10591 10651 10662 12134 12399 12425 12573 12699 
+	}
+	manpower=31346180
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

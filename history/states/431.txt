@@ -1,0 +1,28 @@
+
+state={
+	id=431
+	name="STATE_431"
+
+	history={
+		owner = X18
+		victory_points = {
+			9320 8 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = SHL
+		add_core_of = X18
+	}
+
+	provinces={
+		6257 9320 
+	}
+	manpower=17988
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

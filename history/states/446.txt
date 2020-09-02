@@ -1,0 +1,35 @@
+
+state={
+	id=446
+	name="STATE_446"
+	resources={
+		oil=3.000
+		rubber=52.000
+	}
+
+	history={
+		owner = MAL
+		victory_points = {
+			7415 4 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 1
+			7415 = {
+				naval_base = 10
+			}
+			air_base = 0
+
+		}
+		add_core_of = MAL
+	}
+
+	provinces={
+		1252 1404 2047 4236 4323 5226 7231 7299 7355 7415 10181 10237 10325 12196 12225 12243 
+	}
+	manpower=1402444
+	buildings_max_level_factor=1.000
+	state_category=town
+}

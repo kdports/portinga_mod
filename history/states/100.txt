@@ -1,0 +1,27 @@
+
+state={
+	id=100
+	name="STATE_100"
+
+	history={
+		owner = ENG
+		victory_points = {
+			1815 4 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+
+		}
+		add_core_of = ENG
+	}
+
+	provinces={
+		1815 4610 4794 4820 7688 7814 7888 10711 12633 12651 
+	}
+	manpower=1887372
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

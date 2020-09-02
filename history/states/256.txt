@@ -1,0 +1,35 @@
+
+state={
+	id=256
+	name="STATE_256"
+	resources={
+		steel=0.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			11964 7 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 5
+			arms_factory = 2
+			dockyard = 1
+			11964 = {
+				naval_base = 10
+			}
+			air_base = 2
+
+		}
+		add_core_of = EGY
+		add_core_of = FRA
+	}
+
+	provinces={
+		7091 10005 11964 
+	}
+	manpower=3068596
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

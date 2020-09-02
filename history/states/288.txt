@@ -1,0 +1,18 @@
+
+state={
+	id=288
+	name="STATE_288"
+	impassable = yes
+
+	history={
+		owner = SPR
+		add_core_of = SPR
+	}
+
+	provinces={
+		1043 1901 4903 5095 8061 10749 12849 
+	}
+	manpower=1461372
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=7
+	name="STATE_7"
+	resources={
+		steel=14.000
+	}
+
+	history={
+		owner = AST
+		victory_points = {
+			7669 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			7669 = {
+				naval_base = 2
+			}
+			air_base = 0
+
+		}
+		add_core_of = AST
+	}
+
+	provinces={
+		1217 1410 1422 1431 4415 7457 7669 10276 10288 10316 10518 12104 12246 12290 12326 12339 12499 
+	}
+	manpower=384536
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

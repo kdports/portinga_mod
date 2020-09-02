@@ -1,0 +1,27 @@
+
+state={
+	id=481
+	name="STATE_481"
+
+	history={
+		owner = NZL
+		victory_points = {
+			4357 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = NZL
+	}
+
+	provinces={
+		4357 12103 
+	}
+	manpower=279988
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

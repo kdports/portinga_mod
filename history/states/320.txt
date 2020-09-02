@@ -1,0 +1,27 @@
+
+state={
+	id=320
+	name="STATE_320"
+
+	history={
+		owner = HAI
+		victory_points = {
+			13084 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = HAI
+	}
+
+	provinces={
+		13084 
+	}
+	manpower=1373080
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

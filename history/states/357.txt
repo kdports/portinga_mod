@@ -1,0 +1,30 @@
+
+state={
+	id=357
+	name="STATE_357"
+
+	history={
+		owner = X13
+		victory_points = {
+			7878 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 0
+			10540 = {
+				naval_base = 2
+			}
+			air_base = 0
+
+		}
+		add_core_of = X13
+	}
+
+	provinces={
+		1823 1839 1863 4728 4744 7878 10540 12207 12522 
+	}
+	manpower=501775
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

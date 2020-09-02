@@ -1,0 +1,30 @@
+
+state={
+	id=168
+	name="STATE_168"
+	resources={
+		rubber=0.000
+	}
+
+	history={
+		owner = ETH
+		victory_points = {
+			5010 4 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = ETH
+	}
+
+	provinces={
+		4995 5010 7980 8036 10775 12714 12757 12812 
+	}
+	manpower=1392360
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

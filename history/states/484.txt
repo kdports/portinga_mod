@@ -1,0 +1,28 @@
+
+state={
+	id=484
+	name="STATE_484"
+
+	history={
+		owner = X24
+		victory_points = {
+			336 8 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = ENG
+		add_core_of = X24
+	}
+
+	provinces={
+		241 336 
+	}
+	manpower=726376
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=494
+	name="STATE_494"
+	resources={
+		aluminium=1.000
+		oil=8.000
+		steel=16.000
+	}
+
+	history={
+		owner = X26
+		victory_points = {
+			417 8 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 8
+			arms_factory = 3
+			air_base = 3
+
+		}
+		add_core_of = X26
+	}
+
+	provinces={
+		417 442 466 3410 3434 6499 6522 9427 9494 11398 11413 11507 
+	}
+	manpower=9198528
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

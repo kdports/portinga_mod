@@ -1,0 +1,33 @@
+
+state={
+	id=305
+	name="STATE_305"
+	resources={
+		rubber=1.000
+	}
+
+	history={
+		owner = GUA
+		victory_points = {
+			4908 8 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			4908 = {
+				naval_base = 6
+			}
+			air_base = 5
+
+		}
+		add_core_of = GUA
+	}
+
+	provinces={
+		4908 4977 8033 
+	}
+	manpower=334312
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,161 @@
+focus_tree = {
+	id = NZL_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NZL
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = The_third_wayNZL
+		icon = GFX_goal_support_fascism
+		text = The_third_way
+		x = 28
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_named_threat = { threat = 2 name = The_third_way }
+			add_ideas = fascist_influence
+		}
+		ai_will_do = {
+		factor = 5
+		}
+	}
+
+	focus = {
+		id = mil_marchNZL
+		icon = GFX_goal_generic_allies_build_infantry
+		text = mil_march
+		prerequisite = { focus = The_third_wayNZL }
+		x = 0
+		y = 1
+		relative_position_id = The_third_wayNZL
+		cost = 10
+		completion_reward = {
+		army_experience = 20
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+	}
+		ai_will_do = {
+		factor = 5
+		}
+	}
+
+	focus = {
+		id = expand_the_reichNZL
+		icon = GFX_goal_generic_political_pressure
+		text = expand_the_reich
+		x = 30
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_named_threat = { threat = 3 name = expand_the_reich }
+			add_political_power = 150
+		}
+		ai_will_do = {
+		factor = 5
+		}
+	}
+
+	focus = {
+		id = Fas_SummitNZL
+		icon = GFX_goal_generic_allies_build_infantry
+		text = Fascist_Summit
+		x = 31
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "Call for the Fascist Summit" }
+			add_political_power = 150
+		}
+		ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 10
+			date > 1938.1.1
+		}
+	}
+	}
+
+	focus = {
+		id = Alliance_BLZNZL
+		icon = GFX_goal_generic_allies_build_infantry
+		text = Alliance_BLZ
+		prerequisite = { focus = Fas_SummitNZL }
+		bypass = {
+			OR = {
+				NZL = { is_in_faction_with = BLZ}
+				has_war_with = BLZ
+				NOT = { country_exists = BLZ }
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = Fas_SummitNZL
+		cost = 10
+		available = {
+			OR = {
+				is_faction_leader = yes
+				is_in_faction = no
+			}
+	}
+		completion_reward = {
+			BLZ = {
+				country_event = { hours = 6 id = NFEvents.1 }
+				add_opinion_modifier = { target = NZL modifier = positive_50 }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+	}
+	}
+
+	focus = {
+		id = Alliance_GUYNZL
+		icon = GFX_goal_generic_allies_build_infantry
+		text = Alliance_GUY
+		prerequisite = { focus = Fas_SummitNZL }
+		bypass = {
+			OR = {
+				NZL = { is_in_faction_with = GUY}
+				has_war_with = GUY
+				NOT = { country_exists = GUY }
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = Fas_SummitNZL
+		cost = 10
+		available = {
+			OR = {
+				is_faction_leader = yes
+				is_in_faction = no
+			}
+	}
+		completion_reward = {
+			GUY = {
+				country_event = { hours = 6 id = NFEvents.2 }
+				add_opinion_modifier = { target = NZL modifier = positive_50 }
+			}
+		}
+		ai_will_do = {
+			factor = 10
+	}
+	}
+
+}

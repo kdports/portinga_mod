@@ -1,0 +1,35 @@
+
+state={
+	id=492
+	name="STATE_492"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		owner = X26
+		victory_points = {
+			3320 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 4
+			6314 = {
+				naval_base = 10
+			}
+			air_base = 1
+
+		}
+		add_core_of = ENG
+		add_core_of = X26
+	}
+
+	provinces={
+		327 530 3272 3320 3337 3354 6229 6281 6296 6314 6360 6376 6407 9246 9274 9295 9357 9374 9404 9438 9483 9499 9731 11226 11312 11342 11391 11498 
+	}
+	manpower=5287292
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

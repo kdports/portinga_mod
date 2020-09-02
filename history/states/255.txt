@@ -1,0 +1,22 @@
+
+state={
+	id=255
+	name="STATE_255"
+	resources={
+		steel=1.000
+	}
+	impassable = yes
+
+	history={
+		owner = FRA
+		add_core_of = EGY
+		add_core_of = FRA
+	}
+
+	provinces={
+		1060 11951 
+	}
+	manpower=183130
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

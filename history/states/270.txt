@@ -1,0 +1,31 @@
+
+state={
+	id=270
+	name="STATE_270"
+	resources={
+		aluminium=1.000
+		rubber=0.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			12785 3 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 1
+
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		12785 
+	}
+	manpower=427056
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

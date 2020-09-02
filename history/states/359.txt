@@ -1,0 +1,31 @@
+
+state={
+	id=359
+	name="STATE_359"
+
+	history={
+		owner = X13
+		victory_points = {
+			7542 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 0
+			4468 = {
+				naval_base = 2
+			}
+			air_base = 0
+
+		}
+		add_core_of = NZL
+		add_core_of = X13
+	}
+
+	provinces={
+		1602 1617 1629 4468 4524 4593 7487 7512 7542 7585 7627 10505 12315 12386 12457 
+	}
+	manpower=381844
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

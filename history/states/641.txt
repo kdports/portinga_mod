@@ -1,0 +1,28 @@
+
+state={
+	id=641
+	name="STATE_641"
+
+	history={
+		owner = X27
+		victory_points = {
+			8123 8 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = KUR
+		add_core_of = X27
+	}
+
+	provinces={
+		6826 8123 
+	}
+	manpower=751672
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

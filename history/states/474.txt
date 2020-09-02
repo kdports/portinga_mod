@@ -1,0 +1,31 @@
+
+state={
+	id=474
+	name="STATE_474"
+	resources={
+		steel=14.000
+	}
+
+	history={
+		owner = WGR
+		victory_points = {
+			9536 9 
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 9
+			arms_factory = 3
+			air_base = 4
+
+		}
+		add_core_of = FRA
+		add_core_of = WGR
+	}
+
+	provinces={
+		3488 3516 3576 6537 6583 9418 9444 9536 11407 11519 13081 
+	}
+	manpower=13383544
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

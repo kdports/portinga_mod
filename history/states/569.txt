@@ -1,0 +1,31 @@
+
+state={
+	id=569
+	name="STATE_569"
+	resources={
+		aluminium=2.000
+	}
+
+	history={
+		owner = WGR
+		victory_points = {
+			519 8 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = X28
+		add_core_of = WGR
+	}
+
+	provinces={
+		519 694 
+	}
+	manpower=1241352
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

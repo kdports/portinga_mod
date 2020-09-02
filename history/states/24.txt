@@ -1,0 +1,28 @@
+
+state={
+	id=24
+	name="STATE_24"
+
+	history={
+		owner = X32
+		victory_points = {
+			2077 8 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = BLZ
+		add_core_of = X32
+	}
+
+	provinces={
+		2077 
+	}
+	manpower=2727180
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

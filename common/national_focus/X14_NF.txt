@@ -1,0 +1,81 @@
+focus_tree = {
+	id = X14_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = X14
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = NeighborWarSPRX14
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarSPR
+		bypass = {
+			has_war_with = SPR
+		}
+		x = 28
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1939.12.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Spain" }
+			create_wargoal = {
+				type = annex_everything
+				target = SPR
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = SPR ratio < 0.8 }
+			}
+		}
+	}
+
+	focus = {
+		id = NeighborWarSWIX14
+		icon = GFX_goal_generic_major_war
+		text = NeighborWarSWI
+		bypass = {
+			has_war_with = SWI
+		}
+		x = 30
+		y = 0
+		cost = 10
+		available = {
+			has_war = no
+			date > 1937.3.1
+		}
+		completion_reward = {
+			add_named_threat = { threat = 3 name = "War with Switzerland" }
+			create_wargoal = {
+				type = annex_everything
+				target = SWI
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = SWI ratio < 0.8 }
+			}
+		}
+	}
+
+}

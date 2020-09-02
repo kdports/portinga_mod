@@ -1,0 +1,30 @@
+
+state={
+	id=316
+	name="STATE_316"
+	resources={
+		chromium=4.000
+	}
+
+	history={
+		owner = HAI
+		victory_points = {
+			4641 8 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = HAI
+	}
+
+	provinces={
+		1594 1635 4598 4641 7632 7660 10484 
+	}
+	manpower=4729660
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

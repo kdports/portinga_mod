@@ -1,0 +1,32 @@
+
+state={
+	id=104
+	name="STATE_104"
+	resources={
+		oil=8.000
+		steel=80.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			11714 8 
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 11
+			arms_factory = 0
+			air_base = 3
+
+		}
+		add_core_of = ENG
+		add_core_of = USA
+	}
+
+	provinces={
+		695 709 751 3766 4854 5205 6769 6782 7420 9684 9746 9747 10233 10303 10599 11641 11669 11685 11714 11731 
+	}
+	manpower=10629624
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

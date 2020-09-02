@@ -1,0 +1,30 @@
+
+state={
+	id=625
+	name="STATE_625"
+
+	history={
+		owner = SPR
+		victory_points = {
+			4450 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 1
+			4450 = {
+				naval_base = 8
+			}
+			air_base = 0
+
+		}
+		add_core_of = SPR
+	}
+
+	provinces={
+		4450 9377 
+	}
+	manpower=3259944
+	buildings_max_level_factor=1.000
+	state_category=city
+}

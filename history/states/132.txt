@@ -1,0 +1,30 @@
+
+state={
+	id=132
+	name="STATE_132"
+
+	history={
+		owner = ENG
+		victory_points = {
+			13016 3 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 1
+			13013 = {
+				naval_base = 4
+			}
+			air_base = 1
+
+		}
+		add_core_of = ENG
+	}
+
+	provinces={
+		13013 13016 
+	}
+	manpower=892548
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

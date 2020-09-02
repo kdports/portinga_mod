@@ -1,0 +1,31 @@
+
+state={
+	id=32
+	name="STATE_32"
+	resources={
+		steel=1.000
+	}
+
+	history={
+		owner = BRA
+		victory_points = {
+			7936 6 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 5
+			arms_factory = 2
+			air_base = 2
+
+		}
+		add_core_of = BRA
+		add_core_of = COS
+	}
+
+	provinces={
+		7936 
+	}
+	manpower=2486588
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=252
+	name="STATE_252"
+	resources={
+		rubber=3.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			1355 8 
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 8
+			arms_factory = 3
+			air_base = 3
+
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		1326 1339 1355 4358 12178 12190 12206 13001 
+	}
+	manpower=2231004
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

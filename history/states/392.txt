@@ -1,0 +1,33 @@
+
+state={
+	id=392
+	name="STATE_392"
+	resources={
+		aluminium=9.000
+	}
+
+	history={
+		owner = X14
+		victory_points = {
+			6606 3 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 0
+			6793 = {
+				naval_base = 10
+			}
+			air_base = 1
+
+		}
+		add_core_of = X14
+	}
+
+	provinces={
+		782 6606 6793 6985 9924 11734 
+	}
+	manpower=6214756
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

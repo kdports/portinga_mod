@@ -1,0 +1,28 @@
+
+state={
+	id=490
+	name="STATE_490"
+
+	history={
+		owner = PHI
+		victory_points = {
+			1351 3 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = PHI
+		add_core_of = X05
+	}
+
+	provinces={
+		1351 
+	}
+	manpower=45102
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

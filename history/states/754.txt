@@ -1,0 +1,35 @@
+
+state={
+	id=754
+	name="STATE_754"
+	resources={
+		chromium=7.000
+		steel=7.000
+		tungsten=21.000
+	}
+
+	history={
+		owner = X41
+		victory_points = {
+			12065 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			1185 = {
+				naval_base = 2
+			}
+			air_base = 0
+
+		}
+		add_core_of = X41
+	}
+
+	provinces={
+		1073 1157 1185 4075 4119 4529 7015 7093 7518 9948 10075 10103 10129 12008 12048 12065 12075 12319 
+	}
+	manpower=2014208
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=91
+	name="STATE_91"
+
+	history={
+		owner = EGY
+		victory_points = {
+			12473 1 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 0
+			12029 = {
+				naval_base = 10
+			}
+			air_base = 1
+
+		}
+	}
+
+	provinces={
+		1056 1072 1088 3942 7140 7671 10087 12029 12473 
+	}
+	manpower=5043088
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

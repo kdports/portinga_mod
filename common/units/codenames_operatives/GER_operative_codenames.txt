@@ -1,0 +1,28 @@
+GENERIC_GER_OPERATIVE_CODENAME_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_OPERATIVES
+
+	for_countries = { AUS BAY GUY SAX WGR X00 X01 X03 X09 X15 X21 X24 X28 X34 X40 }
+
+	type = codename
+
+	fallback_name = "Agent %d"
+	unique = {
+		"Wolf"
+		"Cicero"
+		"Cäsar"
+		"Nero"
+		"Alaric"
+		"Augustus"
+		"Titus"
+		"Tiger"
+		"Condor"
+		"Elster"
+		"Bär"
+		"Hai"
+		"Maus"
+		"Willhelm"
+		"August"
+		"Karl"
+		"Heinrich"
+	}
+}

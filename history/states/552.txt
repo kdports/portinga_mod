@@ -1,0 +1,31 @@
+
+state={
+	id=552
+	name="STATE_552"
+	resources={
+		steel=1.000
+		tungsten=1.000
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			12526 5 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 1
+
+		}
+		add_core_of = SOV
+	}
+
+	provinces={
+		1708 1778 1783 1838 1844 4704 4843 7850 7866 7971 12526 12598 12601 12671 12820 
+	}
+	manpower=2067264
+	buildings_max_level_factor=1.000
+	state_category=city
+}

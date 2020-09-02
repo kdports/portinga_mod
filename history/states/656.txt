@@ -1,0 +1,27 @@
+
+state={
+	id=656
+	name="STATE_656"
+
+	history={
+		owner = X29
+		victory_points = {
+			2015 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = X29
+	}
+
+	provinces={
+		1766 1970 2015 5016 5042 5087 7790 8112 
+	}
+	manpower=707872
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

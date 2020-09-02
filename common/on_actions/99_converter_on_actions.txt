@@ -1,0 +1,234 @@
+on_actions = {
+	# country
+	on_new_term_election = {
+		random_events = {
+			100 = election.2
+			100 = election.3
+			100 = election.4
+			100 = election.5
+			100 = election.6
+			100 = election.7
+			100 = election.8
+			100 = election.9
+			100 = election.10
+			100 = election.11
+			100 = election.12
+			100 = election.13
+			100 = election.14
+			100 = election.15
+			100 = election.16
+			100 = election.17
+			100 = election.18
+			100 = election.19
+			100 = election.20
+			100 = election.21
+			100 = election.22
+			100 = election.23
+			100 = election.24
+			100 = election.25
+			100 = election.26
+			100 = election.27
+			100 = election.28
+			100 = election.29
+			100 = election.30
+			100 = election.31
+			100 = election.32
+			100 = election.33
+			100 = election.34
+			100 = election.35
+			100 = election.36
+			100 = election.37
+			100 = election.38
+			100 = election.39
+			100 = election.40
+			100 = election.41
+			100 = election.42
+			100 = election.43
+			100 = election.44
+			100 = election.45
+			100 = election.46
+			100 = election.47
+			100 = election.48
+			100 = election.49
+			100 = election.50
+			100 = election.51
+			100 = election.52
+			100 = election.53
+			100 = election.54
+			100 = election.55
+			100 = election.56
+			100 = election.57
+			100 = election.58
+			100 = election.59
+			100 = election.60
+			100 = election.61
+			100 = election.62
+			100 = election.63
+			100 = election.64
+			100 = election.65
+			100 = election.66
+			100 = election.67
+			100 = election.68
+			100 = election.69
+			100 = election.70
+			100 = election.71
+			100 = election.72
+			100 = election.73
+			100 = election.74
+			100 = election.75
+			100 = election.76
+			100 = election.77
+			100 = election.78
+			100 = election.79
+			100 = election.80
+			100 = election.81
+			100 = election.82
+			100 = election.83
+			100 = election.84
+			100 = election.85
+			100 = election.86
+		}
+	}
+	on_government_change = {
+		effect = {
+			if = {
+				limit = { has_government = absolutist }
+				if = {
+					limit = { has_idea = absolutist_partisans_recruiting }
+					remove_ideas = absolutist_partisans_recruiting
+				}
+				if = {
+					limit = { has_idea = absolutist_revolutionaries }
+					remove_ideas = absolutist_revolutionaries
+				}
+				if = {
+					limit = { has_idea = absolutist_defeated }
+					remove_ideas = absolutist_defeated
+				}
+			}
+			if = {
+				limit = { has_government = communism }
+				if = {
+					limit = { has_idea = communism_partisans_recruiting }
+					remove_ideas = communism_partisans_recruiting
+				}
+				if = {
+					limit = { has_idea = communism_revolutionaries }
+					remove_ideas = communism_revolutionaries
+				}
+				if = {
+					limit = { has_idea = communism_defeated }
+					remove_ideas = communism_defeated
+				}
+			}
+			if = {
+				limit = { has_government = fascism }
+				if = {
+					limit = { has_idea = fascism_partisans_recruiting }
+					remove_ideas = fascism_partisans_recruiting
+				}
+				if = {
+					limit = { has_idea = fascism_revolutionaries }
+					remove_ideas = fascism_revolutionaries
+				}
+				if = {
+					limit = { has_idea = fascism_defeated }
+					remove_ideas = fascism_defeated
+				}
+			}
+			if = {
+				limit = { has_government = radical }
+				if = {
+					limit = { has_idea = radical_partisans_recruiting }
+					remove_ideas = radical_partisans_recruiting
+				}
+				if = {
+					limit = { has_idea = radical_revolutionaries }
+					remove_ideas = radical_revolutionaries
+				}
+				if = {
+					limit = { has_idea = radical_defeated }
+					remove_ideas = radical_defeated
+				}
+			}
+			if = {
+				limit = { has_government = democratic }
+				set_politics = {
+					elections_allowed = yes
+				}
+				if = {
+					limit = { has_idea = democratic_opposition_voicing_protests }
+					remove_ideas = democratic_opposition_voicing_protests
+				}
+				if = {
+					limit = { has_idea = democratic_revolutionaries }
+					remove_ideas = democratic_revolutionaries
+				}
+				if = {
+					limit = { has_idea = reign_of_terror }
+					remove_ideas = reign_of_terror
+				}
+			}
+		}
+	}
+	on_coup_succeeded = {
+		effect = {
+			#Turn elections on for democracies created from coup
+			random_other_country = {
+				limit = {
+					has_government = democratic
+					original_tag = ROOT
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+			}
+		}
+	}
+	on_justifying_wargoal_pulse = {
+		random_events = {
+			100 = war_justification.17
+			100 = war_justification.18
+			100 = war_justification.19
+			100 = war_justification.20
+			100 = war_justification.21
+			100 = war_justification.22
+			100 = war_justification.23
+			100 = war_justification.24
+			100 = war_justification.25
+			100 = war_justification.26
+			100 = war_justification.27
+			100 = war_justification.28
+			100 = war_justification.29
+			100 = war_justification.30
+			100 = war_justification.31
+			100 = war_justification.32
+			100 = war_justification.33
+			100 = war_justification.34
+			100 = war_justification.35
+			100 = war_justification.36
+			100 = war_justification.37
+			100 = war_justification.38
+			100 = war_justification.39
+			100 = war_justification.40
+			100 = war_justification.41
+			100 = war_justification.42
+			100 = war_justification.43
+			100 = war_justification.44
+			100 = war_justification.45
+			100 = war_justification.46
+			100 = war_justification.47
+			100 = war_justification.48
+			100 = war_justification.49
+			100 = war_justification.50
+			100 = war_justification.51
+			100 = war_justification.52
+			100 = war_justification.53
+			100 = war_justification.54
+			100 = war_justification.55
+			100 = war_justification.56
+			17000 = 0
+		}
+	}
+}

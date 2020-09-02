@@ -1,0 +1,32 @@
+
+state={
+	id=29
+	name="STATE_29"
+	resources={
+		oil=2.000
+		steel=0.000
+		tungsten=22.000
+	}
+
+	history={
+		owner = X16
+		victory_points = {
+			5230 8 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = BOL
+	}
+
+	provinces={
+		5188 5230 8225 13195 
+	}
+	manpower=282009
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

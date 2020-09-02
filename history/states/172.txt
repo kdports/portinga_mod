@@ -1,0 +1,34 @@
+
+state={
+	id=172
+	name="STATE_172"
+	resources={
+		aluminium=3.000
+		rubber=0.000
+		steel=0.000
+	}
+
+	history={
+		owner = ETH
+		victory_points = {
+			10919 1 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 0
+			10919 = {
+				naval_base = 6
+			}
+			air_base = 1
+
+		}
+	}
+
+	provinces={
+		10919 12762 12874 
+	}
+	manpower=415876
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

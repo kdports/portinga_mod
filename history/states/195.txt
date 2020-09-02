@@ -1,0 +1,33 @@
+
+state={
+	id=195
+	name="STATE_195"
+	resources={
+		steel=0.000
+	}
+
+	history={
+		owner = ETH
+		victory_points = {
+			5210 3 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 0
+			2196 = {
+				naval_base = 6
+			}
+			air_base = 0
+
+		}
+		add_core_of = ETH
+	}
+
+	provinces={
+		2196 5196 5210 8183 8205 12911 
+	}
+	manpower=2591444
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

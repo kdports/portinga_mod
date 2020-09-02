@@ -1,0 +1,31 @@
+
+state={
+	id=212
+	name="STATE_212"
+	resources={
+		aluminium=2.000
+		chromium=65.000
+		steel=13.000
+	}
+
+	history={
+		owner = ETH
+		victory_points = {
+			5106 1 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+	}
+
+	provinces={
+		1688 2171 2213 5106 5217 7900 10400 10566 
+	}
+	manpower=686452
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

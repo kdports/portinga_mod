@@ -1,0 +1,27 @@
+
+state={
+	id=479
+	name="STATE_479"
+
+	history={
+		owner = NZL
+		victory_points = {
+			10995 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = NZL
+	}
+
+	provinces={
+		10995 
+	}
+	manpower=268148
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

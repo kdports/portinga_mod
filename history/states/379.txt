@@ -1,0 +1,30 @@
+
+state={
+	id=379
+	name="STATE_379"
+	resources={
+		steel=1.000
+	}
+
+	history={
+		owner = TUR
+		victory_points = {
+			9668 7 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 7
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = TUR
+	}
+
+	provinces={
+		711 3689 9668 9670 9685 11639 
+	}
+	manpower=2689444
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

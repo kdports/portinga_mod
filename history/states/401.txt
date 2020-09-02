@@ -1,0 +1,33 @@
+
+state={
+	id=401
+	name="STATE_401"
+	resources={
+		aluminium=6.000
+	}
+
+	history={
+		owner = JAP
+		victory_points = {
+			11960 8 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			7072 = {
+				naval_base = 8
+			}
+			air_base = 5
+
+		}
+		add_core_of = JAP
+	}
+
+	provinces={
+		1051 1067 1133 1136 4054 4142 7072 7113 9985 11960 12031 
+	}
+	manpower=6861916
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

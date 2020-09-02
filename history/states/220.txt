@@ -1,0 +1,32 @@
+
+state={
+	id=220
+	name="STATE_220"
+	resources={
+		steel=0.000
+	}
+
+	history={
+		owner = ETH
+		victory_points = {
+			4879 1 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 0
+			12921 = {
+				naval_base = 6
+			}
+			air_base = 0
+
+		}
+	}
+
+	provinces={
+		4879 8136 10957 10978 12519 12921 13217 
+	}
+	manpower=225044
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

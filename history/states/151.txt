@@ -1,0 +1,21 @@
+
+state={
+	id=151
+	name="STATE_151"
+	resources={
+		steel=0.000
+	}
+	impassable = yes
+
+	history={
+		owner = ETH
+		add_core_of = EGY
+	}
+
+	provinces={
+		2064 12099 12816 
+	}
+	manpower=296396
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

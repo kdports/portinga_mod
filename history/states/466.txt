@@ -1,0 +1,27 @@
+
+state={
+	id=466
+	name="STATE_466"
+
+	history={
+		owner = WGR
+		victory_points = {
+			589 8 
+		}
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 6
+			arms_factory = 5
+			air_base = 3
+
+		}
+		add_core_of = WGR
+	}
+
+	provinces={
+		589 3397 3524 3574 6444 6488 9486 
+	}
+	manpower=6460132
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=59
+	name="STATE_59"
+	resources={
+		oil=16.000
+		steel=1.000
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			4458 8 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = X07
+		add_core_of = SOV
+	}
+
+	provinces={
+		4458 4545 
+	}
+	manpower=479620
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

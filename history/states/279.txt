@@ -1,0 +1,31 @@
+
+state={
+	id=279
+	name="STATE_279"
+	resources={
+		aluminium=0.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			1712 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+			air_base = 2
+
+		}
+		add_core_of = ENG
+	}
+
+	provinces={
+		1712 3691 7813 
+	}
+	manpower=1349764
+	buildings_max_level_factor=1.000
+	state_category=city
+}

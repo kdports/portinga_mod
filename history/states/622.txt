@@ -1,0 +1,30 @@
+
+state={
+	id=622
+	name="STATE_622"
+
+	history={
+		owner = SPR
+		victory_points = {
+			12960 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			12960 = {
+				naval_base = 8
+			}
+			air_base = 0
+
+		}
+		add_core_of = NZL
+	}
+
+	provinces={
+		12960 
+	}
+	manpower=3645024
+	buildings_max_level_factor=1.000
+	state_category=city
+}

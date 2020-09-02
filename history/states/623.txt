@@ -1,0 +1,33 @@
+
+state={
+	id=623
+	name="STATE_623"
+	resources={
+		aluminium=18.000
+	}
+
+	history={
+		owner = SPR
+		victory_points = {
+			1513 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			12477 = {
+				naval_base = 8
+			}
+			air_base = 0
+
+		}
+		add_core_of = SPR
+	}
+
+	provinces={
+		1513 12304 12477 
+	}
+	manpower=1909811
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

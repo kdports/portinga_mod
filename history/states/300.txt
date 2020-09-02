@@ -1,0 +1,31 @@
+
+state={
+	id=300
+	name="STATE_300"
+	resources={
+		aluminium=2.000
+		steel=43.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			11516 8 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 9
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		521 680 698 3533 3546 3560 3666 5291 6531 6698 9505 9642 9658 11488 11516 11642 
+	}
+	manpower=6083344
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=54
+	name="STATE_54"
+	resources={
+		rubber=1.000
+	}
+
+	history={
+		owner = CAL
+		victory_points = {
+			10765 4 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			12461 = {
+				naval_base = 10
+			}
+			air_base = 0
+
+		}
+		add_core_of = CAL
+	}
+
+	provinces={
+		1892 1904 2069 7964 8012 8119 10765 10848 12461 12736 12833 12859 13215 13216 
+	}
+	manpower=1683928
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

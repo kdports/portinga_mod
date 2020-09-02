@@ -1,0 +1,30 @@
+
+state={
+	id=462
+	name="STATE_462"
+
+	history={
+		owner = X23
+		victory_points = {
+			12505 4 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 3
+			12505 = {
+				naval_base = 10
+			}
+			air_base = 1
+
+		}
+		add_core_of = X23
+	}
+
+	provinces={
+		1426 1785 4720 4787 7758 7788 12503 12505 12680 12698 
+	}
+	manpower=6285893
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=16
+	name="STATE_16"
+	resources={
+		rubber=0.000
+		steel=3.000
+		tungsten=4.000
+	}
+
+	history={
+		owner = X41
+		victory_points = {
+			4585 11 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 1
+			air_base = 6
+
+		}
+		add_core_of = X41
+		add_core_of = X02
+	}
+
+	provinces={
+		1170 1333 1492 1566 1650 2061 4019 4059 4202 4210 4585 4626 7034 7400 7469 7562 10283 10344 10386 12284 12363 12404 12449 12492 
+	}
+	manpower=5361652
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

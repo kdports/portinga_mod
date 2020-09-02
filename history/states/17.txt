@@ -1,0 +1,39 @@
+
+state={
+	id=17
+	name="STATE_17"
+	resources={
+		rubber=0.000
+		steel=1.000
+		tungsten=1.000
+	}
+
+	history={
+		owner = X02
+		victory_points = {
+			12256 3 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = BRM
+		add_core_of = X02
+		MAL = {
+			set_province_controller = 1417
+			set_province_controller = 4293
+			set_province_controller = 7441
+			set_province_controller = 12256
+		}
+	}
+
+	provinces={
+		1417 4293 7441 12256 
+	}
+	manpower=1518780
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

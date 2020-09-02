@@ -1,0 +1,35 @@
+
+state={
+	id=61
+	name="STATE_61"
+	resources={
+		oil=19.000
+		steel=2.000
+	}
+
+	history={
+		owner = COS
+		victory_points = {
+			12845 6 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 4
+			arms_factory = 1
+			dockyard = 1
+			1937 = {
+				naval_base = 10
+			}
+			air_base = 2
+
+		}
+		add_core_of = COS
+	}
+
+	provinces={
+		1937 2023 2085 4969 8056 10494 10864 12703 12790 12845 
+	}
+	manpower=5116476
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=760
+	name="STATE_760"
+	resources={
+		chromium=5.000
+		rubber=8.000
+		steel=20.000
+		tungsten=47.000
+	}
+
+	history={
+		owner = X41
+		victory_points = {
+			7137 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = X41
+	}
+
+	provinces={
+		1172 1469 1597 1625 4028 4077 4085 4121 4134 4152 4177 4628 4656 7095 7137 7168 7650 10039 10050 10404 10431 10459 12436 
+	}
+	manpower=405660
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

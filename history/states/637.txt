@@ -1,0 +1,33 @@
+
+state={
+	id=637
+	name="STATE_637"
+	resources={
+		oil=2.000
+		rubber=12.000
+	}
+
+	history={
+		owner = SPR
+		victory_points = {
+			12798 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			8252 = {
+				naval_base = 6
+			}
+			air_base = 0
+
+		}
+	}
+
+	provinces={
+		5051 5120 8047 8075 8252 10888 10942 11020 12798 
+	}
+	manpower=4368876
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

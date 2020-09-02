@@ -1,0 +1,35 @@
+
+state={
+	id=381
+	name="STATE_381"
+	resources={
+		aluminium=15.000
+		steel=28.000
+	}
+
+	history={
+		owner = X14
+		victory_points = {
+			11584 6 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 4
+			arms_factory = 1
+			dockyard = 2
+			11584 = {
+				naval_base = 10
+			}
+			air_base = 2
+
+		}
+		add_core_of = X14
+	}
+
+	provinces={
+		628 3604 3657 6656 9582 9613 11584 
+	}
+	manpower=6933360
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

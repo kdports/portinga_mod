@@ -1,0 +1,21 @@
+
+state={
+	id=287
+	name="STATE_287"
+	resources={
+		steel=1.000
+	}
+	impassable = yes
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+	}
+
+	provinces={
+		1057 1140 1994 4191 7985 10104 10754 10785 12866 
+	}
+	manpower=694132
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

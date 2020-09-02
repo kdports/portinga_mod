@@ -1,0 +1,37 @@
+
+state={
+	id=447
+	name="STATE_447"
+	resources={
+		rubber=240.000
+		steel=3.000
+		tungsten=3.000
+	}
+
+	history={
+		owner = MAL
+		victory_points = {
+			12131 8 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+			arms_factory = 2
+			dockyard = 3
+			12131 = {
+				naval_base = 10
+			}
+			air_base = 2
+
+		}
+		add_core_of = MAL
+		add_core_of = X25
+	}
+
+	provinces={
+		1279 1281 1308 1337 1366 1394 1427 4297 4312 4319 4348 4371 4388 4392 7236 7367 7408 7587 10156 10158 10193 10221 10250 12122 12131 12201 12220 12230 12286 
+	}
+	manpower=6600060
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

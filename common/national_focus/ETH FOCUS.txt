@@ -1,0 +1,427 @@
+focus_tree = {
+	id = ethiopia_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ETH
+		}
+	}
+	default = no
+	focus = {
+		id = labor_force
+		icon = GFX_goal_generic_production
+		
+		x = 4
+		y = 0
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			country_event = { id = ethiopia.1 }
+			}
+		}
+	
+	focus = {
+		id = end_slavery
+		icon = GFX_goal_generic_treaty
+		prerequisite = {
+			focus = labor_force
+			}
+		mutually_exclusive = {
+			focus = last_slaves
+			focus = enforce_slavery
+		}
+		x = -2
+		y = 1
+		relative_position_id = labor_force
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available = {
+			has_idea = slavery_idea_1b
+			}
+			
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power	= 50
+			swap_ideas = {
+				remove_idea = slavery_idea_1b
+				add_idea = slavery_idea_1d
+			}
+		}
+	}
+	focus = {
+		id = last_slaves
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = {
+			focus = labor_force
+			}
+		mutually_exclusive = {
+			focus = end_slavery
+			focus = enforce_slavery
+		}
+		x = 0
+		y = 1
+		relative_position_id = labor_force
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available = {
+			has_idea = slavery_idea_1b
+			}
+			
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = slavery_idea_1b
+				add_idea = slavery_idea_1e
+			}
+		}
+	}
+	focus = {
+		id = enforce_slavery
+		icon = GFX_goal_generic_production
+		prerequisite = {
+			focus = labor_force
+		}
+		mutually_exclusive = {
+			focus = last_slaves
+			focus = end_slavery
+		}
+		x = 2
+		y = 1
+		relative_position_id = labor_force
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available = {
+			has_idea = slavery_idea_1c
+			}
+			
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			swap_ideas = {
+				remove_idea = slavery_idea_1c
+				add_idea = slavery_idea_1f
+			}
+		}
+	}
+	focus = {
+		id = ETH_work_smarter
+		icon = GFX_goal_continuous_research
+		prerequisite = {
+			focus = last_slaves
+			focus = end_slavery
+		}
+		mutually_exclusive = {
+			focus = ETH_work_harder
+		}
+		x = 0
+		y = 1
+		relative_position_id = end_slavery
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ETH_workers_union
+		icon = GFX_goal_generic_production
+		prerequisite = {
+			focus = ETH_work_smarter
+		}
+		x = 0
+		y = 1
+		relative_position_id = ETH_work_smarter
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = ETH_IDEA_ORGANIZED_LABOR
+		}
+	}
+	focus = {
+		id = ETH_adult_education
+		icon = GFX_goal_continuous_research
+		prerequisite = {
+			focus = ETH_workers_union
+		}
+		x = 0
+		y = 1
+		relative_position_id = ETH_workers_union
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = slavery_idea_1d
+				add_idea = ETH_IDEA_EDUCATED_WORKFORCE
+			}
+		}
+	}
+	focus = {
+		id = ETH_work_harder
+		icon = GFX_goal_generic_construction2
+		prerequisite = {
+			focus = last_slaves
+		}
+		mutually_exclusive = {
+			focus = ETH_work_smarter
+		}
+		x = 0
+		y = 1
+		relative_position_id = last_slaves
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = { ETH_IDEA_HARD_WORKERS }
+		}
+	}
+	focus = {
+		id = ETH_military_backbone
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = {
+			focus = ETH_work_harder
+		}
+		x = 0
+		y = 1
+		relative_position_id = ETH_work_harder
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ETH_outsider_workforce
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = {
+			focus = ETH_military_backbone
+		}
+		x = 0
+		y = 1
+		relative_position_id = ETH_military_backbone
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_ideas = { ETH_IDEA_NONCORE_WORKFORCE }
+		}
+	}
+	focus = {
+		id = ETH_no_production_limit
+		icon = GFX_goal_generic_construction2
+		prerequisite = {
+			focus = enforce_slavery
+		}
+		x = 0
+		y = 1
+		relative_position_id = enforce_slavery
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = -0.05
+			every_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ETH_no_compromises
+		icon = GFX_goal_generic_production
+		prerequisite = {
+			focus = ETH_no_production_limit
+		}
+		x = 0
+		y = 1
+		relative_position_id = ETH_no_production_limit
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = { ETH_IDEA_HARD_WORKERS }
+			add_resource = {
+				type = oil
+				amount = 16
+				state = 271
+			}
+		}
+	}
+	focus = {
+		id = ETH_african_mines
+		icon = GFX_focus_generic_steel
+		prerequisite = {
+			focus = ETH_no_compromises
+		}
+		x = 0
+		y = 1
+		relative_position_id = ETH_no_compromises
+		cost = 7
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_resource = {
+				type = steel
+				amount = 16
+				state = 271
+			}
+			add_resource = {
+				type = tungsten
+				amount = 16
+				state = 271
+			}
+			add_resource = {
+				type = chromium
+				amount = 16
+				state = 271
+			}
+		}
+	}
+	focus = {
+		id = ETH_zulu_rebellions
+		icon = GFX_focus_generic_strike_at_democracy1
+		
+		x = 14
+		y = 0
+		
+		cost = 6
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			has_idea = ETH_IDEA_ZULU_UPRISING
+			}
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 120
+			remove_ideas = ETH_IDEA_ZULU_UPRISING
+		}
+	}
+	focus = {
+		id = ETH_secret_police
+		icon = GFX_focus_AST_squander_bug
+		prerequisite = {
+			focus = ETH_zulu_rebellions
+		}
+		x = 0
+		y = 1
+		relative_position_id = ETH_zulu_rebellions
+		cost = 4
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = no
+		
+		completion_reward = {
+			create_intelligence_agency = yes
+		}
+	}
+	focus = {
+		id = ETH_remove_resistance
+		icon = GFX_focus_RAJ_indianisation_of_army
+		prerequisite = {
+			focus = ETH_secret_police
+		}
+		x = 0
+		y = 1
+		relative_position_id = ETH_secret_police
+		cost = 4
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = no
+		
+		completion_reward = {
+			upgrade_intelligence_agency = upgrade_anti_partisan
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = ETH_counter_intelligence
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		prerequisite = {
+			focus = ETH_remove_resistance
+		}
+		x = 0
+		y = 1
+		relative_position_id = ETH_remove_resistance
+		cost = 4
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = no
+		
+		completion_reward = {
+			upgrade_intelligence_agency = upgrade_training_centers
+		}
+	}
+}

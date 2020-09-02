@@ -1,0 +1,28 @@
+
+state={
+	id=505
+	name="STATE_505"
+
+	history={
+		owner = X27
+		victory_points = {
+			10106 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+
+		}
+		add_core_of = KUR
+		add_core_of = X27
+	}
+
+	provinces={
+		1600 1938 3916 5014 10106 10793 10804 10811 
+	}
+	manpower=2466412
+	buildings_max_level_factor=1.000
+	state_category=city
+}

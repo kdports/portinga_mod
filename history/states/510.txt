@@ -1,0 +1,32 @@
+
+state={
+	id=510
+	name="STATE_510"
+	resources={
+		aluminium=6.000
+		steel=2.000
+	}
+
+	history={
+		owner = X27
+		victory_points = {
+			1636 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 5
+			arms_factory = 0
+			air_base = 2
+
+		}
+		add_core_of = KUR
+		add_core_of = X27
+	}
+
+	provinces={
+		1636 1822 2071 4755 4825 4901 7604 10454 12861 
+	}
+	manpower=3103192
+	buildings_max_level_factor=1.000
+	state_category=city
+}
