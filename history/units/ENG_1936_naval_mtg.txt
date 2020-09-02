@@ -1,0 +1,118 @@
+units = {
+	fleet = {
+		name = "2nd Fleet"
+		naval_base = 490
+		task_force = {
+			name = "2nd Fleet"
+			location = 8340
+			ship = { name = "Iron Duke" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Queen Elizabeth" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Rodney" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Jupiter" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Blenheim" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Orlando" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Australia" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+		}
+	}
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 11371
+		task_force = {
+			name = "3rd Fleet"
+			location = 11371
+			ship = { name = "Illustrious" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+		}
+	}
+	fleet = {
+		name = "4th Fleet"
+		naval_base = 490
+		task_force = {
+			name = "4th Fleet"
+			location = 2895
+			ship = { name = "Nelson" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Northampton" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Warspite" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Undaunted" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Narcissus" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Galatea" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Blake" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Aurora" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Edgar" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Hawke" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+		}
+	}
+	fleet = {
+		name = "6th Fleet"
+		naval_base = 490
+		task_force = {
+			name = "6th Fleet"
+			location = 7695
+			ship = { name = "Duke of York" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Anson" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Canopus" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Revenge" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Ramillies" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Royal Oak" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Resolution" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Empress of India" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Magnificent" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Victorious" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Prince George" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Repulse" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Glory" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Shannon" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+		}
+	}
+	fleet = {
+		name = "10th Fleet"
+		naval_base = 490
+		task_force = {
+			name = "10th Fleet"
+			location = 2729
+			ship = { name = "Dreadnought" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Bellerophon" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Superb" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Temeraire" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "St Vincent" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Hercules" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Neptune" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Monarch" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Conqueror" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Thunderer" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "King George V" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Ajax" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Benbow" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Agincourt" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Emperor of India" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Erin" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Canada" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Audacious" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Barham" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Valiant" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Malaya" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "ENG"
+			version_name = "1936 Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "ENG"
+			version_name = "1936 Battleship"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

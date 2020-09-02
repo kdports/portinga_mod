@@ -1,0 +1,38 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 13202
+		task_force = {
+			name = "1st Fleet"
+			location = 13202
+			ship = { name = "Sitka" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X17 } } }
+			ship = { name = "Lakes" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X17 } } }
+			ship = { name = "Tanaina" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X17 } } }
+			ship = { name = "Ketchikan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X17 } } }
+			ship = { name = "Wasilla" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X17 } } }
+			ship = { name = "Cicely" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X17 } } }
+			ship = { name = "Steele Creek" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X17 } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "X17"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "X17"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

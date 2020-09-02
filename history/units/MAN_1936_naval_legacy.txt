@@ -1,0 +1,51 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 3753
+		task_force = {
+			name = "1st Fleet"
+			location = 3753
+			ship = { name = "1st Boli Dreadnought" definition = battleship equipment = { battleship_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "2nd Boli Dreadnought" definition = battleship equipment = { battleship_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "3rd Boli Dreadnought" definition = battleship equipment = { battleship_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "4th Boli Dreadnought" definition = battleship equipment = { battleship_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "5th Boli Dreadnought" definition = battleship equipment = { battleship_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "1st Boli Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "1st Pogobi Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "2nd Pogobi Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "3rd Pogobi Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "1st Ayan Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "1st Pogobi Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "1st Boli Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "2nd Boli Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "3rd Boli Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "4th Boli Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "5th Boli Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "1st Ayan Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "2nd Ayan Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "3rd Ayan Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MAN } } }
+			ship = { name = "4th Ayan Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MAN } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "MAN"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "MAN"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

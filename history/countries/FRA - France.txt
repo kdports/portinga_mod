@@ -90,15 +90,10 @@ if = {
 		}
 	}
 	set_autonomy = {
-		target = X21
-		autonomous_state = autonomy_sphereling
+		target = FWA
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.009
-	}
-	set_autonomy = {
-		target = X35
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
+	}	
     else = {
     }
 }

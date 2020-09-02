@@ -1,0 +1,41 @@
+units = {
+	fleet = {
+		name = "2nd Fleet"
+		naval_base = 9263
+		task_force = {
+			name = "2nd Fleet"
+			location = 2455
+			ship = { name = "Mieszko I" definition = battleship equipment = { battleship_2 = { amount = 1 owner = X26 } } }
+			ship = { name = "1st Königsberg Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X26 } } }
+			ship = { name = "1st Palanga Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X26 } } }
+			ship = { name = "1st Jelgava Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X26 } } }
+			ship = { name = "1st Danzig Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X26 } } }
+			ship = { name = "2nd Königsberg Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X26 } } }
+			ship = { name = "2nd Palanga Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X26 } } }
+			ship = { name = "2nd Jelgava Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X26 } } }
+			ship = { name = "Józef Pilsudski" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X26 } } }
+			ship = { name = "Józef Chlopicki" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X26 } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "X26"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "X26"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

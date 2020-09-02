@@ -1,0 +1,69 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 1403
+		task_force = {
+			name = "1st Fleet"
+			location = 5564
+			ship = { name = "1st Singapore Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "1st Pattani Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "2nd Pattani Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "1st Prachinburi Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "2nd Singapore Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "2nd Prachinburi Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "3rd Pattani Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Aur" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "1st Prachinburi Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "1st Moulmein Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "1st Singapore Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "1st Pattani Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "2nd Prachinburi Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "2nd Singapore Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+		}
+	}
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 1403
+		task_force = {
+			name = "3rd Fleet"
+			location = 5564
+			ship = { name = "Pulau Padang" definition = battleship equipment = { battleship_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Tinggi" definition = battleship equipment = { battleship_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Sibu" definition = battleship equipment = { battleship_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Tioman" definition = battleship equipment = { battleship_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Rupat" definition = battleship equipment = { battleship_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Rangsang" definition = battleship equipment = { battleship_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Tebing Tinggi" definition = battleship equipment = { battleship_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "1st Singapore Dreadnought" definition = battleship equipment = { battleship_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Parameswara" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Sultan Iskandar" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Laksamana" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Hukum Kanun" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Singkep" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Lingga" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Kundur" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+			ship = { name = "Pulau Bengkaus" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = MAL } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "MAL"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "MAL"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

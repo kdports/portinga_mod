@@ -1,0 +1,30 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 13202
+		task_force = {
+			name = "1st Fleet"
+			location = 13202
+			ship = { name = "Sitka" definition = destroyer start_experience_factor = 0.0998 equipment = { ship_hull_light_1 = { amount = 1 owner = X17 version_name = "Early Destroyer" } } }
+			ship = { name = "Lakes" definition = destroyer start_experience_factor = 0.09255 equipment = { ship_hull_light_1 = { amount = 1 owner = X17 version_name = "Early Destroyer" } } }
+			ship = { name = "Tanaina" definition = destroyer start_experience_factor = 0.0978 equipment = { ship_hull_light_1 = { amount = 1 owner = X17 version_name = "Early Destroyer" } } }
+			ship = { name = "Ketchikan" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = X17 version_name = "Early Destroyer" } } }
+			ship = { name = "Wasilla" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = X17 version_name = "Early Destroyer" } } }
+			ship = { name = "Cicely" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = X17 version_name = "Early Destroyer" } } }
+			ship = { name = "Steele Creek" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = X17 version_name = "Early Destroyer" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "X17"
+			version_name = "Early Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+}

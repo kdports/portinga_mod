@@ -1,0 +1,33 @@
+units = {
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 10124
+		task_force = {
+			name = "3rd Fleet"
+			location = 10124
+			ship = { name = "5th Okinawa Commerce Raider" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X05 } } }
+			ship = { name = "6th Okinawa Commerce Raider" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X05 } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "X05"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "X05"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

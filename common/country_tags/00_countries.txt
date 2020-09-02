@@ -1,6 +1,7 @@
 BRA = "countries/Brazil.txt"
 ENG = "countries/The United Kingdom.txt"
 FRA = "countries/France.txt"
+FWA = "countries/French West Africa.txt"
 SOV = "countries/Russia.txt"
 TUR = "countries/The Ottoman Empire.txt"
 USA = "countries/America.txt"

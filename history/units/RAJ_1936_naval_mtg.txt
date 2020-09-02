@@ -1,0 +1,71 @@
+units = {
+	fleet = {
+		name = "2nd Fleet"
+		naval_base = 4245
+		task_force = {
+			name = "2nd Fleet"
+			location = 4245
+			ship = { name = "1st Calcutta Dreadnought" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RAJ version_name = "Early Battleship" } } }
+			ship = { name = "2nd Calcutta Dreadnought" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RAJ version_name = "Early Battleship" } } }
+			ship = { name = "1st Cuttack Dreadnought" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RAJ version_name = "Early Battleship" } } }
+			ship = { name = "1st Surat Dreadnought" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RAJ version_name = "Early Battleship" } } }
+			ship = { name = "3rd Calcutta Dreadnought" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RAJ version_name = "Early Battleship" } } }
+			ship = { name = "1st Tanjore Dreadnought" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RAJ version_name = "Early Battleship" } } }
+			ship = { name = "2nd Surat Dreadnought" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RAJ version_name = "Early Battleship" } } }
+			ship = { name = "2nd Tanjore Dreadnought" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RAJ version_name = "Early Battleship" } } }
+			ship = { name = "1st Kolhapur Dreadnought" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RAJ version_name = "Early Battleship" } } }
+			ship = { name = "3rd Surat Dreadnought" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RAJ version_name = "Early Battleship" } } }
+			ship = { name = "1st Calcutta Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "2nd Calcutta Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Cuttack Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "3rd Calcutta Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "2nd Cuttack Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "3rd Cuttack Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Surat Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "4th Calcutta Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Nellore Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "Khan" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "Nav ka Yudh" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "Lal Jahazi" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "Salima" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "Niloufa" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "Shameena" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Kolhapur Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Cuttack Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Cochin Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Karachi Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "2nd Cochin Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "2nd Karachi Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "3rd Cochin Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Colombo Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Nellore Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Surat Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "2nd Kolhapur Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "2nd Surat Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+			ship = { name = "3rd Kolhapur Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RAJ version_name = "Early Light Cruiser" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "RAJ"
+			version_name = "Early Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "RAJ"
+			version_name = "Early Battleship"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

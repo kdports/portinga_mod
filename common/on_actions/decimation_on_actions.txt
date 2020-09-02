@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_state = {
+				decimate_half_all_industry = yes
+			}
+		}
+	}
+}

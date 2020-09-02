@@ -1,0 +1,43 @@
+units = {
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 4334
+		task_force = {
+			name = "3rd Fleet"
+			location = 4334
+			ship = { name = "1st Kampot Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "2nd Kampot Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "1st Qui Nhon Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "3rd Kampot Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "1st Tourane Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "4th Kampot Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "1st Kampot Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "1st Qui Nhon Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "1st Tourane Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "2nd Tourane Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "3rd Qui Nhon Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X06 } } }
+			ship = { name = "2nd Kampot Cruiser" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X06 } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "X06"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "X06"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

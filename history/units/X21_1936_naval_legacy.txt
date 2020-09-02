@@ -1,0 +1,49 @@
+units = {
+	fleet = {
+		name = "2nd Fleet"
+		naval_base = 321
+		task_force = {
+			name = "2nd Fleet"
+			location = 2729
+			ship = { name = "Derfflinger" definition = battleship equipment = { battleship_1 = { amount = 1 owner = X21 } } }
+			ship = { name = "Goeben" definition = battleship equipment = { battleship_1 = { amount = 1 owner = X21 } } }
+			ship = { name = "Helgoland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = X21 } } }
+			ship = { name = "1st Arnhem Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X21 } } }
+		}
+	}
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 321
+		task_force = {
+			name = "3rd Fleet"
+			location = 7695
+			ship = { name = "2nd Groningen Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X21 } } }
+			ship = { name = "Blitz" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X21 } } }
+			ship = { name = "Blücher" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X21 } } }
+			ship = { name = "Bremse" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X21 } } }
+			ship = { name = "Brummer" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X21 } } }
+			ship = { name = "Bussard" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X21 } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "X21"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "X21"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

@@ -1,0 +1,36 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 6626
+		task_force = {
+			name = "1st Fleet"
+			location = 6626
+			ship = { name = "Kaiser Max" definition = battleship equipment = { battleship_2 = { amount = 1 owner = AUS } } }
+			ship = { name = "Don Juan D'Austria" definition = battleship equipment = { battleship_2 = { amount = 1 owner = AUS } } }
+			ship = { name = "Sankt Georg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = AUS } } }
+			ship = { name = "Admiral Spaun" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = AUS } } }
+			ship = { name = "Donau" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = AUS } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "AUS"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "AUS"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}
