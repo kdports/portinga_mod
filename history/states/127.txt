@@ -24,22 +24,6 @@ state={
 		}
 		add_core_of = ENG
 		add_core_of = X26
-		SOV = {
-			set_province_controller = 83
-			set_province_controller = 496
-			set_province_controller = 567
-			set_province_controller = 3074
-			set_province_controller = 3152
-			set_province_controller = 9079
-			set_province_controller = 11426
-		}
-		X26 = {
-			set_province_controller = 308
-			set_province_controller = 3174
-			set_province_controller = 6178
-			set_province_controller = 6381
-			set_province_controller = 11291
-		}
 	}
 
 	provinces={

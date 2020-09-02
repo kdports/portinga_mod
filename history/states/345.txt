@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = X29
 		victory_points = {
 			2010 3 
 		}

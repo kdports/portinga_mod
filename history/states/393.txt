@@ -5,7 +5,7 @@ state={
 	impassable = yes
 
 	history={
-		owner = X14
+		owner = SPR
 		add_core_of = SPR
 	}
 

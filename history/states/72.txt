@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = X08
+		owner = SOV
 		victory_points = {
 			4677 6 
 		}
@@ -21,7 +21,7 @@ state={
 		}
 		add_core_of = MAN
 		add_core_of = X08
-		add_core_of = X13
+		add_core_of = SOV
 	}
 
 	provinces={

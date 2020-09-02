@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = ETH
+		owner = YEM
 		victory_points = {
 			13079 1 
 		}

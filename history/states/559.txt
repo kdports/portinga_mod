@@ -22,6 +22,15 @@ state={
 			air_base = 1
 
 		}
+		ENG = {
+			set_province_controller = 11130
+			set_province_controller = 11115
+			set_province_controller = 203
+			set_province_controller = 3069
+			set_province_controller = 6061
+			set_province_controller = 103
+			set_province_controller = 3097
+		}		
 		add_core_of = ENG
 		add_core_of = SOV
 	}
