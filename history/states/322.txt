@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = X12
+		owner = MAL
 		victory_points = {
 			12126 3 
 		}
@@ -24,6 +24,7 @@ state={
 			air_base = 0
 
 		}
+		add_core_of = MAL
 		add_core_of = X12
 	}
 

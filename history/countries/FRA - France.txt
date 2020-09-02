@@ -1,95 +1,6 @@
 ﻿capital = 235
 set_research_slots = 4
 
-declare_war_on = {
-	target = WGR
-	type = annex_everything
-}
-BRA = {
-	add_to_war = {
-		targeted_alliance = FRA
-		enemy = WGR
-	}
-}
-SOV = {
-	add_to_war = {
-		targeted_alliance = FRA
-		enemy = WGR
-	}
-}
-X21 = {
-	add_to_war = {
-		targeted_alliance = FRA
-		enemy = WGR
-	}
-}
-X26 = {
-	add_to_war = {
-		targeted_alliance = FRA
-		enemy = WGR
-	}
-}
-X35 = {
-	add_to_war = {
-		targeted_alliance = FRA
-		enemy = WGR
-	}
-}
-AUS = {
-	add_to_war = {
-		targeted_alliance = WGR
-		enemy = FRA
-	}
-}
-BAY = {
-	add_to_war = {
-		targeted_alliance = WGR
-		enemy = FRA
-	}
-}
-ENG = {
-	add_to_war = {
-		targeted_alliance = WGR
-		enemy = FRA
-	}
-}
-X01 = {
-	add_to_war = {
-		targeted_alliance = WGR
-		enemy = FRA
-	}
-}
-X03 = {
-	add_to_war = {
-		targeted_alliance = WGR
-		enemy = FRA
-	}
-}
-X14 = {
-	add_to_war = {
-		targeted_alliance = WGR
-		enemy = FRA
-	}
-}
-X15 = {
-	add_to_war = {
-		targeted_alliance = WGR
-		enemy = FRA
-	}
-}
-X28 = {
-	add_to_war = {
-		targeted_alliance = WGR
-		enemy = FRA
-	}
-}
-X40 = {
-	add_to_war = {
-		targeted_alliance = WGR
-		enemy = FRA
-	}
-}
-
 oob = "FRA_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -284,7 +195,7 @@ add_opinion_modifier = { target = YEM modifier = negative_35 }
 add_opinion_modifier = { target = YUN modifier = negative_50 }
 
 
-give_guarantee = X22
+#give_guarantee = X22
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

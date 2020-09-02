@@ -1,4 +1,4 @@
-﻿capital = 705
+﻿capital = 732
 set_research_slots = 4
 add_named_threat = { threat = 0.1308 name = infamy }
 

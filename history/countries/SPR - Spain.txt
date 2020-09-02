@@ -2,17 +2,6 @@
 set_research_slots = 3
 add_named_threat = { threat = 1.3357 name = infamy }
 
-declare_war_on = {
-	target = X14
-	type = annex_everything
-}
-WGR = {
-	add_to_war = {
-		targeted_alliance = X14
-		enemy = SPR
-	}
-}
-
 oob = "SPR_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }

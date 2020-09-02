@@ -153,7 +153,8 @@ add_opinion_modifier = { target = X41 modifier = negative_20 }
 add_opinion_modifier = { target = YEM modifier = negative_45 }
 add_opinion_modifier = { target = YUN modifier = positive_25 }
 
-
+give_guarantee = BAY
+give_guarantee = CRO
 
 add_ideas = {
 	disarmed_nation

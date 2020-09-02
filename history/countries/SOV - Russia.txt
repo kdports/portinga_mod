@@ -76,11 +76,11 @@ if = {
 		autonomous_state = autonomy_sphereling
 		freedom_level = 0.009
 	}
-	#set_autonomy = {
-	#	target = X18
-	#	autonomous_state = autonomy_sphereling
-	#	freedom_level = 0.63
-	#}
+	set_autonomy = {
+		target = X13
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.63
+	}
 	#set_autonomy = {
 	#	target = X41
 	#	autonomous_state = autonomy_sphereling

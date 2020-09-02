@@ -9,7 +9,7 @@ state={
 	}
 
 	history={
-		owner = BRA
+		owner = X16
 		victory_points = {
 			5179 6 
 		}
@@ -21,7 +21,7 @@ state={
 
 		}
 		add_core_of = BOL
-		add_core_of = BRA
+		add_core_of = X16
 	}
 
 	provinces={

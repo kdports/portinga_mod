@@ -62,64 +62,6 @@ add_tech_bonus = { name = air_doc_bonus bonus = 0.90 uses = 1 category = air_doc
 add_tech_bonus = { name = land_doc_bonus bonus = 0.90 uses = 1 category = land_doctrine }
 set_convoys = 0
 
-
-# DIPLOMACY
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = AUS
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
-	set_autonomy = {
-		target = BAY
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
-	set_autonomy = {
-		target = X01
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
-	set_autonomy = {
-		target = X03
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.729
-	}
-	set_autonomy = {
-		target = X14
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
-	set_autonomy = {
-		target = X15
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
-	set_autonomy = {
-		target = X24
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
-	set_autonomy = {
-		target = X28
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
-	set_autonomy = {
-		target = X40
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
-    else = {
-    }
-}
-
 if = {
     limit = {has_dlc = "Together for Victory" }
 
@@ -218,8 +160,8 @@ add_opinion_modifier = { target = YUN modifier = positive_15 }
 
 
 give_guarantee = SAX
-give_guarantee = X00
-give_guarantee = X34
+#give_guarantee = X00
+#give_guarantee = X34
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

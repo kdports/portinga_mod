@@ -94,6 +94,68 @@ set_popularities = {
 	radical = 4
 }
 
+# DIPLOMACY
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	#set_autonomy = {
+	#	target = AUS
+	#	autonomous_state = autonomy_sphereling
+	#	freedom_level = 0.009
+	#}
+	#set_autonomy = {
+	#	target = BAY
+	#	autonomous_state = autonomy_sphereling
+	#	freedom_level = 0.009
+	#}
+	set_autonomy = {
+		target = X01
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.009
+	}
+	set_autonomy = {
+		target = X03
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.729
+	}
+	set_autonomy = {
+		target = X10
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.009
+	}	
+	set_autonomy = {
+		target = X15
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.009
+	}
+	set_autonomy = {
+		target = X18
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.009
+	}	
+	set_autonomy = {
+		target = X24
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.009
+	}
+	set_autonomy = {
+		target = X28
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.009
+	}
+	set_autonomy = {
+		target = X40
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.009
+	}
+    else = {
+    }
+}
+
 add_opinion_modifier = { target = AUS modifier = negative_67 }
 add_opinion_modifier = { target = BAY modifier = negative_113 }
 add_opinion_modifier = { target = BRA modifier = negative_85 }
