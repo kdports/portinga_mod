@@ -49,19 +49,19 @@ set_convoys = 10
 
 
 set_politics = {
-    ruling_party = fascism
+    ruling_party = democratic
     last_election = "1933.7.25"
     election_frequency = 48
     elections_allowed = no
 }
 
 set_popularities = {
-	absolutist = 0
-	communism = 0
-	democratic = 3
-	fascism = 94
-	neutrality = 3
-	radical = 0
+	absolutist = 6
+	communism = 23
+	democratic = 44
+	fascism = 20
+	neutrality = 4
+	radical = 3
 }
 
 add_opinion_modifier = { target = BRA modifier = negative_200 }
@@ -102,14 +102,24 @@ add_ideas = {
 set_stability = 0.60
 set_war_support = 0.70
 create_country_leader = {
-    name = "Nyurgun Shishigin"
+    name = "Alexander Kerensky"
     desc = "POLITICS_NYURGUN_SHISHIGIN_DESC"
-    picture = "gfx/leaders/OC/portrait_MON_Gengis_Khan.dds"
+    picture = "gfx/leaders/r56_portrait_SOV_Alexander_Kerensky.dds"
     expire = "1965.1.1"
-    ideology = fascism_ideology
+    ideology = socialism
     traits = {
     }
 }
+create_country_leader = {
+    name = "Lavrentiy Beria"
+    desc = "POLITICS_NYURGUN_SHISHIGIN_DESC"
+    picture = "gfx/leaders/Portrait_Soviet_Lavrentiy_Beria.dds"
+    expire = "1965.1.1"
+    ideology = communism_ideology
+    traits = {
+    }
+}
+
 create_corps_commander = {
 	name = "Aytal Okhlopkov"
 	picture = ""
@@ -122,7 +132,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Elley Shishigin"
+	name = "Shishigin"
 	picture = ""
 	traits = { }
 	skill = 1
@@ -133,660 +143,11 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Elley Okhlopkov"
+	name = "Okhlopkov"
 	picture = ""
 	traits = { }
 	skill = 1
 	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aysen Ondar"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aytal Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aytal Sivtsev"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aysen Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Nyurgun Ondar"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 2
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aytal Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Manchaary Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Elley Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aytal Ondar"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Manchaary Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Nyurgun Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aysen Shtyrov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aysen Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Manchaary Shtyrov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Shtyrov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Manchaary Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Nyurgun Sivtsev"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aytal Ondar"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Nyurgun Shtyrov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Nyurgun Ondar"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aytal Sivtsev"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Nyurgun Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aysen Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aysen Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aysen Sivtsev"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Ondar"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aysen Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Nyurgun Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aysen Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Manchaary Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aytal Sivtsev"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aytal Shtyrov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Manchaary Sivtsev"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aysen Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Nyurgun Ondar"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Nyurgun Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Nyurgun Shtyrov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Ondar"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Elley Shtyrov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Ondar"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aytal Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Nyurgun Ondar"
-	picture = ""
-	traits = { }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aysen Sivtsev"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aysen Ondar"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Manchaary Shtyrov"
-	picture = ""
-	traits = { }
-	skill = 2
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Elley Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Elley Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Manchaary Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aytal Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Nyurgun Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Elley Shishigin"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aysen Shtyrov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Aytal Okhlopkov"
-	picture = ""
-	traits = { }
-	skill = 1
-	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
@@ -801,6 +162,28 @@ create_navy_leader = {
 	defense_skill = 1
 	maneuvering_skill = 1
 	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Pavel Sergeyevich Abankin"
+	picture = ""
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Valentin Drozd"
+	picture = ""
+	traits = { }
+	skill = 1
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
 }
 
 ### VARIANTS ###
@@ -916,4 +299,86 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
+	create_equipment_variant = {
+		name = "1936 Battleship"
+		type = ship_hull_heavy_2
+		name_group = ENG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_heavy_battery_2
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "1936 Destroyer"
+		type = ship_hull_light_2
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "1936 Heavy Cruiser"
+		type = ship_hull_cruiser_2
+		name_group = ENG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			mid_1_custom_slot = ship_secondaries_2
+			mid_2_custom_slot = ship_medium_battery_2
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "1936 Light Cruiser"
+		type = ship_hull_cruiser_2
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "1936 Submarine"
+		type = ship_hull_submarine_2
+		name_group = ENG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			rear_1_custom_slot = ship_torpedo_sub_2
+		}
+	}	
 }

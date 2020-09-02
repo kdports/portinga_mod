@@ -8,7 +8,7 @@ country_event = {
 		picture = GFX_report_event_quit_india_movement
 		fire_only_once = yes
 		is_triggered_only = yes
-		
+
 		option = {
 			name = ethiopia.1.1
 			swap_ideas = {
@@ -25,11 +25,11 @@ country_event = {
 				}
 			}
 	}
-	
+
 country_event = {
-		id = ethiopia.slavery.revolt
-		title = ethiopia.slavery.revolt.t
-		desc = ethiopia.slavery.revolt.d
+		id = ethiopia_slavery.revolt
+		title = ethiopia_slavery.revolt.t
+		desc = ethiopia_slavery.revolt.d
 		picture = GFX_report_event_quit_india_movement
 		fire_only_once = no
 		is_triggered_only = no
@@ -63,9 +63,9 @@ country_event = {
 		}
 	}
 country_event = {
-	id = zulu.rebellion
-	title = zulu.rebellion.t
-	desc = zulu.rebellion.d
+	id = zulu_rebellion
+	title = zulu_rebellion.t
+	desc = zulu_rebellion.d
 	picture = GFX_report_event_quit_india_movement
 	fire_only_once = yes
 	is_triggered_only = no
@@ -73,7 +73,7 @@ country_event = {
 		days = 45
 	}
 	option = {
-		name = zulu.rebellion.1
+		name = zulu_rebellion.1
 		add_stability = -0.1
 		add_ideas = { ETH_IDEA_ZULU_UPRISING }
 	}

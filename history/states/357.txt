@@ -3,15 +3,20 @@ state={
 	id=357
 	name="STATE_357"
 
+	resources={
+		oil=100.000
+	}		
+
 	history={
 		owner = X13
 		victory_points = {
 			7878 3 
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 0
-			arms_factory = 0
+			infrastructure = 8
+			industrial_complex = 6
+			arms_factory = 2
+			dockyard = 14
 			10540 = {
 				naval_base = 2
 			}

@@ -228,70 +228,70 @@ instant_effect = {
 units = {
 	division = {
 		name = "1. Infantry Division"
-		location = 4286
+		location = 12551
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "1. Light Infantry Division"
-		location = 4286
+		location = 12551
 		division_template = "Light Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "1. Cavalry Brigade"
-		location = 4286
+		location = 12551
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "1. Infantry Division"
-		location = 12555
+		location = 12551
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "2. Infantry Division"
-		location = 12555
+		location = 12551
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "1. Infantry Brigade"
-		location = 12555
+		location = 12551
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "2. Infantry Brigade"
-		location = 12555
+		location = 12551
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "1. Cavalry Brigade"
-		location = 12555
+		location = 12551
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "1. Light Infantry Division"
-		location = 4733
+		location = 1742
 		division_template = "Light Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "1. Cavalry Brigade"
-		location = 4455
+		location = 1742
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7

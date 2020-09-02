@@ -2,7 +2,31 @@ on_actions = {
 	on_startup = {
 		effect = {
 			every_state = {
-				decimate_half_all_industry = yes
+				if = {
+					limit = {
+						OR = {
+							is_owned_by = FRA
+							is_owned_by = ENG
+							is_owned_by = WGR
+							is_owned_by = RUS
+							is_owned_by = X21
+							is_owned_by = BRA
+							is_owned_by = USA
+							is_owned_by = AUS
+							is_owned_by = X26
+							is_owned_by = X14
+						}
+					}
+					decimate_half_all_industry = yes
+				}
+				if = {
+					limit = {
+						OR = {
+							is_owned_by = FRA
+						}
+					}
+					decimate_half_civilian_industry = yes
+				}
 			}
 		}
 	}
