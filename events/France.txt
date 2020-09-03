@@ -5,19 +5,22 @@ country_event = {
 	id = kev_france.1
 	title = kev_france.1.t
 	desc = kev_france.1.d
-	picture = GFX_report_event_quit_india_movement
+	picture = GFX_news_event_king_speech
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { #Refuse to Negotiate
 		name = kev_france.1.a
-		add_timed_idea = {
-			idea = KEV_X14_fra_bonus
-			days = 200
+		X14 = {
+			add_timed_idea = {
+				idea = KEV_X14_fra_bonus
+				days = 200
+			}
 		}
 		add_to_variable = { country_prestige_num = 15 }
 		custom_effect_tooltip = 2_FRA_pres_tt
 		custom_effect_tooltip = 4_FRA_pres_tt
+		set_country_flag = KEV_FRA_fight_italy
 	}
 	option = { #Negotiate
 		name = kev_france.1.b
@@ -25,7 +28,7 @@ country_event = {
 		custom_effect_tooltip = 3_FRA_pres_tt
 		custom_effect_tooltip = 5_FRA_pres_tt
 		set_country_flag = KEV_FRA_talk_italy
-		clr_country_flag = KEV_FRA_fight_italy
+		clr_country_flag = X14_wants_piedmont
 	}
 }
 
@@ -33,25 +36,87 @@ country_event = { #Italy calls crusade
 	id = kev_france.2
 	title = kev_france.2.t
 	desc = kev_france.2.d
-	picture = GFX_report_event_quit_india_movement
+	picture = GFX_report_event_ANZAC_day
 	fire_only_once = yes
 
 	major = yes
 
 	trigger = {
-		date > 1937.3.1
+		tag = FRA
+		date > 1937.1.1
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				tag = FRA
-			}
-			set_country_flag = KEV_FRA_fight_italy
+		X14= {
+			set_country_flag = X14_wants_piedmont
 		}
 	}
 
 	option = { #Cool
 		name = kev_france.2.a
+	}
+}
+
+country_event = { #Loss against Italy
+	id = kev_france.3
+	title = kev_france.3.t
+	desc = kev_france.3.d
+	picture = GFX_report_event_france_victory_syria
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #France Fuck
+		trigger = {
+			tag = FRA
+		}
+
+		name = kev_france.3.a
+
+		add_stability = -0.3
+		add_war_support = -0.5
+		add_political_power = -300
+		add_to_variable = { country_prestige_num = -40 }
+		custom_effect_tooltip = 7_FRA_pres_tt
+	}
+	option = {
+		trigger = {
+			NOT = { tag = FRA }
+		}
+
+		name = kev_france.3.b
+	}
+}
+
+country_event = { #Loss against Italy
+	id = kev_france.4
+	title = kev_france.4.t
+	desc = kev_france.4.d
+	picture = GFX_report_event_france_victory_syria
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #France YAY
+		trigger = {
+			tag = FRA
+		}
+
+		name = kev_france.4.a
+
+		add_stability = 0.1
+		add_war_support = 0.15
+		add_political_power = 50
+		add_to_variable = { country_prestige_num = 40 }
+		custom_effect_tooltip = 8_FRA_pres_tt
+	}
+	option = {
+		trigger = {
+			NOT = { tag = FRA }
+		}
+
+		name = kev_france.4.b
 	}
 }

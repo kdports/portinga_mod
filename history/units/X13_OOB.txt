@@ -199,6 +199,15 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
+			type = light_tank_equipment_1
+			creator = "X13"
+		}
+		requested_factories = 2
+		progress = 0.88
+		efficiency = 100
+	}	
+	add_equipment_production = {
+		equipment = {
 			type = artillery_equipment_1
 			creator = "X13"
 		}
@@ -226,6 +235,34 @@ instant_effect = {
 	}
 }
 units = {
+	division = {
+		name = "Crusader Division"
+		location = 12551
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Crusader Division"
+		location = 12551
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Crusader Division"
+		location = 12551
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Crusader Division"
+		location = 12551
+		division_template = "Armored Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
 	division = {
 		name = "1. Infantry Division"
 		location = 12551

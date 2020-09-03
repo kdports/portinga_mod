@@ -2,14 +2,19 @@ ita_fra_war = {
 	countdown_to_war_ita = {
 		allowed = {
 			tag = FRA
-			NOT = { has_war_with = X14 }
+		}
+		available = {
+			always = no
 		}
 		activation = {
-			has_country_flag = KEV_FRA_fight_italy
+			X14 = {
+				has_country_flag = X14_wants_piedmont
+				NOT = { has_war_with = FRA }
+			}
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 120
+		days_mission_timeout = 130
 		timeout_effect = {
 			X14 = {
 				declare_war_on = {
@@ -23,27 +28,40 @@ ita_fra_war = {
 	countdown_to_peace_ita = {
 		allowed = {
 			tag = FRA
-			NOT = { has_country_flag = KEV_FRA_ita_offensive }
 		}
 		available = {
-			NOT = { controls_state = 292 }
+			OR = {
+				NOT = { controls_state = 292 }
+				controls_state = 382
+				controls_state = 394
+			}
 		}
 		activation = {
 			has_war_with = X14
+			NOT = { has_completed_focus = KEV_FRA_preemptive_strike }
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 60
+		days_mission_timeout = 180
 		timeout_effect = {
 			white_peace = X14
 
+			X14 = {
+				add_ideas = X14_satisfied
+				clr_country_flag = X14_wants_piedmont
+			}
 			clr_country_flag = KEV_FRA_fight_italy
+			FRA = {
+				country_event = { id = kev_france.4 }
+			}
 		}
 		complete_effect = {
-			add_to_variable = { country_prestige_num = -40 }
-			custom_effect_tooltip = 7_FRA_pres_tt
+			FRA = {
+				country_event = { id = kev_france.3 }
+			}
 			X14 = {
 				transfer_state = 292
+				clr_country_flag = X14_wants_piedmont
 			}
 			white_peace = X14
 			clr_country_flag = KEV_FRA_fight_italy
@@ -53,33 +71,43 @@ ita_fra_war = {
 	countdown_to_loss_ita = {
 		allowed = {
 			tag = FRA
-			has_country_flag = KEV_FRA_ita_offensive
 		}
 		available = {
 			controls_state = 394
 		}
 		activation = {
 			has_war_with = X14
+			has_completed_focus = KEV_FRA_preemptive_strike
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 60
+		days_mission_timeout = 180
 		timeout_effect = {
 			white_peace = X14
-			add_to_variable = { country_prestige_num = -40 }
-			custom_effect_tooltip = 7_FRA_pres_tt
 			clr_country_flag = KEV_FRA_fight_italy
 			clr_country_flag = KEV_FRA_ita_offensive
+			X14 = {
+				clr_country_flag = X14_wants_piedmont
+				add_ideas = X14_satisfied
+			}
+			FRA = {
+				country_event = { id = kev_france.3 }
+			}
 		}
 		complete_effect = {
-			add_to_variable = { country_prestige_num = 40 }
-			custom_effect_tooltip = 8_FRA_pres_tt
 			X14 = {
 				transfer_state = 394
 			}
 			white_peace = X14
 			clr_country_flag = KEV_FRA_fight_italy
 			clr_country_flag = KEV_FRA_ita_offensive
+			X14 = {
+				clr_country_flag = X14_wants_piedmont
+				set_country_flag = X14_instability
+			}
+			FRA = {
+				country_event = { id = kev_france.4 }
+			}
 		}
 	}
 }

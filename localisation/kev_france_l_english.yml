@@ -82,13 +82,13 @@
   KEV_FRA_motorized_focus_desc:0 ""
   KEV_FRA_tank_focus:0 "Tank Integration"
   KEV_FRA_tank_focus_desc:0 ""
-  KEV_FRA_bunker_build:0 "The First Defensive Line"
+  KEV_FRA_bunker_build:0 "The African Defensive Line"
   KEV_FRA_bunker_build_desc:0 ""
   KEV_FRA_coastal_build:0 "Defend Our Flanks"
   KEV_FRA_coastal_build_desc:0 ""
   KEV_FRA_antiair_buildings:0 "Bring Down the Sky"
   KEV_FRA_antiair_buildings_desc:0 ""
-  KEV_FRA_second_bunker_focus:0 "The Second Defensive Line"
+  KEV_FRA_second_bunker_focus:0 "The German Defensive Line"
   KEV_FRA_second_bunker_focus_desc:0 ""
   KEV_FRA_quantity_focus:0 "Mass Production"
   KEV_FRA_quantity_focus_desc:0 ""
@@ -129,7 +129,21 @@
   KEV_FRA_fight_italy:0 "We chose to fight for Piedmont"
 
   # Events
-  kev_france.1.t:0 ""
+  kev_france.1.t:0 "Responding to Italian Demands"
   kev_france.1.d:0 ""
   kev_france.1.a:0 "We Shall Never Surrender!"
   kev_france.1.b:0 "We Surrender."
+
+  kev_france.2.t:0 "The Pope Announces a Crusade"
+  kev_france.2.d:0 ""
+  kev_france.2.a:0 "It seems Italian Unification is not yet complete..."
+
+  kev_france.3.t:0 "The French Army Collapses"
+  kev_france.3.d:0 ""
+  kev_france.3.a:0 "How could this happen?"
+  kev_france.3.b:0 "Has a second downfall begun?"
+
+  kev_france.4.t:0 "Catholicism Defeated"
+  kev_france.4.d:0 ""
+  kev_france.4.a:0 "As expected!"
+  kev_france.4.b:0 "The Hegemon seems to still reign supreme."

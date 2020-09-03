@@ -46,7 +46,7 @@ set_convoys = 0
 
 
 set_politics = {
-    ruling_party = fascism
+    ruling_party = communism
     last_election = "1932.8.5"
     election_frequency = 48
     elections_allowed = no
@@ -54,9 +54,9 @@ set_politics = {
 
 set_popularities = {
 	absolutist = 0
-	communism = 0
+	communism = 50
 	democratic = 9
-	fascism = 88
+	fascism = 38
 	neutrality = 3
 	radical = 0
 }
@@ -106,7 +106,7 @@ create_country_leader = {
     desc = "POLITICS_MANCHAARY_SHISHIGIN_DESC"
     picture = "gfx/leaders/OC/portrait_MON_Gengis_Khan.dds"
     expire = "1965.1.1"
-    ideology = fascism_ideology
+    ideology = leninism
     traits = {
     }
 }
