@@ -1,10 +1,28 @@
 ita_fra_war = {
+	declare_ambitions_x14 = {
+		allowed = {
+			tag = X14
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			country_event = {
+				id = kev_france.2
+			}
+		}
+	}
+
 	countdown_to_war_ita = {
 		allowed = {
 			tag = FRA
 		}
 		available = {
-			always = no
+			X14 = {
+				owns_state = 292
+			}
 		}
 		activation = {
 			X14 = {
@@ -30,11 +48,7 @@ ita_fra_war = {
 			tag = FRA
 		}
 		available = {
-			OR = {
-				NOT = { controls_state = 292 }
-				controls_state = 382
-				controls_state = 394
-			}
+			NOT = { controls_state = 292 }
 		}
 		activation = {
 			has_war_with = X14
@@ -47,19 +61,17 @@ ita_fra_war = {
 			white_peace = X14
 
 			X14 = {
-				add_ideas = X14_satisfied
+				set_country_flag = X14_instability
 				clr_country_flag = X14_wants_piedmont
 			}
 			clr_country_flag = KEV_FRA_fight_italy
-			FRA = {
-				country_event = { id = kev_france.4 }
-			}
+			country_event = { id = kev_france.4 }
 		}
 		complete_effect = {
-			FRA = {
-				country_event = { id = kev_france.3 }
-			}
+
+			country_event = { id = kev_france.3 }
 			X14 = {
+				add_ideas = X14_satisfied
 				transfer_state = 292
 				clr_country_flag = X14_wants_piedmont
 			}

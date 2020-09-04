@@ -160,7 +160,7 @@ ideas = {
 
 		KEV_FRA_anti_italy = {
 
-			picture = generic_coastal_defense_ships
+			picture = GFX_idea_YUG_federal_defense_council
 
 			allowed = {
 				always = no
@@ -179,7 +179,7 @@ ideas = {
 
 		KEV_X14_fra_bonus = {
 
-			picture = generic_coastal_defense_ships
+			picture = GFX_idea_FRA_scw_intervention_republicans_focus
 
 			allowed = {
 				always = no
@@ -199,7 +199,7 @@ ideas = {
 
 		KEV_X14_fra_defence = {
 
-			picture = generic_coastal_defense_ships
+			picture = GFX_idea_YUG_federal_defense_council
 
 			allowed = {
 				always = no
@@ -214,6 +214,44 @@ ideas = {
 			modifier = {
 				attack_bonus_against_cores = 0.10
 				army_core_defence_factor = 0.15
+			}
+		}
+
+		KEV_X14_giving_subsidies = {
+
+			picture = GFX_idea_generic_goods_red_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+		}
+
+		KEV_X14_getting_subsidies = {
+
+			picture = GFX_idea_generic_goods_red_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.2
 			}
 		}
 	}

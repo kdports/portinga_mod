@@ -109,9 +109,40 @@
 
   KEV_FRA_politics_start:0 "All the World's..."
   KEV_FRA_politics_start_desc:0 ""
+  KEV_FRA_italy_start:0 "Old Flames, Anew"
+  KEV_FRA_italy_start_desc:0 ""
+  KEV_FRA_italy_fight:0 "Stand Our Ground"
+  KEV_FRA_italy_fight_desc:0 ""
+  KEV_FRA_italy_fortify:0 "Construct Emergency Fortifications"
+  KEV_FRA_italy_fortify_desc:0 ""
+  KEV_FRA_move_industry:0 "Prepare For The Worst"
+  KEV_FRA_move_industry_desc:0 ""
+  KEV_FRA_prep_piedmont:0 "Where There's A Will"
+  KEV_FRA_prep_piedmont_desc:0 ""
+  KEV_FRA_preemptive_strike:0 "Crossing the Rubicon"
+  KEV_FRA_preemptive_strike_desc:0 ""
+  KEV_FRA_italy_talk:0 "Give Peace A Chance"
+  KEV_FRA_italy_talk_desc:0 ""
+  KEV_FRA_italy_faction:0 "One People Under God"
+  KEV_FRA_italy_faction_desc:0 ""
+  KEV_FRA_italy_get_civs:0 "Reap The Rewards"
+  KEV_FRA_italy_get_civs_desc:0 ""
 
   ## Ideas
   FRA_air_mastery:0 "Production Shortcuts"
+  FRA_gun_quality:0 "Gun Quality"
+  FRA_gun_quality_desc:0 "Bigger, better!"
+  FRA_gun_quantity:0 "Gun Quantity"
+  FRA_gun_quantity_desc:0 "More, more, more!"
+  X14_satisfied:0 "Italia Satisfied"
+  FRA_aa_idea:0 "Superior Antiair"
+  FRA_at_idea:0 "Honed Antitank"
+  FRA_artillery_idea:0 "Experienced Artillerymen"
+  KEV_FRA_anti_italy:0 "Piedmont Preparations"
+  KEV_X14_fra_bonus:0 "The Last Crusade!"
+  KEV_X14_fra_defence:0 "Holy Land Defense"
+  KEV_X14_giving_subsidies:0 "Giving Subsidies"
+  KEV_X14_getting_subsidies:0 "Getting Subsidies"
 
   # Tooltips
   1_FRA_pres_tt:0 "Adds §G5 Prestige§! to your country's total."
@@ -122,6 +153,10 @@
   6_FRA_pres_tt:0 "A §Rpreemptive strike§! will be launched for Emilia! This is a risky maneuver, and could disasterously fail!"
   7_FRA_pres_tt:0 "Subtracts §R40 Prestige§! to your country's total."
   8_FRA_pres_tt:0 "Adds §G40 Prestige§! to your country's total."
+  9_FRA_pres_tt:0 "Subtracts §R5 Prestige§! from your country's total."
+  10_FRA_pres_tt:0 "Subtracts §R15 Prestige§! from your country's total."
+
+  1_X14_helped_tt:0 "Along with liking us more, [X14.GetName] will be able to §Gfield more units§! in their battle against France!\n\nWe should also §Ysend volunteers§! once war breaks out between these two."
 
   # Flags
   X14_wants_piedmont:0 "Italy has declared their ambitions!"
@@ -130,20 +165,40 @@
 
   # Events
   kev_france.1.t:0 "Responding to Italian Demands"
-  kev_france.1.d:0 ""
+  kev_france.1.d:0 "Now that the Pope has made his intentions known, it’s time we do the same. We can accept military confrontation as inevitable and begin to prepare, but the option of a peaceful resolution has not been ruled out."
   kev_france.1.a:0 "We Shall Never Surrender!"
   kev_france.1.b:0 "We Surrender."
 
   kev_france.2.t:0 "The Pope Announces a Crusade"
-  kev_france.2.d:0 ""
+  kev_france.2.d:0 "Yesterday, the Pope called on Catholics across the world to flock to the Vatican in preparation for a Crusade for the now-French region of Piemonte. Tensions have brewed over the region since the French seizure of it in the late 19th century, during the French War of Redemption. The bellicosity of Papal Italy has alarmed many nations, but already volunteers have flocked there from the largely-Catholic England and Spain. Only time and God can tell how this will end..."
   kev_france.2.a:0 "It seems Italian Unification is not yet complete..."
 
   kev_france.3.t:0 "The French Army Collapses"
-  kev_france.3.d:0 ""
+  kev_france.3.d:0 "Shocking news from Piemonte this morning, as reporters at the warfront have relayed a general rout of the French army. A mixture of Papal zeal and good planning seem to have outwitted and broken up the French positions, forcing them to make an uncontrolled retreat from the region. This is entirely unexpected, and casts doubts on the capability of the French to fight even a short war."
   kev_france.3.a:0 "How could this happen?"
   kev_france.3.b:0 "Has a second downfall begun?"
 
   kev_france.4.t:0 "Catholicism Defeated"
-  kev_france.4.d:0 ""
+  kev_france.4.d:0 "Catholic zeal seems to have meant little at the end of the day, as French armies have soundly defeated the Crusade for Piedmont. The Pope has called an emergency session of Cardinals, and many of the Papal volunteers have fled back to their home countries. This has strongly solidified the French government’s position abroad and at home, and reminded the world who the hegemon is."
   kev_france.4.a:0 "As expected!"
   kev_france.4.b:0 "The Hegemon seems to still reign supreme."
+
+  kev_france.5.t:0 "Italian Negotiations"
+  kev_france.5.d:0 "Now that we've agreed to give up Piemonte, the only question that remains is what we'll demand in return..."
+  kev_france.5.a:0 "Mutual guarantees will help us in the future."
+  kev_france.5.b:0 "Industrial subsidies will smooth out our economy."
+
+  kev_france.6.t:0 "Aiding Our Fellow Catholics"
+  kev_france.6.d:0 "As one of the foremost majority-Catholic powers in the world, it’s eyes are now on us for how we’ll respond to the Pope’s recent call for a Crusade against France. Although direct intervention is certainly off the table, we can choose to seriously bolster Papal forces, and perhaps deal a serious blow to France."
+  kev_france.6.a:0 "Of course we will help!"
+  kev_france.6.b:0 "We just can't spare anything."
+
+  kev_france.7.t:0 "Runup to the 1936 Elections"
+  kev_france.7.d:0 "The 1936 elections, scheduled for mid-June, will pitch three primary candidates and their parties against each other. Foriegn policy is the keystone issue in the race, with all three parties basing their platforms on it. With Castellane choosing to step down as the head of the Central Party, Emile Muselier, the party deputy and a distinguished former navy officer, has vowed to lead the country, with a strong focus on reinforcing the empire abroad. Their main opposition is the French Action Party, led by Henri D. Orleans, a jingoistic former representative. Orleans advocates for a more bellicose foriegn policy, arguing that any compromise with France’s enemies is compromising France itself. The People’s Party stands as an unlikely third option in the race, basing its platform off cooperation and negotiation in difficult foriegn situations, with renewed domestic investment and growth at home."
+  kev_france.7.a:0 "Interesting"
+
+  kev_france.8.t:0 "The 1936 Elections"
+  kev_france.8.d:0 "The polling places are open! Across the metropol, people flock to their voting places, casting votes for the party they think best. As the night wears on, the tally is slowly counted. And the winner is..."
+  kev_france.8.a:0 "Emile Muselier, the man of the empire!"
+  kev_france.8.b:0 "Henri D. Orleans, a strong man for a tough world!"
+  kev_france.8.c:0 "Albert Chatalet, let's give peace a chance!"

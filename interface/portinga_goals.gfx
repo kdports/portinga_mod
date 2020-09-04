@@ -29,4 +29,24 @@ spriteTypes = {
 		name = "GFX_goal_tank_hunt"
 		texturefile = "gfx/interface/goals/r56_goal_generic_tank_hunt.dds"
 	}	
+	SpriteType = {# Action Francaise
+		name = "GFX_goal_action_francaise"
+		texturefile = "gfx/interface/goals/action_francaise.tga"
+	}
+	SpriteType = {# Africa2
+		name = "GFX_goal_africa2"
+		texturefile = "gfx/interface/goals/africa2.tga"
+	}
+	SpriteType = {# Champagne Diplomacy
+		name = "GFX_goal_champagne_diplomacy"
+		texturefile = "gfx/interface/goals/champagne_diplomacy.tga"
+	}	
+	SpriteType = {#
+		name = "GFX_DAH_FR_Prod"
+		texturefile = "gfx/interface/goals/DAH_FR_Prod.tga"
+	}
+	SpriteType = {#
+		name = "DAH_Fra_Cop"
+		texturefile = "gfx/interface/goals/DAH_Fra_Cop.tga"
+	}	
 }
