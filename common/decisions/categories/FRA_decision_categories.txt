@@ -1,1 +1,10 @@
-# Not available
+ita_fra_war = {
+	icon = generic_prospect_for_resources
+	priority = 10
+	allowed = {
+		OR = {
+			tag = FRA
+			tag = X14
+		}
+	}
+}

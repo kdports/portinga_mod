@@ -146,7 +146,7 @@ add_opinion_modifier = { target = X17 modifier = negative_10 }
 add_opinion_modifier = { target = X18 modifier = negative_72 }
 add_opinion_modifier = { target = X19 modifier = positive_3 }
 add_opinion_modifier = { target = X20 modifier = negative_10 }
-add_opinion_modifier = { target = X21 modifier = negative_147 }
+add_opinion_modifier = { target = X21 modifier = positive_147 }
 add_opinion_modifier = { target = X22 modifier = negative_10 }
 add_opinion_modifier = { target = X23 modifier = positive_3 }
 add_opinion_modifier = { target = X24 modifier = negative_39 }

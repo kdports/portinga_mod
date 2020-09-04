@@ -193,6 +193,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
+					is_on_continent = europe
 				}
 				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
@@ -249,6 +250,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
+					is_on_continent = europe
 				}
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
@@ -304,6 +306,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
+					is_on_continent = europe
 				}
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
@@ -359,6 +362,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
+					is_on_continent = europe
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -399,7 +403,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			every_controlled_state = { #Placeholder for capital ID
+			234 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			294 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			258 = {
 				add_building_construction = {
 					type = air_base
 					level = 3
@@ -438,7 +456,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			every_controlled_state = { #Placeholder for capital ID
+			238 = { #Placeholder for capital ID
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
@@ -1118,6 +1136,7 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					is_on_continent = europe
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
@@ -1181,6 +1200,7 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
+					is_on_continent = europe
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
@@ -1817,15 +1837,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			every_controlled_state = { #Placeholder for capital ID
+			293 = {
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-					type = bunker
+					type = synthetic_refinery
 					level = 4
 					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_border = yes
-					}
+				}
+			}
+			244 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 4
+					instant_build = yes
 				}
 			}
 		}
@@ -1909,15 +1934,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			every_controlled_state = { #Placeholder for capital ID
+			293 = {
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-					type = bunker
+					type = fuel_silo
 					level = 4
 					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_border = yes
-					}
+				}
+			}
+			244 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = fuel_silo
+					level = 4
+					instant_build = yes
 				}
 			}
 		}
@@ -1952,7 +1982,40 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			every_controlled_state = { #Placeholder for capital ID
+			257 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			256 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			254 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			284 = {
 				add_building_construction = {
 					type = bunker
 					level = 4
@@ -1982,7 +2045,12 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-
+			has_full_control_of_state = 243
+			has_full_control_of_state = 239
+			has_full_control_of_state = 237
+			has_full_control_of_state = 234
+			has_full_control_of_state = 232
+			has_full_control_of_state = 230
 		}
 
 		bypass = {
@@ -1995,7 +2063,132 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			# UNFINISHED, WAIT TILL YOU KNOW STATE IDs THEN REFER TO GER_atlantikwall
+			243 = {
+				#Fortify naval bases
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
+			239 = {
+				#Fortify naval bases
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
+			237 = {
+				#Fortify naval bases
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
+			234 = {
+				#Fortify naval bases
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
+			232 = {
+				#Fortify naval bases
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
+			230 = {
+				#Fortify naval bases
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2028,7 +2221,55 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			# UNFINISHED, WAIT TILL YOU KNOW STATE IDs THEN REFER TO GER_atlantikwall
+			244 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			243 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			242 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			232 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			230 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			258 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			257 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2061,7 +2302,29 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			300 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			231 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			230 = {
 				add_building_construction = {
 					type = bunker
 					level = 4
@@ -2109,8 +2372,8 @@ focus_tree = {
 
 	focus = {
 		id = KEV_FRA_italy_start
-		icon = GFX_focus_fra_french_union
-		x = 6
+		icon = GFX_focus_generic_italy_first
+		x = 9
 		y = 1
 		offset = {
 			x = 0
@@ -2139,6 +2402,1168 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 25
+			country_event = {
+				id = kev_france.1
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_italy_fight
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_start }
+	#	mutually_exclusive = { focus = KEV_FRA_italy_talk }
+		relative_position_id = KEV_FRA_italy_start
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		bypass = {
+			FRA = {
+				has_country_flag = KEV_FRA_fight_italy
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_italy_fortify
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_fight }
+		relative_position_id = KEV_FRA_italy_fight
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			292 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_move_industry
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_fight }
+		relative_position_id = KEV_FRA_italy_fight
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			292 = {
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			235 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_prep_piedmont
+		icon = GFX_goal_generic_construction2
+		x = -1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_fight }
+		relative_position_id = KEV_FRA_italy_fight
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			FRA = {
+				add_timed_idea = {
+					idea = KEV_FRA_anti_italy
+					days = 200
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_preemptive_strike
+		icon = GFX_goal_generic_occupy_start_war
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_prep_piedmont }
+		relative_position_id = KEV_FRA_prep_piedmont
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			FRA = {
+				declare_war_on = {
+					target = X14
+					type = take_state
+				}
+			}
+			X14 = {
+				add_timed_idea = {
+					idea = KEV_X14_fra_defence
+					days = 80
+				}
+			}
+			custom_effect_tooltip = 6_FRA_pres_tt
+			set_country_flag = KEV_FRA_ita_offensive
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_italy_talk
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_start }
+	#	mutually_exclusive = { focus = KEV_FRA_italy_fight }
+		relative_position_id = KEV_FRA_italy_start
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		bypass = {
+			FRA = {
+				has_country_flag = KEV_FRA_talk_italy
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_italy_faction
+		icon = GFX_focus_por_concordat
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_talk }
+	#	mutually_exclusive = { focus = KEV_FRA_italy_fight }
+		relative_position_id = KEV_FRA_italy_talk
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_guaranteed = X14
+			NOT = { has_idea = KEV_X14_getting_subsidies }
+			X14 = {
+				country_exists = X14
+			}
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			X14 = {
+				add_timed_idea = {
+					idea = KEV_X14_getting_subsidies
+					days = 1095
+				}
+			}
+			add_timed_idea = {
+				idea = KEV_X14_giving_subsidies
+				days = 1095
+			}
+			puppet = X14
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_italy_get_civs
+		icon = GFX_goal_reichsautobahn
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_italy_talk }
+		relative_position_id = KEV_FRA_italy_talk
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_idea = KEV_X14_getting_subsidies
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_FRA_big_civ_build }
+				add_extra_state_shared_building_slots = 7
+				add_building_construction = {
+					type = industrial_complex
+					level = 7
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = europe
+				}
+				add_extra_state_shared_building_slots = 7
+				add_building_construction = {
+					type = industrial_complex
+					level = 7
+					instant_build = yes
+				}
+				set_state_flag = KEV_FRA_big_civ_build
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_election_focus
+		icon = GFX_focus_usa_voter_registration_act
+		x = -1
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_politics_start }
+		relative_position_id = KEV_FRA_politics_start
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		bypass = {
+			NOT = {
+				has_country_leader = {
+					name = "François de Castellane"
+					ruling_only = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_central_win
+		icon = GFX_goal_africa2
+		x = -3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_election_focus }
+		relative_position_id = KEV_FRA_election_focus
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_leader = {
+				name = "Emile Muselier"
+				ruling_only = yes
+			}
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_central_navy
+		icon = GFX_focus_generic_africa_naval
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_central_win }
+		relative_position_id = KEV_FRA_central_win
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_central_colony_invest
+		icon = GFX_focus_generic_africa_factory
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_central_win }
+		relative_position_id = KEV_FRA_central_win
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = FWA
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			262 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_central_colony_second
+		icon = GFX_focus_generic_africa_infrastructure
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_central_colony_invest }
+		relative_position_id = KEV_FRA_central_colony_invest
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = FWA
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			FWA = {
+				every_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_central_colony_third
+		icon = GFX_focus_generic_africa_production
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_central_colony_invest }
+		relative_position_id = KEV_FRA_central_colony_invest
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = FWA
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			FWA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 200
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment
+					amount = 100
+					producer = FRA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_east_asia_aid
+		icon = GFX_focus_usa_focus_on_asia
+		x = -3
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_central_win }
+		relative_position_id = KEV_FRA_central_win
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 297
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			297 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_action_win
+		icon = GFX_focus_spa_eliminate_the_carlists
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_election_focus }
+		relative_position_id = KEV_FRA_election_focus
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_leader = {
+				name = "Henri D. Orleans"
+				ruling_only = yes
+			}
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_action_reserves
+		icon = GFX_focus_generic_manpower
+		x = 0
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_action_win }
+		relative_position_id = KEV_FRA_action_win
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			hidden_effect = {
+				load_oob = "FRA_action_units"
+			}
+			custom_effect_tooltip = 1_FRA_units_tt
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_action_conscript
+		icon = GFX_focus_chi_army_reform
+		x = 1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_action_win }
+		relative_position_id = KEV_FRA_action_win
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = KEV_FRA_more_men
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_action_air
+		icon = GFX_goal_generic_air_fighter2
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_action_win }
+		relative_position_id = KEV_FRA_action_win
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 300
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_action_second_air
+		icon = GFX_focus_chi_flying_tigers
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_action_air }
+		relative_position_id = KEV_FRA_action_air
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = CAS_equipment
+				amount = 150
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_people_win
+		icon = GFX_focus_por_workers_of_iberia
+		x = 3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_election_focus }
+		relative_position_id = KEV_FRA_election_focus
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_leader = {
+				name = "Albert Chatalet"
+				ruling_only = yes
+			}
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_people_fuel
+		icon = GFX_focus_generic_rubber
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_people_win }
+		relative_position_id = KEV_FRA_people_win
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			235 = { #Placeholder for capital ID
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			232 = { #Placeholder for capital ID
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_people_civ
+		icon = GFX_focus_generic_industry_1
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_people_win }
+		relative_position_id = KEV_FRA_people_win
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			240 = { #Placeholder for capital ID
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			241 = { #Placeholder for capital ID
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_people_infra
+		icon = GFX_focus_generic_industry_2
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_people_civ }
+		relative_position_id = KEV_FRA_people_civ
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_people_civ_second
+		icon = GFX_focus_generic_industry_3
+		x = 0
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_people_civ }
+		relative_position_id = KEV_FRA_people_civ
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_people_nuke
+		icon = GFX_focus_generic_socialist_science
+		x = 1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_people_fuel }
+		relative_position_id = KEV_FRA_people_fuel
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_tech = nuclear_reactor
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			293 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_malaya_start
+		icon = GFX_goal_MAL_malaysia
+		x = -8
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_politics_start }
+		relative_position_id = KEV_FRA_politics_start
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_country_leader = {
+					name = "François de Castellane"
+					ruling_only = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = 1_FRA_crisis_tt
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_dutch_start
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = -5
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_politics_start }
+		relative_position_id = KEV_FRA_politics_start
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_country_leader = {
+					name = "François de Castellane"
+					ruling_only = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = 1_FRA_crisis_tt
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_nafrica_start
+		icon = GFX_goal_ETH_kingdom_of_judah
+		x = 3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_politics_start }
+		relative_position_id = KEV_FRA_politics_start
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_country_leader = {
+					name = "François de Castellane"
+					ruling_only = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = 1_FRA_crisis_tt
 		}
 	}
 }

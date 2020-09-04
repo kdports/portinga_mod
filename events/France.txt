@@ -1,1 +1,366 @@
-﻿
+﻿add_namespace = kev_france
+
+# How To Train Your Italy
+country_event = {
+	id = kev_france.1
+	title = kev_france.1.t
+	desc = kev_france.1.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Refuse to Negotiate
+		name = kev_france.1.a
+		X14 = {
+			add_timed_idea = {
+				idea = KEV_X14_fra_bonus
+				days = 200
+			}
+		}
+		add_to_variable = { country_prestige_num = 15 }
+		custom_effect_tooltip = 2_FRA_pres_tt
+		custom_effect_tooltip = 4_FRA_pres_tt
+		set_country_flag = KEV_FRA_fight_italy
+	}
+	option = { #Negotiate
+		name = kev_france.1.b
+		add_to_variable = { country_prestige_num = -25 }
+		custom_effect_tooltip = 3_FRA_pres_tt
+		custom_effect_tooltip = 5_FRA_pres_tt
+		unlock_national_focus = KEV_FRA_italy_talk
+		X14 = {
+			transfer_state = 292
+			clr_country_flag = X14_wants_piedmont
+		}
+		country_event = {
+			id = kev_france.5
+		}
+	}
+}
+
+country_event = { #Italy calls crusade
+	id = kev_france.2
+	title = kev_france.2.t
+	desc = kev_france.2.d
+	picture = GFX_report_event_ANZAC_day
+	#fire_only_once = yes
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		date > 1936.1.1
+	}
+
+	immediate = { X14= { set_country_flag = X14_wants_piedmont } }
+
+	option = { #Cool
+		name = kev_france.2.a
+
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						tag = SPR
+						tag = ENG
+						tag = BRA
+						tag = X16
+					}
+				}
+				country_event = {
+					id = kev_france.6
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Loss against Italy
+	id = kev_france.3
+	title = kev_france.3.t
+	desc = kev_france.3.d
+	picture = GFX_report_event_france_victory_syria
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #France Fuck
+		trigger = {
+			tag = FRA
+		}
+
+		name = kev_france.3.a
+
+		add_stability = -0.3
+		add_war_support = -0.5
+		add_political_power = -300
+		add_to_variable = { country_prestige_num = -40 }
+		custom_effect_tooltip = 7_FRA_pres_tt
+	}
+	option = {
+		trigger = {
+			NOT = { tag = FRA }
+		}
+
+		name = kev_france.3.b
+	}
+}
+
+country_event = { #Dub against Italy
+	id = kev_france.4
+	title = kev_france.4.t
+	desc = kev_france.4.d
+	picture = GFX_report_event_france_victory_syria
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #France YAY
+		trigger = {
+			tag = FRA
+		}
+
+		name = kev_france.4.a
+
+		add_stability = 0.1
+		add_war_support = 0.15
+		add_political_power = 50
+		add_to_variable = { country_prestige_num = 40 }
+		custom_effect_tooltip = 8_FRA_pres_tt
+	}
+	option = {
+		trigger = {
+			NOT = { tag = FRA }
+		}
+
+		name = kev_france.4.b
+	}
+}
+
+country_event = { #Talk With Italy
+	id = kev_france.5
+	title = kev_france.5.t
+	desc = kev_france.5.d
+	picture = GFX_news_event_009
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Guarantees
+		name = kev_france.5.a
+
+		add_stability = 0.1
+		add_war_support = 0.05
+		add_political_power = 25
+		add_to_variable = { country_prestige_num = -5 }
+		custom_effect_tooltip = 9_FRA_pres_tt
+
+		give_guarantee = X14
+		X14 = {
+			give_guarantee = FRA
+		}
+	}
+
+	option = { #Subsidies
+		name = kev_france.5.b
+
+		add_timed_idea = {
+			idea = KEV_X14_getting_subsidies
+			days = 365
+		}
+		X14 = {
+			add_timed_idea = {
+				idea = KEV_X14_giving_subsidies
+				days = 365
+			}
+		}
+	}
+}
+
+country_event = { #Eng/Spn Help Italy
+	id = kev_france.6
+	title = kev_france.6.t
+	desc = kev_france.6.d
+	picture = GFX_news_event_009
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = kev_france.6.a
+
+		add_to_variable = { country_prestige_num = 15 }
+		custom_effect_tooltip = 2_FRA_pres_tt
+		X14 = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+			}
+			hidden_effect = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = in_faction
+				}
+				load_oob = "X14_REIN_OOB"
+			}
+		}
+
+		custom_effect_tooltip = 1_X14_helped_tt
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { #No
+		name = kev_france.6.b
+
+		add_to_variable = { country_prestige_num = -15 }
+		custom_effect_tooltip = 10_FRA_pres_tt
+		X14 = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = western_betrayal
+			}
+		}
+	}
+}
+
+country_event = { #Election Info
+	id = kev_france.7
+	title = kev_france.7.t
+	desc = kev_france.7.d
+	#picture = GFX_news_event_009
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = FRA
+		date > 1936.1.1
+	}
+
+	option = { #Info
+		name = kev_france.7.a
+
+	}
+}
+
+country_event = { #Election
+	id = kev_france.8
+	title = kev_france.8.t
+	desc = kev_france.8.d
+	#picture = GFX_news_event_009
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = FRA
+		date > 1936.6.6
+	}
+
+	option = { #Emile Muselier, the Navy's man!
+		name = kev_france.8.a
+		retire_country_leader = yes
+
+		create_country_leader = {
+			name = "Emile Muselier"
+			desc = "POLITICS_FRANçOIS_DE CASTELLANE_DESC"
+			picture = "gfx/leaders/r56_portrait_FRA_Emile_Muselier.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				imperial_sanction
+			}
+		}
+
+		country_event = {
+			id = kev_france.9
+		}
+	}
+
+	option = { #Henri D. Orleans, a strong man for a tough world!
+		name = kev_france.8.b
+		retire_country_leader = yes
+
+		create_country_leader = {
+			name = "Henri D. Orleans"
+			desc = "POLITICS_FRANçOIS_DE CASTELLANE_DESC"
+			picture = "gfx/leaders/Portrait_NFA_Henri_D_Orleans.tga"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				warmonger
+			}
+		}
+
+		country_event = {
+			id = kev_france.10
+		}
+	}
+
+	option = { #Albert Chatalet, let's give peace a chance!
+		name = kev_france.8.c
+		retire_country_leader = yes
+
+		create_country_leader = {
+			name = "Albert Chatalet"
+			desc = "POLITICS_FRANçOIS_DE CASTELLANE_DESC"
+			picture = "gfx/leaders/Portrait_NFA_Albert_Chatelet.tga"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				chamberlain_appeaser
+			}
+		}
+
+		country_event = {
+			id = kev_france.11
+		}
+	}
+}
+
+country_event = { #Central Party Dub
+	id = kev_france.9
+	title = kev_france.9.t
+	desc = kev_france.9.d
+	#picture = GFX_news_event_009
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Info
+		name = kev_france.9.a
+	}
+}
+
+country_event = { #Action Party Dub
+	id = kev_france.10
+	title = kev_france.10.t
+	desc = kev_france.10.d
+	#picture = GFX_news_event_009
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Info
+		name = kev_france.10.a
+	}
+}
+
+country_event = { #People's Party Dub
+	id = kev_france.11
+	title = kev_france.11.t
+	desc = kev_france.11.d
+	#picture = GFX_news_event_009
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Info
+		name = kev_france.11.a
+	}
+}
