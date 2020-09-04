@@ -29,4 +29,16 @@ spriteTypes = {
 		name = "GFX_goal_tank_hunt"
 		texturefile = "gfx/interface/goals/r56_goal_generic_tank_hunt.dds"
 	}	
+	SpriteType = {
+		name = "GFX_goal_ETH_kingdom_of_judah"
+		texturefile = "gfx/interface/goals/r56_goal_ETH_kingdom_of_judah.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ETH_Lion"
+		texturefile = "gfx/interface/goals/ETH_Lion.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_Convene_Clergy"
+		texturefile = "gfx/interface/goals/ETH_Christian_Influence.dds"
+	}
 }

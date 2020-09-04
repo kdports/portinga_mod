@@ -85,6 +85,89 @@ ideas = {
 				local_resources_factor = -0.15
 			}
 		}
+		ETH_IDEA_RESISTANCE_DEFENSE = {
+			modifier = {
+				compliance_gain = 0.5
+			}
+		}
+		ETH_IDEA_EXPANDED_SPYFORCE = {
+			modifier = {
+				operative_slot = 1
+			}
+		}
+		ETH_IDEA_SKILLED_OPERATIVES = {
+			modifier = {
+				resistance_damage_to_garrison = -0.1
+				intel_network_gain = 0.7
+			}
+		}
+		ETH_IMPERIAL_DRIFT = {
+			modifier = {
+				absolutist_drift = 0.20
+			}
+		}
+		ETH_POWER_VACUUM = {
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
+		ETH_DISJOINTED_GOVERNMENT = {
+			modifier = {
+				political_power_gain = -0.8
+			}
+		}
+		ETH_IDEA_GLORY_TO_EMPEROR = {
+			modifier = {
+				conscription = 0.02
+				army_core_defence_factor = 0.1
+			}
+		}
+		ETH_IDEA_ESTATE_LOYALTY = {
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		ETH_IDEA_ESTATE_LOYALTY2 = {
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ETH_IDEA_ESTATE_LOYALTY3 = {
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				conscription_factor = 0.2
+			}
+		}
+		ETH_IDEA_INTERNAL_FOCUS = {
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ETH_IDEA_BREAD_WINE = {
+			modifier = {
+				MONTHLY_POPULATION = 0.3
+			}
+		}
+		ETH_NEW_TECH = {
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		ETH_IDEA_PREPARE_WAR = {
+			modifier = {
+				army_morale_factor = 0.1
+				planning_speed = 0.10
+				max_planning = 0.15
+			}
+		}
+		ETH_IDEA_REARM = {
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
 	}
 
 

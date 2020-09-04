@@ -75,7 +75,7 @@ set_convoys = 0
 
 
 set_politics = {
-    ruling_party = absolutist
+    ruling_party = fascism
     last_election = "1821.1.3"
     election_frequency = 48
     elections_allowed = no

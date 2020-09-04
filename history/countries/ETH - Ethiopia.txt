@@ -69,19 +69,24 @@ set_convoys = 7
 
 
 set_politics = {
-    ruling_party = democratic
+    ruling_party = neutrality
     last_election = "1934.10.5"
     election_frequency = 48
-    elections_allowed = yes
+    elections_allowed = no
 }
 
 set_popularities = {
 	absolutist = 9
 	communism = 4
-	democratic = 69
+	democratic = 3
 	fascism = 10
-	neutrality = 3
+	neutrality = 69
 	radical = 5
+}
+set_party_name = { 
+    ideology = neutrality 
+    long_name = GER_neutrality_party_kaiserreich_long 
+    name = GER_neutrality_party_kaiserreich 
 }
 
 add_opinion_modifier = { target = AST modifier = negative_45 }
@@ -160,15 +165,16 @@ add_ideas = {
 	export_focus
 	culture_amhara
 	slavery_idea_1a
+	ETH_DISJOINTED_GOVERNMENT
 }
-set_stability = 0.60
-set_war_support = 0.59
+set_stability = 0.35
+set_war_support = 0.19
 create_country_leader = {
-    name = "Geteye Wossen"
+    name = "Madi Younts XVIII"
     desc = "POLITICS_GETEYE_WOSSEN_DESC"
     picture = "gfx/leaders/OC/Africa/Portrait_Barot_Yetalll.tga"
     expire = "1965.1.1"
-    ideology = liberalism
+    ideology = "theocracy"
     traits = {
     }
 }
@@ -176,32 +182,32 @@ create_corps_commander = {
 	name = "Kelile Mikael"
 	picture = ""
 	traits = { }
-	skill = 1
-	attack_skill = 2
+	skill = 3
+	attack_skill = 4
 	defense_skill = 1
-	planning_skill = 1
+	planning_skill = 3
 	logistics_skill = 2
 }
 
 create_corps_commander = {
-	name = "Demissie Wossen"
+	name = "Haile Selassie"
 	picture = ""
 	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "Geteye Melekot"
 	picture = ""
 	traits = { }
-	skill = 1
+	skill = 2
 	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
+	defense_skill = 2
+	planning_skill = 3
 	logistics_skill = 1
 }
 
