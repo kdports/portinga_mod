@@ -254,5 +254,24 @@ ideas = {
 				consumer_goods_factor = -0.2
 			}
 		}
+
+		KEV_FRA_more_men = {
+
+			picture = GFX_idea_generic_manpower_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.01
+			}
+		}
 	}
 }

@@ -270,7 +270,12 @@ country_event = { #Election
 			expire = "1965.1.1"
 			ideology = liberalism
 			traits = {
+				imperial_sanction
 			}
+		}
+
+		country_event = {
+			id = kev_france.9
 		}
 	}
 
@@ -285,7 +290,12 @@ country_event = { #Election
 			expire = "1965.1.1"
 			ideology = liberalism
 			traits = {
+				warmonger
 			}
+		}
+
+		country_event = {
+			id = kev_france.10
 		}
 	}
 
@@ -300,7 +310,57 @@ country_event = { #Election
 			expire = "1965.1.1"
 			ideology = liberalism
 			traits = {
+				chamberlain_appeaser
 			}
 		}
+
+		country_event = {
+			id = kev_france.11
+		}
 	}
-} #Do traits for these guys and news events next
+}
+
+country_event = { #Central Party Dub
+	id = kev_france.9
+	title = kev_france.9.t
+	desc = kev_france.9.d
+	#picture = GFX_news_event_009
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Info
+		name = kev_france.9.a
+	}
+}
+
+country_event = { #Action Party Dub
+	id = kev_france.10
+	title = kev_france.10.t
+	desc = kev_france.10.d
+	#picture = GFX_news_event_009
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Info
+		name = kev_france.10.a
+	}
+}
+
+country_event = { #People's Party Dub
+	id = kev_france.11
+	title = kev_france.11.t
+	desc = kev_france.11.d
+	#picture = GFX_news_event_009
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Info
+		name = kev_france.11.a
+	}
+}

@@ -3,6 +3,9 @@ ita_fra_war = {
 		allowed = {
 			tag = X14
 		}
+		available = {
+			date > 1937.1.1
+		}
 		fire_only_once = yes
 
 		ai_will_do = {

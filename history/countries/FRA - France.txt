@@ -98,10 +98,6 @@ if = {
     }
 }
 
-set_rule = {
-	can_be_called_to_war = no
-}
-
 if = {
     limit = {has_dlc = "Together for Victory" }
 

@@ -69,7 +69,7 @@ if = {
 }
 
 set_politics = {
-    ruling_party = absolutist
+    ruling_party = democratic
     last_election = "1821.1.3"
     election_frequency = 48
     elections_allowed = no
@@ -159,7 +159,7 @@ add_opinion_modifier = { target = YEM modifier = negative_35 }
 add_opinion_modifier = { target = YUN modifier = positive_15 }
 
 
-give_guarantee = SAX
+give_guarantee = BAY
 #give_guarantee = X00
 #give_guarantee = X34
 

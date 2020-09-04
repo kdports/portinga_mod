@@ -48,5 +48,17 @@ spriteTypes = {
 	SpriteType = {#
 		name = "DAH_Fra_Cop"
 		texturefile = "gfx/interface/goals/DAH_Fra_Cop.tga"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_armed_protest"
+		texturefile = "gfx/interface/goals/r56_goal_generic_armed_protest.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_MAL_malaysia"
+		texturefile = "gfx/interface/goals/MAL_malaysia.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ETH_kingdom_of_judah"
+		texturefile = "gfx/interface/goals/r56_goal_ETH_kingdom_of_judah.dds"
 	}	
 }

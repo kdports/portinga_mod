@@ -101,6 +101,20 @@ set_popularities = {
 	radical = 2
 }
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = CRO
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.009
+	}
+}
+
 add_opinion_modifier = { target = BAY modifier = negative_121 }
 add_opinion_modifier = { target = BOL modifier = positive_3 }
 add_opinion_modifier = { target = BRA modifier = negative_200 }
@@ -153,8 +167,7 @@ add_opinion_modifier = { target = X41 modifier = negative_20 }
 add_opinion_modifier = { target = YEM modifier = negative_45 }
 add_opinion_modifier = { target = YUN modifier = positive_25 }
 
-give_guarantee = BAY
-give_guarantee = CRO
+give_guarantee = CZE
 
 add_ideas = {
 	disarmed_nation

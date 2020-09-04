@@ -86,9 +86,9 @@ set_politics = {
 }
 
 set_popularities = {
-	absolutist = 27
+	absolutist = 67
 	communism = 4
-	democratic = 52
+	democratic = 12
 	fascism = 10
 	neutrality = 3
 	radical = 4
@@ -196,7 +196,7 @@ add_opinion_modifier = { target = X41 modifier = negative_30 }
 add_opinion_modifier = { target = YEM modifier = negative_10 }
 add_opinion_modifier = { target = YUN modifier = positive_5 }
 
-
+give_guarantee = SAX
 
 add_ideas = {
 	MEX_church_power_1

@@ -109,6 +109,16 @@
 
   KEV_FRA_politics_start:0 "All the World's..."
   KEV_FRA_politics_start_desc:0 ""
+
+  KEV_FRA_malaya_start:0 "The Malaysian Question"
+  KEV_FRA_malaya_start_desc:0 ""
+
+  KEV_FRA_dutch_start:0 "Riots In Den Haag"
+  KEV_FRA_dutch_start_desc:0 ""
+
+  KEV_FRA_nafrica_start:0 "The Burning Nile"
+  KEV_FRA_nafrica_start_desc:0 ""
+
   KEV_FRA_italy_start:0 "Old Flames, Anew"
   KEV_FRA_italy_start_desc:0 ""
   KEV_FRA_italy_fight:0 "Stand Our Ground"
@@ -128,6 +138,47 @@
   KEV_FRA_italy_get_civs:0 "Reap The Rewards"
   KEV_FRA_italy_get_civs_desc:0 ""
 
+  KEV_FRA_election_focus:0 "The 1936 Election"
+  KEV_FRA_election_focus_desc:0 ""
+
+  KEV_FRA_central_win:0 "Mali C'Est France"
+  KEV_FRA_central_win_desc:0 ""
+  KEV_FRA_central_navy:0 "All Men Can Be Sailors"
+  KEV_FRA_central_navy_desc:0 ""
+  KEV_FRA_central_colony_invest:0 "Building An African France"
+  KEV_FRA_central_colony_invest_desc:0 ""
+  KEV_FRA_central_colony_second:0 "Connect The Villages"
+  KEV_FRA_central_colony_second_desc:0 ""
+  KEV_FRA_central_colony_third:0 "Muselier's Fuseliers"
+  KEV_FRA_central_colony_third_desc:0 ""
+  KEV_FRA_east_asia_aid:0 "Don't Forget About Asia"
+  KEV_FRA_east_asia_aid_desc:0 ""
+
+  KEV_FRA_action_win:0 "No Compromise! No Surrender!"
+  KEV_FRA_action_win_desc:0 ""
+  KEV_FRA_action_air:0 "The War in the Air"
+  KEV_FRA_action_air_desc:0 ""
+  KEV_FRA_action_second_air:0 "From the Air, to the Ground"
+  KEV_FRA_action_second_air_desc:0 ""
+  KEV_FRA_action_reserves:0 "Turn the Reserves to Regulars"
+  KEV_FRA_action_reserves_desc:0 ""
+  KEV_FRA_action_conscript:0 "Recruit More Men"
+  KEV_FRA_action_conscript_desc:0 ""
+
+  KEV_FRA_people_win:0 "A Peaceful France Is A Happy France"
+  KEV_FRA_people_win_desc:0 ""
+  KEV_FRA_people_fuel:0 "Fuel For The People"
+  KEV_FRA_people_fuel_desc:0 ""
+  KEV_FRA_people_civ:0 "What Do They Need?"
+  KEV_FRA_people_civ_desc:0 ""
+  KEV_FRA_people_civ_second:0 "Investing Smart"
+  KEV_FRA_people_civ_second_desc:0 ""
+  KEV_FRA_people_infra:0 "One People, One Nation"
+  KEV_FRA_people_infra_desc:0 ""
+  KEV_FRA_people_nuke:0 "It Can Be Used For Peace"
+  KEV_FRA_people_nuke_desc:0 ""
+
+
   ## Ideas
   FRA_air_mastery:0 "Production Shortcuts"
   FRA_gun_quality:0 "Gun Quality"
@@ -143,6 +194,7 @@
   KEV_X14_fra_defence:0 "Holy Land Defense"
   KEV_X14_giving_subsidies:0 "Giving Subsidies"
   KEV_X14_getting_subsidies:0 "Getting Subsidies"
+  KEV_FRA_more_men:0 "All Shall Do Their Duty"
 
   # Tooltips
   1_FRA_pres_tt:0 "Adds §G5 Prestige§! to your country's total."
@@ -156,7 +208,11 @@
   9_FRA_pres_tt:0 "Subtracts §R5 Prestige§! from your country's total."
   10_FRA_pres_tt:0 "Subtracts §R15 Prestige§! from your country's total."
 
+  1_FRA_units_tt:0 "Gain §Y8 infantry divisions§! in Paris."
+
   1_X14_helped_tt:0 "Along with liking us more, [X14.GetName] will be able to §Gfield more units§! in their battle against France!\n\nWe should also §Ysend volunteers§! once war breaks out between these two."
+
+  1_FRA_crisis_tt:0 "Unlocks §Ydecisions§! to deal with this crisis."
 
   # Flags
   X14_wants_piedmont:0 "Italy has declared their ambitions!"
@@ -202,3 +258,15 @@
   kev_france.8.a:0 "Emile Muselier, the man of the empire!"
   kev_france.8.b:0 "Henri D. Orleans, a strong man for a tough world!"
   kev_france.8.c:0 "Albert Chatalet, let's give peace a chance!"
+
+  kev_france.9.t:0 "Central Party Victorious!"
+  kev_france.9.d:0 "Defying few expectations, France's Central Party has won a deft victory in the most recent elections. Emile Muselier, the recently chosen head of the party, has vowed to reinforce and defend the French Empire abroad. International observers are expecting a mixed stance of appeasement from the new government."
+  kev_france.9.a:0 "For all their troubles, France endures."
+
+  kev_france.10.t:0 "Victory for the Action Party!"
+  kev_france.10.d:0 "Winning an upstart victory against the former Central Party government, Henri Orleans' Action Party has declared victory in the most recent French elections. The aggresively-minded party leaders have promised to stand up to France's enemies, and never back down from a challenge. Their right-wing politics are seconded only by their small-government economics. Analysts predict a tumultuous next few years, as the rest of Europe learns to manage this new threat."
+  kev_france.10.a:0 "For all their troubles, France endures."
+
+  kev_france.11.t:0 "People's Party Snatches Victory!"
+  kev_france.11.d:0 "Shocking observers across the world, Chatalet's People's Party has grasped victory in the most recent French elections. Their platform was based entirely off a peaceful and conciliatory approach towards both domestic and foreign policy, and was expected to be a tough sell to the French people. Nevertheless, experts predict a more peaceful France and, hopefully, a more peaceful world."
+  kev_france.11.a:0 "For all their troubles, France endures."
