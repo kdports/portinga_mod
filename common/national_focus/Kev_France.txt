@@ -3911,6 +3911,8 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
+			add_to_variable = { country_prestige_num = 15 }
+			custom_effect_tooltip = 2_FRA_pres_tt
 		}
 	}
 
