@@ -107,7 +107,7 @@
   KEV_FRA_at_build_focus:0 "Counter Tank Advantages"
   KEV_FRA_at_build_focus_desc:0 ""
 
-  KEV_FRA_politics_start:0 "All the World's..."
+  KEV_FRA_politics_start:0 "All The World's A Stage..."
   KEV_FRA_politics_start_desc:0 ""
 
   KEV_FRA_malaya_start:0 "The Malaysian Question"
@@ -178,6 +178,25 @@
   KEV_FRA_people_nuke:0 "It Can Be Used For Peace"
   KEV_FRA_people_nuke_desc:0 ""
 
+  KEV_FRA_nukes_start:0 "The Nuclear Option"
+  KEV_FRA_nukes_start_desc:0 "§RAtom bomb, baby...§!"
+  KEV_FRA_nukes_alone:0 "Going It Alone"
+  KEV_FRA_nukes_alone_desc:0 "Who needs friends? I have nukes!"
+  KEV_FRA_nukes_team:0 "Reaching Out to Friends"
+  KEV_FRA_nukes_team_desc:0 "We all need a little nuclear warmth."
+
+  KEV_FRA_germany_start:0 "West of the Rhine"
+  KEV_FRA_germany_start_desc:0 "It's time for Wallonie to return to its rightful owners."
+  KEV_FRA_wallonie_demand:0 "Wallonie or War!"
+  KEV_FRA_wallonie_demand_desc:0 "Our demand is clear. Their response will determine their fate."
+  KEV_FRA_wallonie_talk:0 "Weapons For Wallonie"
+  KEV_FRA_wallonie_talk_desc:0 "We do have a lot of spare rifles..."
+  KEV_FRA_germany_fight:0 "Germans Shall Always Be Our Enemies!"
+  KEV_FRA_germany_fight_desc:0 "Any proud German state will inevitably seek to attack us. We'll cut them down to size first!"
+  KEV_FRA_germany_onside:0 "Bring Germany Onside"
+  KEV_FRA_germany_onside_desc:0 "A show of goodwill can see us through this crisis. We'll sign a non-aggression pact, backed by our guarantee.
+  KEV_FRA_munster_onside:0 "Side With The Monarchists"
+  KEV_FRA_munster_onside_desc:0 "The enemy of our enemy might be a valuable tool to control the German states. We have no love for kings, but so long as they'll battle the West German Federation, we won't complain."
 
   ## Ideas
   FRA_air_mastery:0 "Production Shortcuts"
@@ -213,6 +232,8 @@
   1_X14_helped_tt:0 "Along with liking us more, [X14.GetName] will be able to §Gfield more units§! in their battle against France!\n\nWe should also §Ysend volunteers§! once war breaks out between these two."
 
   1_FRA_crisis_tt:0 "Unlocks §Ydecisions§! to deal with this crisis."
+
+  1_FRA_nukes_tt:0 "We'll ask around to see if anyone wants to combine their efforts."
 
   # Flags
   X14_wants_piedmont:0 "Italy has declared their ambitions!"
@@ -270,3 +291,16 @@
   kev_france.11.t:0 "People's Party Snatches Victory!"
   kev_france.11.d:0 "Shocking observers across the world, Chatalet's People's Party has grasped victory in the most recent French elections. Their platform was based entirely off a peaceful and conciliatory approach towards both domestic and foreign policy, and was expected to be a tough sell to the French people. Nevertheless, experts predict a more peaceful France and, hopefully, a more peaceful world."
   kev_france.11.a:0 "For all their troubles, France endures."
+
+  kev_france.12.t:0 "France Demands Wallonie!"
+  kev_france.12.d:0 ""
+  kev_france.12.a:0 "Accept"
+  kev_france.12.b:0 "Refuse"
+
+  kev_france.13.t:0 "Wallonie Surrendered"
+  kev_france.13.d:0 "Stunning news from Germany today, as the West German Federation has agreed to peacefully transfer the state of Wallonie back to French hands. Taken from them during France’s Downfall period in the early 19th century, Wallonie had long been a source of tension for the Rhineland powers.\n\nConcerned mothers worldwide now breathe a sigh of relief that their boys won’t be sent off to die for that strip of land."
+  kev_france.13.a:0 "Another victory for France."
+
+  kev_france.14.t:0 "War For Wallonie"
+  kev_france.14.d:0 "Recent French demands for Wallonie seem to have escalated to full-scale war, as the West German Federation has declared their intentions to defend the province till the last drop of blood. Both sides have mobilized their forces, and offensives are expected to begin any day. The Austrian government has issued a statement of neutrality, so long as French demands are limited to only Wallonie."
+  kev_france.14.a:0 "The Rhine is the birthplace of conflict."

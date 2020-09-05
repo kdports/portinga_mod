@@ -125,7 +125,7 @@ add_opinion_modifier = { target = SWI modifier = negative_50 }
 add_opinion_modifier = { target = TAH modifier = positive_15 }
 add_opinion_modifier = { target = TRI modifier = positive_15 }
 add_opinion_modifier = { target = TUR modifier = negative_9 }
-add_opinion_modifier = { target = WGR modifier = positive_61 }
+add_opinion_modifier = { target = WGR modifier = negative_61 }
 add_opinion_modifier = { target = X01 modifier = negative_24 }
 add_opinion_modifier = { target = X02 modifier = negative_10 }
 add_opinion_modifier = { target = X03 modifier = negative_24 }

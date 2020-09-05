@@ -94,8 +94,8 @@ set_politics = {
 
 set_popularities = {
 	absolutist = 6
-	communism = 28
-	democratic = 49
+	communism = 49
+	democratic = 28
 	fascism = 11
 	neutrality = 4
 	radical = 2
@@ -136,7 +136,7 @@ add_opinion_modifier = { target = SOV modifier = negative_59 }
 add_opinion_modifier = { target = SPR modifier = positive_200 }
 add_opinion_modifier = { target = TRI modifier = negative_175 }
 add_opinion_modifier = { target = TUR modifier = negative_13 }
-add_opinion_modifier = { target = WGR modifier = positive_200 }
+add_opinion_modifier = { target = WGR modifier = negative_200 }
 add_opinion_modifier = { target = X00 modifier = negative_50 }
 add_opinion_modifier = { target = X01 modifier = negative_34 }
 add_opinion_modifier = { target = X02 modifier = negative_50 }
@@ -168,6 +168,12 @@ add_opinion_modifier = { target = YEM modifier = negative_45 }
 add_opinion_modifier = { target = YUN modifier = positive_25 }
 
 give_guarantee = CZE
+
+create_faction = Austria_Bloc
+
+AUS = { add_to_faction = CZE }
+
+set_faction_name = "Austrian Bloc"
 
 add_ideas = {
 	disarmed_nation

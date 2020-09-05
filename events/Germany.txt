@@ -1,1 +1,15 @@
-﻿
+﻿add_namespace = kev_ger
+country_event = { #Austrian Intervenes Against France
+	id = kev_ger.1
+	title = kev_ger.1.t
+	desc = kev_ger.1.d
+	picture = GFX_report_event_canadian_tank
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Oh geez
+		name = kev_ger.1.a
+	}
+}

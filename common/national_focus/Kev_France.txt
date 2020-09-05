@@ -142,7 +142,7 @@ focus_tree = {
 			every_controlled_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2800,7 +2800,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_election_focus }
 		relative_position_id = KEV_FRA_election_focus
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -2839,7 +2839,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_central_win }
 		relative_position_id = KEV_FRA_central_win
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -2875,7 +2875,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_central_win }
 		relative_position_id = KEV_FRA_central_win
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -2921,7 +2921,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_central_colony_invest }
 		relative_position_id = KEV_FRA_central_colony_invest
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -2962,7 +2962,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_central_colony_invest }
 		relative_position_id = KEV_FRA_central_colony_invest
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3006,7 +3006,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_central_win }
 		relative_position_id = KEV_FRA_central_win
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3055,7 +3055,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_election_focus }
 		relative_position_id = KEV_FRA_election_focus
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3090,7 +3090,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_action_win }
 		relative_position_id = KEV_FRA_action_win
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3124,7 +3124,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_action_win }
 		relative_position_id = KEV_FRA_action_win
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3155,7 +3155,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_action_win }
 		relative_position_id = KEV_FRA_action_win
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3189,7 +3189,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_action_air }
 		relative_position_id = KEV_FRA_action_air
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3223,7 +3223,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_election_focus }
 		relative_position_id = KEV_FRA_election_focus
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3258,7 +3258,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_people_win }
 		relative_position_id = KEV_FRA_people_win
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3304,7 +3304,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_people_win }
 		relative_position_id = KEV_FRA_people_win
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3350,7 +3350,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_people_civ }
 		relative_position_id = KEV_FRA_people_civ
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3387,7 +3387,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_people_civ }
 		relative_position_id = KEV_FRA_people_civ
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3422,7 +3422,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_FRA_people_fuel }
 		relative_position_id = KEV_FRA_people_fuel
-		cost = 6
+		cost = 8.7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3564,6 +3564,460 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 75
 			custom_effect_tooltip = 1_FRA_crisis_tt
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_nukes_start
+		icon = GFX_focus_wonderweapons
+		x = -12
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_politics_start }
+		relative_position_id = KEV_FRA_politics_start
+		cost = 8.7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			date > 1939.1.1 #y/m/d
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_nukes_alone
+		icon = GFX_goal_FRA_nuclear
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_nukes_start }
+		mutually_exclusive = { focus = KEV_FRA_nukes_team }
+		relative_position_id = KEV_FRA_nukes_start
+		cost = 8.7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_nukes_team
+		icon = GFX_r56_goal_generic_nuclear_energy
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_nukes_start }
+		mutually_exclusive = { focus = KEV_FRA_nukes_alone }
+		relative_position_id = KEV_FRA_nukes_start
+		cost = 8.7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_country_leader = {
+					name = "Henri D. Orleans"
+					ruling_only = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			#add_tech_bonus = {
+			#	bonus = 1.5
+			#	uses = 1
+			#	category = nuclear
+			#}
+			custom_effect_tooltip = 1_FRA_nukes_tt
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_germany_start
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 17
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_politics_start }
+		relative_position_id = KEV_FRA_politics_start
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			every_army_leader = {
+				add_planning = 1
+			}
+			WGR = {
+				set_country_flag = WGR_defend_wallonie
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_wallonie_demand
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_germany_start }
+		mutually_exclusive = { focus = KEV_FRA_wallonie_talk }
+		relative_position_id = KEV_FRA_germany_start
+		cost = 8.7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Henri D. Orleans"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Emile Muselier"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "François de Castellane"
+					ruling_only = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			WGR = {
+				country_event = {
+					id = kev_france.12
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_wallonie_talk
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_germany_start }
+		mutually_exclusive = { focus = KEV_FRA_wallonie_demand }
+		relative_position_id = KEV_FRA_germany_start
+		cost = 8.7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_leader = {
+				name = "Albert Chatalet"
+				ruling_only = yes
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 500
+				target = WGR
+			}
+			send_equipment = {
+				equipment = fighter_equipment
+				amount = 100
+				target = GER
+			}
+			WGR = {
+				add_offsite_building = { type = arms_factory level = 2 }
+			}
+			FRA = {
+				transfer_state = 474
+			}
+			WGR = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = puppet_opinion
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_germany_fight
+		icon = GFX_focus_hol_war_on_pacifism
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_wallonie_talk focus = KEV_FRA_wallonie_demand }
+		mutually_exclusive = { focus = KEV_FRA_germany_onside }
+		relative_position_id = KEV_FRA_wallonie_demand
+		cost = 8.7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Henri D. Orleans"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Emile Muselier"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "François de Castellane"
+					ruling_only = yes
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = WGR
+				}
+				declare_war_on = {
+					target = WGR
+					type = annex_everything
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = X21
+				}
+				declare_war_on = {
+					target = X21
+					type = annex_everything
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = SAX
+				}
+				declare_war_on = {
+					target = SAX
+					type = annex_everything
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = AUS
+				}
+				declare_war_on = {
+					target = AUS
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_germany_onside
+		icon = GFX_focus_generic_self_management
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_wallonie_talk focus = KEV_FRA_wallonie_demand }
+		mutually_exclusive = { focus = KEV_FRA_germany_fight }
+		mutually_exclusive = { focus = KEV_FRA_munster_onside }
+		relative_position_id = KEV_FRA_wallonie_demand
+		cost = 8.7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Albert Chatalet"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Emile Muselier"
+					ruling_only = yes
+				}
+			}
+			#OR = {
+			country_exists = WGR
+			#}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			give_guarantee = WGR
+			diplomatic_relation = {
+				country = WGR
+				relation = non_aggression_pact
+				active = yes
+			}
+			WGR = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = puppet_opinion
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_FRA_munster_onside
+		icon = GFX_focus_hun_elect_a_king
+		x = 4
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_FRA_wallonie_talk focus = KEV_FRA_wallonie_demand }
+		mutually_exclusive = { focus = KEV_FRA_germany_onside }
+		relative_position_id = KEV_FRA_wallonie_demand
+		cost = 8.7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Albert Chatalet"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Emile Muselier"
+					ruling_only = yes
+				}
+			}
+			country_exists = X21
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			give_guarantee = X21
+			diplomatic_relation = {
+				country = X21
+				relation = non_aggression_pact
+				active = yes
+			}
+			X21 = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = puppet_opinion
+				}
+			}
 		}
 	}
 }

@@ -137,7 +137,7 @@ add_opinion_modifier = { target = X16 modifier = negative_30 }
 add_opinion_modifier = { target = X17 modifier = negative_50 }
 add_opinion_modifier = { target = X18 modifier = negative_35 }
 add_opinion_modifier = { target = X19 modifier = positive_108 }
-add_opinion_modifier = { target = X21 modifier = positive_99 }
+add_opinion_modifier = { target = X21 modifier = negative_99 }
 add_opinion_modifier = { target = X23 modifier = positive_44 }
 add_opinion_modifier = { target = X24 modifier = positive_200 }
 add_opinion_modifier = { target = X25 modifier = negative_45 }
@@ -158,6 +158,11 @@ add_opinion_modifier = { target = X41 modifier = negative_90 }
 add_opinion_modifier = { target = YEM modifier = negative_35 }
 add_opinion_modifier = { target = YUN modifier = positive_15 }
 
+create_faction = Dem_Germans
+
+WGR = { add_to_faction = BAY }
+
+set_faction_name = "Nuremberg Treaty"
 
 give_guarantee = BAY
 #give_guarantee = X00
@@ -180,9 +185,9 @@ set_war_support = 0.60
 create_country_leader = {
     name = "Theodor von Sachsen-Meiningen"
     desc = "POLITICS_THEODOR_VON SACHSEN-MEININGEN_DESC"
-    picture = "GFX_portrait_ger_wilhelm_ii"
+    picture = "GFX_NZL_john_ormond"
     expire = "1965.1.1"
-    ideology = theocracy
+    ideology = conservatism
     traits = {
     }
 }

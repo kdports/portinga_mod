@@ -69,4 +69,12 @@ spriteTypes = {
 		name = "GFX_goal_MAL_malaysia"
 		texturefile = "gfx/interface/goals/MAL_malaysia.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_FRA_nuclear"
+		texturefile = "gfx/interface/goals/r56_goal_FRA_nuclear.dds"
+	}
+	spriteType = {
+		name = "GFX_r56_goal_generic_nuclear_energy"
+		texturefile = "gfx/interface/goals/r56_goal_generic_nuclear_energy.dds"
+	}
 }

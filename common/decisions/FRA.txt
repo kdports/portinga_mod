@@ -126,3 +126,278 @@ ita_fra_war = {
 		}
 	}
 }
+
+germany_wars = {
+	countdown_to_peace_fra_wgr = {
+		allowed = {
+			tag = FRA
+		}
+		available = {
+			controls_state = 474
+		}
+		activation = {
+			has_war_with = WGR
+			has_completed_focus = KEV_FRA_wallonie_demand
+			NOT = { has_completed_focus = KEV_FRA_germany_fight }
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			white_peace = WGR
+			WGR = {
+				clr_country_flag = WGR_defend_wallonie
+			}
+		}
+		complete_effect = {
+			FRA = {
+				transfer_state = 474
+			}
+			white_peace = WGR
+			WGR = {
+				clr_country_flag = WGR_defend_wallonie
+			}
+		}
+	}
+
+	intervene_against_france = { #Austria attacks France due to France announcing a full war
+		visible = {
+			tag = AUS
+		}
+		cost = 0
+		days_remove = 15
+		available = {
+			has_war = no
+			FRA = {
+				has_completed_focus = KEV_FRA_germany_fight
+				has_war = yes
+			}
+		}
+		war_with_on_complete = FRA
+		complete_effect = {
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	attack_dem_league = { #Royals attack Democratic League
+		visible = {
+			tag = X21
+		}
+		cost = 0
+		days_remove = 15
+		available = {
+			has_war = no
+			country_exists = WGR
+			date > 1939.4.1
+		}
+		war_with_on_complete = WGR
+		complete_effect = {
+			declare_war_on = {
+				target = WGR
+				type = annex_everything
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	royal_civil_war = { #Saxony Fights Royals post-WGR war
+		visible = {
+			tag = SAX
+		}
+		cost = 0
+		days_remove = 15
+		available = {
+			has_war = no
+			country_exists = X21
+			NOT = {
+				country_exists = WGR
+			}
+		}
+		war_with_on_complete =  X21
+		complete_effect = {
+			leave_faction = yes
+			declare_war_on = {
+				target = X21
+				type = annex_everything
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	x21_integrate = { #Munster Integrates puppets after beating WGR
+		visible = {
+			tag = X21
+		}
+		cost = 0
+		#days_remove = 15
+		available = {
+			has_war = no
+			NOT = {
+				country_exists = WGR
+			}
+		}
+		complete_effect = {
+			every_country = {
+				if = {
+					limit = {
+						is_puppet_of = X21
+					}
+					X21 = {
+						annex_country = {
+							target = PREV
+							transfer_troops = yes
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	wgr_integrate = { #WGR Integrates Bavaria
+		visible = {
+			tag = WGR
+		}
+		cost = 0
+		#days_remove = 15
+		available = {
+			has_war = no
+			NOT = {
+				country_exists = X21
+			}
+		}
+		complete_effect = {
+			annex_country = {
+				target = BAY
+				transfer_troops = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	aus_attack_winner = { #Austria attacks German unifier
+		visible = {
+			tag = AUS
+		}
+		cost = 0
+		days_remove = 15
+		available = {
+			has_war = no
+			any_other_country = {
+				has_full_control_of_state = 19
+				has_full_control_of_state = 469
+				has_full_control_of_state = 455
+				has_full_control_of_state = 573
+				has_war = no
+			}
+		}
+		war_with_on_complete =  X21
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = X21
+				}
+				AUS = {
+					declare_war_on = {
+						target = X21
+						type = annex_everything
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = WGR
+				}
+				AUS = {
+					declare_war_on = {
+						target = WGR
+						type = annex_everything
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = SAX
+				}
+				AUS = {
+					declare_war_on = {
+						target = SAX
+						type = annex_everything
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	form_germany = { #Form German Nation
+		visible = {
+			OR = {
+				tag = WGR
+				tag = X21
+				tag = SAX
+				tag = AUS
+			}
+		}
+		cost = 0
+		#days_remove = 15
+		available = {
+			has_war = no
+			has_full_control_of_state = 19
+			has_full_control_of_state = 469
+			has_full_control_of_state = 455
+			has_full_control_of_state = 573
+		}
+		complete_effect = {
+			set_cosmetic_tag = GER
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	germany_attack_poland = { #meme
+		visible = {
+			has_cosmetic_tag = GER
+		}
+		cost = 0
+		days_remove = 15
+		war_with_on_complete =  X26
+		available = {
+
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = X26
+				type = annex_everything
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

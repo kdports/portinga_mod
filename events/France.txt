@@ -237,7 +237,7 @@ country_event = { #Election Info
 
 	trigger = {
 		tag = FRA
-		date > 1936.1.1
+		date > 1936.2.1
 	}
 
 	option = { #Info
@@ -324,7 +324,7 @@ country_event = { #Central Party Dub
 	id = kev_france.9
 	title = kev_france.9.t
 	desc = kev_france.9.d
-	#picture = GFX_news_event_009
+	picture = GFX_report_event_crowd_in_prague
 	fire_only_once = no
 	is_triggered_only = yes
 
@@ -339,7 +339,7 @@ country_event = { #Action Party Dub
 	id = kev_france.10
 	title = kev_france.10.t
 	desc = kev_france.10.d
-	#picture = GFX_news_event_009
+	picture = GFX_report_event_crowd_in_prague
 	fire_only_once = no
 	is_triggered_only = yes
 
@@ -354,7 +354,7 @@ country_event = { #People's Party Dub
 	id = kev_france.11
 	title = kev_france.11.t
 	desc = kev_france.11.d
-	#picture = GFX_news_event_009
+	picture = GFX_report_event_crowd_in_prague
 	fire_only_once = no
 	is_triggered_only = yes
 
@@ -362,5 +362,82 @@ country_event = { #People's Party Dub
 
 	option = { #Info
 		name = kev_france.11.a
+	}
+}
+
+country_event = { #Demand Wallonie
+	id = kev_france.12
+	title = kev_france.12.t
+	desc = kev_france.12.d
+	#picture = GFX_report_event_crowd_in_prague
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Give Up
+		name = kev_france.12.a
+
+		FRA = {
+			transfer_state = 474
+			country_event = {
+				id = kev_france.13
+			}
+		}
+		ai_chance = {
+			base = 100
+
+			modifier = {
+					NOT = { has_war_with = X21 }
+					factor = 0
+			}
+		}
+	}
+	option = { #Refuse
+		name = kev_france.12.b
+
+		load_oob = "WGR_REIN_OOB"
+		FRA = {
+			declare_war_on = {
+				target = WGR
+				type = annex_everything
+			}
+		}
+		ai_chance = {
+			base = 100
+
+			modifier = {
+					NOT = { has_war_with = X21 }
+					factor = 100
+			}
+		}
+	}
+}
+
+country_event = { #Wallonie Given
+	id = kev_france.13
+	title = kev_france.13.t
+	desc = kev_france.13.d
+	picture = GFX_report_event_crowd_in_prague
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Yay!
+		name = kev_france.13.a
+	}
+}
+
+country_event = { #Wallonie War
+	id = kev_france.14
+	title = kev_france.14.t
+	desc = kev_france.14.d
+	picture = GFX_report_event_canadian_tank
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Yay!
+		name = kev_france.14.a
 	}
 }
