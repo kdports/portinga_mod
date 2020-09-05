@@ -44,7 +44,9 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-
+			country_event = {
+				id = kev_france.15
+			}
 		}
 	}
 
@@ -76,7 +78,9 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-
+			country_event = {
+				id = kev_france.16
+			}
 		}
 	}
 
@@ -108,7 +112,9 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-
+			country_event = {
+				id = kev_france.17
+			}
 		}
 	}
 

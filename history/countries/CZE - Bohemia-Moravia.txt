@@ -61,7 +61,7 @@ set_convoys = 0
 
 
 set_politics = {
-    ruling_party = democratic
+    ruling_party = communism
     last_election = "1934.1.6"
     election_frequency = 48
     elections_allowed = yes
@@ -122,11 +122,11 @@ add_ideas = {
 set_stability = 0.60
 set_war_support = 0.61
 create_country_leader = {
-    name = "Maxmilián Morávec"
+    name = "Alexander Dubček"
     desc = "POLITICS_MAXMILIáN_MORáVEC_DESC"
     picture = "gfx/leaders/CZE/Portrait_Czech_Edvard_Benes.dds"
     expire = "1965.1.1"
-    ideology = socialism
+    ideology = leninism
     traits = {
     }
 }

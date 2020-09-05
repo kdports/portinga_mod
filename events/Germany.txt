@@ -1,4 +1,5 @@
 ﻿add_namespace = kev_ger
+
 country_event = { #Austrian Intervenes Against France
 	id = kev_ger.1
 	title = kev_ger.1.t
@@ -11,5 +12,77 @@ country_event = { #Austrian Intervenes Against France
 
 	option = { #Oh geez
 		name = kev_ger.1.a
+	}
+}
+
+country_event = { #Deciding who to support Royals v Dems
+	id = kev_ger.2
+	title = kev_ger.2.t
+	desc = kev_ger.2.d
+	#picture = GFX_report_event_canadian_tank
+	fire_only_once = no
+	is_triggered_only = yes
+
+	#major = yes
+
+	option = { #Support Royals
+		name = kev_ger.2.1
+
+		add_to_variable = { country_prestige_num = 5 }
+		custom_effect_tooltip = 1_FRA_pres_tt
+
+		X21 = {
+			hidden_effect = {
+				load_oob = "X21_FORBACK_OOB"
+			}
+		}
+		custom_effect_tooltip = 1_ger_support_tt
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 200
+			target = X21
+		}
+	}
+	option = { #Support Dems
+		name = kev_ger.2.2
+
+		add_to_variable = { country_prestige_num = 5 }
+		custom_effect_tooltip = 1_FRA_pres_tt
+
+		WGR = {
+			hidden_effect = {
+				load_oob = "WGR_FORBACK_OOB"
+			}
+		}
+		custom_effect_tooltip = 1_ger_support_tt
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 200
+			target = WGR
+		}
+	}
+	option = { #Support AUS
+		name = kev_ger.2.3
+
+		add_to_variable = { country_prestige_num = 5 }
+		custom_effect_tooltip = 1_FRA_pres_tt
+
+		AUS = {
+			hidden_effect = {
+				load_oob = "AUS_FORBACK_OOB"
+			}
+		}
+		custom_effect_tooltip = 1_ger_support_tt
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 200
+			target = AUS
+		}
+	}
+	option = { #Support None
+		name = kev_ger.2.4
+
+		add_to_variable = { country_prestige_num = -15 }
+		custom_effect_tooltip = 10_FRA_pres_tt
 	}
 }

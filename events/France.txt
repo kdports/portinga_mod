@@ -441,3 +441,102 @@ country_event = { #Wallonie War
 		name = kev_france.14.a
 	}
 }
+
+country_event = { #Golden Age event
+	id = kev_france.15
+	title = kev_france.15.t
+	desc = kev_france.15.d
+	#picture = GFX_report_event_canadian_tank
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	#major = yes
+
+	option = { #Economy bonuses
+		name = kev_france.15.a
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_on_continent = europe
+			}
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+	option = { #General atk bonus
+		name = kev_france.15.b
+		every_army_leader = {
+			add_attack = 1
+		}
+	}
+	option = { #Prestige bonus
+		name = kev_france.15.c
+		add_to_variable = { country_prestige_num = 15 }
+		custom_effect_tooltip = 2_FRA_pres_tt
+	}
+}
+
+country_event = { #Downfall Event
+	id = kev_france.16
+	title = kev_france.16.t
+	desc = kev_france.16.d
+	#picture = GFX_report_event_canadian_tank
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	#major = yes
+
+	#Biggest loss =
+
+	option = { #Wallonie
+		name = kev_france.16.a
+		add_opinion_modifier = {
+			target = WGR
+			modifier = negative_70
+		}
+	}
+	option = { #Malaya
+		name = kev_france.16.b
+		add_opinion_modifier = {
+			target = MAL
+			modifier = negative_70
+		}
+	}
+	option = { #USA
+		name = kev_france.16.c
+		add_opinion_modifier = {
+			target = USA
+			modifier = negative_70
+		}
+	}
+}
+
+country_event = { #Redemption Event
+	id = kev_france.17
+	title = kev_france.17.t
+	desc = kev_france.17.d
+	#picture = GFX_report_event_canadian_tank
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	#major = yes
+
+	#Biggest dub =
+
+	option = { #Army
+		name = kev_france.17.a
+		complete_national_focus = KEV_FRA_army_start
+	}
+	option = { #Navy
+		name = kev_france.17.b
+		complete_national_focus = KEV_FRA_naval_start
+	}
+	option = { #Air
+		name = kev_france.17.c
+		complete_national_focus = KEV_FRA_air_innovations
+	}
+}
