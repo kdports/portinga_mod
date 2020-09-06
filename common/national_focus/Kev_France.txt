@@ -3682,6 +3682,7 @@ focus_tree = {
 			#	uses = 1
 			#	category = nuclear
 			#}
+			set_country_flag = nuke_share_yes
 			custom_effect_tooltip = 1_FRA_nukes_tt
 		}
 	}

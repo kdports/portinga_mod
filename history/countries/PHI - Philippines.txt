@@ -63,8 +63,8 @@ set_politics = {
 
 set_popularities = {
 	absolutist = 6
-	communism = 1
-	democratic = 82
+	communism = 31
+	democratic = 52
 	fascism = 6
 	neutrality = 3
 	radical = 2

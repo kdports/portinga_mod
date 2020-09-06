@@ -1,0 +1,57 @@
+﻿l_english:
+  #Focuses
+  KEV_X13_first_history:0 "The Empire of the Pacific"
+  KEV_X13_first_history_desc:0 ""
+  KEV_X13_second_history:0 "Mother Bear's Grip"
+  KEV_X13_second_history_desc:0 ""
+  KEV_X13_third_history:0 "Liquid Gold"
+  KEV_X13_third_history_desc:0 ""
+
+  ## Ideas
+
+  # Decisions
+  nuke_sharing_cat:0 "Joint Nuclear Research"
+  nuke_sharing_cat_desc:0 "We've decided to pursue nuclear technology in tandem with other nations. However, there are §Rimportant caveats§!! We can only choose §Rone nation§! to pursue this technology with, and choosing to share excludes us from other nations approaching us to share research!"
+
+  # Reminder Tooltips
+  #1_FRA_pres_tt:0 "Adds §G5 Prestige§! to your country's total."
+  #2_FRA_pres_tt:0 "Adds §G15 Prestige§! to your country's total."
+  #3_FRA_pres_tt:0 "Subtracts §R25 Prestige§! to your country's total."
+  #7_FRA_pres_tt:0 "Subtracts §R40 Prestige§! to your country's total."
+  #8_FRA_pres_tt:0 "Adds §G40 Prestige§! to your country's total."
+  #9_FRA_pres_tt:0 "Subtracts §R5 Prestige§! from your country's total."
+  #10_FRA_pres_tt:0 "Subtracts §R15 Prestige§! from your country's total."
+
+  #New Tooltips
+
+  # Flags
+  nuke_share_yes:0 "We've decided that cooperation holds the secrets of the atom."
+  nuke_share_disabled:0 "We have already shared our nuclear research prowess with someone else."
+
+  # Events
+  kev_khodynt.1.t:0 "From Markovo to Melbourne"
+  kev_khodynt.1.d:0 ""
+  kev_khodynt.1.a:0 ""
+  kev_khodynt.1.b:0 ""
+  kev_khodynt.1.c:0 ""
+
+  kev_khodynt.2.t:0 "Pacifying the Russians"
+  kev_khodynt.2.d:0 ""
+  kev_khodynt.2.a:0 ""
+  kev_khodynt.2.b:0 ""
+  kev_khodynt.2.c:0 ""
+
+  kev_khodynt.3.t:0 "Striking the Motherload"
+  kev_khodynt.3.d:0 ""
+  kev_khodynt.3.a:0 ""
+  kev_khodynt.3.b:0 ""
+  kev_khodynt.3.c:0 ""
+
+  kev_khodynt.4.t:0 "A Bomb Idea"
+  kev_khodynt.4.d:0 "Diplomats from [ROOT.GetName] have recently approached our ambassador, asking about the possibility of a joint nuclear program. Although this would significantly speed up our own nuclear research, it would have the unfortunate effect of aiding theirs as well. As such, we should accept this offer only if we don't plan on future confrontations with [ROOT.GetName]."
+  kev_khodynt.4.a:0 "Accept the proposition"
+  kev_khodynt.4.b:0 "Nuclear secrets are ours alone!"
+
+  kev_khodynt.5.t:0 "Agreement Accepted!"
+  kev_khodynt.5.d:0 ""
+  kev_khodynt.5.a:0 ""

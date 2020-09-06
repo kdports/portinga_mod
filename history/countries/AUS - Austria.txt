@@ -113,6 +113,11 @@ if = {
 		autonomous_state = autonomy_sphereling
 		freedom_level = 0.009
 	}
+	set_autonomy = {
+		target = CZE
+		autonomous_state = autonomy_sphereling
+		freedom_level = 0.009
+	}	
 }
 
 add_opinion_modifier = { target = BAY modifier = negative_121 }

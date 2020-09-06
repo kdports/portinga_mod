@@ -1,0 +1,132 @@
+add_namespace = kev_khodynt
+
+# Pacific history
+country_event = {
+	id = kev_khodynt.1
+	title = kev_khodynt.1.t
+	desc = kev_khodynt.1.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = kev_khodynt.1.a
+	}
+
+	option = { #
+		name = kev_khodynt.1.b
+	}
+
+	option = { #
+		name = kev_khodynt.1.c
+	}
+}
+
+# Russia history
+country_event = {
+	id = kev_khodynt.2
+	title = kev_khodynt.2.t
+	desc = kev_khodynt.2.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = kev_khodynt.2.a
+	}
+
+	option = { #
+		name = kev_khodynt.2.b
+	}
+
+	option = { #
+		name = kev_khodynt.2.c
+	}
+}
+
+# Oil
+country_event = {
+	id = kev_khodynt.3
+	title = kev_khodynt.3.t
+	desc = kev_khodynt.3.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = kev_khodynt.3.a
+	}
+
+	option = { #
+		name = kev_khodynt.3.b
+	}
+
+	option = { #
+		name = kev_khodynt.3.c
+	}
+}
+
+# Nuke share
+country_event = {
+	id = kev_khodynt.4
+	title = kev_khodynt.4.t
+	desc = kev_khodynt.4.d
+	#picture = GFX_news_event_king_speech
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_country_flag = nuke_share_sent_@PREV
+			}
+			save_event_target_as = nuke_share_target
+		}
+	}
+
+	option = { #Accept
+		name = kev_khodynt.4.a
+		add_tech_bonus = {
+			bonus = 2.0
+			uses = 1
+			category = nuclear
+		}
+		set_country_flag = nuke_share_disabled
+		event_target:nuke_share_target = {
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 1
+				category = nuclear
+			}
+			set_country_flag = nuke_share_disabled
+			country_event = {
+				id = kev_khodynt.5
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	option = { #Decline
+		name = kev_khodynt.4.b
+		event_target:nuke_share_target = {
+			set_country_flag = nuke_share_yes
+		}
+	}
+}
+
+#Nuke share accepted
+country_event = {
+	id = kev_khodynt.5
+	title = kev_khodynt.5.t
+	desc = kev_khodynt.5.d
+	#picture = GFX_news_event_king_speech
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = kev_khodynt.5.a
+	}
+}

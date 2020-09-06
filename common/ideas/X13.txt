@@ -1,4 +1,65 @@
 ideas = {
+	country = {
+		X13_naval_targeting = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				naval_strike_targetting_factor = 0.15
+				air_cas_present_factor = 0.1
+			}
+		}
+
+		X13_naval_movement = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				navy_max_range_factor = 0.15
+				naval_speed_factor = 0.1
+			}
+		}
+
+		X13_build_fast = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				invasion_preparation = -0.15
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
 	political_advisor = {
 		X13_absolutist_advisor = {
 			allowed = {
@@ -88,199 +149,199 @@ ideas = {
 			}
 		}
 	}
-	tank_manufacturer = { 
+	tank_manufacturer = {
 		designer = yes
-		
+
 		X13_tank_manufacturer = {
 			picture = generic_tank_manufacturer_1
-			
+
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				armor = 0.10
 			}
-			
+
 			traits = { tank_manufacturer }
 		}
 	}
-	naval_manufacturer = { 
+	naval_manufacturer = {
 		designer = yes
 		X13_naval_manufacturer = {
-			
+
 			picture = generic_naval_manufacturer_1
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				naval_equipment = 0.10
 			}
-			
+
 			traits = { naval_manufacturer }
 		}
 	}
-	aircraft_manufacturer = { 
+	aircraft_manufacturer = {
 		designer = yes
 		X13_light_aircraft_manufacturer = {
-			
+
 			picture = generic_air_manufacturer_1
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
+
 			traits = { light_aircraft_manufacturer }
 		}
-		
+
 		X13_medium_aircraft_manufacturer = {
-			
+
 			picture = generic_air_manufacturer_3
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
+
 			traits = { medium_aircraft_manufacturer }
 		}
-		
+
 		X13_heavy_aircraft_manufacturer = {
 			picture = generic_air_manufacturer_2
-			
+
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
+
 			traits = { heavy_aircraft_manufacturer }
 		}
-		
+
 		X13_naval_aircraft_manufacturer = {
-			
+
 			picture = generic_naval_manufacturer_2
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
+
 			traits = { naval_aircraft_manufacturer }
 		}
 	}
 	industrial_concern = {
 		X13_industrial_concern = {
-			
+
 			picture = generic_industrial_concern_1
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				industry = 0.10
 			}
-			
+
 			traits = { industrial_concern }
 		}
 		X13_electronics_concern = {
-			
+
 			picture = generic_electronics_concern_1
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				electronics = 0.10
 			}
-			
+
 			traits = { electronics_concern }
 		}
 	}
 	materiel_manufacturer = {
 		designer = yes
 		X13_motorized_equipment_manufacturer = {
-			
+
 			picture = generic_motorized_equipment_manufacturer_3
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				motorized_equipment = 0.10
 			}
-			
+
 			traits = { motorized_equipment_manufacturer }
 		}
-		
+
 		X13_infantry_equipment_manufacturer = {
-			
+
 			picture = generic_infantry_equipment_manufacturer_2
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				infantry_weapons = 0.10
 			}
-			
+
 			traits = { infantry_equipment_manufacturer }
 		}
-		
+
 		X13_artillery_manufacturer = {
-			
+
 			picture = generic_artillery_manufacturer_2
 			allowed = {
 				original_tag = X13
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				artillery = 0.10
 			}
-			
+
 			traits = { artillery_manufacturer }
 		}
 	}
