@@ -104,7 +104,7 @@ country_event = {
 			}
 		}
 
-		ai_will_do = {
+		ai_chance = {
 			base = 100
 		}
 	}
@@ -128,5 +128,182 @@ country_event = {
 
 	option = {
 		name = kev_khodynt.5.a
+	}
+}
+
+#Beria coup start
+country_event = {
+	id = kev_khodynt.6
+	title = kev_khodynt.6.t
+	desc = kev_khodynt.6.d
+	#picture = GFX_news_event_king_speech
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = X13
+		date > 1936.1.1
+	}
+
+	immediate = {
+		X13 = {
+			set_country_flag = beria_coup_leadup
+		}
+	}
+
+	option = { #Kerensky Support
+		name = kev_khodynt.6.a
+		set_country_flag = kerensky_support
+		set_variable = { kerensky_support_num = 14 }
+		set_variable = { beria_support_num = 75 }
+	}
+	option = { #Beria Support
+		name = kev_khodynt.6.b
+		set_country_flag = beria_support
+		set_variable = { kerensky_support_num = 75 }
+		set_variable = { beria_support_num = 14 }
+	}
+}
+
+#Coup ask for help
+country_event = {
+	id = kev_khodynt.7
+	title = kev_khodynt.7.t
+	desc = kev_khodynt.7.d
+	#picture = GFX_news_event_king_speech
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { #Agree to help
+		name = kev_khodynt.7.a
+		add_political_power = -25
+		X13 = {
+			add_political_power = 75
+		}
+	}
+	option = { #No way Jose
+		name = kev_khodynt.7.b
+
+	}
+}
+
+#Kerensky Okay
+news_event = {
+	id = kev_khodynt.8
+	title = kev_khodynt.8.t
+	desc = kev_khodynt.8.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Good for him
+		name = kev_khodynt.8.a
+	}
+}
+
+#Kerensky Shot
+news_event = {
+	id = kev_khodynt.9
+	title = kev_khodynt.9.t
+	desc = kev_khodynt.9.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Sux
+		name = kev_khodynt.9.a
+	}
+}
+
+#Russia Negotiations
+country_event = {
+	id = kev_khodynt.10
+	title = kev_khodynt.10.t
+	desc = kev_khodynt.10.d
+	picture = GFX_report_event_destroyers
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { #Offer Payments
+		name = kev_khodynt.10.a
+		add_timed_idea = {
+			idea = KEV_X14_giving_subsidies
+			days = 365
+		}
+		hidden_effect = {
+			country_event = {
+				id = kev_khodynt.11
+			}
+		}
+	}
+	option = { #Offer Resources
+		name = kev_khodynt.10.b
+		destroy_resource = {
+			type = oil
+			amount = 50
+			state = 369
+		}
+		custom_effect_tooltip = 1_X13_sov_tt
+		hidden_effect = {
+			country_event = {
+				id = kev_khodynt.11
+			}
+		}
+	}
+	option = { #Offer Ships
+		name = kev_khodynt.10.c
+		transfer_ship = {
+			type = destroyer
+			target = SOV
+		}
+		transfer_ship = {
+			type = destroyer
+			target = SOV
+		}
+		transfer_ship = {
+			type = heavy_cruiser
+			target = SOV
+		}
+		transfer_ship = {
+			type = light_cruiser
+			target = SOV
+		}
+		transfer_ship = {
+			type = light_cruiser
+			target = SOV
+		}
+		transfer_ship = {
+			type = light_cruiser
+			target = SOV
+		}
+		custom_effect_tooltip = 2_X13_sov_tt
+		hidden_effect = {
+			country_event = {
+				id = kev_khodynt.11
+			}
+		}
+	}
+}
+
+#Russia accepts
+country_event = {
+	id = kev_khodynt.11
+	title = kev_khodynt.11.t
+	desc = kev_khodynt.11.d
+	picture = GFX_report_event_generic_rally2
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Yay
+		name = kev_khodynt.11.a
+		leave_faction = yes
+		hidden_effect = {
+			create_faction = X13_PACT
+			set_faction_name = "Markovo Axis"
+		}
 	}
 }

@@ -7,11 +7,95 @@
   KEV_X13_third_history:0 "Liquid Gold"
   KEV_X13_third_history_desc:0 ""
 
+  KEV_X13_naval_doctrine:0 "The 65th Annual Naval Review"
+  KEV_X13_naval_doctrine_desc:0 ""
+  KEV_X13_build_infrastructure:0 "The Civilian Infrastructure Act"
+  KEV_X13_build_infrastructure_desc:0 ""
+
+  KEV_X13_build_civ_papua:0 "Investing in Papua"
+  KEV_X13_build_civ_papua_desc:0 ""
+  KEV_X13_build_civ_isles:0 "And All the Isles Around"
+  KEV_X13_build_civ_isles_desc:0 ""
+  KEV_X13_build_synths:0 "Rubber and Oil"
+  KEV_X13_build_synths_desc:0 ""
+
+  KEV_X13_first_naval_expansion:0 "Expand the Dockyards"
+  KEV_X13_first_naval_expansion_desc:0 ""
+  KEV_X13_amphibious_focus:0 "The Khodyntan Marines"
+  KEV_X13_amphibious_focus_desc:0 ""
+
+  KEV_X13_air_doctrine:0 "Air Methodology"
+  KEV_X13_air_doctrine_desc:0 ""
+  KEV_X13_fighter_focus:0 "Prioritize Air Supremacy"
+  KEV_X13_fighter_focus_desc:0 ""
+  KEV_X13_naval_air_focus:0 "Prioritize Naval Supremacy"
+  KEV_X13_naval_air_focus_desc:0 ""
+  KEV_X13_antisub_focus:0 "Joint Antisubmarine Forces"
+  KEV_X13_antisub_focus_desc:0 ""
+
+  KEV_X13_tank_doctrine:0 "Oil in Warfare Doctrine"
+  KEV_X13_tank_doctrine_desc:0 ""
+  KEV_X13_motor_research:0 "Integrate Troop Transports"
+  KEV_X13_motor_research_desc:0 ""
+  KEV_X13_build_mils:0 "Kickstart Military Industry"
+  KEV_X13_build_mils_desc:0 ""
+  KEV_X13_papua_def:0 "Construct Island Defenses"
+  KEV_X13_papua_def_desc:0 ""
+
+  KEV_X13_boost_gov:0 "Restate Government Positions"
+  KEV_X13_boost_gov_desc:0 ""
+  KEV_X13_second_boost_gov:0 "Connect With The Opposition"
+  KEV_X13_second_boost_gov_desc:0 ""
+  KEV_X13_boost_pres:0 "Sail the Great White Fleet"
+  KEV_X13_boost_pres_desc:0 ""
+
+  KEV_X13_industry_research:0 "New Industrial Techniques"
+  KEV_X13_industry_research_desc:0 ""
+  KEV_X13_electronic_research:0 "Pilot Light Shenanigans"
+  KEV_X13_electronic_research_desc:0 ""
+  KEV_X13_airbase_build:0 "Construct Airports"
+  KEV_X13_airbase_build_desc:0 ""
+
+  KEV_X13_nuclear_research:0 "Kurchatov's Little Pet"
+  KEV_X13_nuclear_research_desc:0 "§RA bigger bomb? So what?§!"
+
+  KEV_X13_carrier_focus:0 "The K.P.S. Cascadia"
+  KEV_X13_carrier_focus_desc:0 ""
+  KEV_X13_second_naval_expansion:0 "Pass the Welding Plate"
+  KEV_X13_second_naval_expansion_desc:0 ""
+  KEV_X13_destroyer_focus:0 "Remember the Screens"
+  KEV_X13_destroyer_focus_desc:0 ""
+  KEV_X13_naval_air_second:0 "Watched From Above"
+  KEV_X13_naval_air_second_desc:0 ""
+
+  KEV_X13_tank_focus:0 "Armored Warfare"
+  KEV_X13_tank_focus_desc:0 ""
+  KEV_X13_second_tank_focus:0 "Safeguarding the Troops"
+  KEV_X13_second_tank_focus_desc:0 ""
+  KEV_X13_fuel_silos:0 "An Emergency Reserve"
+  KEV_X13_fuel_silos_desc:0 ""
+  KEV_X13_support_equip_focus:0 "Logistic Assistance"
+  KEV_X13_support_equip_focus_desc:0 ""
+
+  KEV_X13_air_support_together:0 "§GAir to Surface Drills§!"
+  KEV_X13_air_support_together_desc:0 ""
+  KEV_X13_fuel_navy_together:0 "§GFuel Distribution Centers§!"
+  KEV_X13_fuel_navy_together_desc:0 ""
+  KEV_X13_ships_tanks_together:0 "§GAll Things Armored§!"
+  KEV_X13_ships_tanks_together_desc:0 ""
+
   ## Ideas
+  X13_build_fast:0 "Expedited Armor Production"
+  X13_naval_movement:0 "Streamlined Naval Logistics"
+  X13_naval_targeting:0 "Improved Airstrike Procedures"
+  X13_com_support:0 "Marxists Rallied"
 
   # Decisions
   nuke_sharing_cat:0 "Joint Nuclear Research"
   nuke_sharing_cat_desc:0 "We've decided to pursue nuclear technology in tandem with other nations. However, there are §Rimportant caveats§!! We can only choose §Rone nation§! to pursue this technology with, and choosing to share excludes us from other nations approaching us to share research!"
+
+  khodynt_coup_cat:0 "Leadup to Beria's Coup"
+  khodynt_coup_cat_desc:0 "Beria's ambitions have placed both himself and Kerensky in a bitter struggle for power. Having set events in motion, Beria is now counting down the days until his coup attempt, a coup that will execute §!regardless of if he is fully prepared§!.\n\nKerensky's Level of Support: [?kerensky_support_num|C0]\n\nBeria's Level of Support: [?beria_support_num|O0]"
 
   # Reminder Tooltips
   #1_FRA_pres_tt:0 "Adds §G5 Prestige§! to your country's total."
@@ -23,6 +107,30 @@
   #10_FRA_pres_tt:0 "Subtracts §R15 Prestige§! from your country's total."
 
   #New Tooltips
+  1_X13_coup_tt:0 "If accepted, we'll gain political power to spend aiding our efforts."
+  2_X13_coup_tt:0 "Kerensky gains §Gten points§! of support."
+  3_X13_coup_tt:0 "Kerensky loses §Rten points§! of support."
+  4_X13_coup_tt:0 "Beria gains §Gten points§! of support."
+  5_X13_coup_tt:0 "Beria loses §Rten points§! of support."
+  6_X13_coup_tt:0 "Kerensky gains §Gfive points§! of support."
+  7_X13_coup_tt:0 "Beria gains §Gfive points§! of support."
+
+  prestige_more_than_5:0 "§H5§! prestige"
+  prestige_more_than_5_blocked:0 "§R5§! prestige"
+  prestige_more_than_5_tooltip:0 "It costs 5 prestige to select this."
+
+  cmp_more_than_25:0 "§H25§!£command_power"
+  cmp_more_than_25_blocked:0 "§R25§!£command_power"
+  cmp_more_than_25_tooltip:0 "It costs 25£command_power to select this."
+
+  army_xp_more_than_10:0 "§H10§!£army_experience"
+  army_xp_more_than_10_blocked:0 "§R10§!£army_experience"
+  army_xp_more_than_10_tooltip:0 "It costs 10£army_experience to select this."
+
+  1_X13_sov_tt:0 "We will §Rlose§! §Y50 oil§! in [369.GetName]."
+  2_X13_sov_tt:0 "We will §Rtransfer§! §Y6 screen ships§! to [SOV.GetName]."
+
+  1_X13_crisis_tt:0 "The §CTierra Austral§! §Rcrisis§! will begin."
 
   # Flags
   nuke_share_yes:0 "We've decided that cooperation holds the secrets of the atom."
@@ -48,10 +156,28 @@
   kev_khodynt.3.c:0 ""
 
   kev_khodynt.4.t:0 "A Bomb Idea"
-  kev_khodynt.4.d:0 "Diplomats from [ROOT.GetName] have recently approached our ambassador, asking about the possibility of a joint nuclear program. Although this would significantly speed up our own nuclear research, it would have the unfortunate effect of aiding theirs as well. As such, we should accept this offer only if we don't plan on future confrontations with [ROOT.GetName]."
+  kev_khodynt.4.d:0 "Diplomats from [event_target:nuke_share_target.GetName] have recently approached our ambassador, asking about the possibility of a joint nuclear program. Although this would significantly speed up our own nuclear research, it would have the unfortunate effect of aiding theirs as well. As such, we should accept this offer only if we don't plan on future confrontations with [event_target:nuke_share_target.GetName]."
   kev_khodynt.4.a:0 "Accept the proposition"
   kev_khodynt.4.b:0 "Nuclear secrets are ours alone!"
 
   kev_khodynt.5.t:0 "Agreement Accepted!"
-  kev_khodynt.5.d:0 ""
-  kev_khodynt.5.a:0 ""
+  kev_khodynt.5.d:0 "Our diplomatic overtures have been met with success, and our proposal has been accepted! From now on, we'll work together to share our nuclear prowess."
+  kev_khodynt.5.a:0 "To a brighter future."
+
+  kev_khodynt.6.t:0 "The Ambitions of Lavrentiy Beria"
+  kev_khodynt.6.d:0 "Little escapes the notice of Lavrentiy Beria. Head of the Khodyntan Commissariat for Internal Affairs (K.V.D.), the nation’s foremost investigative agency, Beria has made it his job to know everything about everyone in Khodynt. Under his watch, the K.V.D. has transformed itself from a crime-fighting bureau to a ruthless secret police organization, constantly feeding information on political dissidents to the higher levels of power. President Kerensky, for his part, has done his best to roll back Beria’s empowerment of the K.V.D. and return it to an investigative agency. As such, his most recent budget includes a severe reduction in K.V.D. funding, a penultimate measure aimed at neutering Beria’s dreams of a fully-fledged secret police.\n\nBeria has no intention of going quietly however, and has begun to plot a military coup to overthrow Kerensky and install a more rigid Proletarian Dictatorship led by himself."
+  kev_khodynt.6.a:0 "Kerensky is the President!"
+  kev_khodynt.6.b:0 "Nothing will stop Beria."
+
+  kev_khodynt.7.t:0 "[X13.GetName] asks for assistance"
+  kev_khodynt.7.d:0 "Diplomats from [X13.GetName] have approached our ambassadors recently, asking for political support with what seems to be an internal power struggle between pro-democracy and hardline leninist forces in their country. We have a vested interest in maintaining a government type similar to our own, and backing that faction could pay off. On the other hand, there's no guarantee that our investment will benefit us, making this proposition somewhat risky."
+  kev_khodynt.7.a:0 "We'll buy in. This could be a useful bargaining chip."
+  kev_khodynt.7.b:0 "Why bother? Let's sit this one out."
+
+  kev_khodynt.8.t:0 "Kerensky Survives Assassination Attempt"
+  kev_khodynt.8.d:0 "Shocking news from [X13.GetName] today, as a failed attempt on the life of President Kerensky has led to massive arrests and imprisonments of suspected ringleaders. Among them is former intelligence head Lavrentiy Beria, who is named as the primary orchastrator of what is being described as an attempted coup against the democratic government."
+  kev_khodynt.8.a:0 "He finally catches a break."
+
+  kev_khodynt.9.t:0 "Kerensky Shot Dead"
+  kev_khodynt.9.d:0 "Shocking news from [X13.GetName] today, as gunmen attacked President Kerensky's motorcade, killing both him and his bodyguards. Nearby police units arrived shortly afterwards, making short work of the attackers, but by then the damage had been done. Lavrentiy Beria, Kerensky's intelligence head, has been sworn in as the interim president, vowing to bring stability in this time of crisis."
+  kev_khodynt.9.a:0 "He just can't seem to catch a break."

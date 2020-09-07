@@ -174,7 +174,7 @@ germany_wars = {
 			}
 		}
 		war_with_on_complete = FRA
-		complete_effect = {
+		remove_effect = {
 			declare_war_on = {
 				target = FRA
 				type = annex_everything
@@ -198,7 +198,7 @@ germany_wars = {
 			date > 1939.4.1
 		}
 		war_with_on_complete = WGR
-		complete_effect = {
+		remove_effect = {
 			declare_war_on = {
 				target = WGR
 				type = annex_everything
@@ -235,7 +235,7 @@ germany_wars = {
 			}
 		}
 		war_with_on_complete =  X21
-		complete_effect = {
+		remove_effect = {
 			leave_faction = yes
 			declare_war_on = {
 				target = X21
@@ -322,7 +322,7 @@ germany_wars = {
 			}
 		}
 		war_with_on_complete =  X21
-		complete_effect = {
+		remove_effect = {
 			if = {
 				limit = {
 					country_exists = X21
@@ -400,7 +400,7 @@ germany_wars = {
 		available = {
 
 		}
-		complete_effect = {
+		remove_effect = {
 			declare_war_on = {
 				target = X26
 				type = annex_everything

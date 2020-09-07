@@ -80,5 +80,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_oil"
 		texturefile = "gfx/interface/goals/r56_goal_generic_oil.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_research_silver"
+		texturefile = "gfx/interface/goals/r56_goal_generic_research_silver.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_HON_nkvd_assistance"
+		texturefile = "gfx/interface/goals/r56_goal_HON_nkvd_assistance.dds"
 	}	
 }

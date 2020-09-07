@@ -53,6 +53,8 @@ if = {
 		early_ship_hull_heavy = 1
 		early_ship_hull_light = 1
 		early_ship_hull_submarine = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
 		mtg_transport = 1
 		submarine_mine_laying = 1
 	}

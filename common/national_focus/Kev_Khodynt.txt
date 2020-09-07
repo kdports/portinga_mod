@@ -159,7 +159,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_build_infrastructure
-		icon = GFX_focus_fra_devalue_the_franc
+		icon = GFX_goal_generic_construct_infrastructure
 		x = -1
 		y = 1
 		offset = {
@@ -210,7 +210,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_build_civ_papua
-		icon = GFX_focus_fra_devalue_the_franc
+		icon = GFX_goal_generic_construct_civilian
 		x = 2
 		y = 1
 		offset = {
@@ -264,7 +264,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_build_civ_isles
-		icon = GFX_focus_fra_devalue_the_franc
+		icon = GFX_goal_generic_construct_civ_factory
 		x = -1
 		y = 1
 		offset = {
@@ -310,7 +310,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_build_synths
-		icon = GFX_focus_fra_devalue_the_franc
+		icon = GFX_focus_generic_rubber
 		x = 0
 		y = 2
 		offset = {
@@ -452,7 +452,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_air_doctrine
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_generic_air_doctrine
 		x = -2
 		y = 1
 		offset = {
@@ -601,7 +601,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_tank_doctrine
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_generic_army_doctrines
 		x = 4
 		y = 1
 		offset = {
@@ -639,7 +639,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_motor_research
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_generic_army_motorized
 		x = -1
 		y = 1
 		offset = {
@@ -678,7 +678,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_build_mils
-		icon = GFX_focus_fra_devalue_the_franc
+		icon = GFX_goal_generic_construct_military
 		x = 1
 		y = 1
 		offset = {
@@ -717,7 +717,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_papua_def
-		icon = GFX_focus_fra_devalue_the_franc
+		icon = GFX_focus_generic_coastal_fort
 		x = 0
 		y = 2
 		offset = {
@@ -831,7 +831,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_boost_gov
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_generic_propaganda
 		x = 6
 		y = 1
 		offset = {
@@ -865,7 +865,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_second_boost_gov
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 0
 		y = 2
 		offset = {
@@ -901,7 +901,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_boost_pres
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_generic_navy_battleship
 		x = 1
 		y = 1
 		offset = {
@@ -936,7 +936,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_industry_research
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_generic_production2
 		x = -4
 		y = 1
 		offset = {
@@ -974,7 +974,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_airbase_build
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_eng_special_air_service
 		x = 0
 		y = 2
 		offset = {
@@ -1042,7 +1042,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_electronic_research
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_research_silver
 		x = -1
 		y = 1
 		offset = {
@@ -1080,7 +1080,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_nuclear_research
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_wonderweapons
 		x = -3
 		y = 2
 		offset = {
@@ -1287,7 +1287,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_naval_air_second
-		icon = GFX_focus_generic_cruiser2
+		icon = GFX_goal_generic_CAS
 
 		x = 2
 		y = 1
@@ -1355,7 +1355,7 @@ focus_tree = {
 	focus = {
 		id = KEV_X13_second_tank_focus
 		prerequisite = { focus = KEV_X13_tank_focus }
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_generic_tank_production
 		x = -2
 		y = 1
 		relative_position_id = KEV_X13_tank_focus
@@ -1379,7 +1379,7 @@ focus_tree = {
 	focus = {
 		id = KEV_X13_fuel_silos
 		prerequisite = { focus = KEV_X13_tank_focus }
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_goal_generic_oil_refinery
 		x = 0
 		y = 1
 		relative_position_id = KEV_X13_tank_focus
@@ -1449,7 +1449,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_air_support_together
-		icon = GFX_focus_por_support_mns
+		icon = GFX_focus_chi_flying_tigers
 		x = -1
 		y = 2
 		offset = {
@@ -1484,7 +1484,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_fuel_navy_together
-		icon = GFX_focus_por_support_mns
+		icon = GFX_focus_generic_navy_battleship2
 		x = -3
 		y = 2
 		offset = {
@@ -1519,7 +1519,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_ships_tanks_together
-		icon = GFX_focus_por_support_mns
+		icon = GFX_goal_continuous_armor_production
 		x = -5
 		y = 2
 		offset = {
@@ -1549,6 +1549,411 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = X13_build_fast
+		}
+	}
+
+	focus = {
+		id = KEV_X13_kerensky_win
+		icon = GFX_goal_continuous_armor_production
+		x = 4
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		relative_position_id = KEV_X13_air_support_together
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = KEV_X13_beria_win
+		icon = GFX_goal_continuous_armor_production
+		x = -4
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		relative_position_id = KEV_X13_ships_tanks_together
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			always = no
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = KEV_X13_russia_renegotiate
+		icon = GFX_goal_continuous_armor_production
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_beria_win }
+		relative_position_id = KEV_X13_beria_win
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			country_event = {
+				id = kev_khodynt.10
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_align_japan
+		icon = GFX_goal_continuous_armor_production
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_beria_win }
+		relative_position_id = KEV_X13_beria_win
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			JAP = {
+				add_ideas = X13_com_support
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_invite_japan
+		icon = GFX_goal_continuous_armor_production
+		x = -2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_align_japan }
+		prerequisite = { focus = KEV_X13_russia_renegotiate  }
+		relative_position_id = KEV_X13_align_japan
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			JAP = {
+				has_government = communism
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			X13 = {
+				add_to_faction = JAP
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_align_phil
+		icon = GFX_goal_continuous_armor_production
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_beria_win }
+		relative_position_id = KEV_X13_beria_win
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			PHI = {
+				add_ideas = X13_com_support
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_invite_phil
+		icon = GFX_goal_continuous_armor_production
+		x = 2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_align_phil }
+		prerequisite = { focus = KEV_X13_russia_renegotiate  }
+		relative_position_id = KEV_X13_align_phil
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			PHI = {
+				has_government = communism
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			X13 = {
+				add_to_faction = PHI
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_invite_alaska
+		icon = GFX_goal_continuous_armor_production
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_russia_renegotiate  }
+		relative_position_id = KEV_X13_russia_renegotiate
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 1000
+				target = X17
+			}
+			X13 = {
+				add_to_faction = X17
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_invite_australia
+		icon = GFX_goal_continuous_armor_production
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_russia_renegotiate  }
+		relative_position_id = KEV_X13_russia_renegotiate
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			636 = {
+				add_claim_by = AST
+			}
+			635 = {
+				add_claim_by = X13
+			}
+			create_wargoal = {
+				type = take_claimed_state
+				target = SPR
+			}
+			X13 = {
+				add_to_faction = AST
+			}
+			custom_effect_tooltip = 1_X13_crisis_tt
+		}
+	}
+
+	focus = {
+		id = KEV_X13_invite_california
+		icon = GFX_goal_continuous_armor_production
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_russia_renegotiate  }
+		relative_position_id = KEV_X13_russia_renegotiate
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			X13 = {
+				add_to_faction = CAL
+			}
+			add_to_variable = { country_prestige_num = -15 }
+			custom_effect_tooltip = 10_FRA_pres_tt
+		}
+	}
+
+	focus = {
+		id = KEV_X13_attack_kiwi
+		icon = GFX_goal_continuous_armor_production
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_invite_california focus = KEV_X13_invite_australia focus = KEV_X13_invite_alaska focus = KEV_X13_invite_japan focus = KEV_X13_invite_phil }
+		relative_position_id = KEV_X13_invite_california
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			declare_war_on = {
+				target = NZL
+				type = annex_everything
+			}
 		}
 	}
 }

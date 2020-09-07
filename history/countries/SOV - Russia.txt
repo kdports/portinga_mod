@@ -190,6 +190,12 @@ give_guarantee = GEO
 give_guarantee = X07
 give_guarantee = X31
 
+create_faction = Russia_Bloc
+
+SOV = { add_to_faction = X13 }
+
+set_faction_name = "Russian Federation"
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	add_ideas = MTG_naval_treaty_adherent
