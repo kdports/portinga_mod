@@ -92,6 +92,16 @@ crisis_category = {
 						transfer_state = 636
 					}
 				}
+				if = {
+					limit = {
+						has_global_flag = westafrica_crisis
+					}
+					ETH = {
+						annex_country = {
+							target = FWA
+						}
+					}
+				}
 			}
 		}
 	}

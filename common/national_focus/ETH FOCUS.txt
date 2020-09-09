@@ -11,20 +11,20 @@ focus_tree = {
 	focus = {
 		id = labor_force
 		icon = GFX_goal_generic_production
-		
+
 		x = 4
 		y = 0
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			country_event = { id = ethiopia.1 }
 			}
 		}
-	
+
 	focus = {
 		id = end_slavery
 		icon = GFX_goal_generic_treaty
@@ -39,15 +39,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = labor_force
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available = {
 			has_idea = slavery_idea_1b
 			}
-			
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power	= 50
@@ -71,15 +71,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = labor_force
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available = {
 			has_idea = slavery_idea_1b
 			}
-			
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 50
 			swap_ideas = {
@@ -102,15 +102,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = labor_force
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available = {
 			has_idea = slavery_idea_1c
 			}
-			
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
@@ -136,11 +136,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = end_slavery
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			169 = {
 				add_building_construction = {
@@ -162,11 +162,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_work_smarter
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 100
 			add_ideas = ETH_IDEA_ORGANIZED_LABOR
@@ -182,11 +182,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_workers_union
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = slavery_idea_1d
@@ -207,11 +207,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = last_slaves
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = { ETH_IDEA_HARD_WORKERS }
 		}
@@ -226,11 +226,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_work_harder
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			169 = {
 				add_building_construction = {
@@ -252,11 +252,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_military_backbone
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = { ETH_IDEA_NONCORE_WORKFORCE }
 		}
@@ -271,11 +271,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = enforce_slavery
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_stability = -0.05
 			204 = {
@@ -303,11 +303,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_no_production_limit
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_stability = -0.05
 			add_ideas = { ETH_IDEA_HARD_WORKERS }
@@ -328,11 +328,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_no_compromises
 		cost = 7
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_stability = -0.05
 			add_resource = {
@@ -355,18 +355,18 @@ focus_tree = {
 	focus = {
 		id = ETH_zulu_rebellions
 		icon = GFX_focus_generic_strike_at_democracy1
-		
+
 		x = 12
 		y = 0
-		
+
 		cost = 6
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available = {
 			has_idea = ETH_IDEA_ZULU_UPRISING
 			}
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 120
 			remove_ideas = ETH_IDEA_ZULU_UPRISING
@@ -382,10 +382,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_zulu_rebellions
 		cost = 4
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			create_intelligence_agency = yes
 		}
@@ -400,10 +400,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_secret_police
 		cost = 4
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			upgrade_intelligence_agency = upgrade_anti_partisan
 			add_stability = 0.1
@@ -419,10 +419,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_remove_resistance
 		cost = 4
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			upgrade_intelligence_agency = upgrade_training_centers
 		}
@@ -437,10 +437,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_zulu_rebellions
 		cost = 10
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = { ETH_IDEA_RESISTANCE_DEFENSE }
 		}
@@ -455,10 +455,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_restore_order
 		cost = 10
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 		add_stability = 0.1
 		}
@@ -473,10 +473,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_zulu_rebellions
 		cost = 10
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = { ETH_IDEA_EXPANDED_SPYFORCE }
 		}
@@ -491,10 +491,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_recruit_operative
 		cost = 10
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = { ETH_IDEA_SKILLED_OPERATIVES }
 		}
@@ -505,10 +505,10 @@ focus_tree = {
 		x = 25
 		y = 0
 		cost = 1
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -523,10 +523,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_south_lion
 		cost = 1
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -541,10 +541,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_coptic_nation
 		cost = 1
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			country_event = { id = ethiopia.4 }
 		}
@@ -562,7 +562,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_figurehead_emperor
 		cost = 10
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = no
@@ -570,7 +570,7 @@ focus_tree = {
 			has_idea = ETH_POWER_VACUUM
 		}
 		completion_reward = {
-			add_timed_idea = { 
+			add_timed_idea = {
 				idea = ETH_IMPERIAL_DRIFT
 				days = 365
 				}
@@ -587,11 +587,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_imperial_ambitions
 		cost = 10
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_popularity = {
 				ideology = absolutist
@@ -621,11 +621,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_selassie_rising
 		cost = 10
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			remove_ideas = { ETH_DISJOINTED_GOVERNMENT }
 			add_stability = 0.05
@@ -645,11 +645,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_selassie_rising
 		cost = 10
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			remove_ideas = { ETH_DISJOINTED_GOVERNMENT }
 			country_event = { id = ethiopia.6 }
@@ -669,11 +669,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_repeal_1620
 		cost = 10
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
+
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_ideas = { ETH_IDEA_GLORY_TO_EMPEROR }
 		}
@@ -688,10 +688,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = ETH_bow_emperor
 		cost = 10
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_political_power = 50
 			add_war_support = 0.05
@@ -1108,6 +1108,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ETH_preemptive_strike
 		}
+		available = {
+			NOT = {
+				has_global_flag = westafrica_crisis
+			}
+		}
 		x = 0
 		y = 1
 		cost = 10
@@ -1115,10 +1120,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = no
 		completion_reward = {
-			declare_war_on = {
-				target = FWA
-				type = annex_everything
+			set_global_flag = crisis_ongoing
+			set_global_flag = westafrica_crisis
+			set_country_flag = crisis_head_one
+			FRA = {
+				set_country_flag = crisis_head_two
 			}
+			custom_effect_tooltip = 3_X13_crisis_tt
 		}
 	}
 	focus = {
