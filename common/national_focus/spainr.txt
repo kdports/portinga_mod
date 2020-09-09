@@ -20,7 +20,7 @@ focus_tree = {
 		mutually_exclusive = {
 			
 		}
-		x = 10
+		x = 43
 		y = 1
 		
 		cost = 10
@@ -783,12 +783,12 @@ focus_tree = {
 	
 	focus = {
 		id = SPR_regla_la_ceilo
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_eng_special_air_service
 
-		x = 14
-		y = 2
+		x = -18
+		y = 0
 		offset = {
-			x = 0
+			x = -1
 			y = 0
 		}
 		
@@ -828,7 +828,7 @@ focus_tree = {
 		}
 		
 		relative_position_id = SPR_regla_la_ceilo
-		mutually_exclusive = { focus = SPR_start_fighters }
+	
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -866,7 +866,7 @@ focus_tree = {
 		}
 		
 		relative_position_id = SPR_regla_la_ceilo
-		mutually_exclusive = { focus = SPR_start_bombers }
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -894,15 +894,15 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = SPR_backround_2 }
 
-		x = 10
-		y = -1
+		x = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
 		
-		relative_position_id = SPR_regla_la_ceilo
-		mutually_exclusive = { focus = SPR_start_bombers }
+		relative_position_id = SPR_backround_2
+	
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -930,15 +930,14 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		
 
-		x = 7
-		y = -3
+		x = 33
+		y = -2
 		offset = {
 			x = 6
 			y = 0
 		}
 		
-		relative_position_id = SPR_regla_la_ceilo
-		mutually_exclusive = { focus = SPR_start_bombers }
+		
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -966,15 +965,16 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = SPR_backround_1 }
 
-		x = 7
-		y = -2
+		x = 0
+		y = 1
+		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
 		
-		relative_position_id = SPR_regla_la_ceilo
-		mutually_exclusive = { focus = SPR_start_bombers }
+		relative_position_id = SPR_backround_1
+		
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -1041,11 +1041,11 @@ focus_tree = {
 		
 			
 		
-		x = 22
-		y = 3
+		x = 0
+		y = 1
 		
 		cost = 10
-		
+		relative_position_id = SPR_the_faliure_of_the_royal_family
 		ai_will_do = {
 			factor = 2
 		}
@@ -1176,7 +1176,7 @@ focus_tree = {
 		icon = GFX_goal_tfv_burn_the_royal_portraits
 		prerequisite = { focus = SPR_embrace_marxism }
 		x = -2
-		y = 1
+		y = 0
 		relative_position_id = SPR_embrace_marxism
 		
 		cost = 10
@@ -1237,7 +1237,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SPR_correct_democratic_misgivings
+		id = SPR_correct_royal_misgivings
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SPR_purge_the_remants_of_the_crown }
 		x = 1
@@ -1251,7 +1251,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_stability < 0.9
+			
 		}
 
 		bypass = {
@@ -1264,7 +1264,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_ideas = JAP_reeducation_campaign
+			add_war_support = .1
 		}
 	}
 	
@@ -1544,10 +1544,10 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = SPR_start_fighters }
 
-		x = 3
+		x = 0
 		y = 1
 		offset = {
-			x = 3
+			x = 0
 			y = 2
 		}
 		
@@ -1580,7 +1580,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = SPR_start_bombers }
 
-		x = 3
+		x = 0
 		y = 1
 		offset = {
 			x = -2
@@ -1608,6 +1608,414 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+	}
+	
+	focus = {
+		id = SPR_halifax_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 19
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			navy_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = SPR_halifax_shipyards_DY
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				prioritize = { 464 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SPR_halifax_shipyards_DY
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_destroyer_effort
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = SPR_halifax_shipyards }
+		x = 0
+		y = 1
+		relative_position_id = SPR_halifax_shipyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPR_destroyer_effort
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_light_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = SPR_destroyer_effort }
+		x = -1
+		y = 2
+		relative_position_id = SPR_halifax_shipyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPR_light_cruiser_effort
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_heavy_cruiser_effort
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = { focus = SPR_destroyer_effort }
+		x = 1
+		y = 2
+		relative_position_id = SPR_halifax_shipyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPR_heavy_cruiser_effort
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {	
+		id = SPR_escort_fleet
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = SPR_light_cruiser_effort }
+		mutually_exclusive = { focus = SPR_fleet_in_being }
+		x = -1
+		y = 3
+		relative_position_id = SPR_halifax_shipyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				has_war_with = GER
+				factor = 2
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = SPR_escort_fleet
+				bonus = 1.0
+				uses = 2
+				category = convoy_defense_tree
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_fleet_in_being
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = SPR_light_cruiser_effort }
+		mutually_exclusive = { focus = SPR_escort_fleet }
+		x = 1
+		y = 3
+		relative_position_id = SPR_halifax_shipyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = SPR_fleet_in_being
+				bonus = 1.0
+				uses = 2
+				category = cat_fleet_in_being
+			}			
+		}
+	}
+
+	focus = {
+		id = SPR_degauss_ship_hulls
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = SPR_escort_fleet focus = SPR_fleet_in_being }
+		x = -1
+		y = 4
+		relative_position_id = SPR_halifax_shipyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_ideas = SPR_degauss_ship_hulls
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				if = {
+					limit = {
+						has_tech = degaussing
+					}
+					add_tech_bonus = {
+						name = SPR_degauss_ship_hulls
+						bonus = 0.5
+						uses = 1
+						category = naval_mines
+					}
+					else = {
+						set_technology = {
+						    degaussing = 1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_trade_fleet
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = SPR_escort_fleet focus = SPR_fleet_in_being }
+		x = 1
+		y = 4
+		relative_position_id = SPR_halifax_shipyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_ideas = SPR_trade_fleet			
+		}
+	}
+
+	focus = {
+		id = SPR_united_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = SPR_trade_fleet focus = SPR_degauss_ship_hulls }
+		x = 0
+		y = 5
+		relative_position_id = SPR_halifax_shipyards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			navy_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = SPR_united_shipyards_DY
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SPR_united_shipyards_DY
+			}
 		}
 	}
 	
