@@ -501,7 +501,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ETH_south_lion
-		icon = GFX_goal_ETH_Lion
+		icon = GFX_focus_eng_imperial_federation
 		x = 25
 		y = 0
 		cost = 1
@@ -1271,7 +1271,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ETH_statens_jarnvagar
-		icon = GFX_goal_ETH_railroads
+		icon = GFX_focus_generic_africa_infrastructure
 		x = 50
 		y = 0
 		cost = 10
@@ -1295,7 +1295,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_lkab_investments
-		icon = GFX_goal_ETH_lkab
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = ETH_statens_jarnvagar }
 		x = 0
 		y = 1
@@ -1431,7 +1431,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_kth_focus
-		icon = GFX_goal_ETH_kth
+		icon = GFX_focus_research
 		prerequisite = { focus = ETH_statens_jarnvagar }
 		x = 4
 		y = 1
@@ -1458,7 +1458,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_bofors_focus
-		icon = GFX_goal_ETH_bofors
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = ETH_industry_1 }
 		x = 3
 		y = 2
@@ -1495,7 +1495,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_husqvarna_focus
-		icon = GFX_goal_ETH_husqvarna
+		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ETH_bofors_focus }
 		prerequisite = { focus = ETH_kth_focus }
 		x = 4
@@ -1577,7 +1577,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_landstormen
-		icon = GFX_goal_ETH_landstormen
+		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = ETH_urbanisation }
 		mutually_exclusive = { focus = ETH_military_production_act }
 		x = 1
@@ -1832,7 +1832,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_foa_focus
-		icon = GFX_goal_ETH_foa
+		icon = GFX_focus_research2
 		prerequisite = { focus = ETH_beurling_commission }
 		x = 6
 		y = 2
@@ -1852,7 +1852,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ETH_forsvarsbeslutet_1936
-		icon = GFX_goal_ETH_army
+		icon = GFX_goal_generic_army_doctrines
 		x = 42
 		y = 0
 		cost = 5
@@ -1942,17 +1942,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ETH_ski_infantry"
-			custom_effect_tooltip = tech_ski_infantry_effect
-			hidden_effect = {
-				set_technology = { tech_ski_infantry = 1 popup = no }
-			}
+			add_ideas = { ETH_IDEA_SPECIAL_FORCES }
 		}
 	}
 
 	focus = {
 		id = ETH_modern_jagers
-		icon = GFX_goal_ETH_jagers
+		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = ETH_ski_infantry }
 		x = -1
 		y = 2
@@ -2206,7 +2202,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_landsverk_focus
-		icon = GFX_goal_ETH_landsverk
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = ETH_domestic_designs }
 		x = -1
 		y = 2
@@ -2238,7 +2234,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_pansartrupperna
-		icon = GFX_goal_ETH_pansartrupperna
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = ETH_douglas_plan }
 		x = 1
 		y = 1
@@ -2419,7 +2415,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_aggressive_army
-		icon = GFX_goal_ETH_karl_XII
+		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = {
 			focus = ETH_modern_caroleans
 			focus = ETH_integrated_support
@@ -2477,7 +2473,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ETH_old_naval_construction"
 			custom_effect_tooltip = ETH_naval_construct_tt
-			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_light_2
@@ -2502,7 +2497,6 @@ focus_tree = {
 					progress = 0.95
 					amount = 1
 				}
-			}
 		}
 	}
 
@@ -2617,21 +2611,21 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ETH_air_bases"
-			138 = {
+			148 = {
 				add_building_construction = {
 					type = air_base
 					level = 3
 					instant_build = yes
 				}
 			}
-			141 = {
+			156 = {
 				add_building_construction = {
 					type = air_base
 					level = 3
 					instant_build = yes
 				}
 			}
-			666 = {
+			171 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -2645,7 +2639,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_air_reserve
-		icon = GFX_goal_ETH_airforce_1
+		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = ETH_air_bases }
 		x = 2
 		y = 2
@@ -2727,7 +2721,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_navy_supremacy
-		icon = GFX_goal_ETH_navy
+		icon = GFX_focus_generic_africa_naval
 		prerequisite = { focus = ETH_military_summit }
 		mutually_exclusive = { focus = ETH_airforce_supremacy }
 		x = -1
@@ -2992,7 +2986,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_airforce_supremacy
-		icon = GFX_goal_ETH_airforce_2
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = ETH_military_summit }
 		mutually_exclusive = { focus = ETH_navy_supremacy }
 		x = 3
@@ -3046,7 +3040,7 @@ focus_tree = {
 
 	focus = {
 		id = ETH_saab_focus
-		icon = GFX_goal_ETH_saab
+		icon = GFX_focus_generic_africa_factory
 		prerequisite = { focus = ETH_fighter_1 }
 		x = 2
 		y = 6
