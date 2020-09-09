@@ -1073,7 +1073,7 @@ focus_tree = {
 		id = SPR_approach_the_working_class
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SPR_begin_talks_with_the_unions }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SPR_begin_talks_with_the_unions
 
@@ -1100,7 +1100,7 @@ focus_tree = {
 		id = SPR_expand_urban_areas
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SPR_begin_talks_with_the_unions }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SPR_begin_talks_with_the_unions
 		
@@ -1136,7 +1136,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_expand_urban_areas }
 		
 
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SPR_approach_the_working_class		
 
@@ -2016,6 +2016,552 @@ focus_tree = {
 				}
 				set_state_flag = SPR_united_shipyards_DY
 			}
+		}
+	}
+	
+	
+	focus = {
+		id = SPR_spread_the_revolution
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_embrace_marxism }
+
+		x = 0
+		y = 2
+	
+		
+		relative_position_id = SPR_embrace_marxism
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_get_caught_up
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_expand_urban_areas }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_expand_urban_areas
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_invest_in_consumer_goods
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_get_caught_up }
+
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_get_caught_up
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_build_build_build
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_get_caught_up }
+
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_get_caught_up
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_back_on_top
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_build_build_build }
+		prerequisite = {focus = SPR_invest_in_consumer_goods }
+
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_build_build_build
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_enemies_at_our_door
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_spread_the_revolution }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_spread_the_revolution
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_english_menace
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_enemies_at_our_door }
+
+		x = 3
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_enemies_at_our_door
+		mutually_exclusive = { focus = SPR_french_scum }
+		mutually_exclusive = { focus = SPR_colonial_concern }
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_french_scum
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_enemies_at_our_door }
+
+		x = -3
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_enemies_at_our_door
+		mutually_exclusive = { focus = SPR_colonial_concern }
+		mutually_exclusive = { focus = SPR_english_menace }
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	
+		focus = {
+		id = SPR_colonial_concern
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_enemies_at_our_door }
+
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_enemies_at_our_door
+		mutually_exclusive = { focus = SPR_french_scum }
+		mutually_exclusive = { focus = SPR_english_menace }
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_ready_for_anything
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_english_menace }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_english_menace
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_southern_concern
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_french_scum}
+
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_french_scum
+		mutually_exclusive = { focus = SPR_northern_concern }
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_northern_concern
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_french_scum }
+
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_french_scum
+		mutually_exclusive = { focus = SPR_southern_concern }
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_dont_give_in
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_southern_concern focus = SPR_northern_concern }
+		
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_southern_concern
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_demand_compensation
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_dont_give_in }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_dont_give_in
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_engllish_alliance
+		icon = GFX_goal_generic_air_production
+		
+
+		x = -3
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_french_scum
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = SPR_french_scum
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
 		}
 	}
 	
