@@ -75,7 +75,7 @@ set_convoys = 0
 
 
 set_politics = {
-    ruling_party = absolutist
+    ruling_party = fascism
     last_election = "1821.1.3"
     election_frequency = 48
     elections_allowed = no
@@ -125,7 +125,7 @@ add_opinion_modifier = { target = SWI modifier = negative_50 }
 add_opinion_modifier = { target = TAH modifier = positive_15 }
 add_opinion_modifier = { target = TRI modifier = positive_15 }
 add_opinion_modifier = { target = TUR modifier = negative_9 }
-add_opinion_modifier = { target = WGR modifier = positive_61 }
+add_opinion_modifier = { target = WGR modifier = negative_61 }
 add_opinion_modifier = { target = X01 modifier = negative_24 }
 add_opinion_modifier = { target = X02 modifier = negative_10 }
 add_opinion_modifier = { target = X03 modifier = negative_24 }
@@ -146,7 +146,7 @@ add_opinion_modifier = { target = X17 modifier = negative_10 }
 add_opinion_modifier = { target = X18 modifier = negative_72 }
 add_opinion_modifier = { target = X19 modifier = positive_3 }
 add_opinion_modifier = { target = X20 modifier = negative_10 }
-add_opinion_modifier = { target = X21 modifier = negative_147 }
+add_opinion_modifier = { target = X21 modifier = positive_147 }
 add_opinion_modifier = { target = X22 modifier = negative_10 }
 add_opinion_modifier = { target = X23 modifier = positive_3 }
 add_opinion_modifier = { target = X24 modifier = negative_39 }

@@ -1,1 +1,24 @@
-# Not available
+ita_fra_war = {
+	icon = generic_prospect_for_resources
+	priority = 10
+	allowed = {
+		OR = {
+			tag = FRA
+			tag = X14
+		}
+	}
+}
+
+germany_wars = {
+	icon = generic_prospect_for_resources
+	priority = 10
+	allowed = {
+		OR = {
+			tag = FRA
+			tag = WGR
+			tag = AUS
+			tag = X21
+			tag = SAX
+		}
+	}
+}

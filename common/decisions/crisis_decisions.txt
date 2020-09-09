@@ -1,0 +1,559 @@
+crisis_category = {
+
+	#timer
+	countdown_to_crisis_war = {
+		allowed = {
+		}
+		available = {
+		}
+		activation = {
+			has_global_flag = crisis_ongoing
+		}
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				OR = {
+					has_country_flag = crisis_head_one
+					has_country_flag = crisis_head_two
+				}
+			}
+		}
+
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+
+	# Back Down
+	crisis_back_down = {
+		visible = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = crisis_head_one
+				}
+				add_to_variable = { country_prestige_num = -25 }
+				custom_effect_tooltip = 3_FRA_pres_tt
+			}
+
+			if = {
+				limit = {
+					has_country_flag = crisis_head_two
+				}
+				add_to_variable = { country_prestige_num = -5 }
+				custom_effect_tooltip = 9_FRA_pres_tt
+
+				if = {
+					limit = {
+						has_global_flag = formosa_crisis
+					}
+					X13 = {
+						transfer_state = 253
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = austral_crisis
+					}
+					X13 = {
+						transfer_state = 635
+					}
+					AST = {
+						transfer_state = 636
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = westafrica_crisis
+					}
+					ETH = {
+						annex_country = {
+							target = FWA
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# Join Team One
+	crisis_join_one = {
+		visible = {
+			NOT = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+				has_country_flag = crisis_team_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		target_root_trigger = {
+			NOT = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+				has_country_flag = crisis_team_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				has_country_flag = crisis_head_one
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			set_country_flag = crisis_team_one
+			news_event = {
+				id = crisis.1
+			}
+		}
+	}
+
+	# Join Team Two
+	crisis_join_two = {
+		visible = {
+			NOT = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+				has_country_flag = crisis_team_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		target_root_trigger = {
+			NOT = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+				has_country_flag = crisis_team_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			set_country_flag = crisis_team_two
+			news_event = {
+				id = crisis.1
+			}
+		}
+	}
+
+	# Offer Weapons
+	crisis_give_inf = {
+		visible = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+			has_equipment = {
+				infantry_equipment_1 > 999
+			}
+		}
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				is_ai = no
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 1000
+				target = FROM
+			}
+		}
+	}
+
+	# Offer Political Power
+	crisis_give_pp = {
+		visible = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+		}
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				is_ai = no
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			add_political_power = -75
+			FROM = {
+				add_political_power = 75
+			}
+		}
+	}
+
+	# Offer Stability
+	crisis_give_stab = {
+		visible = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+		}
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				is_ai = no
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			add_stability = -0.1
+			FROM = {
+				add_stability = 0.1
+			}
+		}
+	}
+
+	# Offer Army Exp
+	crisis_give_aexp = {
+		visible = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+		}
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				is_ai = no
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			has_army_experience > 10
+		}
+
+		custom_cost_text = army_xp_more_than_10
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			army_experience = -10
+			FROM = {
+				army_experience = 10
+			}
+		}
+	}
+
+	# Offer Navy Exp
+	crisis_give_nexp = {
+		visible = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+		}
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				is_ai = no
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			has_navy_experience > 10
+		}
+
+		custom_cost_text = navy_xp_more_than_10
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			navy_experience = -10
+			FROM = {
+				navy_experience = 10
+			}
+		}
+	}
+
+	# Offer Air Exp
+	crisis_give_pexp = {
+		visible = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+		}
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				is_ai = no
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			has_air_experience > 10
+		}
+
+		custom_cost_text = air_xp_more_than_10
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			air_experience = -10
+			FROM = {
+				air_experience = 10
+			}
+		}
+	}
+
+	# Offer Industry Tech
+	crisis_give_industry_tech = {
+		visible = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+		}
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				OR = {
+					has_country_flag = crisis_head_one
+					has_country_flag = crisis_head_two
+				}
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			FROM = {
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 0.5
+					uses = 1
+					category = industry
+				}
+			}
+		}
+	}
+
+	# Offer Civs
+	crisis_give_give_civs = {
+		visible = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		available = {
+		}
+
+		target_root_trigger = {
+			OR = {
+				has_country_flag = crisis_head_one
+				has_country_flag = crisis_head_two
+			}
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				OR = {
+					has_country_flag = crisis_head_one
+					has_country_flag = crisis_head_two
+				}
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		#days_remove = 30
+		complete_effect = {
+			FROM = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+}

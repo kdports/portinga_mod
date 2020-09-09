@@ -1,0 +1,71 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 1403
+		task_force = {
+			name = "1st Fleet"
+			location = 5564
+			ship = { name = "1st Singapore Battleship" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "1st Pattani Battleship" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "2nd Pattani Battleship" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "1st Prachinburi Battleship" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "2nd Singapore Battleship" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "2nd Prachinburi Battleship" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "3rd Pattani Battleship" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Pulau Aur" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "1st Prachinburi Cruiser" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "1st Moulmein Cruiser" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "1st Singapore Cruiser" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "1st Pattani Cruiser" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "2nd Prachinburi Cruiser" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "2nd Singapore Cruiser" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+		}
+	}
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 1403
+		task_force = {
+			name = "3rd Fleet"
+			location = 5564
+			ship = { name = "Pulau Padang" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = MAL version_name = "1936 Battleship" } } }
+			ship = { name = "Pulau Tinggi" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = MAL version_name = "1936 Battleship" } } }
+			ship = { name = "Pulau Sibu" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = MAL version_name = "1936 Battleship" } } }
+			ship = { name = "Pulau Tioman" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = MAL version_name = "1936 Battleship" } } }
+			ship = { name = "Pulau Rupat" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = MAL version_name = "1936 Battleship" } } }
+			ship = { name = "Pulau Rangsang" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = MAL version_name = "1936 Battleship" } } }
+			ship = { name = "Pulau Tebing Tinggi" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = MAL version_name = "1936 Battleship" } } }
+			ship = { name = "1st Singapore Dreadnought" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = MAL version_name = "1936 Battleship" } } }
+			ship = { name = "Parameswara" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Sultan Iskandar" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Laksamana" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Hukum Kanun" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Pulau Singkep" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Pulau Lingga" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Pulau Kundur" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Pulau Bengkaus" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAL version_name = "1936 Light Cruiser" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "MAL"
+			version_name = "1936 Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "MAL"
+			version_name = "1936 Battleship"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

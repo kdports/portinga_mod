@@ -6,7 +6,7 @@ state={
 	history={
 		owner = FRA
 		victory_points = {
-			13056 5 
+			13056 5
 		}
 		buildings = {
 			infrastructure = 6
@@ -14,13 +14,18 @@ state={
 			arms_factory = 2
 			dockyard = 1
 			air_base = 1
-
+			13057 = {
+				naval_base = 2
+			}
+			13054 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = FRA
 	}
 
 	provinces={
-		13054 13055 13056 13057 
+		13054 13055 13056 13057
 	}
 	manpower=501828
 	buildings_max_level_factor=1.000

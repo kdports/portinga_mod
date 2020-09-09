@@ -78,7 +78,7 @@ if = {
 # Research Bonuses
 add_tech_bonus = { name = air_doc_bonus bonus = 0.90 uses = 1 category = air_doctrine }
 add_tech_bonus = { name = naval_doc_bonus bonus = 0.90 uses = 1 category = naval_doctrine }
-set_convoys = 27
+set_convoys = 300
 
 
 # DIPLOMACY
@@ -90,15 +90,10 @@ if = {
 		}
 	}
 	set_autonomy = {
-		target = X21
-		autonomous_state = autonomy_sphereling
+		target = FWA
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.009
-	}
-	set_autonomy = {
-		target = X35
-		autonomous_state = autonomy_sphereling
-		freedom_level = 0.009
-	}
+	}	
     else = {
     }
 }
@@ -210,15 +205,44 @@ add_ideas = {
 }
 set_stability = 0.60
 set_war_support = 0.60
+
 create_country_leader = {
-    name = "François de Castellane"
+    name = "Albert Chatalet"
     desc = "POLITICS_FRANçOIS_DE CASTELLANE_DESC"
-    picture = "gfx/leaders/FRA/Portrait_France_Edouard_Daladier.dds"
+    picture = "gfx/leaders/Portrait_NFA_Albert_Chatelet.tga"
     expire = "1965.1.1"
     ideology = liberalism
     traits = {
     }
 }
+create_country_leader = {
+    name = "Henri D. Orleans"
+    desc = "POLITICS_FRANçOIS_DE CASTELLANE_DESC"
+    picture = "gfx/leaders/Portrait_NFA_Henri_D_Orleans.tga"
+    expire = "1965.1.1"
+    ideology = liberalism
+    traits = {
+    }
+}
+create_country_leader = {
+    name = "Emile Muselier"
+    desc = "POLITICS_FRANçOIS_DE CASTELLANE_DESC"
+    picture = "gfx/leaders/r56_portrait_FRA_Emile_Muselier.dds"
+    expire = "1965.1.1"
+    ideology = liberalism
+    traits = {
+    }
+}
+create_country_leader = {
+    name = "François de Castellane"
+    desc = "POLITICS_FRANçOIS_DE CASTELLANE_DESC"
+    picture = "gfx/leaders/r56_portrait_FRA_Camille_Chautemps.dds"
+    expire = "1965.1.1"
+    ideology = liberalism
+    traits = {
+    }
+}
+
 create_corps_commander = {
 	name = "Adrien Baraguey d'Hilliers"
 	picture = ""

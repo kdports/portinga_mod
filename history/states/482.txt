@@ -6,20 +6,28 @@ state={
 	history={
 		owner = NZL
 		victory_points = {
-			13028 3 
+			13028 3
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 0
 			arms_factory = 0
 			air_base = 0
-
+			13027 = {
+				naval_base = 2
+			}
+			13030 = {
+				naval_base = 2
+			}
+			13031 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = NZL
 	}
 
 	provinces={
-		13027 13028 13029 13030 13031 13032 13033 
+		13027 13028 13029 13030 13031 13032 13033
 	}
 	manpower=221884
 	buildings_max_level_factor=1.000

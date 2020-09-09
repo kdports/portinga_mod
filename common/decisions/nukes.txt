@@ -1,0 +1,37 @@
+nuke_sharing_cat = {
+	ask_for_share = {
+		visible = {
+			has_country_flag = nuke_share_yes
+		}
+		available = {
+			has_country_flag = nuke_share_yes
+		}
+
+		target_root_trigger = {
+			has_country_flag = nuke_share_yes
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				NOT = { has_country_flag = nuke_share_disabled }
+			}
+		}
+
+		cost = 25
+		#fire_only_once = no
+		complete_effect = {
+			clr_country_flag = nuke_share_yes
+			set_country_flag = nuke_share_sent_@FROM
+			save_event_target_as = ROOT
+			FROM = {
+				country_event = {
+					id = kev_khodynt.4
+				}
+			 }
+	   }
+	}
+}

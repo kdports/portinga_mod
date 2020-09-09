@@ -1,0 +1,21 @@
+﻿l_english:
+  #Focuses
+
+  ## Ideas
+
+  # Tooltips
+  1_ger_support_tt:0 "They will be able to field §G4§! additional units in the upcoming war!"
+
+  # Flags
+
+  # Events
+  kev_ger.1.t:0 "Austria Intervenes in the Franco-Prussian War"
+  kev_ger.1.d:0 "Old tensions seemed to have flared up between Austria and France, as Austria has announced an intervention against France following their recent declaration of war. With the major German powers now aligned against France, what was promised to be a quick war may now spiral into a wider conflict."
+  kev_ger.1.a:0 "Old rivalries never die."
+
+  kev_ger.2.t:0 "The German Unification War"
+  kev_ger.2.d:0 "The recent outbreak of war between [X21.GetName] and [WGR.GetName] signals one of the final battles for German supremacy between two of the region’s most formidable states. Although the Austrians, also ethnically German, haven’t gotten involved in the conflict yet, we believe it to be almost inevitable. As such, we have a choice to make. We need to decide which of the German powers is most likely to align with our interests, and then support them accordingly."
+  kev_ger.2.1:0 "Support the Royalists!"
+  kev_ger.2.2:0 "Support the Democracies!"
+  kev_ger.2.3:0 "Preemptively support the Austrians!"
+  kev_ger.2.4:0 "Are you stupid? We're not supporting anyone!"

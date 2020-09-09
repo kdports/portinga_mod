@@ -23,7 +23,8 @@ state={
 			air_base = 2
 
 		}
-		add_core_of = FRA
+		add_core_of = ENG
+		add_core_of = X35
 	}
 
 	provinces={

@@ -13,7 +13,9 @@ state={
 			industrial_complex = 0
 			arms_factory = 0
 			air_base = 0
-
+			13047 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = X13
 	}

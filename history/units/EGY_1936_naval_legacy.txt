@@ -1,0 +1,43 @@
+units = {
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 12058
+		task_force = {
+			name = "3rd Fleet"
+			location = 12058
+			ship = { name = "Muhammad Ali" definition = battleship equipment = { battleship_1 = { amount = 1 owner = EGY } } }
+			ship = { name = "Ibrahim" definition = battleship equipment = { battleship_1 = { amount = 1 owner = EGY } } }
+			ship = { name = "Ismail" definition = battleship equipment = { battleship_1 = { amount = 1 owner = EGY } } }
+			ship = { name = "Said" definition = battleship equipment = { battleship_1 = { amount = 1 owner = EGY } } }
+			ship = { name = "1st Chania Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = EGY } } }
+			ship = { name = "1st Acre Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = EGY } } }
+			ship = { name = "Abd al-Latif" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EGY } } }
+			ship = { name = "Abd al-Hafiz" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EGY } } }
+			ship = { name = "Abd al-Aziz" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EGY } } }
+			ship = { name = "Abd al-Hadi" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EGY } } }
+			ship = { name = "Abd al-Haqq" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EGY } } }
+			ship = { name = "Abd al-Jalil" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EGY } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "EGY"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "EGY"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

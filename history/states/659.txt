@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = TRI
+		owner = SPR
 		victory_points = {
 			3284 8 
 		}
@@ -22,6 +22,7 @@ state={
 
 		}
 		add_core_of = TRI
+		add_core_of = SPR
 	}
 
 	provinces={

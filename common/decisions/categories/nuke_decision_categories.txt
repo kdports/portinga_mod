@@ -1,0 +1,8 @@
+nuke_sharing_cat = {
+	icon = generic_prospect_for_resources
+	priority = 2
+	#visible_when_empty = yes
+	allowed = {
+		is_ai = no
+	}
+}

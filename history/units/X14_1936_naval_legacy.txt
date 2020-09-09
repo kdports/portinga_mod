@@ -1,0 +1,33 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 6973
+		task_force = {
+			name = "1st Fleet"
+			location = 5707
+			ship = { name = "Giulio Cesare" definition = battleship equipment = { battleship_2 = { amount = 1 owner = X14 } } }
+			ship = { name = "General San Martin" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = X14 } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "X14"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "X14"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

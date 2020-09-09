@@ -86,9 +86,9 @@ set_politics = {
 }
 
 set_popularities = {
-	absolutist = 27
+	absolutist = 67
 	communism = 4
-	democratic = 52
+	democratic = 12
 	fascism = 10
 	neutrality = 3
 	radical = 4
@@ -114,42 +114,42 @@ if = {
 	#}
 	set_autonomy = {
 		target = X01
-		autonomous_state = autonomy_sphereling
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.009
 	}
 	set_autonomy = {
 		target = X03
-		autonomous_state = autonomy_sphereling
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.729
 	}
 	set_autonomy = {
 		target = X10
-		autonomous_state = autonomy_sphereling
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.009
 	}	
 	set_autonomy = {
 		target = X15
-		autonomous_state = autonomy_sphereling
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.009
 	}
 	set_autonomy = {
 		target = X18
-		autonomous_state = autonomy_sphereling
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.009
 	}	
 	set_autonomy = {
 		target = X24
-		autonomous_state = autonomy_sphereling
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.009
 	}
 	set_autonomy = {
 		target = X28
-		autonomous_state = autonomy_sphereling
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.009
 	}
 	set_autonomy = {
 		target = X40
-		autonomous_state = autonomy_sphereling
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.009
 	}
     else = {
@@ -165,7 +165,7 @@ add_opinion_modifier = { target = EGY modifier = positive_101 }
 add_opinion_modifier = { target = ENG modifier = positive_23 }
 add_opinion_modifier = { target = ETH modifier = negative_25 }
 add_opinion_modifier = { target = FRA modifier = positive_200 }
-add_opinion_modifier = { target = SAX modifier = negative_147 }
+add_opinion_modifier = { target = SAX modifier = positive_147 }
 add_opinion_modifier = { target = SHL modifier = negative_5 }
 add_opinion_modifier = { target = SOV modifier = positive_114 }
 add_opinion_modifier = { target = SPR modifier = positive_104 }
@@ -173,7 +173,7 @@ add_opinion_modifier = { target = SWI modifier = negative_50 }
 add_opinion_modifier = { target = TRI modifier = positive_15 }
 add_opinion_modifier = { target = TUR modifier = positive_18 }
 add_opinion_modifier = { target = USA modifier = positive_15 }
-add_opinion_modifier = { target = WGR modifier = positive_99 }
+add_opinion_modifier = { target = WGR modifier = negative_99 }
 add_opinion_modifier = { target = X00 modifier = positive_11 }
 add_opinion_modifier = { target = X01 modifier = negative_148 }
 add_opinion_modifier = { target = X03 modifier = negative_135 }
@@ -196,10 +196,15 @@ add_opinion_modifier = { target = X41 modifier = negative_30 }
 add_opinion_modifier = { target = YEM modifier = negative_10 }
 add_opinion_modifier = { target = YUN modifier = positive_5 }
 
+give_guarantee = SAX
 
+create_faction = Royal_Germans
+
+X21 = { add_to_faction = SAX }
+
+set_faction_name = "Royal German Alliance"
 
 add_ideas = {
-	MEX_church_power_1
 	limited_conscription
 	low_economic_mobilisation
 	export_focus

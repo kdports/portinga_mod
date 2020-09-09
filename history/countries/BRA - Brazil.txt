@@ -173,8 +173,6 @@ add_opinion_modifier = { target = YUN modifier = negative_30 }
 
 give_guarantee = BOL
 give_guarantee = GUY
-give_guarantee = MAN
-give_guarantee = PHI
 give_guarantee = X33
 
 if = {

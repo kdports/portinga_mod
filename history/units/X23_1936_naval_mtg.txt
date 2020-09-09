@@ -1,0 +1,54 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 373
+		task_force = {
+			name = "1st Fleet"
+			location = 373
+			ship = { name = "Labrador" definition = battleship start_experience_factor = 0.14399 equipment = { ship_hull_heavy_1 = { amount = 1 owner = X23 version_name = "Early Battleship" } } }
+			ship = { name = "Saint Lawrence" definition = battleship start_experience_factor = 0.15 equipment = { ship_hull_heavy_1 = { amount = 1 owner = X23 version_name = "Early Battleship" } } }
+			ship = { name = "Belle Isle" definition = battleship start_experience_factor = 0.15 equipment = { ship_hull_heavy_1 = { amount = 1 owner = X23 version_name = "Early Battleship" } } }
+			ship = { name = "Dominion" definition = battleship start_experience_factor = 0.15 equipment = { ship_hull_heavy_1 = { amount = 1 owner = X23 version_name = "Early Battleship" } } }
+			ship = { name = "1st Chicoutimi Battleship" definition = heavy_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Bathurst Battleship" definition = heavy_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "2nd Chicoutimi Battleship" definition = heavy_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "3rd Chicoutimi Battleship" definition = heavy_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "2nd Bathurst Battleship" definition = heavy_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "4th Chicoutimi Battleship" definition = heavy_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "3rd Bathurst Battleship" definition = heavy_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "5th Chicoutimi Battleship" definition = heavy_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Long Island Battleship" definition = heavy_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "Newfoundland" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Light Cruiser" } } }
+			ship = { name = "John Cabot" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Light Cruiser" } } }
+			ship = { name = "Hudson" definition = light_cruiser start_experience_factor = 0.14557 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Light Cruiser" } } }
+			ship = { name = "Kirke" definition = light_cruiser start_experience_factor = 0.14776 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Light Cruiser" } } }
+			ship = { name = "Bristol" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Light Cruiser" } } }
+			ship = { name = "Prince Edward" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Light Cruiser" } } }
+			ship = { name = "Saint John" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Light Cruiser" } } }
+			ship = { name = "Discovery" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = X23 version_name = "Early Light Cruiser" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "X23"
+			version_name = "Early Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "X23"
+			version_name = "Early Battleship"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

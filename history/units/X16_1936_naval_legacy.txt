@@ -1,0 +1,54 @@
+units = {
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 10515
+		task_force = {
+			name = "3rd Fleet"
+			location = 10515
+			ship = { name = "1st Punta Arenas Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "1st Montevideo Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "2nd La Serena Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "1st Bahía Blanca Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "2nd Valdivia Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "3rd La Serena Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "2nd Punta Arenas Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "2nd Montevideo Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "1st La Serena Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "1st Valdivia Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "Buenos Aires" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "Almirante Brown" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "Álvarez Jonte" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X16 } } }
+		}
+	}
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 2210
+		task_force = {
+			name = "1st Fleet"
+			location = 2210
+			ship = { name = "1st Arica Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X16 } } }
+			ship = { name = "Belgrano" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X16 } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "X16"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "X16"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

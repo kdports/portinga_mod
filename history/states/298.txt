@@ -4,7 +4,7 @@ state={
 	name="STATE_298"
 
 	history={
-		owner = FRA
+		owner = FWA
 		victory_points = {
 			2038 3 
 		}
@@ -18,7 +18,6 @@ state={
 			air_base = 1
 
 		}
-		add_core_of = FRA
 	}
 
 	provinces={

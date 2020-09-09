@@ -1,0 +1,51 @@
+units = {
+	fleet = {
+		name = "2nd Fleet"
+		naval_base = 321
+		task_force = {
+			name = "2nd Fleet"
+			location = 2729
+			ship = { name = "Derfflinger" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = X21 version_name = "Early Battleship" } } }
+			ship = { name = "Goeben" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = X21 version_name = "Early Battleship" } } }
+			ship = { name = "Helgoland" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = X21 version_name = "Early Battleship" } } }
+			ship = { name = "1st Arnhem Battleship" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = X21 version_name = "1936 Heavy Cruiser" } } }
+		}
+	}
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 321
+		task_force = {
+			name = "3rd Fleet"
+			location = 7695
+			ship = { name = "2nd Groningen Battleship" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = X21 version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Blitz" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = X21 version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Blücher" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = X21 version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Bremse" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = X21 version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Brummer" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = X21 version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Bussard" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = X21 version_name = "1936 Light Cruiser" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "X21"
+			version_name = "1936 Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "X21"
+			version_name = "Early Battleship"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

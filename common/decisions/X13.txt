@@ -1,0 +1,278 @@
+khodynt_coup_cat = {
+	#timer
+	countdown_to_coup = {
+		allowed = {
+			tag = X13
+		}
+		available = {
+		}
+		activation = {
+			tag = X13
+			has_country_flag = beria_coup_leadup
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 380
+		timeout_effect = {
+			clr_country_flag = beria_coup_leadup
+			if = {
+				limit = {
+					check_variable = { kerensky_support_num > beria_support_num }
+				}
+				news_event = {
+					id = kev_khodynt.8
+				}
+				retire_ideology_leader = communism
+				add_popularity = {
+					ideology = communism
+					popularity = -0.2
+				}
+				clr_country_flag = beria_coup_leadup
+				clr_country_flag = kerensky_support
+				clr_country_flag = beria_support
+				complete_national_focus = KEV_X13_kerensky_win
+			}
+			else = {
+				news_event = {
+					id = kev_khodynt.9
+				}
+				kill_ideology_leader = democratic
+				add_popularity = {
+					ideology = communism
+					popularity = 0.6
+				}
+				set_politics = {
+					ruling_party = communism
+				}
+				clr_country_flag = beria_coup_leadup
+				clr_country_flag = kerensky_support
+				clr_country_flag = beria_support
+				complete_national_focus = KEV_X13_beria_win
+			}
+		}
+	}
+
+	# Kerensky Support
+	kerensky_ask_for_help = {
+		visible = {
+			tag = X13
+			has_country_flag = kerensky_support
+		}
+
+		target_root_trigger = {
+			has_country_flag = kerensky_support
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				has_government = democratic
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			has_army_experience > 10
+		}
+
+		custom_cost_text = army_xp_more_than_10
+
+		fire_only_once = no
+		days_remove = 30
+		complete_effect = {
+			army_experience = -10
+		}
+		remove_effect = {
+			FROM = {
+				country_event = {
+					id = kev_khodynt.7
+				}
+			}
+			custom_effect_tooltip = 1_X13_coup_tt
+		}
+	}
+
+	#PP for Power
+	kerensky_back_officers = {
+		visible = {
+			tag = X13
+			has_country_flag = kerensky_support
+		}
+
+		cost = 75
+
+		fire_only_once = no
+		days_remove = 50
+		remove_effect = {
+			add_to_variable = { kerensky_support_num = 10 }
+			custom_effect_tooltip = 2_X13_coup_tt
+		}
+	}
+
+	#Prestige for Enemy Loss
+	kerensky_discredit_enemy= {
+		visible = {
+			tag = X13
+			has_country_flag = kerensky_support
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = {
+				country_prestige_num > -95
+			}
+		}
+
+		custom_cost_text = prestige_more_than_5
+
+		fire_only_once = no
+		days_remove = 50
+		remove_effect = {
+			add_to_variable = { country_prestige_num = -5 }
+			custom_effect_tooltip = 9_FRA_pres_tt
+
+			add_to_variable = { beria_support_num = -10 }
+			custom_effect_tooltip = 5_X13_coup_tt
+		}
+	}
+
+	#Tighten security
+	kerensky_tighten_security = {
+		visible = {
+			tag = X13
+			has_country_flag = kerensky_support
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+
+		custom_cost_text = cmp_more_than_25
+
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			add_command_power = -25
+		}
+		remove_effect = {
+			add_to_variable = { kerensky_support_num = 5 }
+			custom_effect_tooltip = 6_X13_coup_tt
+		}
+	}
+
+	# Beria Support
+	beria_ask_for_help = {
+		visible = {
+			tag = X13
+			has_country_flag = beria_support
+		}
+
+		target_root_trigger = {
+			has_country_flag = beria_support
+		}
+
+		targets = { ENG FRA X13 X08 ETH SPR }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = { tag = ROOT }
+				has_government = communism
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			has_army_experience > 10
+		}
+
+		custom_cost_text = army_xp_more_than_10
+
+		#fire_only_once = no
+		days_remove = 30
+		complete_effect = {
+			army_experience = -10
+		}
+		remove_effect = {
+			FROM = {
+				country_event = {
+					id = kev_khodynt.7
+				}
+			}
+			custom_effect_tooltip = 1_X13_coup_tt
+		}
+	}
+
+	#PP for Power
+	beria_back_officers = {
+		visible = {
+			tag = X13
+			has_country_flag = beria_support
+		}
+
+		cost = 75
+
+		fire_only_once = no
+		days_remove = 50
+		remove_effect = {
+			add_to_variable = { beria_support_num = 10 }
+			custom_effect_tooltip = 4_X13_coup_tt
+		}
+	}
+
+	#Prestige for Enemy Loss
+	beria_discredit_enemy = {
+		visible = {
+			tag = X13
+			has_country_flag = beria_support
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = {
+				country_prestige_num > -95
+			}
+		}
+
+		custom_cost_text = prestige_more_than_5
+
+		fire_only_once = no
+		days_remove = 50
+		remove_effect = {
+			add_to_variable = { country_prestige_num = -5 }
+			custom_effect_tooltip = 9_FRA_pres_tt
+
+			add_to_variable = { kerensky_support_num = -10 }
+			custom_effect_tooltip = 3_X13_coup_tt
+		}
+	}
+
+	#loosen security
+	beria_loosen_security = {
+		visible = {
+			tag = X13
+			has_country_flag = beria_support
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+
+		custom_cost_text = cmp_more_than_25
+
+		fire_only_once = no
+		days_remove = 35
+		complete_effect = {
+			add_command_power = -25
+		}
+		remove_effect = {
+			add_to_variable = { beria_support_num = 5 }
+			custom_effect_tooltip = 7_X13_coup_tt
+		}
+	}
+}

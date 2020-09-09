@@ -1,0 +1,52 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 373
+		task_force = {
+			name = "1st Fleet"
+			location = 373
+			ship = { name = "Labrador" definition = battleship equipment = { battleship_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "Saint Lawrence" definition = battleship equipment = { battleship_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "Belle Isle" definition = battleship equipment = { battleship_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "Dominion" definition = battleship equipment = { battleship_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "1st Chicoutimi Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "1st Bathurst Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "2nd Chicoutimi Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "3rd Chicoutimi Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "2nd Bathurst Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "4th Chicoutimi Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "3rd Bathurst Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "5th Chicoutimi Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "1st Long Island Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "Newfoundland" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "John Cabot" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "Hudson" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "Kirke" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "Bristol" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "Prince Edward" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "Saint John" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X23 } } }
+			ship = { name = "Discovery" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = X23 } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "X23"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "X23"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

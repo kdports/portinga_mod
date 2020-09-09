@@ -1,0 +1,61 @@
+units = {
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 13092
+		task_force = {
+			name = "3rd Fleet"
+			location = 13092
+			ship = { name = "Almirante Padilla" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Buenaventura" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Cartagena de Indias" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Colombia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Cristóbal Colón" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Fco. de Paula Santander" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Gran Colombia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Independiente" definition = battleship equipment = { battleship_1 = { amount = 1 owner = COS } } }
+			ship = { name = "1st Liberia Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "1st Barranquilla Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "1st Caracas Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "1st San Felipe Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "1st Penonomé Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "2nd Barranquilla Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "2nd Liberia Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Bogotá" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Bolívar" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Cali" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Córdoba" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Cúcuta" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Cundinamarca" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Medellin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Pasto" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Santander" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "Sucre" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "1st Buenaventura Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "1st Barranquilla Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "1st Penonomé Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "1st Bluefields Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+			ship = { name = "1st Liberia Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = COS } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "COS"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "COS"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

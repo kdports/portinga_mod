@@ -6,20 +6,22 @@ state={
 	history={
 		owner = X13
 		victory_points = {
-			13067 3 
+			13067 3
 		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 0
 			arms_factory = 0
 			air_base = 0
-
+			13067 = {
+				naval_base = 8
+			}
 		}
 		add_core_of = X13
 	}
 
 	provinces={
-		13067 
+		13067
 	}
 	manpower=29880
 	buildings_max_level_factor=1.000

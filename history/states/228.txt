@@ -15,7 +15,7 @@ state={
 			air_base = 3
 
 		}
-		add_core_of = FRA
+		add_core_of = X35
 	}
 
 	provinces={

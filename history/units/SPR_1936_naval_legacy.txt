@@ -1,0 +1,79 @@
+units = {
+	fleet = {
+		name = "4th Fleet"
+		naval_base = 7451
+		task_force = {
+			name = "4th Fleet"
+			location = 5937
+			ship = { name = "5th Bilbao Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "1st Perpignan Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "1st Gibraltar Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "10th Perpignan Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+		}
+	}
+	fleet = {
+		name = "5th Fleet"
+		naval_base = 7451
+		task_force = {
+			name = "5th Fleet"
+			location = 5407
+			ship = { name = "3rd La Coruña Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "2nd La Coruña Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "2nd Perpignan Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "9th Perpignan Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "1st La Coruña Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+		}
+	}
+	fleet = {
+		name = "6th Fleet"
+		naval_base = 7451
+		task_force = {
+			name = "6th Fleet"
+			location = 5707
+			ship = { name = "5th La Coruña Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "4th Perpignan Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "1st Oporto Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "8th Perpignan Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "4th Bilbao Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "11th Perpignan Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "6th La Coruña Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "3rd Perpignan Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "2nd Bilbao Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Pelayo" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "4th La Coruña Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "7th Perpignan Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Castilla" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Aragón" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Cardenal Cisneros" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Ciudad de Oviedo" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Conde de Venadito" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Cristóbal Colón" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Don Antonio de Ulloa" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Alfonso XII" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Almirante Oquendo" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Cataluña" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+			ship = { name = "Don Juan de Austria" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SPR } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "SPR"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "SPR"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

@@ -1,0 +1,63 @@
+units = {
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 13092
+		task_force = {
+			name = "3rd Fleet"
+			location = 13092
+			ship = { name = "Almirante Padilla" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = COS version_name = "Early Battleship" } } }
+			ship = { name = "Buenaventura" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = COS version_name = "Early Battleship" } } }
+			ship = { name = "Cartagena de Indias" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = COS version_name = "Early Battleship" } } }
+			ship = { name = "Colombia" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = COS version_name = "Early Battleship" } } }
+			ship = { name = "Cristóbal Colón" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = COS version_name = "Early Battleship" } } }
+			ship = { name = "Fco. de Paula Santander" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = COS version_name = "Early Battleship" } } }
+			ship = { name = "Gran Colombia" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = COS version_name = "Early Battleship" } } }
+			ship = { name = "Independiente" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = COS version_name = "Early Battleship" } } }
+			ship = { name = "1st Liberia Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Barranquilla Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Caracas Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st San Felipe Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Penonomé Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "2nd Barranquilla Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "2nd Liberia Battleship" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "Bogotá" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "Bolívar" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "Cali" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "Córdoba" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "Cúcuta" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "Cundinamarca" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "Medellin" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "Pasto" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "Santander" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "Sucre" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Buenaventura Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Barranquilla Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Penonomé Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Bluefields Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Liberia Cruiser" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COS version_name = "Early Light Cruiser" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "COS"
+			version_name = "Early Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "COS"
+			version_name = "Early Battleship"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}
