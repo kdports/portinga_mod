@@ -3087,6 +3087,7 @@ focus_tree = {
 		}
 		
 		relative_position_id = SPR_colonial_concern
+		mutually_exclusive = { focus = SPR_let_go_of_south_america }
 		
 		cost = 7
 		ai_will_do = {
@@ -3123,6 +3124,7 @@ focus_tree = {
 		}
 		
 		relative_position_id = SPR_colonial_concern
+		mutually_exclusive = { focus = SPR_reclaim_the_colonies }
 		
 		cost = 7
 		ai_will_do = {
@@ -3187,14 +3189,14 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = SPR_prepare_defences }
 
-		x = -2
-		y = 0
+		x = 0
+		y = 1
 		offset = {
 			x = 0
 			y = 2
 		}
 		
-		relative_position_id = SPR_prepare_defences
+		relative_position_id = SPR_dont_give_in
 		
 		cost = 7
 		ai_will_do = {
@@ -3468,6 +3470,723 @@ focus_tree = {
 			
 		}
 	}
+	
+	focus = {
+		id = SPR_convince_gautamala
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_invite_brazil }
+		prerequisite = { focus = SPR_invite_la_plata }
+
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_create_the_coalition
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_kuboresha_mahusiano
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_ethopian_alliance }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_ethopian_alliance
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_improve_relations
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_english_alliance }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_english_alliance
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+		
+	focus = {
+		id = SPR_améliorer_les_relations
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_french_alliance }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_french_alliance
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_anglo_spanish_treaty
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_improve_relations }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_improve_relations
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_anglo_french_treaty
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_améliorer_les_relations }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_améliorer_les_relations
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_spainsh_etheopian_treaty
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_kuboresha_mahusiano }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+		
+		relative_position_id = SPR_kuboresha_mahusiano
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SPR_begin_rearmament
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 12
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { }
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war_support > 0.12
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_defensive_focus
+		icon = GFX_goal_generic_defence
+		mutually_exclusive = { focus = SPR_aggressive_focus }
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = SPR_begin_rearmament }
+		available_if_capitulated = yes
+		relative_position_id = SPR_begin_rearmament
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = maxime_weygand
+		}
+	}
+	
+	focus = {
+		id = SPR_methodical_battle
+		icon = GFX_goal_generic_cavalry
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_defensive_focus }
+		mutually_exclusive = { focus = SPR_firepower_kills }
+		relative_position_id = SPR_defensive_focus
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPR_methodical_battle
+				category = land_doctrine
+				uses = 2
+				bonus = 2
+			}
+		}
+	}
+	focus = {
+		id = SPR_fortification_focus
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = SPR_methodical_battle }
+		x = 0
+		y = 1
+		relative_position_id = SPR_methodical_battle
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = SPR_fortification_focus
+		}
+	}
+	focus = {
+		id = SPR_alpine_forts
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = SPR_fortification_focus }
+		x = 0
+		y = 1
+		relative_position_id = SPR_fortification_focus
+		cost = 10
+
+		available = {
+			735 = { is_controlled_by = ROOT }
+		}
+
+		completion_reward = {
+			ROOT = { country_event = { id = SPRnce.3 } }
+			ITA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = SPR_alpine_forts
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_extend_the_maginot_line
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = SPR_alpine_forts }
+		x = 0
+		y = 1
+		relative_position_id = SPR_alpine_forts
+		cost = 10
+
+		available = {
+			18 = { is_controlled_by = ROOT }
+			29 = { is_controlled_by = ROOT }
+			785 = { is_controlled_by = ROOT }
+			has_idea = SPR_protected_by_the_maginot_line
+		}
+		completion_reward = {
+			ROOT = { country_event = { id = SPRnce.2 } }
+			BEL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = SPR_extend_the_maginot_line_focus_neg
+				}
+				add_opinion_modifier = {
+					target = GER
+					modifier = SPR_extend_the_maginot_line_focus_pos
+				}
+			}
+		}
+	}
+	
+
+	focus = {
+		id = SPR_aggressive_focus
+		icon = GFX_goal_generic_major_war
+		mutually_exclusive = { focus = SPR_defensive_focus }
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = SPR_begin_rearmament
+		available_if_capitulated = yes
+		prerequisite = { focus = SPR_begin_rearmament }
+		ai_will_do = {
+			factor = 0.2
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = maurice_gamelin
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = SPR_battle_of_maneuver
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_aggressive_focus }
+		mutually_exclusive = { focus = SPR_air_dominance }
+		relative_position_id = SPR_aggressive_focus
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = charles_de_gaulle
+		}
+	}
+	focus = {
+		id = SPR_motorized_focus
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = SPR_battle_of_maneuver }
+		x = 0
+		y = 1
+		relative_position_id = SPR_battle_of_maneuver
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_ideas = SPR_motorized_focus
+		}
+	}
+	focus = {
+		id = SPR_mechanized_focus
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = SPR_motorized_focus }
+		x = 0
+		y = 1
+		relative_position_id = SPR_motorized_focus
+		cost = 10
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = SPR_mechanized_focus
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = SPR_light_medium_armor
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = SPR_mechanized_focus }
+		x = 0
+		y = 1
+		relative_position_id = SPR_mechanized_focus
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = SPR_light_medium_armor
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+				category = cat_medium_armor
+			}
+		}
+	}
+	focus = {
+		id = SPR_air_dominance
+		icon = GFX_goal_generic_air_fighter2
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_aggressive_focus }
+		mutually_exclusive = { focus = SPR_battle_of_maneuver }
+		relative_position_id = SPR_aggressive_focus
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = { SPR_air_dominance }
+		}
+	}
+	focus = {
+		id = SPR_cas_focus
+		icon = GFX_goal_generic_CAS
+	 	prerequisite = { 
+	 		focus = SPR_air_dominance
+	 	}
+		x = 0
+		y = 1
+		relative_position_id = SPR_air_dominance
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPR_cas_focus
+				bonus = 1.0
+				uses = 2
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = SPR_air_ground_cooperation
+		icon = GFX_goal_generic_air_bomber
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_cas_focus }
+		mutually_exclusive = { }
+		relative_position_id = SPR_air_dominance
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPR_air_ground_cooperation
+				category = air_doctrine
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = SPR_flying_artillery
+		icon = GFX_goal_poland_goal
+		x = 0
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = SPR_air_ground_cooperation }
+		mutually_exclusive = { }
+		relative_position_id = SPR_air_dominance
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = { SPR_flying_artillery }
+		}
+	}
+	focus = {
+		id = SPR_army_reform
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { 
+			focus = SPR_light_medium_armor 
+			focus = SPR_heavy_armor_focus 
+			focus = SPR_extend_the_maginot_line
+			focus = SPR_flying_artillery
+		}
+		x = -1
+		y = 1
+		relative_position_id = SPR_light_medium_armor
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = { has_idea = SPR_disjointed_government }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			remove_ideas = SPR_victors_of_wwi
+			army_experience = 10
+			add_tech_bonus = {
+				name = SPR_army_reform
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = SPR_AMX
+		}
+	}
+	
+	
+	
+	
+	
+
+
 	
 	
 	
