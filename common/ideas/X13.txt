@@ -80,6 +80,27 @@ ideas = {
 				opinion_gain_monthly_same_ideology_factor = 0.5
 			}
 		}
+
+		X13_dem_support = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_generic_communism_drift_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.10
+				drift_defence_factor = -0.05
+				opinion_gain_monthly_same_ideology_factor = 0.5
+			}
+		}
 	}
 	political_advisor = {
 		X13_absolutist_advisor = {

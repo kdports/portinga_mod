@@ -1554,7 +1554,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_kerensky_win
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_goal_support_democracy
 		x = 4
 		y = 2
 		offset = {
@@ -1585,8 +1585,473 @@ focus_tree = {
 	}
 
 	focus = {
+		id = KEV_X13_kerensky_russia_civ
+		icon = GFX_focus_generic_industry_1
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_kerensky_win }
+		relative_position_id = KEV_X13_kerensky_win
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			X13 = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 4
+				}
+			}
+			SOV = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 4
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_kerensky_russia_equip
+		icon = GFX_focus_chi_army_reform
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_kerensky_win }
+		relative_position_id = KEV_X13_kerensky_win
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1000
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_kerensky_russia_steel
+		icon = GFX_focus_generic_steel
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_kerensky_russia_equip }
+		relative_position_id = KEV_X13_kerensky_russia_equip
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			capital_scope = {
+				add_resource = {
+					type = steel
+					amount = 50
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_kerensky_russia_research
+		icon = GFX_focus_generic_treaty
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_kerensky_win }
+		relative_position_id = KEV_X13_kerensky_win
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_stability = 0.2
+		}
+	}
+
+	focus = {
+		id = KEV_X13_kerensky_second_research
+		icon = GFX_focus_research2
+		text = extra_tech_slot
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_kerensky_russia_research }
+		relative_position_id = KEV_X13_kerensky_russia_research
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_research_slot = 1
+			SOV = {
+				add_research_slot = 1
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_kerensky_democratize_kiwis
+		icon = GFX_focus_generic_self_management
+		x = -4
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_kerensky_win }
+		relative_position_id = KEV_X13_kerensky_win
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			NZL = {
+				add_ideas = X13_dem_support
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_kerensky_kiwi_vote
+		icon = GFX_focus_smiling_buddha
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_kerensky_democratize_kiwis }
+		relative_position_id = KEV_X13_kerensky_democratize_kiwis
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NZL = {
+				has_government = democratic
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			annex_country = {
+				target = NZL
+				transfer_troops = yes
+			}
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
+		}
+	}
+
+	focus = {
+		id = KEV_X13_help_formosa
+		icon = GFX_focus_taiwan
+		x = 4
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_kerensky_win }
+		relative_position_id = KEV_X13_kerensky_win
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			transfer_state = 84
+			transfer_state = 395
+			give_guarantee = JAP
+			custom_effect_tooltip = 2_X13_crisis_tt
+		}
+	}
+
+	focus = {
+		id = KEV_X13_take_japan
+		icon = GFX_focus_generic_japanese_imperial_glory
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_help_formosa }
+		relative_position_id = KEV_X13_help_formosa
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			JAP = {
+				controls_state = 253
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			SOV = {
+				set_autonomy = {
+					target = JAP
+					autonomy_state = autonomy_sphereling
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_democratize_pol
+		icon = GFX_focus_generic_polish_deal
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_kerensky_russia_civ }
+		prerequisite = { focus = KEV_X13_kerensky_russia_steel }
+		prerequisite = { focus = KEV_X13_kerensky_second_research }
+		relative_position_id = KEV_X13_kerensky_russia_civ
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = X26
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			X26 = {
+				add_ideas = X13_dem_support
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_pol_russia
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_democratize_pol }
+		relative_position_id = KEV_X13_democratize_pol
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			X26 = {
+				has_government = democratic
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			X26 = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = positive_70
+				}
+				add_opinion_modifier = {
+					target = X13
+					modifier = positive_70
+				}
+			}
+			SOV = {
+				add_to_faction = X26
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_all_friends
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_take_japan }
+		prerequisite = { focus = KEV_X13_kerensky_kiwi_vote }
+		prerequisite = { focus = KEV_X13_pol_russia }
+		relative_position_id = KEV_X13_pol_russia
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_in_faction_with = SOV
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_faction_with = X13
+				}
+				add_offsite_building = { type = arms_factory level = 5 }
+				add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = { type = dockyard level = 5 }
+			}
+		}
+	}
+
+	focus = { #Expand this tree with developing the other nations, if we have time/energy
 		id = KEV_X13_beria_win
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_goal_HON_nkvd_assistance
 		x = -4
 		y = 2
 		offset = {
@@ -1618,7 +2083,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_russia_renegotiate
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_goal_generic_dangerous_deal
 		x = 0
 		y = 2
 		offset = {
@@ -1627,7 +2092,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_X13_beria_win }
 		relative_position_id = KEV_X13_beria_win
-		cost = 7
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1653,7 +2118,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_align_japan
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_goal_support_communism
 		x = -2
 		y = 1
 		offset = {
@@ -1688,7 +2153,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_invite_japan
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_focus_chi_collaboration_with_the_japanese
 		x = -2
 		y = 2
 		offset = {
@@ -1718,6 +2183,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			JAP = {
+				add_opinion_modifier = {
+					target = X13
+					modifier = positive_100
+				}
+			}
 			X13 = {
 				add_to_faction = JAP
 			}
@@ -1726,7 +2197,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_align_phil
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_goal_support_fourth_int
 		x = 2
 		y = 1
 		offset = {
@@ -1760,7 +2231,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_invite_phil
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_focus_jap_manchurian_project
 		x = 2
 		y = 2
 		offset = {
@@ -1790,6 +2261,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			PHI = {
+				add_opinion_modifier = {
+					target = X13
+					modifier = positive_100
+				}
+			}
 			X13 = {
 				add_to_faction = PHI
 			}
@@ -1798,7 +2275,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_invite_alaska
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_focus_brk_frozen
 		x = 2
 		y = 1
 		offset = {
@@ -1832,6 +2309,12 @@ focus_tree = {
 				amount = 1000
 				target = X17
 			}
+			X17 = {
+				add_opinion_modifier = {
+					target = X13
+					modifier = positive_100
+				}
+			}
 			X13 = {
 				add_to_faction = X17
 			}
@@ -1840,7 +2323,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_invite_australia
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_focus_AST_rats_tobruk
 		x = -2
 		y = 1
 		offset = {
@@ -1877,6 +2360,12 @@ focus_tree = {
 				type = take_claimed_state
 				target = SPR
 			}
+			AST = {
+				add_opinion_modifier = {
+					target = X13
+					modifier = positive_100
+				}
+			}
 			X13 = {
 				add_to_faction = AST
 			}
@@ -1886,7 +2375,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_invite_california
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_focus_chi_legislative_yuan
 		x = 0
 		y = 1
 		offset = {
@@ -1913,6 +2402,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			CAL = {
+				add_opinion_modifier = {
+					target = X13
+					modifier = positive_100
+				}
+			}
 			X13 = {
 				add_to_faction = CAL
 			}
@@ -1923,7 +2418,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_X13_attack_kiwi
-		icon = GFX_goal_continuous_armor_production
+		icon = GFX_goal_HOL_east_indies
 		x = -1
 		y = 1
 		offset = {
@@ -1932,7 +2427,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = KEV_X13_invite_california focus = KEV_X13_invite_australia focus = KEV_X13_invite_alaska focus = KEV_X13_invite_japan focus = KEV_X13_invite_phil }
 		relative_position_id = KEV_X13_invite_california
-		cost = 7
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1954,6 +2449,148 @@ focus_tree = {
 				target = NZL
 				type = annex_everything
 			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_attack_champa
+		icon = GFX_focus_CZE_german_puppet
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_invite_california focus = KEV_X13_invite_australia focus = KEV_X13_invite_alaska focus = KEV_X13_invite_japan focus = KEV_X13_invite_phil }
+		relative_position_id = KEV_X13_invite_california
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			declare_war_on = {
+				target = X06
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_attack_burma
+		icon = GFX_goal_generic_armed_protest
+		x = -3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_invite_california focus = KEV_X13_invite_australia focus = KEV_X13_invite_alaska focus = KEV_X13_invite_japan focus = KEV_X13_invite_phil }
+		relative_position_id = KEV_X13_invite_california
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			declare_war_on = {
+				target = BRM
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_X13_attack_formosa
+		icon = GFX_focus_taiwan
+		x = 3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_invite_california focus = KEV_X13_invite_australia focus = KEV_X13_invite_alaska focus = KEV_X13_invite_japan focus = KEV_X13_invite_phil }
+		relative_position_id = KEV_X13_invite_california
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			custom_effect_tooltip = 2_X13_crisis_tt
+		}
+	}
+
+	focus = {
+		id = KEV_X13_no_dream
+		icon = GFX_focus_eng_global_defense
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_X13_attack_formosa }
+		prerequisite = { focus = KEV_X13_attack_kiwi }
+		prerequisite = { focus = KEV_X13_attack_champa }
+		prerequisite = { focus = KEV_X13_attack_burma }
+		relative_position_id = KEV_X13_attack_champa
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_to_variable = { country_prestige_num = 40 }
+			custom_effect_tooltip = 8_FRA_pres_tt
 		}
 	}
 }

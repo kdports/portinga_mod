@@ -88,5 +88,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_HON_nkvd_assistance"
 		texturefile = "gfx/interface/goals/r56_goal_HON_nkvd_assistance.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_HOL_east_indies"
+		texturefile = "gfx/interface/goals/r56_goal_HOL_east_indies.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_hol_spread_communism_in_the_east_indies"
+		texturefile = "gfx/interface/goals/focus_hol_spread_communism_in_the_east_indies.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_brk_frozen"
+		texturefile = "gfx/interface/goals/brk_focus_frozen_cabal.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_taiwan"
+		texturefile = "gfx/interface/goals/Taiwan_Colony.tga"
 	}	
 }

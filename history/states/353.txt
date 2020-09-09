@@ -6,21 +6,32 @@ state={
 	history={
 		owner = X13
 		victory_points = {
-			13021 3 
+			13021 3
 		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 0
 			arms_factory = 0
 			air_base = 0
-
+			13022 = {
+				naval_base = 2
+			}
+			7393 = {
+				naval_base = 2
+			}
+			4387 = {
+				naval_base = 2
+			}
+			13020 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = AST
 		add_core_of = X13
 	}
 
 	provinces={
-		4387 7393 13020 13021 13022 13050 
+		4387 7393 13020 13021 13022 13050
 	}
 	manpower=150342
 	buildings_max_level_factor=1.000

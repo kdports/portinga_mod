@@ -242,10 +242,12 @@ country_event = {
 	}
 	option = { #Offer Resources
 		name = kev_khodynt.10.b
-		destroy_resource = {
-			type = oil
-			amount = 50
-			state = 369
+		SOV = {
+			create_import = {
+				resource = oil
+				amount = 50
+				exporter = X13
+			}
 		}
 		custom_effect_tooltip = 1_X13_sov_tt
 		hidden_effect = {
@@ -301,6 +303,9 @@ country_event = {
 	option = { #Yay
 		name = kev_khodynt.11.a
 		leave_faction = yes
+		SOV = {
+			end_puppet = X13
+		}
 		hidden_effect = {
 			create_faction = X13_PACT
 			set_faction_name = "Markovo Axis"
