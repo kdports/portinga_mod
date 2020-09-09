@@ -151,6 +151,20 @@
   khodynt_coup_cat:0 "Leadup to Beria's Coup"
   khodynt_coup_cat_desc:0 "Beria's ambitions have placed both himself and Kerensky in a bitter struggle for power. Having set events in motion, Beria is now counting down the days until his coup attempt, a coup that will execute §!regardless of if he is fully prepared§!.\n\nKerensky's Level of Support: [?kerensky_support_num|C0]\n\nBeria's Level of Support: [?beria_support_num|O0]"
 
+  crisis_category:0 "Great Power Crisis!"
+  countdown_to_crisis_war:0 "Countdown to Escalation"
+  crisis_back_down:0 "Concede Defeat"
+  crisis_join_one:0 "Back Aggressive Powers"
+  crisis_join_two:0 "Back Defensive Powers"
+  crisis_give_inf:0 "Send Infantry Weapons"
+  crisis_give_pp:0 "Send Political Power"
+  crisis_give_stab:0 "Send Stability"
+  crisis_give_aexp:0 "Give Army Experience"
+  crisis_give_nexp:0 "Give Navy Experience"
+  crisis_give_pexp:0 "Give Air Experience"
+  crisis_give_industry_tech:0 "Give Industry Bonus"
+  crisis_give_give_civs:0 "Give Civilian Bonuses"
+
   # Reminder Tooltips
   #1_FRA_pres_tt:0 "Adds §G5 Prestige§! to your country's total."
   #2_FRA_pres_tt:0 "Adds §G15 Prestige§! to your country's total."
@@ -168,6 +182,7 @@
   5_X13_coup_tt:0 "Beria loses §Rten points§! of support."
   6_X13_coup_tt:0 "Kerensky gains §Gfive points§! of support."
   7_X13_coup_tt:0 "Beria gains §Gfive points§! of support."
+  8_X13_coup_tt:0 "§OBeria will flee the country, never to return...§!"
 
   prestige_more_than_5:0 "§H5§! prestige"
   prestige_more_than_5_blocked:0 "§R5§! prestige"
@@ -202,22 +217,22 @@
 
   # Events
   kev_khodynt.1.t:0 "From Markovo to Melbourne"
-  kev_khodynt.1.d:0 ""
-  kev_khodynt.1.a:0 ""
-  kev_khodynt.1.b:0 ""
-  kev_khodynt.1.c:0 ""
+  kev_khodynt.1.d:0 "At its height, our empire stretched from Central Siberia to the southernmost reaches of arable land. The grandeur was made possible by our navy, and in particular our most ambitious admirals. Their ability to wreak havoc on would-be challengers secured our dominant position in the Pacific. Their tactics were largely..."
+  kev_khodynt.1.a:0 "Dedicated to hit-and-run maneuvers, outflanking their foes."
+  kev_khodynt.1.b:0 "Based around massive attacks, overwhelming enemy screens."
+  kev_khodynt.1.c:0 "Defensive in nature, allowing the enemy forces to sail into ambushes."
 
   kev_khodynt.2.t:0 "Pacifying the Russians"
-  kev_khodynt.2.d:0 ""
-  kev_khodynt.2.a:0 ""
-  kev_khodynt.2.b:0 ""
-  kev_khodynt.2.c:0 ""
+  kev_khodynt.2.d:0 "Meanwhile, we pushed west and encountered unfamiliar faces. These strange men were alike us in many ways, but possessed far greater armies and industry. After being pushed east in successive wars, we were forced to accept that we would be unable to maintain complete independence. In order to maintain at least some sovereignty, we..."
+  kev_khodynt.2.a:0 "Tied our economies together, creating mutually-reliant industry."
+  kev_khodynt.2.b:0 "Became a major producer of weapons, making our factories too valuable to destroy."
+  kev_khodynt.2.c:0 "Paid them off with our natural resources."
 
   kev_khodynt.3.t:0 "Striking the Motherload"
-  kev_khodynt.3.d:0 ""
-  kev_khodynt.3.a:0 ""
-  kev_khodynt.3.b:0 ""
-  kev_khodynt.3.c:0 ""
+  kev_khodynt.3.d:0 "The turn of the century expanded our nation’s horizons in unexpected ways. The advancements in motorization, along with the discovery of massive oil reserves under our feet, empowered us in never before seen ways. We were the first to discover how best to extract and store this liquid gold, which meant..."
+  kev_khodynt.3.a:0 "Advancements in storage through the creation of fuel silos."
+  kev_khodynt.3.b:0 "Increases in processing time, allowing for more extraction faster."
+  kev_khodynt.3.c:0 "Generalized enhancements, with a wide range of utility."
 
   kev_khodynt.4.t:0 "A Bomb Idea"
   kev_khodynt.4.d:0 "Diplomats from [event_target:nuke_share_target.GetName] have recently approached our ambassador, asking about the possibility of a joint nuclear program. Although this would significantly speed up our own nuclear research, it would have the unfortunate effect of aiding theirs as well. As such, we should accept this offer only if we don't plan on future confrontations with them."
@@ -255,3 +270,7 @@
   kev_khodynt.11.t:0 "Russia Agrees to Succession!"
   kev_khodynt.11.d:0 "In light of our various offers, the Moscow government finally relented and agreed to allow our peaceful succession from the Russian Federation. For the first time in nearly one hundred years there are two Russian nations. Now, our eyes turn towards the Pacific..."
   kev_khodynt.11.a:0 "Well, of course they did."
+
+  kev_khodynt.12.t:0 "Russian Exile Offers Services"
+  kev_khodynt.12.d:0 "It seems that the recent political shakeup in [X13.GetName] has resulted in one of their leading communists, Lavrentiy Beria, fleeing here for refuge. As an accomplished general, he might be a valuable asset in future wars."
+  kev_khodynt.12.a:0 "He seems like a fine fellow."

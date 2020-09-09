@@ -1,7 +1,6 @@
 crisis_category = {
 	icon = generic_propaganda
 	priority = 50
-	visible_when_empty = yes
 	available = {
 		has_global_flag = crisis_ongoing
 		is_ai = no

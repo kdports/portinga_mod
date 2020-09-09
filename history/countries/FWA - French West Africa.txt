@@ -175,6 +175,7 @@ add_ideas = {
 	low_economic_mobilisation
 	export_focus
 	culture_french
+	FWA_racial_divide
 }
 set_stability = 0.60
 set_war_support = 0.60

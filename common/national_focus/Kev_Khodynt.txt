@@ -1732,6 +1732,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.2
+			custom_effect_tooltip = 8_X13_coup_tt
+			hidden_effect = {
+				SPR = {
+					country_event = {
+						id = kev_khodynt.12
+					}
+				}
+			}
 		}
 	}
 
