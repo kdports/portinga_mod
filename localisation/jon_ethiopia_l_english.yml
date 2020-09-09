@@ -25,7 +25,21 @@
   ETH_no_compromises:0 "No Compromises on our Workforce"
   ETH_no_compromises_desc:0 ""
   ETH_african_mines:0 "Exploit the Mines of Africa"
-  
+  ETH_zulu_rebellions:0 "Address the Zulu Problem"
+  ETH_restore_order:0 "Restore Order"
+  ETH_integrate_zulu:0 "Honor Zulu Customs"
+  ETH_secret_police:0 "Form the Secret Police"
+  ETH_remove_resistance:0 "Remove Resistance"
+  ETH_counter_intelligence:0 "Recruit Foreigners"
+  ETH_recruit_operative:0 "Recruit an Operative"
+  ETH_skilled_operatives:0 "Train Skilled Operatives"
+  ETH_south_lion:0 "The Lion of the South"
+  ETH_coptic_nation:0 "The Great Coptic Nation"
+  ETH_figurehead_emperor:0 "Figurehead Emperor"
+  ETH_imperial_ambitions:0 "Imperial Ambitions"
+  ETH_selassie_rising:0 "The Rise of Selassie"
+  ETH_ties_europe:0 "Friends in the North"
+  ETH_approach_england2:0 "Bring in England"
 
   ## Ideas
   slavery_idea_1a:0 "Unskilled Laborers"

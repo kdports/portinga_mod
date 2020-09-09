@@ -2469,7 +2469,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ETH_old_naval_construction"
 			custom_effect_tooltip = ETH_naval_construct_tt
-			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_light_2
@@ -2494,7 +2493,6 @@ focus_tree = {
 					progress = 0.95
 					amount = 1
 				}
-			}
 		}
 	}
 
@@ -2609,21 +2607,21 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ETH_air_bases"
-			138 = {
+			148 = {
 				add_building_construction = {
 					type = air_base
 					level = 3
 					instant_build = yes
 				}
 			}
-			141 = {
+			156 = {
 				add_building_construction = {
 					type = air_base
 					level = 3
 					instant_build = yes
 				}
 			}
-			666 = {
+			171 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
