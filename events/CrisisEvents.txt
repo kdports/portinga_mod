@@ -1,8 +1,8 @@
 add_namespace = crisis
 news_event = {
 	id = crisis.1
-	title = "[From.GetName] joins the crisis!"
-	desc = "It seems that [From.GetName] has thrown their lot in with a faction!"
+	title = "[Root.GetName] joins the crisis!"
+	desc = "It seems that [Root.GetName] has thrown their lot in with a faction!"
 	picture = news_event_generic_sign_treaty1
 
 	major = yes

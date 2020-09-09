@@ -5,9 +5,14 @@ crisis_category = {
 		allowed = {
 		}
 		available = {
+			NOT = {
+				has_global_flag = crisis_ongoing
+			}
 		}
 		activation = {
-			has_global_flag = crisis_ongoing
+			any_country = {
+				has_country_flag = crisis_head_one
+			}
 		}
 
 		target_root_trigger = {
@@ -17,7 +22,7 @@ crisis_category = {
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -37,6 +42,24 @@ crisis_category = {
 			declare_war_on = {
 				target = FROM
 				type = annex_everything
+			}
+			every_country = {
+				limit = {
+					has_country_flag = crisis_team_two
+				}
+				declare_war_on = {
+					target = ROOT
+					type = annex_everything
+				}
+			}
+			every_country = {
+				limit = {
+					has_country_flag = crisis_team_one
+				}
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				}
 			}
 		}
 	}
@@ -58,6 +81,7 @@ crisis_category = {
 		fire_only_once = no
 		#days_remove = 30
 		complete_effect = {
+			clr_global_flag = crisis_ongoing
 			if = {
 				limit = {
 					has_country_flag = crisis_head_one
@@ -103,6 +127,12 @@ crisis_category = {
 					}
 				}
 			}
+			every_country = {
+				clr_country_flag = crisis_head_one
+				clr_country_flag = crisis_head_two
+				clr_country_flag = crisis_team_one
+				clr_country_flag = crisis_team_two
+			}
 		}
 	}
 
@@ -113,7 +143,7 @@ crisis_category = {
 				has_country_flag = crisis_head_one
 				has_country_flag = crisis_head_two
 				has_country_flag = crisis_team_one
-				has_country_flag = crisis_head_two
+				has_country_flag = crisis_team_two
 			}
 		}
 
@@ -126,11 +156,11 @@ crisis_category = {
 				has_country_flag = crisis_head_one
 				has_country_flag = crisis_head_two
 				has_country_flag = crisis_team_one
-				has_country_flag = crisis_head_two
+				has_country_flag = crisis_team_two
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -159,7 +189,7 @@ crisis_category = {
 				has_country_flag = crisis_head_one
 				has_country_flag = crisis_head_two
 				has_country_flag = crisis_team_one
-				has_country_flag = crisis_head_two
+				has_country_flag = crisis_team_two
 			}
 		}
 
@@ -172,11 +202,11 @@ crisis_category = {
 				has_country_flag = crisis_head_one
 				has_country_flag = crisis_head_two
 				has_country_flag = crisis_team_one
-				has_country_flag = crisis_head_two
+				has_country_flag = crisis_team_two
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -220,7 +250,7 @@ crisis_category = {
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -262,7 +292,7 @@ crisis_category = {
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -303,7 +333,7 @@ crisis_category = {
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -344,7 +374,7 @@ crisis_category = {
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -390,7 +420,7 @@ crisis_category = {
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -436,7 +466,7 @@ crisis_category = {
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -482,7 +512,7 @@ crisis_category = {
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {
@@ -530,7 +560,7 @@ crisis_category = {
 			}
 		}
 
-		targets = { ENG FRA X13 X08 ETH SPR }
+		targets = { ENG FRA X13 X08 ETH SPR CRO }
 		targets_dynamic = yes
 
 		target_trigger = {

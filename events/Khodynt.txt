@@ -11,14 +11,26 @@ country_event = {
 
 	option = { #
 		name = kev_khodynt.1.a
+		every_navy_leader = {
+			add_maneuver = 2
+			add_coordination = 1
+		}
 	}
 
 	option = { #
 		name = kev_khodynt.1.b
+		every_navy_leader = {
+			add_attack = 2
+			add_coordination = 1
+		}
 	}
 
 	option = { #
 		name = kev_khodynt.1.c
+		every_navy_leader = {
+			add_defense = 2
+			add_coordination = 1
+		}
 	}
 }
 
@@ -33,14 +45,32 @@ country_event = {
 
 	option = { #
 		name = kev_khodynt.2.a
+		add_offsite_building = {
+			type = industrial_complex
+			level = 4
+		}
 	}
 
 	option = { #
 		name = kev_khodynt.2.b
+		add_offsite_building = {
+			type = arms_factory
+			level = 4
+		}
 	}
 
 	option = { #
 		name = kev_khodynt.2.c
+		add_resource = {
+			type = aluminium
+			amount = 20
+			state = 369
+		}
+		add_resource = {
+			type = tungsten
+			amount = 20
+			state = 369
+		}
 	}
 }
 
@@ -55,14 +85,34 @@ country_event = {
 
 	option = { #
 		name = kev_khodynt.3.a
+		set_technology = {
+			synth_oil_experiments = 1
+		}
+		set_technology = {
+			fuel_refining2  = 1
+		}
 	}
 
 	option = { #
 		name = kev_khodynt.3.b
+		set_technology = {
+			synth_oil_experiments = 1
+		}
+		set_technology = {
+			oil_processing = 1
+		}
 	}
 
 	option = { #
 		name = kev_khodynt.3.c
+		set_technology = {
+			synth_oil_experiments = 1
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = synth_resources
+		}
 	}
 }
 
@@ -309,6 +359,30 @@ country_event = {
 		hidden_effect = {
 			create_faction = X13_PACT
 			set_faction_name = "Markovo Axis"
+		}
+	}
+}
+
+#Beria in Spain
+country_event = {
+	id = kev_khodynt.12
+	title = kev_khodynt.12.t
+	desc = kev_khodynt.12.d
+	picture = GFX_report_event_generic_rally2
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Yay
+		name = kev_khodynt.12.a
+		create_corps_commander = {
+			name = "Lavrentiy Beria"
+			picture = GFX_leader_beria
+			traits = { trickster brilliant_strategist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
 		}
 	}
 }
