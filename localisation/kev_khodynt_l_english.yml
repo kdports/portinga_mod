@@ -181,6 +181,14 @@
   army_xp_more_than_10_blocked:0 "§R10§!£army_experience"
   army_xp_more_than_10_tooltip:0 "It costs 10£army_experience to select this."
 
+  navy_xp_more_than_10:0 "§H10§!£navy_experience"
+  navy_xp_more_than_10_blocked:0 "§R10§!£navy_experience"
+  navy_xp_more_than_10_tooltip:0 "It costs 10£navy_experience to select this."
+
+  air_xp_more_than_10:0 "§H10§!£air_experience"
+  air_xp_more_than_10_blocked:0 "§R10§!£air_experience"
+  air_xp_more_than_10_tooltip:0 "It costs 10£air_experience to select this."
+
   1_X13_sov_tt:0 "We will §Rlose§! §Y50 oil§! in [369.GetName]."
   2_X13_sov_tt:0 "We will §Rtransfer§! §Y6 screen ships§! to [SOV.GetName]."
 

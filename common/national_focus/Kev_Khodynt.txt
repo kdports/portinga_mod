@@ -1863,7 +1863,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-
+			NOT = {
+				has_global_flag = crisis_ongoing
+			}
 		}
 
 		bypass = {
@@ -1880,6 +1882,12 @@ focus_tree = {
 			transfer_state = 395
 			give_guarantee = JAP
 			custom_effect_tooltip = 2_X13_crisis_tt
+			set_global_flag = crisis_ongoing
+			set_global_flag = formosa_crisis
+			set_country_flag = crisis_head_one
+			X08 = {
+				set_country_flag = crisis_head_two
+			}
 		}
 	}
 
@@ -2337,7 +2345,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-
+			NOT = {
+				has_global_flag = crisis_ongoing
+			}
 		}
 
 		bypass = {
@@ -2370,6 +2380,12 @@ focus_tree = {
 				add_to_faction = AST
 			}
 			custom_effect_tooltip = 1_X13_crisis_tt
+			set_global_flag = crisis_ongoing
+			set_global_flag = austral_crisis
+			set_country_flag = crisis_head_one
+			SPR = {
+				set_country_flag = crisis_head_two
+			}
 		}
 	}
 
@@ -2540,7 +2556,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-
+			NOT = {
+				has_global_flag = crisis_ongoing
+			}
 		}
 
 		bypass = {
@@ -2554,6 +2572,12 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = 2_X13_crisis_tt
+			set_global_flag = crisis_ongoing
+			set_global_flag = formosa_crisis
+			set_country_flag = crisis_head_one
+			X08 = {
+				set_country_flag = crisis_head_two
+			}
 		}
 	}
 

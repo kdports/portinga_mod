@@ -142,7 +142,7 @@ country_event = {
 
 	trigger = {
 		tag = X13
-		date > 1936.1.1
+		date > 1936.4.1
 	}
 
 	immediate = {
