@@ -1,5 +1,10 @@
 ideas = {
 	country = {
+		ETH_IDEA_SPECIAL_FORCES = {
+			modifier = {
+				special_forces_min = 100
+			}
+		}
 		slavery_idea_1a = {
 			modifier = {
 				production_speed_buildings_factor = 0.2
