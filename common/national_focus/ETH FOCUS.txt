@@ -1110,7 +1110,7 @@ focus_tree = {
 		}
 		available = {
 			NOT = {
-				has_global_flag = westafrica_crisis
+				has_global_flag = crisis_ongoing
 			}
 		}
 		x = 0

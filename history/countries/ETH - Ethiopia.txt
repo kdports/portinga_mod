@@ -5,7 +5,7 @@ oob = "ETH_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "ETH_1936_naval_mtg"
-	else = { 
+	else = {
 		set_naval_oob = "ETH_1936_naval_legacy"
 	}
 }
@@ -76,17 +76,17 @@ set_politics = {
 }
 
 set_popularities = {
-	absolutist = 9
+	absolutist = 69
 	communism = 4
 	democratic = 3
 	fascism = 10
-	neutrality = 69
+	neutrality = 9
 	radical = 5
 }
-set_party_name = { 
-    ideology = neutrality 
-    long_name = GER_neutrality_party_kaiserreich_long 
-    name = GER_neutrality_party_kaiserreich 
+set_party_name = {
+    ideology = neutrality
+    long_name = GER_neutrality_party_kaiserreich_long
+    name = GER_neutrality_party_kaiserreich
 }
 
 add_opinion_modifier = { target = AST modifier = negative_45 }
@@ -175,7 +175,7 @@ create_country_leader = {
     desc = "POLITICS_GETEYE_WOSSEN_DESC"
     picture = "gfx/leaders/OC/Africa/Portrait_Barot_Yetalll.tga"
     expire = "1965.1.1"
-    ideology = "theocracy"
+    ideology = theocracy
     traits = {
     }
 }
