@@ -69,7 +69,7 @@ set_convoys = 7
 
 
 set_politics = {
-    ruling_party = neutrality
+    ruling_party = absolutist
     last_election = "1934.10.5"
     election_frequency = 48
     elections_allowed = no
@@ -84,7 +84,7 @@ set_popularities = {
 	radical = 5
 }
 set_party_name = {
-    ideology = neutrality
+    ideology = absolutist
     long_name = GER_neutrality_party_kaiserreich_long
     name = GER_neutrality_party_kaiserreich
 }

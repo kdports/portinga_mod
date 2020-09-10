@@ -187,7 +187,6 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 add_ideas = {
-	great_power
 	limited_conscription
 	civilian_economy
 	export_focus

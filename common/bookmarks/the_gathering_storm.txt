@@ -11,37 +11,27 @@ bookmarks = {
 			ideology = democratic
 			ideas = { great_power }
 		}
-		BRA= {
+		X13= {
 			history = "democratic_GP_CONV_DESC"
 			ideology = democratic
-			ideas = { great_power }
+			ideas = { }
 		}
-		SOV= {
+		SPR= {
 			history = "democratic_GP_CONV_DESC"
-			ideology = democratic
-			ideas = { great_power }
+			ideology = communism
+			ideas = { }
 		}
 		ENG= {
 			history = "democratic_GP_CONV_DESC"
 			ideology = democratic
 			ideas = { great_power }
 		}
-		USA= {
+		ETH= {
 			history = "fascism_GP_CONV_DESC"
-			ideology = fascism
+			ideology = theocracy
 			ideas = { great_power }
 		}
-		WGR= {
-			history = "absolutist_GP_CONV_DESC"
-			ideology = absolutist
-			ideas = { great_power }
-		}
-		TUR= {
-			history = "democratic_GP_CONV_DESC"
-			ideology = democratic
-			ideas = { great_power }
-		}
-		X16= {
+		X08= {
 			history = "democratic_GP_CONV_DESC"
 			ideology = democratic
 			ideas = { great_power }
@@ -49,175 +39,7 @@ bookmarks = {
 		"---"= {
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
-		AUS = {
-			minor = yes
-			history = "communism_SP_CONV_DESC"
-			ideology = communism
-			ideas = { }
-		}
-		BAY = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		CAL = {
-			minor = yes
-			history = "communism_SP_CONV_DESC"
-			ideology = communism
-			ideas = { }
-		}
-		COS = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		CZE = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		ETH = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		HUN = {
-			minor = yes
-			history = "fascism_SP_CONV_DESC"
-			ideology = fascism
-			ideas = { }
-		}
-		MAL = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		MAN = {
-			minor = yes
-			history = "fascism_SP_CONV_DESC"
-			ideology = fascism
-			ideas = { }
-		}
-		PHI = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		RAJ = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		SPR = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		SWI = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		X00 = {
-			minor = yes
-			history = "fascism_SP_CONV_DESC"
-			ideology = fascism
-			ideas = { }
-		}
-		X02 = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		X04 = {
-			minor = yes
-			history = "fascism_SP_CONV_DESC"
-			ideology = fascism
-			ideas = { }
-		}
-		X08 = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		X09 = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		X14 = {
-			minor = yes
-			history = "absolutist_SP_CONV_DESC"
-			ideology = absolutist
-			ideas = { }
-		}
-		X15 = {
-			minor = yes
-			history = "absolutist_SP_CONV_DESC"
-			ideology = absolutist
-			ideas = { }
-		}
-		X21 = {
-			minor = yes
-			history = "absolutist_SP_CONV_DESC"
-			ideology = absolutist
-			ideas = { }
-		}
-		X23 = {
-			minor = yes
-			history = "fascism_SP_CONV_DESC"
-			ideology = fascism
-			ideas = { }
-		}
-		X26 = {
-			minor = yes
-			history = "fascism_SP_CONV_DESC"
-			ideology = fascism
-			ideas = { }
-		}
-		X27 = {
-			minor = yes
-			history = "absolutist_SP_CONV_DESC"
-			ideology = absolutist
-			ideas = { }
-		}
-		X29 = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		X31 = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		X34 = {
-			minor = yes
-			history = "fascism_SP_CONV_DESC"
-			ideology = fascism
-			ideas = { }
-		}
-		X37 = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
-		}
-		YUN = {
+		CRO = {
 			minor = yes
 			history = "democratic_SP_CONV_DESC"
 			ideology = democratic
