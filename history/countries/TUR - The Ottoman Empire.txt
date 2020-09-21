@@ -6,7 +6,7 @@ oob = "TUR_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "TUR_1936_naval_mtg"
-	else = { 
+	else = {
 		set_naval_oob = "TUR_1936_naval_legacy"
 	}
 }
@@ -190,6 +190,7 @@ add_ideas = {
 	limited_conscription
 	civilian_economy
 	export_focus
+	TUR_collapse
 	culture_turkish
 }
 set_stability = 0.60

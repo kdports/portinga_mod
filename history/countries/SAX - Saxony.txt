@@ -165,8 +165,6 @@ add_opinion_modifier = { target = X41 modifier = negative_10 }
 add_opinion_modifier = { target = YEM modifier = negative_10 }
 add_opinion_modifier = { target = YUN modifier = negative_10 }
 
-
-
 add_ideas = {
 	limited_conscription
 	civilian_economy

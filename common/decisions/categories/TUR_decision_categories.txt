@@ -1,0 +1,12 @@
+tur_freedom_cat = {
+	icon = generic_formable_nations
+	priority = 25
+	visible_when_empty = no
+
+	available = {
+	}
+	visible = {
+		has_global_flag = tur_succession
+		is_ai = no
+	}
+}

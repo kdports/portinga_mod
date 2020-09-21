@@ -1,0 +1,38 @@
+﻿l_english:
+  #Focuses
+
+
+  ## Ideas
+
+
+  # Decisions
+  tur_freedom_cat:0 "Seccesion From The Sublime Porte"
+  tur_freedom_cat_desc:0 "The Turkish Republic, once the stalwart power of the Near East, now seems to be facing an age of rapid decline.\n\nFrench Influence: [?FRA.freesupport|%Y0]\nKhodynt Influence: [?X13.freesupport|%Y0]\nSpanish Influence: [?SPR.freesupport|%Y0]\nShun Influence: [?X08.freesupport|%Y0]\nEnglish Influence: [?ENG.freesupport|%Y0]\nEthiopian Influence: [?ETH.freesupport|%Y0]"
+
+  support_freedom_start:0 "Begin [FROM.GetName]'s Seccession"
+
+  # Reminder Tooltips
+  #1_FRA_pres_tt:0 "Adds §G5 Prestige§! to your country's total."
+  #2_FRA_pres_tt:0 "Adds §G15 Prestige§! to your country's total."
+  #3_FRA_pres_tt:0 "Subtracts §R25 Prestige§! to your country's total."
+  #7_FRA_pres_tt:0 "Subtracts §R40 Prestige§! to your country's total."
+  #8_FRA_pres_tt:0 "Adds §G40 Prestige§! to your country's total."
+  #9_FRA_pres_tt:0 "Subtracts §R5 Prestige§! from your country's total."
+  #10_FRA_pres_tt:0 "Subtracts §R15 Prestige§! from your country's total."
+
+  #New Tooltips
+  tur_hungary_event:0 "§YSupport independence§! decisions have been unlocked"
+
+  freesupport_start:0 "§GWe will gain an advantage, having been the first great power to announce our support for this country.§!\n"
+
+  # Flags
+
+
+  # Events
+  kev_turkey.1.t:0 ""
+  kev_turkey.1.d:0 ""
+  kev_turkey.1.a:0 "See ya"
+
+  kev_turkey.2.t:0 "The Treaty On The Danube"
+  kev_turkey.2.d:0 "Shocking news from the Balkans today, as delegates from Hungary’s previously illegal Congress of Independence have announced a landmark deal with the Sublime Porte. The deal, reached after months of quiet negotiations with President Halil Bey, guarantees near-autonomous self rule for the various European territories of the Turkish Republic in exchange for serious economic reperations and pacts of mutual nonaggression. However, despite the treaty's insistance on the supremacy of the Sublime Porte in these new territories, the various great powers have already begun to exert influence over them. The Balkans, it seems, is now the center of a worldwide scramble for influence."
+  kev_turkey.2.a:0 "Now, the sharks are circling."

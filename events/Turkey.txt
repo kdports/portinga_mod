@@ -1,1 +1,102 @@
-﻿
+﻿add_namespace = kev_turkey
+
+#Hungary Break Off
+country_event = {
+	id = kev_turkey.1
+	title = kev_turkey.1.t
+	desc = kev_turkey.1.d
+	#picture = GFX_news_event_king_speech
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = HUN
+		date > 1936.1.1 #Final will be 1937.11.1
+	}
+
+	immediate = {
+		TUR = {
+			set_autonomy = {
+				target = HUN
+				autonomy_state = autonomy_free
+			}
+			release_puppet = MNT
+			release_puppet = BUL
+			release_puppet = BOS
+			release_puppet = GRE
+			release_puppet = ALB
+			release_puppet = ROM
+			release_puppet = CYP
+			release_puppet = SER
+		}
+		HUN = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.6
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+		AUS = {
+			add_to_faction = HUN
+		}
+		set_global_flag = tur_succession
+		every_country = {
+			if = {
+				limit = {
+					is_puppet_of = TUR
+				}
+				add_offsite_building = { type = arms_factory level = 15 }
+				add_offsite_building = { type = industrial_complex level = 15 }
+				load_oob = "TUR_OOB"
+			}
+		}
+		every_country = {
+			if = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = FRA
+						tag = X13
+						tag = SPR
+						tag = ETH
+						tag = X08
+					}
+				}
+				set_variable = {
+					freesupport = 0
+				}
+			}
+		}
+	}
+
+	option = { #oh cool
+		name = kev_khodynt.1.a
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = kev_turkey.2
+			}
+		}
+	}
+}
+
+#Hungary Breaks Off Event
+news_event = {
+	id = kev_turkey.2
+	title = kev_turkey.2.t
+	desc = kev_turkey.2.d
+	picture = GFX_news_event_generic_sign_treaty2
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Good for them
+		name = kev_turkey.2.a
+		custom_effect_tooltip = tur_hungary_event
+	}
+}

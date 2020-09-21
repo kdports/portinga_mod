@@ -1,0 +1,143 @@
+tur_freedom_cat = {
+	# Support Independence
+	support_freedom_start = {
+		visible = {
+			NOT = {
+				has_global_flag = succession_ongoing
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_puppet_of = TUR
+			}
+		}
+
+		cost = 75
+
+		fire_only_once = yes
+		#days_remove = 0
+		complete_effect = {
+			set_global_flag = succession_ongoing
+			FROM = {
+				set_country_flag = breaking_free
+			}
+			ROOT = {
+				set_variable = {
+					freesupport = 0.15
+				}
+			}
+			custom_effect_tooltip = freesupport_start
+		}
+		#remove_effect = {
+		#}
+	}
+
+	#Independence Mission
+	countdown_to_breakoff = {
+		allowed = {
+		#	always = no
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			is_ai = no
+		}
+		activation = {
+			has_global_flag = succession_ongoing
+			any_country = {
+				has_country_flag = breaking_free
+			}
+		}
+
+		target_root_trigger = {
+			is_ai = no
+		}
+
+		targets = { BUL SER ROM MNT ALB GRE CYP BOS }
+		targets_dynamic = yes
+
+		target_trigger = {
+			FROM = {
+				has_country_flag = breaking_free
+			}
+		}
+
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 90
+		timeout_effect = {
+			clr_global_flag = succession_ongoing
+			FROM = {
+				clr_country_flag = breaking_free
+			}
+			TUR = {
+				set_autonomy = {
+					target = FROM
+					autonomy_state = autonomy_free
+				}
+			}
+			every_country = {
+				if = {
+					limit = {
+						OR = {
+							tag = ENG
+							tag = FRA
+							tag = X13
+							tag = SPR
+							tag = ETH
+							tag = X08
+						}
+					}
+					add_to_array = {
+						array = support_influence_array
+						value = THIS
+					}
+					add_to_array = {
+						array = support_influence_array_scores
+						value = freesupport
+					}
+				}
+			}
+
+			find_highest_in_array = {
+				array = support_influence_array_scores
+			}
+			set_variable = { support_winner = support_influence_array^i }
+
+			every_country = {
+				if = {
+					limit = {
+						TAG = support_winner
+					}
+					set_autonomy = {
+						target = FROM
+						autonomy_state = autonomy_puppet
+					}
+					add_to_variable = {
+						country_prestige_num = 15
+					}
+				}
+
+				if = {
+					limit = {
+						OR = {
+							tag = ENG
+							tag = FRA
+							tag = X13
+							tag = SPR
+							tag = ETH
+							tag = X08
+						}
+					}
+					set_variable = {
+						freesupport = 0
+					}
+				}
+			}
+			clear_array = support_influence_array
+			clear_array = support_influence_array_scores
+		}
+	}
+}

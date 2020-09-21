@@ -227,13 +227,6 @@ instant_effect = {
 }
 units = {
 	division = {
-		name = "2. Light Infantry Division"
-		location = 6706
-		division_template = "Light Infantry Division"
-		start_experience_factor = 0.4
-		start_equipment_factor = 0.7
-	}
-	division = {
 		name = "1. Light Infantry Brigade"
 		location = 6706
 		division_template = "Light Infantry Brigade"
