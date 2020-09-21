@@ -29,8 +29,201 @@ tur_freedom_cat = {
 			}
 			custom_effect_tooltip = freesupport_start
 		}
-		#remove_effect = {
-		#}
+	}
+
+	# Send Political Power
+	support_freedom_pp = {
+		visible = {
+			has_global_flag = succession_ongoing
+		}
+
+		target_trigger = {
+			FROM = {
+				has_country_flag = breaking_free
+			}
+		}
+
+		cost = 75
+
+		fire_only_once = no
+		days_remove = 40
+		remove_effect = {
+			add_to_variable = {
+				freesupport = 15
+			}
+			custom_effect_tooltip = 1_TUR_sup_tt
+		}
+	}
+
+	# Send Command Power
+	support_freedom_cmp = {
+		visible = {
+			has_global_flag = succession_ongoing
+		}
+
+		target_trigger = {
+			FROM = {
+				has_country_flag = breaking_free
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = cmp_more_than_25
+
+		fire_only_once = no
+		days_remove = 30
+		complete_effect = {
+			add_command_power = -25
+		}
+		remove_effect = {
+			add_to_variable = {
+				freesupport = 10
+			}
+			custom_effect_tooltip = 2_TUR_sup_tt
+		}
+	}
+
+	# Send Guns
+	support_freedom_guns = {
+		visible = {
+			has_global_flag = succession_ongoing
+		}
+
+		target_trigger = {
+			FROM = {
+				has_country_flag = breaking_free
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+
+		custom_cost_text = guns_more_than_1000
+
+		fire_only_once = no
+		days_remove = 20
+
+		complete_effect = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 1000
+				target = FROM
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				freesupport = 10
+			}
+			custom_effect_tooltip = 2_TUR_sup_tt
+		}
+	}
+
+	# Send Planes
+	support_freedom_planes = {
+		visible = {
+			has_global_flag = succession_ongoing
+		}
+
+		target_trigger = {
+			FROM = {
+				has_country_flag = breaking_free
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			has_equipment = {
+				fighter_equipment > 99
+			}
+		}
+
+		custom_cost_text = fighters_more_than_100
+
+		fire_only_once = no
+		days_remove = 20
+
+		complete_effect = {
+			send_equipment = {
+				equipment = fighter_equipment
+				amount = 100
+				target = FROM
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				freesupport = 10
+			}
+			custom_effect_tooltip = 2_TUR_sup_tt
+		}
+	}
+
+	# Send Prestige
+	support_freedom_prestige = {
+		visible = {
+			has_global_flag = succession_ongoing
+		}
+
+		target_trigger = {
+			FROM = {
+				has_country_flag = breaking_free
+			}
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			check_variable = {
+				country_prestige_num > -95
+			}
+		}
+
+		custom_cost_text = prestige_more_than_5
+
+		fire_only_once = no
+		days_remove = 10
+
+		complete_effect = {
+			subtract_from_variable = {
+				country_prestige_num = 5
+			}
+			custom_effect_tooltip = 9_FRA_pres_tt
+		}
+		remove_effect = {
+			add_to_variable = {
+				freesupport = 5
+			}
+			custom_effect_tooltip = 3_TUR_sup_tt
+		}
+	}
+
+	# Demand Prestige
+	freedom_demand_prestige = {
+		visible = {
+			has_global_flag = succession_ongoing
+		}
+
+		target_trigger = {
+			FROM = {
+				has_country_flag = breaking_free
+			}
+		}
+
+		cost = 20
+
+		fire_only_once = no
+		days_remove = 25
+		remove_effect = {
+			add_to_variable = {
+				country_prestige_num = 5
+			}
+			custom_effect_tooltip = 1_FRA_pres_tt
+		}
 	}
 
 	#Independence Mission
