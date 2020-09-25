@@ -1,0 +1,2358 @@
+focus_tree = {
+	id = kev_england_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 20
+			tag = ENG
+		}
+	}
+
+	continuous_focus_position = { x = 0 y = -10 }
+
+	initial_show_position = {
+		x = 10
+	}
+
+	default = no
+	focus = {
+		id = KEV_ENG_first_history
+		icon = GFX_focus_focus_fra_orleans_restoration
+		x = 20
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { }
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = kev_england.1
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_second_history
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_first_history }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_first_history
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = kev_england.2
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_third_history
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_second_history }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_second_history
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = kev_england.3
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_converted_areas
+		icon = GFX_focus_hol_liberation
+		x = -8
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_third_history }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_third_history
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_ireland_start
+		icon = GFX_focus_hol_liberation
+		x = 7
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_converted_areas }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_converted_areas
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Build stuff
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_ireland_left
+		icon = GFX_focus_hol_liberation
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_ireland_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_ireland_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Build stuff
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_ireland_right
+		icon = GFX_focus_hol_liberation
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_ireland_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_ireland_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Build stuff
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_ireland_second_left
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_ireland_left focus = KEV_ENG_ireland_right }
+		mutually_exclusive = { focus = KEV_ENG_ireland_second_right }
+		relative_position_id = KEV_ENG_ireland_left
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Build stuff
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_ireland_second_right
+		icon = GFX_focus_hol_liberation
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_ireland_left focus = KEV_ENG_ireland_right }
+		mutually_exclusive = { focus = KEV_ENG_ireland_second_left }
+		relative_position_id = KEV_ENG_ireland_left
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Build stuff
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_ireland_final
+		icon = GFX_focus_hol_liberation
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_ireland_second_right focus = KEV_ENG_ireland_second_left }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_ireland_second_left
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Build stuff
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_scotland_start
+		icon = GFX_focus_hol_liberation
+		x = 4
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_converted_areas }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_converted_areas
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Air stuff
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_scotland_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_scotland_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.8
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.8
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_direct_focus
+		icon = GFX_goal_generic_air_bomber
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_scotland_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_scotland_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cas_bonus
+				bonus = 0.8
+				uses = 1
+				category = cas_bomber
+			}
+			add_tech_bonus = {
+				name = cas_bonus
+				bonus = 0.8
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_bomb_focus
+		icon = GFX_goal_generic_air_doctrine
+
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_scotland_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_scotland_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_strategic_bomber
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = strategic_destruction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_get_planes
+		icon = GFX_goal_generic_CAS
+
+		x = 1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_scotland_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_scotland_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_naval_air_focus
+		icon = GFX_goal_generic_air_naval_bomber
+
+		x = -1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_scotland_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_scotland_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = naval_air
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_denmark_start
+		icon = GFX_focus_hol_liberation
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_converted_areas }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_converted_areas
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Add forts and defensive stuff
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_support_wgr
+		icon = GFX_focus_hol_liberation
+		x = 1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_denmark_start }
+		mutually_exclusive = { focus = KEV_ENG_support_mun }
+		relative_position_id = KEV_ENG_denmark_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_support_mun
+		icon = GFX_focus_hol_liberation
+		x = -1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_denmark_start }
+		mutually_exclusive = { focus = KEV_ENG_support_wgr }
+		relative_position_id = KEV_ENG_denmark_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_denmark_build
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_denmark_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_denmark_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Civs/mils there
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_denmark_build_second
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_denmark_build }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_denmark_build
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Civs/mils there
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_greenland_start
+		icon = GFX_focus_hol_liberation
+		x = -2
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_converted_areas }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_converted_areas
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_greenland_invade
+		icon = GFX_focus_hol_liberation
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_greenland_start }
+		mutually_exclusive = { focus = KEV_ENG_greenland_puppet }
+		relative_position_id = KEV_ENG_greenland_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_greenland_dockyards
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_greenland_invade }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_greenland_invade
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_greenland_puppet
+		icon = GFX_focus_hol_liberation
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_greenland_start }
+		mutually_exclusive = { focus = KEV_ENG_greenland_invade }
+		relative_position_id = KEV_ENG_greenland_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_greenland_factories
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_greenland_puppet }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_greenland_puppet
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_dutch_start
+		icon = GFX_focus_hol_liberation
+		x = -5
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_converted_areas }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_converted_areas
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_dutch_left
+		icon = GFX_focus_hol_liberation
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_dutch_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_dutch_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_dutch_mid
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_dutch_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_dutch_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_dutch_right
+		icon = GFX_focus_hol_liberation
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_dutch_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_dutch_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_dutch_crisis
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_dutch_left focus = KEV_ENG_dutch_mid focus = KEV_ENG_dutch_right }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_dutch_mid
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_unconverted_areas
+		icon = GFX_focus_hol_liberation
+		x = 10
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_third_history }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_third_history
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_inuit_start
+		icon = GFX_focus_hol_liberation
+		x = 5
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_unconverted_areas }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_unconverted_areas
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_inuit_settle
+		icon = GFX_focus_hol_liberation
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_inuit_start }
+		mutually_exclusive = { focus = KEV_ENG_inuit_nomad }
+		relative_position_id = KEV_ENG_inuit_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Buildings and resistance
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_inuit_nomad
+		icon = GFX_focus_hol_liberation
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_inuit_start }
+		mutually_exclusive = { focus = KEV_ENG_inuit_settle }
+		relative_position_id = KEV_ENG_inuit_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Cores
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_navajo_start
+		icon = GFX_focus_hol_liberation
+		x = 1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_unconverted_areas }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_unconverted_areas
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_navajo_police
+		icon = GFX_focus_hol_liberation
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_navajo_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_navajo_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Something with fighting resistance? Idk
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_navajo_build
+		icon = GFX_focus_hol_liberation
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_navajo_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_navajo_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { #Build factories n shit
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_navajo_core
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_navajo_build }
+		prerequisite = { focus = KEV_ENG_navajo_police }
+		mutually_exclusive = { focus = KEV_ENG_navajo_puppet }
+		relative_position_id = KEV_ENG_navajo_build
+		cost = 14.3
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_navajo_puppet
+		icon = GFX_focus_hol_liberation
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_navajo_build }
+		prerequisite = { focus = KEV_ENG_navajo_police }
+		mutually_exclusive = { focus = KEV_ENG_navajo_core }
+		relative_position_id = KEV_ENG_navajo_build
+		cost = 14.3
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_madeira_start
+		icon = GFX_focus_hol_liberation
+		x = 9
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_unconverted_areas }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_unconverted_areas
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_madeira_forts
+		icon = GFX_focus_hol_liberation
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_madeira_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_madeira_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_madeira_dockyards
+		icon = GFX_focus_hol_liberation
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_madeira_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_madeira_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_madeira_core
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_madeira_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_madeira_start
+		cost = 14.3
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			#Gives good spirit and cores
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_sweden_start
+		icon = GFX_focus_hol_liberation
+		x = -5
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_unconverted_areas }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_unconverted_areas
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_estonia_core
+		icon = GFX_focus_hol_liberation
+		x = -1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_sweden_start }
+		mutually_exclusive = { focus = KEV_ENG_estonia_puppet }
+		relative_position_id = KEV_ENG_sweden_start
+		cost = 14.3
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			#Gives good spirit and cores
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_estonia_puppet
+		icon = GFX_focus_hol_liberation
+		x = 1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_sweden_start }
+		mutually_exclusive = { focus = KEV_ENG_estonia_core }
+		relative_position_id = KEV_ENG_sweden_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_sweden_core
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_estonia_core focus = KEV_ENG_estonia_puppet }
+		mutually_exclusive = { focus = KEV_ENG_sweden_puppet }
+		relative_position_id = KEV_ENG_estonia_core
+		cost = 14.3
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			#Gives good spirit and cores
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_sweden_puppet
+		icon = GFX_focus_hol_liberation
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_estonia_core focus = KEV_ENG_estonia_puppet }
+		mutually_exclusive = { focus = KEV_ENG_sweden_core }
+		relative_position_id = KEV_ENG_estonia_core
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			#Removes bad spirit
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_sweden_defense
+		icon = GFX_focus_hol_liberation
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_sweden_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_sweden_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_sweden_airdef
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_sweden_defense }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_sweden_defense
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_estonia_defense
+		icon = GFX_focus_hol_liberation
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_sweden_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_sweden_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_estonia_airdef
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_estonia_defense }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_estonia_defense
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_army_start
+		icon = GFX_goal_generic_army_doctrines
+		x = 30
+		y = 11
+		cost = 7
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_completed_focus = KEV_ENG_third_history
+		}
+
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_tech = infantry_weapons2 } }
+				add_tech_bonus = {
+					name = ETH_forsvarsbeslutet_1936
+					bonus = 1
+					uses = 1
+					technology = infantry_weapons2
+				}
+				else = {
+					add_political_power = 50
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = KEV_ENG_army_doctrine
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_army_start }
+		relative_position_id = KEV_ENG_army_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_support_equip_focus
+		icon = GFX_focus_por_support_mns
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_army_start }
+		relative_position_id = KEV_ENG_army_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_naval_air_second
+		icon = GFX_goal_generic_CAS
+
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_army_start }
+		relative_position_id = KEV_ENG_army_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.8
+				uses = 1
+				category = naval_air
+			}
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.8
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_artillery_research_focus
+		icon = GFX_goal_generic_army_artillery2
+		x = -1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_army_start }
+		relative_position_id = KEV_ENG_army_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.2
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_motorized_focus
+		prerequisite = { focus = KEV_ENG_army_start }
+		icon = GFX_goal_generic_army_motorized
+		x = 1
+		y = 2
+		relative_position_id = KEV_ENG_army_start
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_quality_focus
+		icon = GFX_focus_focus_fra_maquis
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_artillery_research_focus }
+		prerequisite = { focus = KEV_ENG_naval_air_second }
+		mutually_exclusive = { focus = KEV_ENG_quantity_focus }
+		relative_position_id = KEV_ENG_artillery_research_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			army_experience = 5
+			add_ideas = FRA_gun_quality
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_quantity_focus
+		icon = GFX_focus_secret_rearmament
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_army_doctrine }
+		prerequisite = { focus = KEV_ENG_motorized_focus }
+		mutually_exclusive = { focus = KEV_ENG_quality_focus }
+		relative_position_id = KEV_ENG_motorized_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			army_experience = 5
+			add_ideas = FRA_gun_quantity
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_naval_start
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		x = -10
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { }
+		relative_position_id = KEV_ENG_third_history
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = KEV_ENG_third_history
+		}
+
+		bypass = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_ENG_naval_build }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = KEV_ENG_naval_build
+			}
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_naval_start }
+		relative_position_id = KEV_ENG_naval_start
+
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_first_naval_expansion
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_naval_start }
+		relative_position_id = KEV_ENG_naval_start
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_ENG_dockyard_expand_first }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = KEV_ENG_dockyard_expand_first
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_second_naval_expansion
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_first_naval_expansion }
+		relative_position_id = KEV_ENG_first_naval_expansion
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEV_ENG_dockyard_expand_second }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_on_continent = europe
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = KEV_ENG_dockyard_expand_second
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_submarine_focus
+		icon = GFX_goal_generic_navy_submarine
+		x = 3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_naval_start }
+		relative_position_id = KEV_ENG_naval_start
+
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_u_boat_effort
+				bonus = 0.8
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_carrier_focus
+		prerequisite = { focus = KEV_ENG_naval_doctrine }
+		mutually_exclusive = { focus = KEV_ENG_battleship_focus focus = KEV_ENG_destroyer_focus }
+		icon = GFX_goal_generic_navy_carrier
+		x = 0
+		y = 1
+		relative_position_id = KEV_ENG_naval_doctrine
+		cost = 7
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		available = {
+			has_completed_focus = KEV_ENG_naval_air_second
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}
+
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_battleship_focus
+		prerequisite = { focus = KEV_ENG_naval_doctrine }
+		mutually_exclusive = { focus = KEV_ENG_carrier_focus focus = KEV_ENG_destroyer_focus }
+		icon = GFX_goal_generic_navy_battleship
+		x = 2
+		y = 1
+		relative_position_id = KEV_ENG_naval_doctrine
+		cost = 7
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
+
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_destroyer_focus
+		prerequisite = { focus = KEV_ENG_naval_doctrine }
+		mutually_exclusive = { focus = KEV_ENG_carrier_focus focus = KEV_ENG_battleship_focus }
+		icon = GFX_focus_generic_destroyer
+		x = 4
+		y = 1
+		relative_position_id = KEV_ENG_naval_doctrine
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_antisub_focus
+		prerequisite = { focus = KEV_ENG_carrier_focus focus = KEV_ENG_battleship_focus focus = KEV_ENG_destroyer_focus }
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = -3
+		y = 1
+		relative_position_id = KEV_ENG_carrier_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = asw_tech
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_amphibious_focus
+		prerequisite = { focus = KEV_ENG_carrier_focus focus = KEV_ENG_battleship_focus focus = KEV_ENG_destroyer_focus }
+		icon = GFX_goal_generic_amphibious_assault
+		x = -1
+		y = 1
+		relative_position_id = KEV_ENG_carrier_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_completed_focus = KEV_ENG_army_start
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_antisub_second_focus
+		prerequisite = { focus = KEV_ENG_amphibious_focus focus = KEV_ENG_antisub_focus }
+		icon = GFX_goal_generic_occupy_states_coastal
+		x = -1
+		y = 1
+		relative_position_id = KEV_ENG_amphibious_focus
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = naval_minelaying
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = naval_minesweeping
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_repair_yards
+		prerequisite = { focus = KEV_ENG_carrier_focus focus = KEV_ENG_battleship_focus focus = KEV_ENG_destroyer_focus }
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 1
+		relative_position_id = KEV_ENG_carrier_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = ENG_expand_the_repair_yards_2dockyard }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_expand_the_repair_yards_2dockyard
+			}
+			add_ideas = ENG_expand_the_repair_yards
+		}
+	}
+}

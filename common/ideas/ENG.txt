@@ -1,4 +1,206 @@
 ideas = {
+	country = {
+		ENG_ireland_converted = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				surrender_limit = 0.05
+			}
+		}
+		ENG_scotland_converted = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				surrender_limit = 0.05
+			}
+		}
+		ENG_denmark_converted = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				surrender_limit = 0.05
+			}
+		}
+		ENG_greenland_converted = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				surrender_limit = 0.05
+			}
+		}
+		ENG_netherlands_converted = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				surrender_limit = 0.05
+			}
+		}
+		ENG_inuit_converted = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				surrender_limit = 0.05
+			}
+		}
+		ENG_navajo_converted = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				surrender_limit = 0.05
+			}
+		}
+		ENG_sweden_converted = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				surrender_limit = 0.05
+			}
+		}
+		ENG_estonia_converted = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				surrender_limit = 0.05
+			}
+		}
+		ENG_greenland_lost = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.15
+				max_planning = 0.1
+				planning_speed = 0.05
+			}
+		}
+		ENG_netherlands_lost = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.15
+				army_attack_factor = 0.05
+			}
+		}
+		ENG_sweden_unhappy= {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.15
+				resistance_damage_to_garrison = 0.05
+				resistance_decay = -0.1
+			}
+		}
+		ENG_estonia_unhappy= {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.15
+				resistance_damage_to_garrison = 0.05
+				resistance_decay = -0.1
+			}
+		}
+		ENG_inuit_unhappy= {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.15
+				resistance_damage_to_garrison = 0.05
+				resistance_decay = -0.1
+			}
+		}
+		ENG_navajo_unhappy= {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.15
+				resistance_damage_to_garrison = 0.05
+				resistance_decay = -0.1
+			}
+		}
+	}
 	political_advisor = {
 		ENG_absolutist_advisor = {
 			allowed = {
@@ -88,199 +290,199 @@ ideas = {
 			}
 		}
 	}
-	tank_manufacturer = { 
+	tank_manufacturer = {
 		designer = yes
-		
+
 		ENG_tank_manufacturer = {
 			picture = generic_tank_manufacturer_1
-			
+
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				armor = 0.10
 			}
-			
+
 			traits = { tank_manufacturer }
 		}
 	}
-	naval_manufacturer = { 
+	naval_manufacturer = {
 		designer = yes
 		ENG_naval_manufacturer = {
-			
+
 			picture = generic_naval_manufacturer_1
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				naval_equipment = 0.10
 			}
-			
+
 			traits = { naval_manufacturer }
 		}
 	}
-	aircraft_manufacturer = { 
+	aircraft_manufacturer = {
 		designer = yes
 		ENG_light_aircraft_manufacturer = {
-			
+
 			picture = generic_air_manufacturer_1
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
+
 			traits = { light_aircraft_manufacturer }
 		}
-		
+
 		ENG_medium_aircraft_manufacturer = {
-			
+
 			picture = generic_air_manufacturer_3
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
+
 			traits = { medium_aircraft_manufacturer }
 		}
-		
+
 		ENG_heavy_aircraft_manufacturer = {
 			picture = generic_air_manufacturer_2
-			
+
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
+
 			traits = { heavy_aircraft_manufacturer }
 		}
-		
+
 		ENG_naval_aircraft_manufacturer = {
-			
+
 			picture = generic_naval_manufacturer_2
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				air_equipment = 0.10
 			}
-			
+
 			traits = { naval_aircraft_manufacturer }
 		}
 	}
 	industrial_concern = {
 		ENG_industrial_concern = {
-			
+
 			picture = generic_industrial_concern_1
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				industry = 0.10
 			}
-			
+
 			traits = { industrial_concern }
 		}
 		ENG_electronics_concern = {
-			
+
 			picture = generic_electronics_concern_1
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				electronics = 0.10
 			}
-			
+
 			traits = { electronics_concern }
 		}
 	}
 	materiel_manufacturer = {
 		designer = yes
 		ENG_motorized_equipment_manufacturer = {
-			
+
 			picture = generic_motorized_equipment_manufacturer_3
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				motorized_equipment = 0.10
 			}
-			
+
 			traits = { motorized_equipment_manufacturer }
 		}
-		
+
 		ENG_infantry_equipment_manufacturer = {
-			
+
 			picture = generic_infantry_equipment_manufacturer_2
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				infantry_weapons = 0.10
 			}
-			
+
 			traits = { infantry_equipment_manufacturer }
 		}
-		
+
 		ENG_artillery_manufacturer = {
-			
+
 			picture = generic_artillery_manufacturer_2
 			allowed = {
 				original_tag = ENG
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				artillery = 0.10
 			}
-			
+
 			traits = { artillery_manufacturer }
 		}
 	}

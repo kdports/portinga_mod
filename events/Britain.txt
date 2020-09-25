@@ -1,1 +1,67 @@
-﻿
+﻿add_namespace = kev_england
+
+# Culture Conversion
+country_event = {
+	id = kev_england.1
+	title = kev_england.1.t
+	desc = kev_england.1.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = kev_england.1.a
+	}
+
+	option = { #
+		name = kev_england.1.b
+	}
+
+	option = { #
+		name = kev_england.1.c
+	}
+}
+
+# First European Democracy
+country_event = {
+	id = kev_england.2
+	title = kev_england.2.t
+	desc = kev_england.2.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = kev_england.2.a
+	}
+
+	option = { #
+		name = kev_england.2.b
+	}
+
+	option = { #
+		name = kev_england.2.c
+	}
+}
+
+# Losing Empire
+country_event = {
+	id = kev_england.3
+	title = kev_england.3.t
+	desc = kev_england.3.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = kev_england.3.a
+	}
+
+	option = { #
+		name = kev_england.3.b
+	}
+
+	option = { #
+		name = kev_england.3.c
+	}
+}

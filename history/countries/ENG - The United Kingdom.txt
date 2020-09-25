@@ -5,7 +5,7 @@ oob = "ENG_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "ENG_1936_naval_mtg"
-	else = { 
+	else = {
 		set_naval_oob = "ENG_1936_naval_legacy"
 	}
 }
@@ -80,6 +80,7 @@ add_tech_bonus = { name = land_doc_bonus bonus = 0.90 uses = 1 category = land_d
 add_tech_bonus = { name = naval_doc_bonus bonus = 0.90 uses = 1 category = naval_doctrine }
 set_convoys = 31
 
+create_intelligence_agency = yes
 
 # DIPLOMACY
 if = {
@@ -213,13 +214,42 @@ add_ideas = {
 	low_economic_mobilisation
 	export_focus
 	culture_english
+	ENG_ireland_converted
+	ENG_scotland_converted
+	ENG_denmark_converted
+	ENG_greenland_lost
+	ENG_netherlands_lost
+	ENG_sweden_unhappy
+	ENG_estonia_unhappy
+	ENG_inuit_unhappy
+	ENG_navajo_unhappy
 }
 set_stability = 0.60
 set_war_support = 0.60
 create_country_leader = {
+    name = "Guy Turing"
+    desc = "POLITICS_NIGEL_FISHER_DESC"
+    picture = "gfx/leaders/Portrait_Canada_Mackenzie_King.dds"
+    expire = "1965.1.1"
+    ideology = liberalism
+    traits = {
+		humble
+    }
+}
+create_country_leader = {
     name = "Nigel Fisher"
     desc = "POLITICS_NIGEL_FISHER_DESC"
-    picture = "gfx/leaders/ENG/Portrait_Britain_Stanley_Baldwin.dds"
+    picture = "gfx/leaders/r56_portrait_ARG_Nimio_de_Anquin.dds"
+    expire = "1965.1.1"
+    ideology = liberalism
+    traits = {
+		rearmer
+    }
+}
+create_country_leader = {
+    name = "Nigel Fisher"
+    desc = "POLITICS_NIGEL_FISHER_DESC"
+    picture = "gfx/leaders/r56_portrait_ARG_Nimio_de_Anquin.dds"
     expire = "1965.1.1"
     ideology = liberalism
     traits = {
