@@ -1,0 +1,24 @@
+state={
+	id=767
+	name="STATE_767"
+	provinces={
+		13234 13235
+	}
+	history={
+		owner = TUR
+		victory_points = {
+			13235 1 
+		}
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = TUR
+		add_core_of = ALB
+	}
+	manpower=11400
+	buildings_max_level_factor=1.000
+}
