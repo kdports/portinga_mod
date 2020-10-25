@@ -1,1 +1,11 @@
-# Not available
+
+usa_eng_war = {
+	icon = generic_prospect_for_resources
+	priority = 10
+	allowed = {
+		OR = {
+			tag = ENG
+			tag = USA
+		}
+	}
+}

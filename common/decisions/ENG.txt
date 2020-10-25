@@ -1,1 +1,74 @@
 # Not available
+usa_eng_war = {
+	countdown_to_war_usa = {
+		allowed = {
+			tag = ENG
+			tag = USA
+		}
+		available = {
+			ENG = {
+				owns_state = 142
+				owns_state = 103
+			}
+			USA = {
+				has_government = fascism
+			}
+		}
+		activation = {
+			USA = {
+				has_country_flag = usa_wants_illinois
+				NOT = { has_war_with = ENG }
+			}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 600
+		timeout_effect = {
+			USA = {
+				declare_war_on = {
+					target = ENG
+					type = take_state
+				}
+			}
+		}
+	}
+
+	countdown_to_peace_usa = {
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			NOT = { controls_state = 142 }
+			NOT = { controls_state = 103 }
+			NOT = { has_completed_focus = KEV_ENG_operation_longshot }
+		}
+		activation = {
+			has_war_with = USA
+			NOT = { has_completed_focus = KEV_ENG_operation_longshot }
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 300
+		timeout_effect = {
+			white_peace = USA
+
+			USA = {
+				clr_country_flag = usa_wants_illinois
+			}
+			clr_global_flag = usa_announced
+			country_event = { id = kev_england.6 }
+		}
+		complete_effect = {
+
+			country_event = { id = kev_england.5 }
+			USA = {
+				add_ideas = usa_satisfied
+				transfer_state = 142
+				transfer_state = 103
+				clr_country_flag = usa_wants_illinois
+			}
+			white_peace = USA
+			clr_global_flag = usa_announced
+		}
+	}
+}

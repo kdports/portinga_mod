@@ -2355,4 +2355,232 @@ focus_tree = {
 			add_ideas = ENG_expand_the_repair_yards
 		}
 	}
+
+	focus = {
+		id = KEV_ENG_canada_start
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 9
+		offset = {
+			x = 0
+			y = 0
+		}
+		#prerequisite = { focus = KEV_ENG_third_history }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_third_history
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = canada_start_tt
+				has_global_flag = usa_announced
+			}
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_influence_X23
+		icon = GFX_focus_hol_liberation
+		x = 5
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_canada_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_canada_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = -50
+			X23 = {
+				add_ideas = {
+					idea = democratic_influence
+					idea = democratic_opposition_voicing_protests
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_coup_X23
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_influence_X23 }
+		mutually_exclusive = { focus = KEV_ENG_operation_longshot }
+		relative_position_id = KEV_ENG_influence_X23
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = -100
+			X23 = {
+				hidden_effect = {
+					set_popularities = {
+						democratic = 50
+						neutrality = 15
+						fascism = 30
+						communism = 5
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+			ENG = {
+				puppet = X23
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_invite_deseret
+		icon = GFX_focus_hol_liberation
+		x = -1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_influence_X23 focus = KEV_ENG_influence_usa }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_influence_X23
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = -20
+			ENG = {
+				give_guarantee = X09
+			}
+			X09 = {
+				give_guarantee = ENG
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_influence_usa
+		icon = GFX_focus_hol_liberation
+		x = 3
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_canada_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_canada_start
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = -50
+			USA = {
+				add_ideas = {
+					idea = democratic_influence
+					idea = democratic_opposition_voicing_protests
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_operation_longshot
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_influence_usa }
+		mutually_exclusive = { focus = KEV_ENG_coup_X23 }
+		relative_position_id = KEV_ENG_influence_usa
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			USA = {
+				democratic > 0.35
+			}
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = -50
+			hidden_effect = {
+				USA = {
+					clr_country_flag = usa_wants_illinois
+				}
+				clr_global_flag = usa_announced
+			}
+			ENG = {
+				declare_war_on = {
+					target = USA
+					type = take_state
+				}
+			}
+			USA = {
+				start_civil_war = {
+					ideology = democratic
+					size = 0.4
+					only_own_territory = no
+				}
+			}
+		}
+	}
 }

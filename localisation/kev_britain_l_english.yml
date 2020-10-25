@@ -24,9 +24,10 @@
   #10_FRA_pres_tt:0 "Subtracts §R15 Prestige§! from your country's total."
 
   #New Tooltips
-
+  canada_start_tt:0 "The American Empire has announced their ambitions"
 
   # Flags
+  usa_wants_illinois:0 "The American Empire Shall Feast"
 
 
   # Events
@@ -48,3 +49,11 @@
   kev_england.3.b:0 ""
   kev_england.3.c:0 ""
 
+  kev_england.4.t:0 "The American Emperor Vows Illinois"
+  kev_england.4.d:0 "The newly sworn-in Emperor of America has shocked the world today, announcing a renewed offensive against the British territories of Illinois and South Bend. The 1910 Accords had silenced what had been nearly twenty years of border raids beforehand, but the death of the former Emperor seems to have dealt an end to those agreements. Both the Canadian Governor-General and British Prime Minister have sworn to stand their ground, making eventual conflict almost inevitable."
+  kev_england.4.a:0 "The hellish nation continues its escapades."
+
+  kev_england.5.t:0 "America Satiated"
+  kev_england.5.d:0 ""
+  kev_england.5.a:0 "Bring me the man responsible!"
+  kev_england.5.b:0 "Glad I don't live there!"

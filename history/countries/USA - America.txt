@@ -105,8 +105,8 @@ set_politics = {
 set_popularities = {
 	absolutist = 5
 	communism = 1
-	democratic = 55
-	fascism = 34
+	democratic = 24
+	fascism = 65
 	neutrality = 4
 	radical = 1
 }
@@ -165,6 +165,15 @@ add_ideas = {
 }
 set_stability = 0.60
 set_war_support = 0.62
+create_country_leader = {
+    name = "Dan Johnson"
+    desc = "POLITICS_DONALD_SHERIDAN_DESC"
+    picture = "gfx/leaders/r56_portrait_USA_Alf_Landon.dds"
+    expire = "1965.1.1"
+    ideology = liberalism
+    traits = {
+    }
+}
 create_country_leader = {
     name = "Donald Sheridan"
     desc = "POLITICS_DONALD_SHERIDAN_DESC"

@@ -61,7 +61,12 @@ set_politics = {
 }
 
 set_popularities = {
-	fascism = 100
+	absolutist = 5
+	communism = 21
+	democratic = 24
+	fascism = 45
+	neutrality = 4
+	radical = 1
 }
 
 add_opinion_modifier = { target = ENG modifier = negative_8 }
