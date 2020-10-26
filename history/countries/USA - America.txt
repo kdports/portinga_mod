@@ -161,7 +161,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	limited_exports
-	culture_yankee
+	culture_french_canadian
 }
 set_stability = 0.60
 set_war_support = 0.62

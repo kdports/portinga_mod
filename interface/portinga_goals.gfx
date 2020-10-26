@@ -5,6 +5,14 @@ spriteTypes = {
 		name = "GFX_goal_recycling"
 		texturefile = "gfx/interface/goals/r56_goal_FRA_VIC_goal_recycling.dds"
 	}
+	SpriteType = {
+		name = "GFX_r56_goal_IRE_fianna_fail"
+		texturefile = "gfx/interface/goals/r56_goal_IRE_fianna_fail.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_IRE_island_defences"
+		texturefile = "gfx/interface/goals/r56_goal_IRE_island_defences.dds"
+	}
 	spriteType = {
 		name = "GFX_eye_focus_banking"
 		texturefile = "gfx/interface/goals/r56_goal_generic_banking.dds"

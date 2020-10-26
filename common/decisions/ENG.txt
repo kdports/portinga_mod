@@ -62,7 +62,7 @@ usa_eng_war = {
 
 			country_event = { id = kev_england.5 }
 			USA = {
-				add_ideas = usa_satisfied
+				set_country_flag = usa_satisfied
 				transfer_state = 142
 				transfer_state = 103
 				clr_country_flag = usa_wants_illinois

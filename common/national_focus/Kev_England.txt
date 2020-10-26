@@ -19,7 +19,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = KEV_ENG_first_history
-		icon = GFX_focus_focus_fra_orleans_restoration
+		icon = GFX_focus_rom_abdicate
 		x = 20
 		y = 0
 		offset = {
@@ -49,7 +49,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_second_history
-		icon = GFX_focus_RAJ_lions_of_the_great_war
+		icon = GFX_focus_AST_never_gallipoli
 		x = 0
 		y = 1
 		offset = {
@@ -80,7 +80,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_third_history
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_CZE_german_puppet
 		x = 0
 		y = 1
 		offset = {
@@ -111,7 +111,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_converted_areas
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_concessions
 		x = -8
 		y = 1
 		offset = {
@@ -167,7 +167,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_ireland_start
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_IRE_island_defences
 		x = 7
 		y = 1
 		offset = {
@@ -196,7 +196,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_ireland_left
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_CZE_military_research_institute
 		x = -1
 		y = 1
 		offset = {
@@ -232,7 +232,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_ireland_right
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_generic_oil_refinery
 		x = 1
 		y = 1
 		offset = {
@@ -268,7 +268,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_ireland_second_left
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		x = 0
 		y = 1
 		offset = {
@@ -304,7 +304,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_ireland_second_right
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_generic_army_artillery2
 		x = 2
 		y = 1
 		offset = {
@@ -340,7 +340,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_ireland_final
-		icon = GFX_focus_hol_liberation
+		icon = GFX_r56_goal_IRE_fianna_fail
 		x = 1
 		y = 1
 		offset = {
@@ -363,12 +363,15 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Build stuff
+			add_to_variable = { country_prestige_num = 15 }
+			custom_effect_tooltip = 2_FRA_pres_tt
+			add_political_power = 75
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_scotland_start
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_CZE_military_aeronautical_institute
 		x = 4
 		y = 4
 		offset = {
@@ -396,7 +399,6 @@ focus_tree = {
 					type = air_base
 					level = 7
 					instant_build = yes
-					province = 3501
 				}
 			}
 			233 = {
@@ -404,7 +406,6 @@ focus_tree = {
 					type = air_base
 					level = 7
 					instant_build = yes
-					province = 6526
 				}
 			}
 		}
@@ -571,6 +572,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 1000
+				producer = X09
+			}
 		}
 	}
 
@@ -615,7 +621,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_denmark_start
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_focus_fra_national_resistance_council
 		x = 1
 		y = 1
 		offset = {
@@ -656,7 +662,7 @@ focus_tree = {
 					instant_build = yes
 					province = {
 						all_provinces = yes
-						limit_to_border = 5
+						limit_to_border = yes
 					}
 				}
 			}
@@ -676,7 +682,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_support_wgr
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_support_democracy
 		x = 1
 		y = 2
 		offset = {
@@ -716,7 +722,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_support_mun
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_hun_elect_a_king
 		x = -1
 		y = 2
 		offset = {
@@ -756,7 +762,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_denmark_build
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_combined_arms
 		x = 0
 		y = 1
 		offset = {
@@ -792,7 +798,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_denmark_build_second
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_industry_2
 		x = 0
 		y = 2
 		offset = {
@@ -828,7 +834,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_greenland_start
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_hol_prepare_the_inundation_lines
 		x = -2
 		y = 4
 		offset = {
@@ -862,7 +868,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_greenland_invade
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_provoke_border_clashes
 		x = 1
 		y = 1
 		offset = {
@@ -901,7 +907,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_greenland_dockyards
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_GRE_a_long_and_proud_tradition
 		x = 0
 		y = 1
 		offset = {
@@ -937,7 +943,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_greenland_puppet
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_generic_forceful_treaty
 		x = -1
 		y = 1
 		offset = {
@@ -974,7 +980,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_greenland_factories
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 0
 		y = 1
 		offset = {
@@ -1016,7 +1022,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_dutch_start
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_eng_the_sun_never_sets
 		x = -5
 		y = 1
 		offset = {
@@ -1049,7 +1055,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_dutch_left
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		x = -2
 		y = 1
 		offset = {
@@ -1102,7 +1108,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_dutch_mid
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_focus_fra_border
 		x = 0
 		y = 1
 		offset = {
@@ -1140,7 +1146,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_dutch_right
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_generic_defence
 		x = 2
 		y = 1
 		offset = {
@@ -1173,7 +1179,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_dutch_crisis
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_hol_oranje_boven
 		x = 0
 		y = 1
 		offset = {
@@ -1210,7 +1216,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_unconverted_areas
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_eng_global_defense
 		x = 10
 		y = 1
 		offset = {
@@ -1233,12 +1239,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = -50
+			add_stability = 0.05
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_inuit_start
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_military_academy
 		x = 5
 		y = 3
 		offset = {
@@ -1261,12 +1269,25 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			army_experience = 25
+			136 = {
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+			}
+			143 = {
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_inuit_settle
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_self_management
 		x = -1
 		y = 1
 		offset = {
@@ -1276,7 +1297,7 @@ focus_tree = {
 		prerequisite = { focus = KEV_ENG_inuit_start }
 		mutually_exclusive = { focus = KEV_ENG_inuit_nomad }
 		relative_position_id = KEV_ENG_inuit_start
-		cost = 6
+		cost = 10
 			ai_will_do = {
 			factor = 1
 		}
@@ -1289,12 +1310,32 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Buildings and resistance
+			136 = {
+				add_resistance = 30
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			143 = {
+				add_resistance = 30
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			remove_ideas = ENG_inuit_unhappy
+			add_ideas = ENG_inuit_converted
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_inuit_nomad
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_GRE_a_land_of_mountains
 		x = 1
 		y = 1
 		offset = {
@@ -1317,12 +1358,23 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Cores
+			136 = {
+				add_compliance = 50
+				force_disable_resistance = ENG
+			}
+			143 = {
+				add_compliance = 50
+				force_disable_resistance = ENG
+			}
+			add_stability = 0.1
+			add_political_power = 25
+			remove_ideas = ENG_inuit_unhappy
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_navajo_start
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_support_the_left_right
 		x = 1
 		y = 2
 		offset = {
@@ -1345,12 +1397,13 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_navajo_police
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_manpower
 		x = 1
 		y = 1
 		offset = {
@@ -1373,12 +1426,20 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Something with fighting resistance? Idk
+			ENG = {
+				every_owned_state = {
+					limit = {
+						is_core_of = DNH
+					}
+					add_resistance = -30
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_navajo_build
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_industry_1
 		x = -1
 		y = 1
 		offset = {
@@ -1401,12 +1462,24 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Build factories n shit
+			ENG = {
+				every_owned_state = {
+					limit = {
+						is_core_of = DNH
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+					}
+					add_extra_state_shared_building_slots = 4
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_navajo_core
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		x = 0
 		y = 1
 		offset = {
@@ -1430,12 +1503,22 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			ENG = {
+				every_owned_state = {
+					limit = {
+						is_core_of = DNH
+					}
+					add_core_of = ENG
+				}
+				remove_ideas = ENG_navajo_unhappy
+				add_ideas = ENG_navajo_converted
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_navajo_puppet
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_tripartite_pact
 		x = 2
 		y = 1
 		offset = {
@@ -1459,12 +1542,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			release_puppet = DNH
+			remove_ideas = ENG_navajo_unhappy
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_madeira_start
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_rubber
 		x = 9
 		y = 1
 		offset = {
@@ -1487,12 +1572,18 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			133 = {
+				add_resource = {
+					type = rubber
+					amount = 15
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_madeira_forts
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_coastal_fort
 		x = -2
 		y = 1
 		offset = {
@@ -1515,12 +1606,19 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			133 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 10
+					province = 3118
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_madeira_dockyards
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 2
 		y = 1
 		offset = {
@@ -1543,12 +1641,19 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			133 = {
+				add_building_construction = {
+					type = dockyard
+					level = 7
+				}
+				add_extra_state_shared_building_slots = 7
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_madeira_core
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_generic_propaganda
 		x = 0
 		y = 1
 		offset = {
@@ -1571,13 +1676,19 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			#Gives good spirit and cores
+			133 = {
+				add_core_of = ENG
+				add_resource = {
+					type = rubber
+					amount = 5
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_sweden_start
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		x = -5
 		y = 1
 		offset = {
@@ -1600,12 +1711,13 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = -60
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_estonia_core
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_eng_the_sun_never_sets
 		x = -1
 		y = 2
 		offset = {
@@ -1628,13 +1740,17 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			#Gives good spirit and cores
+			127 = {
+				add_core_of = ENG
+			}
+			remove_ideas = ENG_estonia_unhappy
+			add_ideas = ENG_estonia_converted
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_estonia_puppet
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_eng_decolonization
 		x = 1
 		y = 2
 		offset = {
@@ -1657,12 +1773,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			release_puppet = EST
+			remove_ideas = ENG_estonia_unhappy
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_sweden_core
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_demand_sudetenland
 		x = 0
 		y = 1
 		offset = {
@@ -1685,13 +1803,22 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			#Gives good spirit and cores
+			ENG = {
+				every_owned_state = {
+					limit = {
+						is_core_of = SWE
+					}
+					add_core_of = ENG
+				}
+			}
+			remove_ideas = ENG_sweden_unhappy
+			add_ideas = ENG_sweden_converted
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_sweden_puppet
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_diplomatic_treaty
 		x = 2
 		y = 1
 		offset = {
@@ -1714,13 +1841,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			#Removes bad spirit
+			release_puppet = SWE
+			remove_ideas = ENG_sweden_unhappy
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_sweden_defense
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_generic_fortify_city
 		x = -2
 		y = 1
 		offset = {
@@ -1743,12 +1871,34 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			119 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			123 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_sweden_airdef
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_air_defense
 		x = 0
 		y = 3
 		offset = {
@@ -1771,12 +1921,36 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			119 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			123 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_estonia_defense
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_generic_fortify_city
 		x = 2
 		y = 1
 		offset = {
@@ -1799,12 +1973,23 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			127 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = KEV_ENG_estonia_airdef
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_air_defense
 		x = 0
 		y = 3
 		offset = {
@@ -1827,6 +2012,18 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			127 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -2610,7 +2807,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_canada_start
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_hol_united_netherlands
 		x = 0
 		y = 9
 		offset = {
@@ -2642,7 +2839,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_oncoming_storm
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
 		x = -2
 		y = 1
 		offset = {
@@ -2687,7 +2884,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_sabotage_texas
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		x = 1
 		y = 1
 		offset = {
@@ -2724,7 +2921,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_plant_propaganda
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_generic_armed_protest
 		x = -1
 		y = 3
 		offset = {
@@ -2758,7 +2955,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_canadian_volunteers
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_little_entente
 		x = 0
 		y = 2
 		offset = {
@@ -2794,7 +2991,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_protecting_illinois
-		icon = GFX_focus_hol_liberation
+		icon = GFX_goal_generic_construct_military
 		x = 2
 		y = 2
 		offset = {
@@ -2843,7 +3040,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_influence_X23
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_prc_infiltration
 		x = 5
 		y = 1
 		offset = {
@@ -2877,7 +3074,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_coup_X23
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_spr_crush_the_revolution
 		x = 0
 		y = 1
 		offset = {
@@ -2921,7 +3118,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_invite_deseret
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_hol_the_foundations_of_defense
 		x = -1
 		y = 2
 		offset = {
@@ -2955,7 +3152,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_influence_usa
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		x = 3
 		y = 1
 		offset = {
@@ -2989,7 +3186,7 @@ focus_tree = {
 
 	focus = {
 		id = KEV_ENG_operation_longshot
-		icon = GFX_focus_hol_liberation
+		icon = GFX_focus_spa_the_war_of_vengeance
 		x = 0
 		y = 1
 		offset = {
@@ -3031,7 +3228,6 @@ focus_tree = {
 				start_civil_war = {
 					ideology = democratic
 					size = 0.4
-					only_own_territory = no
 				}
 			}
 		}

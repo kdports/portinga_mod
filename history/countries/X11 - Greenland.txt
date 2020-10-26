@@ -87,7 +87,7 @@ add_ideas = {
 	volunteer_only
 	civilian_economy
 	export_focus
-	culture_eskaleut
+	culture_english
 }
 set_stability = 0.60
 set_war_support = 0.60
