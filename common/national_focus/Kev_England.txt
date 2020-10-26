@@ -134,6 +134,34 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			116 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			117 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 
@@ -162,6 +190,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Build stuff
+			add_political_power = 100
 		}
 	}
 
@@ -190,6 +219,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Build stuff
+			109 = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 7
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 7
+			}
 		}
 	}
 
@@ -218,6 +255,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Build stuff
+			109 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 7
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 7
+			}
 		}
 	}
 
@@ -246,6 +291,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Build stuff
+			108 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 7
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 7
+			}
 		}
 	}
 
@@ -274,6 +327,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Build stuff
+			108 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 7
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 7
+			}
 		}
 	}
 
@@ -330,6 +391,22 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Air stuff
+			117 = {
+				add_building_construction = {
+					type = air_base
+					level = 7
+					instant_build = yes
+					province = 3501
+				}
+			}
+			233 = {
+				add_building_construction = {
+					type = air_base
+					level = 7
+					instant_build = yes
+					province = 6526
+				}
+			}
 		}
 	}
 
@@ -561,6 +638,39 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Add forts and defensive stuff
+			128 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_victory_point = yes
+					}
+				}
+			}
+			129 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = 5
+					}
+				}
+			}
+			130 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_victory_point = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -589,6 +699,18 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			give_guarantee = WGR
+			diplomatic_relation = {
+				country = WGR
+				relation = non_aggression_pact
+				active = yes
+			}
+			WGR = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = puppet_opinion
+				}
+			}
 		}
 	}
 
@@ -617,6 +739,18 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			give_guarantee = X21
+			diplomatic_relation = {
+				country = X21
+				relation = non_aggression_pact
+				active = yes
+			}
+			X21 = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = puppet_opinion
+				}
+			}
 		}
 	}
 
@@ -645,6 +779,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Civs/mils there
+			128 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 7
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 7
+			}
 		}
 	}
 
@@ -673,6 +815,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { #Civs/mils there
+			130 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 7
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 7
+			}
 		}
 	}
 
@@ -701,6 +851,12 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			X11 = {
+				add_ideas = {
+					democratic_influence
+					democratic_opposition_voicing_protests
+				}
+			}
 		}
 	}
 
@@ -721,7 +877,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-
+			X11 = {
+				has_government = democratic
+			}
 		}
 
 		bypass = {
@@ -729,6 +887,15 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			remove_ideas = {
+				ENG_greenland_lost
+			}
+			add_ideas = {
+				ENG_greenland_converted
+			}
+			declare_war_on = {
+				target = X11
+			}
 		}
 	}
 
@@ -757,6 +924,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			304 = {
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 5
+			}
 		}
 	}
 
@@ -777,7 +952,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-
+			X11 = {
+				has_government = democratic
+			}
 		}
 
 		bypass = {
@@ -785,6 +962,13 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			remove_ideas = {
+				ENG_greenland_lost
+			}
+			add_ideas = {
+				ENG_greenland_converted
+			}
+			puppet = X11
 		}
 	}
 
@@ -813,6 +997,20 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			304 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
 		}
 	}
 
@@ -841,6 +1039,11 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = 50
+			add_timed_idea = {
+				idea = ENG_revanchism
+				days = 200
+			}
 		}
 	}
 
@@ -861,7 +1064,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-
+			227 = {
+				NOT = { is_controlled_by = ENG }
+			}
 		}
 
 		bypass = {
@@ -869,6 +1074,29 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			hidden_effect = {
+				create_ship = {
+					type = ship_hull_heavy_2
+					equipment_variant = "1936 Battleship"
+					creator = ENG
+				}
+				create_ship = {
+					type = ship_hull_heavy_2
+					equipment_variant = "1936 Battleship"
+					creator = ENG
+				}
+				create_ship = {
+					type = ship_hull_heavy_2
+					equipment_variant = "1936 Battleship"
+					creator = ENG
+				}
+				create_ship = {
+					type = ship_hull_heavy_2
+					equipment_variant = "1936 Battleship"
+					creator = ENG
+				}
+			}
+			custom_effect_tooltip = dutch_ships_tt
 		}
 	}
 
@@ -889,7 +1117,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-
+			227 = {
+				NOT = { is_controlled_by = ENG }
+			}
 		}
 
 		bypass = {
@@ -897,6 +1127,14 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			233 = {
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 5
+			}
 		}
 	}
 
@@ -917,7 +1155,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-
+			227 = {
+				NOT = { is_controlled_by = ENG }
+			}
 		}
 
 		bypass = {
@@ -925,6 +1165,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_ideas = {
+				ENG_invasion_boost
+			}
 		}
 	}
 
@@ -945,7 +1188,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-
+			NOT = {
+				has_global_flag = crisis_ongoing
+			}
 		}
 
 		bypass = {
@@ -953,6 +1198,13 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			set_global_flag = crisis_ongoing
+			set_global_flag = dutch_crisis
+			set_country_flag = crisis_head_one
+			FRA = {
+				set_country_flag = crisis_head_two
+			}
+			custom_effect_tooltip = 4_X13_crisis_tt
 		}
 	}
 
@@ -2389,6 +2641,207 @@ focus_tree = {
 	}
 
 	focus = {
+		id = KEV_ENG_oncoming_storm
+		icon = GFX_focus_hol_liberation
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_canada_start }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_canada_start
+		cost = 8
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			USA = {
+				has_government = fascism
+			}
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			USA = {
+				every_state = {
+					limit = {
+						is_owned_and_controlled_by = USA
+						any_neighbor_state = {
+							is_owned_by = ENG
+						}
+					}
+					add_state_modifier = {
+						modifier = {
+							local_org_regain = -0.05
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_sabotage_texas
+		icon = GFX_focus_hol_liberation
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_oncoming_storm }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_oncoming_storm
+		cost = 9
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			USA = {
+				has_government = fascism
+			}
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			730 = {
+				add_state_modifier = {
+					modifier = {
+						local_resources = -0.5
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_plant_propaganda
+		icon = GFX_focus_hol_liberation
+		x = -1
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_oncoming_storm }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_oncoming_storm
+		cost = 6
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			USA = {
+				has_government = fascism
+			}
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 50
+			USA = {
+				add_stability = -0.10
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_canadian_volunteers
+		icon = GFX_focus_hol_liberation
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_oncoming_storm }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_oncoming_storm
+		cost = 8
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = {
+				load_oob = CAN_1936
+			}
+			custom_effect_tooltip = can_volunteers_tt
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = ENG
+			}
+		}
+	}
+
+	focus = {
+		id = KEV_ENG_protecting_illinois
+		icon = GFX_focus_hol_liberation
+		x = 2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = KEV_ENG_oncoming_storm }
+		mutually_exclusive = { }
+		relative_position_id = KEV_ENG_oncoming_storm
+		cost = 8
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+
+		bypass = {
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			142 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			103 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = KEV_ENG_influence_X23
 		icon = GFX_focus_hol_liberation
 		x = 5
@@ -2415,8 +2868,8 @@ focus_tree = {
 			add_political_power = -50
 			X23 = {
 				add_ideas = {
-					idea = democratic_influence
-					idea = democratic_opposition_voicing_protests
+					democratic_influence
+					democratic_opposition_voicing_protests
 				}
 			}
 		}
@@ -2527,8 +2980,8 @@ focus_tree = {
 			add_political_power = -50
 			USA = {
 				add_ideas = {
-					idea = democratic_influence
-					idea = democratic_opposition_voicing_protests
+					democratic_influence
+					democratic_opposition_voicing_protests
 				}
 			}
 		}

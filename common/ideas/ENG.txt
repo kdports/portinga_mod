@@ -200,6 +200,32 @@ ideas = {
 				resistance_decay = -0.1
 			}
 		}
+		ENG_revanchism = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				decryption = 0.50
+				encryption = 0.50
+			}
+		}
+		ENG_invasion_boost = {
+			#picture = generic_coastal_defense_ships
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_invasion_capacity = 15
+				naval_invasion_prep_speed = 1
+			}
+		}
 	}
 	political_advisor = {
 		ENG_absolutist_advisor = {

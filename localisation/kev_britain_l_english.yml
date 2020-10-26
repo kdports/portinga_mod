@@ -1,15 +1,20 @@
 ﻿l_english:
   #Focuses
-  KEV_ENG_first_history:0 ""
+  KEV_ENG_first_history:0 "First History"
   KEV_ENG_first_history_desc:0 ""
-  KEV_ENG_second_history:0 ""
+  KEV_ENG_second_history:0 "Second History"
   KEV_ENG_second_history_desc:0 ""
-  KEV_ENG_third_history:0 ""
+  KEV_ENG_third_history:0 "Third History"
   KEV_ENG_third_history_desc:0 ""
 
 
   ## Ideas
-
+  ENG_revanchism:0 "England A Gloria!"
+  ENG_invasion_boost:0 "Invasion Preparations"
+  ENG_greenland_lost:0 "Greenland Lost"
+  ENG_greenland_converted:0 "Greenland Reunified"
+  ENG_netherlands_lost:0 "Den Haag Lost"
+  ENG_netherlands_converted:0 "Den Haag Reunified"
 
   # Decisions
 
@@ -25,6 +30,8 @@
 
   #New Tooltips
   canada_start_tt:0 "The American Empire has announced their ambitions"
+  can_volunteers_tt:0 "§GRegiments of eager Canadian units will arrive!§!"
+  dutch_ships_tt:0 "§G4 Battleships§! will enter the reserve fleet!"
 
   # Flags
   usa_wants_illinois:0 "The American Empire Shall Feast"

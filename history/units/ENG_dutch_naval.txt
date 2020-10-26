@@ -1,0 +1,17 @@
+units = {
+	fleet = {
+		name = "2nd Fleet"
+		naval_base = 490
+		task_force = {
+			name = "2nd Fleet"
+			location = 8340
+			ship = { name = "Iron Duke" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Queen Elizabeth" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Rodney" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "1936 Battleship" } } }
+			ship = { name = "Jupiter" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Heavy Cruiser" } } }
+			ship = { name = "Blenheim" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Orlando" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+			ship = { name = "Australia" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "1936 Light Cruiser" } } }
+		}
+	}
+}

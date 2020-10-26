@@ -126,6 +126,20 @@ crisis_category = {
 						}
 					}
 				}
+				if = {
+					limit = {
+						has_global_flag = dutch_crisis
+					}
+					ENG = {
+						transfer_state = 227
+						remove_ideas = {
+							ENG_netherlands_lost
+						}
+						add_ideas = {
+							ENG_netherlands_converted
+						}
+					}
+				}
 			}
 			every_country = {
 				clr_country_flag = crisis_head_one
