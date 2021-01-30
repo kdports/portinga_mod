@@ -1,6 +1,6 @@
 focus_tree = {
 	id = drewchile
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -8,35 +8,35 @@ focus_tree = {
 			tag = SPR
 		}
 	}
-	
-	
+
+
 	default = no
-	
+
 	continuous_focus_position = { x = 20 y = 1000 }
-	
+
 	focus = {
 		id = SPR_expand_industry
 		icon = GFX_goal_support_communism
 		mutually_exclusive = {
-			
+
 		}
 		x = 43
 		y = 1
-		
+
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 3
 		}
-		
+
 		available = {
-		
+			has_completed_focus = SPR_backround_2
 		}
-		
+
 		bypass = {
-			
+
 		}
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -44,22 +44,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			41 = {
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-				id = 3938
-			}	
-			add_building_construction = {
-				type = industrial_complex
-				level = 3
-				instant_build = yes
-				id = 3938
-			}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
 			}
 		}
-	}			
-	
+	}
+
 	focus = {
 		id = SPR_invest_in_the_colonies
 		icon = GFX_focus_generic_military_mission
@@ -69,18 +67,18 @@ focus_tree = {
 		relative_position_id = SPR_expand_industry
 
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		available = {
-		
+
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			513 = {
@@ -111,10 +109,10 @@ focus_tree = {
 				instant_build = yes
 			}
 			}
-			
+
 		}
 	}
-	
+
 	focus= {
 		id = SPR_centralise_the_arms_industry
 		icon = GFX_idea_generic_intel_bonus
@@ -122,9 +120,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPR_expand_industry
-		
+
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -134,18 +132,18 @@ focus_tree = {
 		}
 
 		bypass = {
-				
+
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 3 }
 		}
 	}
-	
+
 	focus = {
 		id = SPR_further_spainsh_discovery
 		icon = GFX_focus_research
@@ -184,10 +182,10 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_expand_the_sciences
 		icon = GFX_focus_research
@@ -219,16 +217,16 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-		
+
 	focus = {
 		id = SPR_create_the_autovias
 		icon = GFX_decision_category_infiltration
 		prerequisite = { focus = SPR_further_spainsh_discovery }
-		
+
 
 		x = -1
 		y = 1
-		relative_position_id = SPR_further_spainsh_discovery	
+		relative_position_id = SPR_further_spainsh_discovery
 
 		cost = 10
 
@@ -241,13 +239,13 @@ focus_tree = {
 		}
 
 		bypass = {
-					
+
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			SPR = {
@@ -259,15 +257,15 @@ focus_tree = {
 						province = {
 							all_provinces = yes
 							limit_to_border = yes
-						
+
 						}
 					}
 				}
 			}
 		}
-	}	
-	
-	
+	}
+
+
 	focus = {
 		id = SPR_create_the_future
 		icon = GFX_goal_tfv_burn_the_royal_portraits
@@ -275,15 +273,15 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SPR_centralise_the_arms_industry
-		
+
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -297,10 +295,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_political_power = 75
-		
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_civilian_industry
 		icon = GFX_goal_generic_national_unity
@@ -321,7 +319,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -335,12 +333,12 @@ focus_tree = {
 				type = industrial_complex
 				level = 2
 				instant_build = yes
-				
+
 				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SPR_military_industry
 		icon = GFX_goal_generic_national_unity
@@ -375,12 +373,12 @@ focus_tree = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
-				
+
 				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SPR_apease_the_labor_unions
 		icon = GFX_goal_generic_propaganda
@@ -396,7 +394,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -412,7 +410,7 @@ focus_tree = {
 			add_stability = 0.1
 		}
 	}
-	
+
 	focus = {
 		id = SPR_advance-the_propaganda_department
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -428,30 +426,64 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
-		bypass = {			
+		bypass = {
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-	
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_war_support = 0.1
 		}
 	}
-	
+
+	focus = {
+		id = SPR_regla_la_ceilo
+		icon = GFX_focus_eng_special_air_service
+
+		x = -18
+		y = 0
+		offset = {
+			x = -1
+			y = 0
+		}
+
+		relative_position_id = SPR_expand_industry
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = SPR_backround_2
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+	}
+
 	focus = {
 	id = SPR_air_innovations
 		icon = GFX_goal_FRA_air_force
 
-		prerequisite = { focus = SPR_regla_la_ceilo } 
+		prerequisite = { focus = SPR_regla_la_ceilo }
 
-		x = 0 
+		x = 0
 		y = 3
 		offset = {
 			x = 0
@@ -483,7 +515,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 
 	focus = {
 		id = SPR_fighter_focus
@@ -496,7 +528,7 @@ focus_tree = {
 			y = 0
 		}
 		prerequisite = { focus = SPR_air_innovations }
-		
+
 		relative_position_id = SPR_air_innovations
 		cost = 7
 		ai_will_do = {
@@ -780,41 +812,7 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = SPR_regla_la_ceilo
-		icon = GFX_focus_eng_special_air_service
 
-		x = -18
-		y = 0
-		offset = {
-			x = -1
-			y = 0
-		}
-		
-		relative_position_id = SPR_expand_industry
-		cost = 7
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			
-		}
-	}
-	
 	focus = {
 		id = SPR_start_bombers
 		icon = GFX_goal_generic_air_production
@@ -826,9 +824,9 @@ focus_tree = {
 			x = 0
 			y = 0
 		}
-		
+
 		relative_position_id = SPR_regla_la_ceilo
-	
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -847,12 +845,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
-	
-	
+
+
+
 	focus = {
 		id = SPR_start_fighters
 		icon = GFX_goal_generic_air_production
@@ -864,7 +862,7 @@ focus_tree = {
 			x = 0
 			y = 0
 		}
-		
+
 		relative_position_id = SPR_regla_la_ceilo
 
 		cost = 5
@@ -885,50 +883,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
-	focus = {
-		id = SPR_the_faliure_of_the_royal_family
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = SPR_backround_2 }
 
-		x = 2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		
-		relative_position_id = SPR_backround_2
-	
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			
-		}
-	}
-	
 	focus = {
 		id = SPR_backround_1
 		icon = GFX_goal_generic_air_production
-		
+
 
 		x = 33
 		y = -2
@@ -936,8 +898,8 @@ focus_tree = {
 			x = 6
 			y = 0
 		}
-		
-		
+
+
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -956,10 +918,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_backround_2
 		icon = GFX_goal_generic_air_production
@@ -972,9 +934,9 @@ focus_tree = {
 			x = 0
 			y = 0
 		}
-		
+
 		relative_position_id = SPR_backround_1
-		
+
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -993,24 +955,24 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
-		id = SPR_stick_to_the_crown
+		id = SPR_the_faliure_of_the_royal_family
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = SPR_backround_2 }
 
-		x = -2
-		y = 2
+		x = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
-		
-		relative_position_id = SPR_backround_1
-		
+
+		relative_position_id = SPR_backround_2
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1029,35 +991,71 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
-		
+
+	focus = {
+		id = SPR_stick_to_the_crown
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = SPR_backround_2 }
+
+		x = -2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+
+		relative_position_id = SPR_backround_1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+
+		}
+	}
+
+
 	focus = {
 		id = SPR_begin_talks_with_the_unions
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = SPR_the_faliure_of_the_royal_family }
-		
-			
-		
+
+
+
 		x = 0
 		y = 1
-		
+
 		cost = 10
 		relative_position_id = SPR_the_faliure_of_the_royal_family
 		ai_will_do = {
 			factor = 2
 		}
-		
+
 		available = {
-		
+
 		}
-		
+
 		bypass = {
 			has_government = communism
 		}
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1068,7 +1066,7 @@ focus_tree = {
 			add_political_power = 200
 		}
 	}
-	
+
 	focus = {
 		id = SPR_approach_the_working_class
 		icon = GFX_focus_generic_military_mission
@@ -1078,24 +1076,24 @@ focus_tree = {
 		relative_position_id = SPR_begin_talks_with_the_unions
 
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		available = {
-		
+
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_manpower = 10000
 		}
 	}
-	
+
 	focus= {
 		id = SPR_expand_urban_areas
 		icon = GFX_goal_generic_forceful_treaty
@@ -1103,9 +1101,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SPR_begin_talks_with_the_unions
-		
+
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1115,30 +1113,30 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_government = communism			
+			has_government = communism
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 2 }
 		}
 	}
-	
-	
-		
+
+
+
 	focus = {
 		id = SPR_embrace_marxism
 		icon = GFX_focus_jap_cast_the_die
 		prerequisite = { focus = SPR_approach_the_working_class }
 		prerequisite = { focus = SPR_expand_urban_areas }
-		
+
 
 		x = 0
 		y = 1
-		relative_position_id = SPR_approach_the_working_class		
+		relative_position_id = SPR_approach_the_working_class
 
 		cost = 10
 
@@ -1151,13 +1149,13 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_government = communism			
+			has_government = communism
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			set_political_party = {
@@ -1170,7 +1168,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SPR_purge_the_remants_of_the_crown
 		icon = GFX_goal_tfv_burn_the_royal_portraits
@@ -1178,15 +1176,15 @@ focus_tree = {
 		x = -2
 		y = 0
 		relative_position_id = SPR_embrace_marxism
-		
+
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -1200,10 +1198,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_political_power = 100
-		
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_rebuild_the_civil_service
 		icon = GFX_goal_generic_national_unity
@@ -1235,7 +1233,7 @@ focus_tree = {
 			add_stability = 0.1
 		}
 	}
-	
+
 	focus = {
 		id = SPR_correct_royal_misgivings
 		icon = GFX_goal_generic_propaganda
@@ -1251,7 +1249,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -1267,7 +1265,7 @@ focus_tree = {
 			add_war_support = .1
 		}
 	}
-	
+
 
 	focus = {
 		id = SPR_reinvest_into_infrastructure
@@ -1297,7 +1295,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			SPR = {			
+			SPR = {
 				random_state = {
 					limit = {
 						has_state_flag = JAP_expand_manchurian_railways_Inf1
@@ -1325,7 +1323,7 @@ focus_tree = {
 			SPR = {
 				random_owned_controlled_state = {
 					limit = {
-						is_fully_controlled_by = PREV						
+						is_fully_controlled_by = PREV
 						free_building_slots = {
 							building = infrastructure
 							size > 0
@@ -1341,7 +1339,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
-						is_fully_controlled_by = PREV						
+						is_fully_controlled_by = PREV
 						free_building_slots = {
 							building = infrastructure
 							size > 1
@@ -1358,7 +1356,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SPR_fund_the_military
 		icon = GFX_goal_generic_construct_infrastructure
@@ -1374,7 +1372,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -1387,7 +1385,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			SPR = {			
+			SPR = {
 				random_state = {
 					limit = {
 						has_state_flag = JAP_expand_manchurian_railways_Inf1
@@ -1415,7 +1413,7 @@ focus_tree = {
 			SPR = {
 				random_owned_controlled_state = {
 					limit = {
-						is_fully_controlled_by = PREV						
+						is_fully_controlled_by = PREV
 						free_building_slots = {
 							building = arms_factory
 							size > 0
@@ -1431,7 +1429,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
-						is_fully_controlled_by = PREV						
+						is_fully_controlled_by = PREV
 						free_building_slots = {
 							building = arms_factory
 							size > 2
@@ -1448,7 +1446,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SPR_make_more_jobs
 		icon = GFX_goal_generic_construct_infrastructure
@@ -1464,7 +1462,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -1477,7 +1475,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			SPR = {			
+			SPR = {
 				random_state = {
 					limit = {
 						has_state_flag = JAP_expand_manchurian_railways_Inf1
@@ -1505,7 +1503,7 @@ focus_tree = {
 			SPR = {
 				random_owned_controlled_state = {
 					limit = {
-						is_fully_controlled_by = PREV						
+						is_fully_controlled_by = PREV
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -1521,7 +1519,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
-						is_fully_controlled_by = PREV						
+						is_fully_controlled_by = PREV
 						free_building_slots = {
 							building = industrial_complex
 							size > 3
@@ -1538,7 +1536,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SPR_fighter_two
 		icon = GFX_goal_generic_air_production
@@ -1550,9 +1548,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_start_fighters
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -1571,10 +1569,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_bomber_two
 		icon = GFX_goal_generic_air_production
@@ -1586,9 +1584,9 @@ focus_tree = {
 			x = -2
 			y = 0
 		}
-		
+
 		relative_position_id = SPR_start_bombers
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -1607,10 +1605,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1624,9 +1622,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			has_completed_focus = SPR_backround_2
 		}
-		
+
 		bypass = {
 
 		}
@@ -1691,7 +1689,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1729,7 +1727,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1767,7 +1765,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1788,7 +1786,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {	
+	focus = {
 		id = SPR_escort_fleet
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = SPR_light_cruiser_effort }
@@ -1810,7 +1808,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1849,7 +1847,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1866,7 +1864,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = cat_fleet_in_being
-			}			
+			}
 		}
 	}
 
@@ -1887,7 +1885,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1940,7 +1938,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1951,7 +1949,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = SPR_trade_fleet			
+			add_ideas = SPR_trade_fleet
 		}
 	}
 
@@ -1972,7 +1970,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2018,8 +2016,8 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = SPR_spread_the_revolution
 		icon = GFX_goal_generic_air_production
@@ -2027,10 +2025,10 @@ focus_tree = {
 
 		x = 0
 		y = 2
-	
-		
+
+
 		relative_position_id = SPR_embrace_marxism
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2049,10 +2047,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_get_caught_up
 		icon = GFX_goal_generic_air_production
@@ -2064,9 +2062,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_expand_urban_areas
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2085,10 +2083,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_invest_in_consumer_goods
 		icon = GFX_goal_generic_air_production
@@ -2100,9 +2098,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_get_caught_up
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2121,10 +2119,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_build_build_build
 		icon = GFX_goal_generic_air_production
@@ -2136,9 +2134,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_get_caught_up
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2157,10 +2155,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_back_on_top
 		icon = GFX_goal_generic_air_production
@@ -2173,9 +2171,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_build_build_build
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2194,10 +2192,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_enemies_at_our_door
 		icon = GFX_goal_generic_air_production
@@ -2209,9 +2207,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_spread_the_revolution
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2230,10 +2228,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_english_menace
 		icon = GFX_goal_generic_air_production
@@ -2245,11 +2243,11 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_enemies_at_our_door
 		mutually_exclusive = { focus = SPR_french_scum }
 		mutually_exclusive = { focus = SPR_colonial_concern }
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2268,10 +2266,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_french_scum
 		icon = GFX_goal_generic_air_production
@@ -2283,11 +2281,11 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_enemies_at_our_door
 		mutually_exclusive = { focus = SPR_colonial_concern }
 		mutually_exclusive = { focus = SPR_english_menace }
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2306,11 +2304,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
-	
+
+
 		focus = {
 		id = SPR_colonial_concern
 		icon = GFX_goal_generic_air_production
@@ -2322,11 +2320,11 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_enemies_at_our_door
 		mutually_exclusive = { focus = SPR_french_scum }
 		mutually_exclusive = { focus = SPR_english_menace }
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2345,10 +2343,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_ready_for_anything
 		icon = GFX_goal_generic_air_production
@@ -2360,9 +2358,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_english_menace
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2381,10 +2379,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_southern_concern
 		icon = GFX_goal_generic_air_production
@@ -2396,7 +2394,7 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_french_scum
 		mutually_exclusive = { focus = SPR_northern_concern }
 		cost = 7
@@ -2417,10 +2415,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_northern_concern
 		icon = GFX_goal_generic_air_production
@@ -2432,7 +2430,7 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_french_scum
 		mutually_exclusive = { focus = SPR_southern_concern }
 		cost = 7
@@ -2453,24 +2451,24 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_dont_give_in
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = SPR_southern_concern focus = SPR_northern_concern }
-		
+
 		x = 1
 		y = 1
 		offset = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_southern_concern
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2489,10 +2487,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_demand_compensation
 		icon = GFX_goal_generic_air_production
@@ -2504,9 +2502,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_dont_give_in
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2525,10 +2523,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_stabilty = .1
+			add_stability = 0.1
 		}
 	}
-	
+
 	focus = {
 		id = SPR_english_alliance
 		icon = GFX_goal_generic_air_production
@@ -2540,15 +2538,15 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_french_scum
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -2561,10 +2559,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_insight_painic
 		icon = GFX_goal_generic_air_production
@@ -2576,9 +2574,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_demand_compensation
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2597,10 +2595,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_unclaimed_lands
 		icon = GFX_goal_generic_air_production
@@ -2612,9 +2610,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_demand_compensation
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2633,10 +2631,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_coordinated_strike
 		icon = GFX_goal_generic_air_production
@@ -2649,11 +2647,11 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_insight_painic
 		relative_position_id = SPR_unclaimed_lands
-		
-		
+
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2672,10 +2670,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_war
 		icon = GFX_goal_generic_air_production
@@ -2687,9 +2685,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_coordinated_strike
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2708,10 +2706,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_french_alliance
 		icon = GFX_goal_generic_air_production
@@ -2723,15 +2721,15 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_french_scum
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -2744,10 +2742,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_ethopian_alliance
 		icon = GFX_goal_generic_air_production
@@ -2759,15 +2757,15 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_french_scum
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -2780,14 +2778,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_friends_elsewhere
 		icon = GFX_goal_generic_air_production
-		
+
 
 		x = -7
 		y = 1
@@ -2795,9 +2793,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_french_scum
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2816,10 +2814,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_demand_mederna
 		icon = GFX_goal_generic_air_production
@@ -2831,9 +2829,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_ready_for_anything
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2852,10 +2850,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_pin_point_targets
 		icon = GFX_goal_generic_air_production
@@ -2867,9 +2865,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_demand_mederna
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2891,7 +2889,7 @@ focus_tree = {
 			add_war_support = .2
 		}
 	}
-	
+
 	focus = {
 		id = SPR_sabatoge_and_deceit
 		icon = GFX_goal_generic_air_production
@@ -2903,9 +2901,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_pin_point_targets
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2924,10 +2922,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_strike_the_lion
 		icon = GFX_goal_generic_air_production
@@ -2939,9 +2937,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_sabatoge_and_deceit
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2960,10 +2958,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-		
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_wane_the_colonies
 		icon = GFX_goal_generic_air_production
@@ -2975,9 +2973,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_demand_mederna
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -2996,10 +2994,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_moblise_the_departments
 		icon = GFX_goal_generic_air_production
@@ -3011,10 +3009,10 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_wane_the_colonies
 
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3033,10 +3031,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_hit_em_were_it_hurts
 		icon = GFX_goal_generic_air_production
@@ -3048,9 +3046,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_moblise_the_departments
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3069,10 +3067,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_reclaim_the_colonies
 		icon = GFX_goal_generic_air_production
@@ -3085,10 +3083,10 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_colonial_concern
 		mutually_exclusive = { focus = SPR_let_go_of_south_america }
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3107,10 +3105,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
-	} 
-	
+	}
+
 	focus = {
 		id = SPR_let_go_of_south_america
 		icon = GFX_goal_generic_air_production
@@ -3122,10 +3120,10 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_colonial_concern
 		mutually_exclusive = { focus = SPR_reclaim_the_colonies }
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3144,10 +3142,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_prepare_defences
 		icon = GFX_goal_generic_air_production
@@ -3159,9 +3157,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_reclaim_the_colonies
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3180,10 +3178,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_ready_to_move
 		icon = GFX_goal_generic_air_production
@@ -3195,9 +3193,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_dont_give_in
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3216,7 +3214,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
@@ -3230,9 +3228,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_prepare_defences
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3251,10 +3249,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_understand_our_enemy
 		icon = GFX_goal_generic_air_production
@@ -3266,9 +3264,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_sow_discontent
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3287,10 +3285,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_go_go_go
 		icon = GFX_goal_generic_air_production
@@ -3302,9 +3300,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_understand_our_enemy
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3323,10 +3321,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_befriend_the_former_colonies
 		icon = GFX_goal_generic_air_production
@@ -3338,9 +3336,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_let_go_of_south_america
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3359,10 +3357,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_create_the_coalition
 		icon = GFX_goal_generic_air_production
@@ -3374,9 +3372,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_befriend_the_former_colonies
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3395,10 +3393,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_invite_brazil
 		icon = GFX_goal_generic_air_production
@@ -3410,9 +3408,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_create_the_coalition
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3431,10 +3429,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_invite_la_plata
 		icon = GFX_goal_generic_air_production
@@ -3446,9 +3444,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_create_the_coalition
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3467,10 +3465,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_convince_gautamala
 		icon = GFX_goal_generic_air_production
@@ -3483,9 +3481,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_create_the_coalition
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3504,10 +3502,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_kuboresha_mahusiano
 		icon = GFX_goal_generic_air_production
@@ -3519,9 +3517,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_ethopian_alliance
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3540,10 +3538,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_improve_relations
 		icon = GFX_goal_generic_air_production
@@ -3555,9 +3553,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_english_alliance
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3576,11 +3574,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
-		
+
+
 	focus = {
 		id = SPR_améliorer_les_relations
 		icon = GFX_goal_generic_air_production
@@ -3592,9 +3590,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_french_alliance
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3613,10 +3611,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_anglo_spanish_treaty
 		icon = GFX_goal_generic_air_production
@@ -3628,9 +3626,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_improve_relations
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3649,10 +3647,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_anglo_french_treaty
 		icon = GFX_goal_generic_air_production
@@ -3664,9 +3662,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_améliorer_les_relations
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3685,10 +3683,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_spainsh_etheopian_treaty
 		icon = GFX_goal_generic_air_production
@@ -3700,9 +3698,9 @@ focus_tree = {
 			x = 0
 			y = 2
 		}
-		
+
 		relative_position_id = SPR_kuboresha_mahusiano
-		
+
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3721,10 +3719,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SPR_begin_rearmament
 		icon = GFX_goal_generic_construct_mil_factory
@@ -3744,8 +3742,9 @@ focus_tree = {
 
 		available = {
 			has_war_support > 0.12
+			has_completed_focus = SPR_backround_2
 		}
-		
+
 		bypass = {
 
 		}
@@ -3796,10 +3795,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = maxime_weygand
+			# show_ideas_tooltip = maxime_weygand
 		}
 	}
-	
+
 	focus = {
 		id = SPR_methodical_battle
 		icon = GFX_goal_generic_cavalry
@@ -3819,9 +3818,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -3868,13 +3867,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			ROOT = { country_event = { id = SPRnce.3 } }
-			ITA = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = SPR_alpine_forts
-				}
-			}
+			#ROOT = { country_event = { id = SPRnce.3 } }
+			#X13 = {
+			#	add_opinion_modifier = {
+			#		target = ROOT
+			#		modifier = SPR_alpine_forts
+			#	}
+			#}
 		}
 	}
 	focus = {
@@ -3890,23 +3889,23 @@ focus_tree = {
 			18 = { is_controlled_by = ROOT }
 			29 = { is_controlled_by = ROOT }
 			785 = { is_controlled_by = ROOT }
-			has_idea = SPR_protected_by_the_maginot_line
+			#has_idea = SPR_protected_by_the_maginot_line
 		}
 		completion_reward = {
-			ROOT = { country_event = { id = SPRnce.2 } }
-			BEL = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = SPR_extend_the_maginot_line_focus_neg
-				}
-				add_opinion_modifier = {
-					target = GER
-					modifier = SPR_extend_the_maginot_line_focus_pos
-				}
-			}
+			#ROOT = { country_event = { id = SPRnce.2 } }
+			#BEL = {
+			#	add_opinion_modifier = {
+			#		target = ROOT
+			#		modifier = SPR_extend_the_maginot_line_focus_neg
+			#	}
+			#	add_opinion_modifier = {
+			#		target = GER
+			#		modifier = SPR_extend_the_maginot_line_focus_pos
+			#	}
+			#}
 		}
 	}
-	
+
 
 	focus = {
 		id = SPR_aggressive_focus
@@ -3946,9 +3945,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -4037,9 +4036,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -4055,7 +4054,7 @@ focus_tree = {
 	focus = {
 		id = SPR_cas_focus
 		icon = GFX_goal_generic_CAS
-	 	prerequisite = { 
+	 	prerequisite = {
 	 		focus = SPR_air_dominance
 	 	}
 		x = 0
@@ -4093,9 +4092,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -4132,9 +4131,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -4150,9 +4149,9 @@ focus_tree = {
 	focus = {
 		id = SPR_army_reform
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { 
-			focus = SPR_light_medium_armor 
-			focus = SPR_heavy_armor_focus 
+		prerequisite = {
+			focus = SPR_light_medium_armor
+			focus = SPR_heavy_armor_focus
 			focus = SPR_extend_the_maginot_line
 			focus = SPR_flying_artillery
 		}
@@ -4180,32 +4179,31 @@ focus_tree = {
 			show_ideas_tooltip = SPR_AMX
 		}
 	}
-	
-	
-	
-	
-	
 
 
-	
-	
-	
+
+
+
+
+
+
+
+
 	}
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
-		
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -171,7 +171,7 @@ add_opinion_modifier = { target = YUN modifier = negative_50 }
 #give_guarantee = X22
 
 add_ideas = {
-	volunteer_only
+	limited_conscription
 	low_economic_mobilisation
 	export_focus
 	culture_french

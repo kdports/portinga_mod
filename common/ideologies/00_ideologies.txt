@@ -352,8 +352,7 @@ ideologies = {
 			civilian_intel_to_others = 10.0
 			generate_wargoal_tension = 1.00
 			guarantee_tension = 0.25
-			hidden_modifier = { join_faction_tension = -0.1 }
-			join_faction_tension = 0.50
+			join_faction_tension = 0.40
 			lend_lease_tension = 0.50
 			navy_intel_to_others = 12.5
 			send_volunteers_tension = 0.50

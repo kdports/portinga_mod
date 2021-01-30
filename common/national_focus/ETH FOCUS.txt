@@ -599,11 +599,12 @@ focus_tree = {
 			}
 			create_country_leader = {
 				name = "Haile Selassie"
-				desc = "HAILE_SELASSIE_DESC"
+				desc = ""
 				picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 				expire = "1965.1.1"
-				ideology = "absolutist"
+				ideology = "absolute_monarchy"
 				traits = {
+					warmonger
 				}
 			}
 		}
@@ -858,7 +859,7 @@ focus_tree = {
 				desc = "MADI_YOUNTS_DESC"
 				picture = "Portrait_Barot_Yetalll.tga"
 				expire = "1965.1.1"
-				ideology = "absolutist"
+				ideology = "absolute_monarchy"
 				traits = {
 				}
 			}
@@ -887,7 +888,7 @@ focus_tree = {
 				desc = "MADI_YOUNTS_DESC"
 				picture = "Portrait_Barot_Yetalll.tga"
 				expire = "1965.1.1"
-				ideology = "absolutist"
+				ideology = "absolute_monarchy"
 				traits = {
 				}
 			}
@@ -2853,7 +2854,7 @@ focus_tree = {
 
 			custom_effect_tooltip = ETH_hms_karl_xii_tooltip
 			hidden_effect = {
-				ETH_NF_TREE_FBB01_naval_variant = yes
+				# ETH_NF_TREE_FBB01_naval_variant = yes
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_heavy_1
