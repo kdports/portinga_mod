@@ -28,6 +28,14 @@ on_actions = {
 					}
 					decimate_half_civilian_industry = yes
 				}
+				if = {
+					limit = {
+						OR = {
+							is_owned_by = FRA
+						}
+					}
+					decimate_half_all_industry = yes
+				}
 			}
 		}
 	}
