@@ -4,7 +4,7 @@ news_event = {
 	id = kev_mexwar.1
 	title = kev_mexwar.1.t
 	desc = kev_mexwar.1.d
-	picture = GFX_news_event_king_speech
+	picture = GFX_news_event_mex_civil_war
 	fire_only_once = no
 	major = yes
 	
@@ -36,7 +36,7 @@ news_event = {
 	id = kev_mexwar.2
 	title = kev_mexwar.2.t
 	desc = kev_mexwar.2.d
-	picture = GFX_news_event_king_speech
+	picture = GFX_news_event_mex_civil_war
 	fire_only_once = no
 	major = yes
 	

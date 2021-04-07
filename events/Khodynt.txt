@@ -5,7 +5,7 @@ country_event = {
 	id = kev_khodynt.1
 	title = kev_khodynt.1.t
 	desc = kev_khodynt.1.d
-	picture = GFX_news_event_king_speech
+	picture = GFX_report_event_ast_navy
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -39,7 +39,7 @@ country_event = {
 	id = kev_khodynt.2
 	title = kev_khodynt.2.t
 	desc = kev_khodynt.2.d
-	picture = GFX_news_event_king_speech
+	picture = GFX_report_event_soviet_invasion_map
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -79,7 +79,7 @@ country_event = {
 	id = kev_khodynt.3
 	title = kev_khodynt.3.t
 	desc = kev_khodynt.3.d
-	picture = GFX_news_event_king_speech
+	picture = GFX_report_event_generic_research_lab
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -121,7 +121,7 @@ country_event = {
 	id = kev_khodynt.4
 	title = kev_khodynt.4.t
 	desc = kev_khodynt.4.d
-	#picture = GFX_news_event_king_speech
+	picture = GFX_report_event_generic_sign_treaty1
 	fire_only_once = no
 	is_triggered_only = yes
 
@@ -172,7 +172,7 @@ country_event = {
 	id = kev_khodynt.5
 	title = kev_khodynt.5.t
 	desc = kev_khodynt.5.d
-	#picture = GFX_news_event_king_speech
+	#picture = GFX_report_event_molotov_ribentrop_handshake
 	fire_only_once = no
 	is_triggered_only = yes
 
@@ -186,7 +186,7 @@ country_event = {
 	id = kev_khodynt.6
 	title = kev_khodynt.6.t
 	desc = kev_khodynt.6.d
-	#picture = GFX_news_event_king_speech
+	picture = GFX_report_event_soviet_purge_trial
 	fire_only_once = yes
 	is_triggered_only = no
 
@@ -242,7 +242,7 @@ news_event = {
 	id = kev_khodynt.8
 	title = kev_khodynt.8.t
 	desc = kev_khodynt.8.d
-	picture = GFX_news_event_king_speech
+	#picture = GFX_news_event_king_speech
 	fire_only_once = no
 	is_triggered_only = yes
 
@@ -258,7 +258,7 @@ news_event = {
 	id = kev_khodynt.9
 	title = kev_khodynt.9.t
 	desc = kev_khodynt.9.d
-	picture = GFX_news_event_king_speech
+	#picture = GFX_news_event_king_speech
 	fire_only_once = no
 	is_triggered_only = yes
 
