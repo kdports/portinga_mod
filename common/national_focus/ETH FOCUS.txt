@@ -654,6 +654,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = { ETH_DISJOINTED_GOVERNMENT }
 			country_event = { id = ethiopia.6 }
+			custom_effect_tooltip = 1_FRA_pres_tt
 			add_to_variable = {
 				var = country_prestige_num
 				value = 5
@@ -1325,7 +1326,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = available_designer
+			# custom_effect_tooltip = available_designer
 			show_ideas_tooltip = lkab
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1488,8 +1489,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ETH_bofors
+			# custom_effect_tooltip = available_designer
+			# show_ideas_tooltip = ETH_bofors
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -1526,7 +1527,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = available_designer
+			# custom_effect_tooltip = available_designer
 			show_ideas_tooltip = husqvarna_vapenfabriks
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1904,12 +1905,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ETH_holmquist_plan"
-			custom_effect_tooltip = ETH_bugfixed_swap_tooltip_three
-			hidden_effect = {
-				swap_ideas = {
-					remove_idea = ETH_conservative_army_idea_1
-					add_idea = ETH_holmquist_army_idea
-				}
+			# custom_effect_tooltip = ETH_bugfixed_swap_tooltip_three
+			swap_ideas = {
+				remove_idea = ETH_conservative_army_idea_1
+				add_idea = ETH_holmquist_army_idea
 			}
 			add_tech_bonus = {
 				name = ETH_holmquist_plan
@@ -2115,12 +2114,10 @@ focus_tree = {
 				category = cat_superior_firepower
 				category = cat_grand_battle_plan
 			}
-			custom_effect_tooltip = ETH_bugfixed_swap_tooltip_four
-			hidden_effect = {
-				swap_ideas = {
-					remove_idea = ETH_holmquist_army_1
-					add_idea = ETH_holmquist_army_2
-				}
+			# custom_effect_tooltip = ETH_bugfixed_swap_tooltip_four
+			swap_ideas = {
+				remove_idea = ETH_holmquist_army_1
+				add_idea = ETH_holmquist_army_2
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
@@ -2146,12 +2143,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ETH_douglas_plan"
-			custom_effect_tooltip = ETH_bugfixed_swap_tooltip
-			hidden_effect = {
-				swap_ideas = {
-					remove_idea = ETH_conservative_army_idea_1
-					add_idea = ETH_douglas_army_idea
-				}
+			# custom_effect_tooltip = ETH_bugfixed_swap_tooltip
+			swap_ideas = {
+				remove_idea = ETH_conservative_army_idea_1
+				add_idea = ETH_douglas_army_idea
 			}
 			add_tech_bonus = {
 				name = ETH_douglas_plan
@@ -2266,41 +2261,38 @@ focus_tree = {
 					}
 				}
 			}
-			custom_effect_tooltip = ETH_tank_divs_unit_tooltip
-			hidden_effect = {
+			# custom_effect_tooltip = ETH_tank_divs_unit_tooltip
+			division_template = {
+				name = "Pansarregemente"
 
-				division_template = {
-					name = "Pansarregemente"
+				regiments = {
+					light_armor = { x = 0 y = 0 }
+					light_armor = { x = 0 y = 1 }
+					light_armor = { x = 0 y = 2 }
 
-					regiments = {
-						light_armor = { x = 0 y = 0 }
-						light_armor = { x = 0 y = 1 }
-						light_armor = { x = 0 y = 2 }
-
-						motorized = { x = 1 y = 0 }
-						motorized = { x = 1 y = 1 }
-						motorized = { x = 1 y = 2 }
-					}
-
-					support = {
-						artillery = { x = 0 y = 0 }
-					}
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
 				}
 
-				random_owned_controlled_state = {
-					prioritize = { 141 }
-					create_unit = {
-						division = "name = \"Kungliga Göta Pansarlivgarde\" division_template = \"Pansarregemente\" start_experience_factor = 0.6"
-						owner = SWE
-					}
+				support = {
+					artillery = { x = 0 y = 0 }
 				}
+			}
 
-				random_owned_controlled_state = {
-					prioritize = { 138 }
-					create_unit = {
-						division = "name = \"Skånska Pansarregementet\" division_template = \"Pansarregemente\" start_experience_factor = 0.6"
-						owner = SWE
-					}
+			random_owned_controlled_state = {
+				prioritize = { 141 }
+				create_unit = {
+					division = "name = \"Kungliga Göta Pansarlivgarde\" division_template = \"Pansarregemente\" start_experience_factor = 0.6"
+					owner = SWE
+				}
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 138 }
+				create_unit = {
+					division = "name = \"Skånska Pansarregementet\" division_template = \"Pansarregemente\" start_experience_factor = 0.6"
+					owner = SWE
 				}
 			}
 		}
@@ -2356,12 +2348,10 @@ focus_tree = {
 				uses = 2
 				category = support_tech
 			}
-			custom_effect_tooltip = ETH_bugfixed_swap_tooltip_two
-			hidden_effect = {
-				swap_ideas = {
-					remove_idea = ETH_douglas_army_1
-					add_idea = ETH_douglas_army_2
-				}
+			# custom_effect_tooltip = ETH_bugfixed_swap_tooltip_two
+			swap_ideas = {
+				remove_idea = ETH_douglas_army_1
+				add_idea = ETH_douglas_army_2
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
@@ -2389,22 +2379,18 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus ETH_national_defence"
 			if = {
 				limit = { has_idea = ETH_holmquist_army_2 }
-				custom_effect_tooltip = ETH_bugfixed_swap_tooltip_five
-				hidden_effect = {
-					swap_ideas = {
-						remove_idea = ETH_holmquist_army_2
-						add_idea = ETH_holmquist_army_defence
-					}
+				# custom_effect_tooltip = ETH_bugfixed_swap_tooltip_five
+				swap_ideas = {
+					remove_idea = ETH_holmquist_army_2
+					add_idea = ETH_holmquist_army_defence
 				}
 			}
 			else_if = {
 				limit = { has_idea = ETH_douglas_army_2 }
-				custom_effect_tooltip = ETH_bugfixed_swap_tooltip_seven
-				hidden_effect = {
-					swap_ideas = {
-						remove_idea = ETH_douglas_army_2
-						add_idea = ETH_douglas_army_defence
-					}
+				# custom_effect_tooltip = ETH_bugfixed_swap_tooltip_seven
+				swap_ideas = {
+					remove_idea = ETH_douglas_army_2
+					add_idea = ETH_douglas_army_defence
 				}
 			}
 			else = {
@@ -2436,22 +2422,18 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus ETH_aggressive_army"
 			if = {
 				limit = { has_idea = ETH_holmquist_army_2 }
-				custom_effect_tooltip = ETH_bugfixed_swap_tooltip_six
-				hidden_effect = {
-					swap_ideas = {
-						remove_idea = ETH_holmquist_army_2
-						add_idea = ETH_holmquist_army_offense
-					}
+				# custom_effect_tooltip = ETH_bugfixed_swap_tooltip_six
+				swap_ideas = {
+					remove_idea = ETH_holmquist_army_2
+					add_idea = ETH_holmquist_army_offense
 				}
 			}
 			else_if = {
 				limit = { has_idea = ETH_douglas_army_2 }
-				custom_effect_tooltip = ETH_bugfixed_swap_tooltip_eight
-				hidden_effect = {
-					swap_ideas = {
-						remove_idea = ETH_douglas_army_2
-						add_idea = ETH_douglas_army_offense
-					}
+				# custom_effect_tooltip = ETH_bugfixed_swap_tooltip_eight
+				swap_ideas = {
+					remove_idea = ETH_douglas_army_2
+					add_idea = ETH_douglas_army_offense
 				}
 			}
 			else = {
@@ -2473,31 +2455,30 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ETH_old_naval_construction"
-			custom_effect_tooltip = ETH_naval_construct_tt
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_light_2
-					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
 				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_light_2
-					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
+				requested_factories = 1
+				progress = 0.95
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_2
 				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_cruiser_2
-					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
+				requested_factories = 1
+				progress = 0.95
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
 				}
+				requested_factories = 1
+				progress = 0.95
+				amount = 1
+			}
 		}
 	}
 
@@ -2852,30 +2833,28 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ETH_hms_karl_xii"
 
-			custom_effect_tooltip = ETH_hms_karl_xii_tooltip
-			hidden_effect = {
+			# custom_effect_tooltip = ETH_hms_karl_xii_tooltip
 				# ETH_NF_TREE_FBB01_naval_variant = yes
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_heavy_1
-						creator = "SWE"
-						version_name = "Kustflottan Class"
-					}
-					name = "Karl XII"
-					requested_factories = 5
-					progress = 0.5
-					amount = 1
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_1
+					creator = "SWE"
+					version_name = "Kustflottan Class"
 				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
+				name = "Karl XII"
+				requested_factories = 5
+				progress = 0.5
+				amount = 1
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
 
-					set_technology = {
-						basic_heavy_armor_scheme = 1
-						interwar_antiair = 1
-						improved_fire_control_system = 1
-					}
+				set_technology = {
+					basic_heavy_armor_scheme = 1
+					interwar_antiair = 1
+					improved_fire_control_system = 1
 				}
 			}
 			random_state = {
@@ -3081,7 +3060,7 @@ focus_tree = {
 				remove_idea = ETH_nordenskiold_idea
 				add_idea = ETH_nordenskiold_idea_2
 			}
-			custom_effect_tooltip = available_designer
+			# custom_effect_tooltip = available_designer
 			show_ideas_tooltip = svenska_aeroplan
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }

@@ -513,3 +513,15 @@
  olympics.failed.t:10 "The Cancellation of the Olympic Games"
  olympics.failed.d:10 "Due to the current international situation, the Olympic Games scheduled for [GetDateStringNoHour] could not be held."
  olympics.failed.a:10 "Not my fault."
+ 
+ kev_mexwar.1.t: "The Central American War"
+ kev_mexwar.1.d: "Conflict has spent centuries brewing in Central America.[GUA.GetName], [X20.GetName], and [X32.GetName] spent most of the 19th century establishing themselves as the notable powers in the region, each preparing for an inevitable showdown to unite the area. It seems that, for now, [X20.GetName] and [X32.GetName] have managed to strike some sort of deal, delaying war between them and creating a united front against [GUA.GetName]. Where this will go, few know."
+ kev_mexwar.1.a: "Time to send "Volunteers"!"
+ 
+ kev_mexwar.2.t: "The [X20.GetName]-[X32.GetName] Alliance Breaks Down"
+ kev_mexwar.2.d: "The conflict sweeping Central America has just gotten worse. Sensing victory on the horizon, the alliance between [X20.GetName] and [X32.GetName] has broken down, with reports of both armies leading wanton attacks against formerly allied troops. It seems this two way brawl has now transformed into a three-way melee."
+ kev_mexwar.2.a: "Absolute Chaos"
+ 
+ kev_mideast.1.t: "The War of Iraqi Vengeance"
+ kev_mideast.1.d: "Fourteen years ago, Persian armies took advantage of declining Turkish military might to launch a lightning war into the territory of the Qara Koyunlu. Their initial push was met with success, as the underprepared Turkish armies struggled to resist the fanatical Persian horde. They were also aided by a Kurdish uprising in the heart of the Turk's Iraqi puppet, crippling their military. Eventually, however, the superior training of the Iraqi and Turkish forces halted the invader's progress. An uneasy truce has settled over the region for the past half-decade, all in the background of growing tension between Mosul and Sublime Porte.\n\nThat tension erupted today as the Mosul Dynasty declared its independence and initiated a renewed offensive."
+ kev_mideast.1.a: "This will be quick"

@@ -125,7 +125,7 @@ add_ideas = {
 	limited_conscription
 	civilian_economy
 	export_focus
-	culture_dummy
+	culture_north_german
 }
 set_stability = 0.60
 set_war_support = 0.60

@@ -72,7 +72,7 @@ country_event = {
 	}
 
 	option = { #oh cool
-		name = kev_khodynt.1.a
+		name = kev_turkey.1.a
 		every_country = {
 			limit = {
 				is_ai = no

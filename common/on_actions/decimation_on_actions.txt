@@ -32,9 +32,18 @@ on_actions = {
 					limit = {
 						OR = {
 							is_owned_by = FRA
+							is_owned_by = SOV
 						}
 					}
 					decimate_half_all_industry = yes
+				}
+				if = {
+					limit = {
+						OR = {
+							is_owned_by = FRA
+						}
+					}
+					decimate_half_arms_industry = yes
 				}
 			}
 		}

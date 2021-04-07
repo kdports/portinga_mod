@@ -166,14 +166,13 @@ add_ideas = {
 	culture_amhara
 	slavery_idea_1a
 	ETH_DISJOINTED_GOVERNMENT
-	SWE_conservative_army_idea_1
 }
 set_stability = 0.25
 set_war_support = 0.19
 create_country_leader = {
     name = "Madi Younts XVIII"
     desc = "POLITICS_GETEYE_WOSSEN_DESC"
-    picture = "gfx/leaders/OC/Africa/Portrait_Barot_Yetalll.tga"
+    picture = "gfx/leaders/Portrait_Barot_YetaIII.dds"
     expire = "1965.1.1"
     ideology = theocracy
     traits = {

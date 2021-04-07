@@ -1,1 +1,72 @@
-﻿
+﻿add_namespace = kev_mexwar
+
+news_event = {
+	id = kev_mexwar.1
+	title = kev_mexwar.1.t
+	desc = kev_mexwar.1.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = no
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			X20 = {
+				declare_war_on = {
+					target = GUA
+					type = annex_everything
+				}
+			}
+			X32 = {
+				declare_war_on = {
+					target = GUA
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	option = { #Oh no
+		name = kev_mexwar.1.a
+	}
+}
+
+news_event = {
+	id = kev_mexwar.2
+	title = kev_mexwar.2.t
+	desc = kev_mexwar.2.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = no
+	major = yes
+	
+	trigger = {
+		X20 = { has_war_with = GUA }
+		GUA = { surrender_progress > 0.5 }
+		NOT = { GUA = { has_country_flag = alliance_break } }
+	}
+
+	immediate = {
+		hidden_effect = {
+			X20 = {
+				declare_war_on = {
+					target = GUA
+					type = annex_everything
+				}
+			}
+			X32 = {
+				declare_war_on = {
+					target = GUA
+					type = annex_everything
+				}
+			}
+			GUA = {
+				set_country_flag = alliance_break
+			}
+		}
+	}
+
+	option = { #Oh no
+		name = kev_mexwar.2.a
+	}
+}

@@ -1,4 +1,4 @@
-﻿capital = 501
+﻿capital = 505
 set_research_slots = 3
 
 oob = "X27_OOB"
@@ -76,9 +76,9 @@ set_politics = {
 }
 
 set_popularities = {
-	absolutist = 24
+	absolutist = 45
 	communism = 7
-	democratic = 45
+	democratic = 24
 	fascism = 17
 	neutrality = 3
 	radical = 4
@@ -117,14 +117,13 @@ add_opinion_modifier = { target = SOV modifier = positive_114 }
 add_opinion_modifier = { target = SPR modifier = positive_110 }
 add_opinion_modifier = { target = TAH modifier = negative_10 }
 add_opinion_modifier = { target = TRI modifier = negative_10 }
-add_opinion_modifier = { target = TUR modifier = positive_200 }
+add_opinion_modifier = { target = TUR modifier = negative_110 }
 add_opinion_modifier = { target = WGR modifier = positive_103 }
 add_opinion_modifier = { target = X00 modifier = negative_30 }
 add_opinion_modifier = { target = X01 modifier = negative_20 }
 add_opinion_modifier = { target = X02 modifier = negative_30 }
 add_opinion_modifier = { target = X03 modifier = negative_20 }
 add_opinion_modifier = { target = X04 modifier = positive_3 }
-add_opinion_modifier = { target = X05 modifier = negative_10 }
 add_opinion_modifier = { target = X06 modifier = negative_30 }
 add_opinion_modifier = { target = X07 modifier = positive_131 }
 add_opinion_modifier = { target = X08 modifier = negative_10 }

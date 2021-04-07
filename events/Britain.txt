@@ -11,18 +11,31 @@ country_event = {
 
 	option = { #
 		name = kev_england.1.a
+		add_manpower = 100000
 	}
 
 	option = { #
 		name = kev_england.1.b
+		add_resource = {
+			type = tungsten
+			amount = 15
+			state = 105
+		}
 	}
 
 	option = { #
 		name = kev_england.1.c
+		117 = {
+			add_state_modifier = {
+				modifier = {
+					monthly_population = 0.4
+				}
+			}
+		}
 	}
 }
 
-# First European Democracy
+# Breakaways
 country_event = {
 	id = kev_england.2
 	title = kev_england.2.t
@@ -33,14 +46,17 @@ country_event = {
 
 	option = { #
 		name = kev_england.2.a
+		add_stability = -0.15
 	}
 
 	option = { #
 		name = kev_england.2.b
+		add_war_support = -0.15
 	}
 
 	option = { #
 		name = kev_england.2.c
+		add_manpower = -50000
 	}
 }
 
@@ -55,14 +71,17 @@ country_event = {
 
 	option = { #
 		name = kev_england.3.a
+		add_stability = 0.05
 	}
 
 	option = { #
 		name = kev_england.3.b
+		add_war_support = 0.1
 	}
 
 	option = { #
 		name = kev_england.3.c
+		add_to_variable = { country_prestige_num = 10 }
 	}
 }
 
@@ -72,15 +91,12 @@ news_event = {
 	title = kev_england.4.t
 	desc = kev_england.4.d
 	picture = GFX_news_event_king_speech
-	#fire_only_once = yes
+	fire_only_once = yes
 	major = yes
 
 	trigger = {
 		NOT = { has_global_flag = usa_announced }
-	}
-
-	mean_time_to_happen = {
-		days = 600
+		date > 1937.1.1
 	}
 
 	immediate = {

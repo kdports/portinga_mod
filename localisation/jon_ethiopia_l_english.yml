@@ -145,3 +145,7 @@
   ethiopia.2.t:0 "Workers Strike!"
   ethiopia.2.d:0 ""
   ethiopia.2.1:0 "Fools."
+  
+  ## Tooltips
+  ETH_tt_effect_will_come: "This effect will appear later!"
+  ETH_jager_div_unit_tooltip: "Gets a new division template!"

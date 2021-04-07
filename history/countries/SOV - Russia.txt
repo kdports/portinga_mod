@@ -187,7 +187,6 @@ add_opinion_modifier = { target = YUN modifier = negative_30 }
 
 
 give_guarantee = GEO
-give_guarantee = X07
 give_guarantee = X31
 
 create_faction = Russia_Bloc

@@ -1,0 +1,19 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = kev_mideast.1
+					days = 165
+				}
+				news_event = {
+					id = kev_mexwar.1
+					days = 430
+				}
+			}
+		}
+	}
+}

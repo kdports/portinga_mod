@@ -45,16 +45,16 @@ set_convoys = 1
 
 
 set_politics = {
-    ruling_party = democratic
+    ruling_party = absolutist
     last_election = "1934.5.13"
     election_frequency = 48
-    elections_allowed = yes
+    elections_allowed = no
 }
 
 set_popularities = {
-	absolutist = 9
+	absolutist = 58
 	communism = 7
-	democratic = 58
+	democratic = 9
 	fascism = 16
 	neutrality = 4
 	radical = 6

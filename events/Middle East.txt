@@ -1,0 +1,34 @@
+add_namespace = kev_mideast
+
+news_event = {
+	id = kev_mideast.1
+	title = kev_mideast.1.t
+	desc = kev_mideast.1.d
+	picture = GFX_news_event_king_speech
+	fire_only_once = no
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			TUR = {
+				release = X27
+			}
+			X27 = {
+				declare_war_on = {
+					target = KUR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = X31
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	option = { #Oh no
+		name = kev_mideast.1.a
+	}
+}
