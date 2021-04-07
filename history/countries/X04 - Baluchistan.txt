@@ -94,7 +94,6 @@ add_opinion_modifier = { target = WGR modifier = negative_45 }
 add_opinion_modifier = { target = X00 modifier = negative_10 }
 add_opinion_modifier = { target = X01 modifier = negative_10 }
 add_opinion_modifier = { target = X03 modifier = negative_10 }
-add_opinion_modifier = { target = X05 modifier = negative_20 }
 add_opinion_modifier = { target = X08 modifier = positive_20 }
 add_opinion_modifier = { target = X12 modifier = positive_28 }
 add_opinion_modifier = { target = X15 modifier = negative_10 }
@@ -126,7 +125,7 @@ create_country_leader = {
     desc = "POLITICS_AZAM_KHAN_DESC"
     picture = "gfx/leaders/OC/portrait_PER_Abdolhossein_Teymourtash.dds"
     expire = "1965.1.1"
-    ideology = fascism_ideology
+    ideology = theocracy
     traits = {
     }
 }
