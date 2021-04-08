@@ -243,10 +243,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = KEV_FRA_big_mil_build }
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -258,10 +258,10 @@ focus_tree = {
 					is_core_of = ROOT
 					is_on_continent = europe
 				}
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = KEV_FRA_big_mil_build
@@ -299,10 +299,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = KEV_FRA_sml_civ_build }
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -314,10 +314,10 @@ focus_tree = {
 					is_core_of = ROOT
 					is_on_continent = europe
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = KEV_FRA_sml_civ_build
@@ -355,10 +355,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = KEV_FRA_sml_civ_build }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -370,10 +370,10 @@ focus_tree = {
 					is_core_of = ROOT
 					is_on_continent = europe
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = KEV_FRA_sml_civ_build

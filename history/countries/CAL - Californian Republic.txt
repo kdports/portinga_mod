@@ -75,7 +75,6 @@ add_opinion_modifier = { target = TRI modifier = negative_100 }
 add_opinion_modifier = { target = TUR modifier = negative_60 }
 add_opinion_modifier = { target = USA modifier = negative_40 }
 add_opinion_modifier = { target = WGR modifier = negative_10 }
-add_opinion_modifier = { target = X05 modifier = negative_20 }
 add_opinion_modifier = { target = X09 modifier = negative_179 }
 add_opinion_modifier = { target = X13 modifier = positive_55 }
 add_opinion_modifier = { target = X15 modifier = negative_10 }

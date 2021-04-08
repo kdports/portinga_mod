@@ -26,6 +26,111 @@ ideas = {
 				}
 			}
 		}
+		SPR_air_dominance = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				army_bonus_air_superiority_factor = 0.1
+				air_superiority_bonus_in_combat = 0.05
+			}
+		}
+		SPR_degauss_ship_hulls = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				naval_defense_factor = 0.10
+			}
+		}
+		SPR_trade_fleet = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				convoy_escort_efficiency = 0.15
+			}
+		}
+		SPR_motorized_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.05
+			}
+		}
+		SPR_fortification_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.15
+			}
+		}
+		JAP_the_unthinkable_option = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = jap_the_unthinkable_option
+			
+			modifier = {
+				stability_weekly = -0.01
+				communism_drift = 0.03
+			}
+		}
 	}
 	political_advisor = {
 		SPR_absolutist_advisor = {

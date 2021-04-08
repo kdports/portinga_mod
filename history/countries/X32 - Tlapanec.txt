@@ -74,7 +74,6 @@ add_opinion_modifier = { target = WGR modifier = negative_10 }
 add_opinion_modifier = { target = X00 modifier = negative_10 }
 add_opinion_modifier = { target = X03 modifier = negative_10 }
 add_opinion_modifier = { target = X04 modifier = negative_20 }
-add_opinion_modifier = { target = X05 modifier = negative_20 }
 add_opinion_modifier = { target = X15 modifier = negative_10 }
 add_opinion_modifier = { target = X19 modifier = negative_20 }
 add_opinion_modifier = { target = X20 modifier = negative_149 }

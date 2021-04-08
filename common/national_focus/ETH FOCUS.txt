@@ -602,7 +602,7 @@ focus_tree = {
 				desc = ""
 				picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 				expire = "1965.1.1"
-				ideology = "absolute_monarchy"
+				ideology = absolute_monarchy
 				traits = {
 					warmonger
 				}
@@ -860,7 +860,7 @@ focus_tree = {
 				desc = "MADI_YOUNTS_DESC"
 				picture = "Portrait_Barot_Yetalll.tga"
 				expire = "1965.1.1"
-				ideology = "absolute_monarchy"
+				ideology = absolute_monarchy
 				traits = {
 				}
 			}
@@ -889,7 +889,7 @@ focus_tree = {
 				desc = "MADI_YOUNTS_DESC"
 				picture = "Portrait_Barot_Yetalll.tga"
 				expire = "1965.1.1"
-				ideology = "absolute_monarchy"
+				ideology = absolute_monarchy
 				traits = {
 				}
 			}

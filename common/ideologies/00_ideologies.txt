@@ -249,6 +249,15 @@ ideologies = {
 		
 			dictatorship_neutral = {
 			}
+			
+			despotism = {
+			}
+			
+			centrism = {
+			}
+
+			oligarchism = {
+			}
 		
 			theocracy_neutral = {
 			}

@@ -5,7 +5,7 @@ state={
 	resources={
 		steel=0.000
 	}
-	impassable = yes
+	# impassable = yes
 
 	history={
 		owner = SPR

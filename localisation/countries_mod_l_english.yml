@@ -1523,3 +1523,7 @@
  YUN_radical:10 "Yunnan Clique"
  YUN_radical_ADJ:10 "Yunnan"
  YUN_radical_DEF:10 "Yunnan Clique"
+ 
+ GEN_GOV_fascism:10 "General Government"
+ GEN_GOV_fascism_ADJ:10 "British"
+ GEN_GOV_fascism_DEF:10 "the General Government"

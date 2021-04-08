@@ -1,0 +1,11 @@
+division_template = {
+	name = "Flying Artillery"
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+        flying_artillery_brigade = { x = 0 y = 2 }
+        flying_artillery_brigade = { x = 1 y = 0 }
+        flying_artillery_brigade = { x = 1 y = 1 }
+	}
+}

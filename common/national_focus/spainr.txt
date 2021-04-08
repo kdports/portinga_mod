@@ -16,7 +16,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_expand_industry
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_generic_industry_3
 		mutually_exclusive = {
 
 		}
@@ -60,7 +60,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_invest_in_the_colonies
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_goal_reichsautobahn
 		prerequisite = { focus = SPR_expand_industry }
 		x = -1
 		y = 1
@@ -115,7 +115,7 @@ focus_tree = {
 
 	focus= {
 		id = SPR_centralise_the_arms_industry
-		icon = GFX_idea_generic_intel_bonus
+		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = SPR_expand_industry }
 		x = 1
 		y = 1
@@ -146,7 +146,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_further_spainsh_discovery
-		icon = GFX_focus_research
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
 		prerequisite = { focus = SPR_centralise_the_arms_industry }
 		x = 1
 		y = 1
@@ -220,7 +220,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_create_the_autovias
-		icon = GFX_decision_category_infiltration
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = SPR_further_spainsh_discovery }
 
 
@@ -263,7 +263,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_create_the_future
-		icon = GFX_goal_tfv_burn_the_royal_portraits
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = SPR_centralise_the_arms_industry }
 		x = -2
 		y = 1
@@ -296,7 +296,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_civilian_industry
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = SPR_create_the_future }
 		x = -2
 		y = 1
@@ -336,7 +336,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_military_industry
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = SPR_create_the_future }
 		x = 0
 		y = 1
@@ -376,7 +376,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_apease_the_labor_unions
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus =  SPR_civilian_industry }
 		x = 1
 		y = 1
@@ -408,7 +408,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_advance-the_propaganda_department
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = SPR_military_industry }
 		x = 0
 		y = 2
@@ -557,7 +557,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPR_air_bonus
+		id = SPR_direct_focus
 		icon = GFX_goal_generic_air_bomber
 
 		x = 0
@@ -782,7 +782,7 @@ focus_tree = {
 			y = 0
 		}
 		prerequisite = { focus = SPR_air_support_focus focus = SPR_strat_bomb_focus }
-		prerequisite = { focus = SPR_air_bonus }
+		prerequisite = { focus = SPR_direct_focus }
 		relative_position_id = SPR_strat_bomb_focus
 		cost = 7
 		ai_will_do = {
@@ -802,15 +802,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_ideas = {
-				FRA_air_mastery
-			}
+			add_ideas = FRA_air_mastery
 		}
 	}
 
 	focus = {
 		id = SPR_start_bombers
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = SPR_regla_la_ceilo }
 
 		x = 1
@@ -852,7 +850,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_start_fighters
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = SPR_regla_la_ceilo }
 
 		x = 3
@@ -892,7 +890,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_background_1
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_spa_caudillo_of_spain
 
 
 		x = 33
@@ -927,7 +925,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_background_2
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_intervention_spain_republic
 		prerequisite = { focus = SPR_background_1 }
 
 		x = 0
@@ -964,7 +962,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_the_faliure_of_the_royal_family
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_BUL_oppose_the_royal_dictatorship
 		prerequisite = { focus = SPR_background_2 }
 
 		x = 2
@@ -1000,7 +998,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_stick_to_the_crown
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_rom_royal_dictatorship
 		prerequisite = { focus = SPR_background_2 }
 
 		x = -2
@@ -1037,7 +1035,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_begin_talks_with_the_unions
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = { focus = SPR_the_faliure_of_the_royal_family }
 
 
@@ -1072,7 +1070,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_approach_the_working_class
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_focus_spr_class_war
 		prerequisite = { focus = SPR_begin_talks_with_the_unions }
 		x = 0
 		y = 1
@@ -1099,7 +1097,7 @@ focus_tree = {
 
 	focus= {
 		id = SPR_expand_urban_areas
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_eng_crush_the_dream
 		prerequisite = { focus = SPR_begin_talks_with_the_unions }
 		x = 2
 		y = 1
@@ -1132,7 +1130,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_embrace_marxism
-		icon = GFX_focus_jap_cast_the_die
+		icon = GFX_focus_spr_unify_the_london_bureau
 		prerequisite = { focus = SPR_approach_the_working_class }
 		prerequisite = { focus = SPR_expand_urban_areas }
 
@@ -1169,6 +1167,17 @@ focus_tree = {
 			set_politics = {
 				ruling_party = communism
 			}
+			create_country_leader = {
+				name = "Miguel De Leon"
+				desc = "Socialist Leader"
+				picture = "Portriats_Italy_Generic_3"
+				expire = "1942.5.2"
+				ideology = socialism
+				traits = {
+					socialite_connections
+					famous_aviator
+					}
+				}
 		}
 	}
 
@@ -1207,7 +1216,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_rebuild_the_civil_service
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = SPR_purge_the_remants_of_the_crown }
 		x = -1
 		y = 1
@@ -1239,7 +1248,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_correct_royal_misgivings
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_eng_chiefs_of_staff_committee
 		prerequisite = { focus = SPR_purge_the_remants_of_the_crown }
 		x = 1
 		y = 1
@@ -1272,7 +1281,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_reinvest_into_infrastructure
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { focus = SPR_expand_the_sciences }
 		x = 0
 		y = 1
@@ -1361,7 +1370,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_fund_the_military
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SPR_reinvest_into_infrastructure}
 		x = -1
 		y = 1
@@ -1451,7 +1460,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_make_more_jobs
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_CZE_military_aeronautical_institute
 		prerequisite = { focus = SPR_reinvest_into_infrastructure}
 		x = 1
 		y = 1
@@ -1541,7 +1550,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_fighter_two
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = SPR_start_fighters }
 
 		x = 0
@@ -1581,7 +1590,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_bomber_two
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_usa_escort_fighters
 		prerequisite = { focus = SPR_start_bombers }
 
 		x = 0
@@ -1621,7 +1630,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_halifax_shipyards
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_focus_generic_navy_battleship2
 		x = 19
 		y = 2
 
@@ -2030,7 +2039,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_spread_the_revolution
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		prerequisite = { focus = SPR_embrace_marxism }
 
 		x = 0
@@ -2063,7 +2072,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_get_caught_up
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_spa_the_spanish_miracle
 		prerequisite = { focus = SPR_expand_urban_areas }
 
 		x = 0
@@ -2093,13 +2102,27 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			602 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 3
+			
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 
 	focus = {
 		id = SPR_invest_in_consumer_goods
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_generic_aluminum
 		prerequisite = { focus = SPR_get_caught_up }
 
 		x = 1
@@ -2129,13 +2152,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			591 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 15
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 15
+			}
 		}
 	}
 
 	focus = {
 		id = SPR_build_build_build
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = SPR_get_caught_up }
 
 		x = -1
@@ -2165,13 +2195,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			593 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 14
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 14
+			
+			
+			}
 		}
 	}
 
 	focus = {
 		id = SPR_back_on_top
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_spr_war_of_independence 
 		prerequisite = { focus = SPR_build_build_build }
 		prerequisite = {focus = SPR_invest_in_consumer_goods }
 
@@ -2202,13 +2241,99 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			590 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 3
+			
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 3
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 2
+			}
+			594 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 2
+			}
+			601 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 2
+			}
+			602 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 2
+			}
+			603 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 2
+			}
+			598 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 2
+			}
+			597 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 2
+			}
+			599 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 2
+			}
+			595 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 2
+			}
+			
 		}
 	}
 
 	focus = {
 		id = SPR_enemies_at_our_door
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_spr_no_pasaran
 		prerequisite = { focus = SPR_spread_the_revolution }
 
 		x = 0
@@ -2244,7 +2369,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_english_menace
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
 		prerequisite = { focus = SPR_enemies_at_our_door }
 
 		x = 3
@@ -2282,7 +2407,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_french_scum
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_fra_le_deluge
 		prerequisite = { focus = SPR_enemies_at_our_door }
 
 		x = -3
@@ -2314,14 +2439,34 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			FWA = {
+				remove_state_core = 259
+			}
+			SPR = {
+				add_state_core = 259
+			}
+			235 = {
+				add_state_modifier = {
+					modifier = {
+						intel_network_gain_factor = 0.25
+					}
+				}
+			}
+			262 = {
+				add_state_modifier = {
+					modifier = {
+						intel_network_gain_factor = 0.25
+					}
+				}
+			}
+			
 		}
 	}
 
 
-		focus = {
+	focus = {
 		id = SPR_colonial_concern
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = { focus = SPR_enemies_at_our_door }
 
 		x = 0
@@ -2359,7 +2504,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_ready_for_anything
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = SPR_english_menace }
 
 		x = 1
@@ -2395,7 +2540,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_southern_concern
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_generic_africa_production
 		prerequisite = { focus = SPR_french_scum}
 
 		x = -1
@@ -2425,13 +2570,45 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			389 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+					all_provinces = yes
+					limit_to_border = yes
+					}
+				}
+			}
+			618 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+					all_provinces = yes
+					limit_to_border = yes
+					}
+				}
+			}
+			616 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+					all_provinces = yes
+					limit_to_border = yes
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = SPR_northern_concern
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_focus_fra_border
 		prerequisite = { focus = SPR_french_scum }
 
 		x = 1
@@ -2461,13 +2638,46 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			594 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+					all_provinces = yes
+					limit_to_border = yes
+					}
+				}
+			}
+			595 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+					all_provinces = yes
+					limit_to_border = yes
+					}
+				}
+			}
+			585 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = {
+					all_provinces = yes
+					limit_to_border = yes
+					}
+				}
+			}
+			
 		}
 	}
 
 	focus = {
 		id = SPR_dont_give_in
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		prerequisite = { focus = SPR_southern_concern focus = SPR_northern_concern }
 
 		x = 1
@@ -2503,7 +2713,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_demand_compensation
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_generic_air_defense
 		prerequisite = { focus = SPR_dont_give_in }
 
 		x = -2
@@ -2539,7 +2749,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_english_alliance
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_chi_british_cooperation
 		prerequisite = { focus = SPR_friends_elsewhere }
 
 		x = -5
@@ -2578,7 +2788,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_insight_painic
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_YUG_pan_slavic_congress
 		prerequisite = { focus = SPR_demand_compensation }
 
 		x = -1
@@ -2614,7 +2824,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_unclaimed_lands
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_AST_never_gallipoli
 		prerequisite = { focus = SPR_demand_compensation}
 
 		x = 1
@@ -2650,7 +2860,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_coordinated_strike
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = SPR_insight_painic }
 		prerequisite = { focus = SPR_unclaimed_lands }
 
@@ -2689,7 +2899,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_war
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = SPR_coordinated_strike }
 
 		x = 0
@@ -2725,7 +2935,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_french_alliance
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = SPR_friends_elsewhere }
 
 		x = -7
@@ -2764,7 +2974,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_ethopian_alliance
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_chi_proclaim_rival_government
 		prerequisite = { focus = SPR_friends_elsewhere }
 
 		x = -9
@@ -2803,7 +3013,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_friends_elsewhere
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_eng_unite_the_anglosphere
 
 
 		x = -7
@@ -2841,7 +3051,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_demand_mederna
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_hol_the_zuiderzee_works
 		prerequisite = { focus = SPR_ready_for_anything }
 
 		x = 1
@@ -2877,7 +3087,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_pin_point_targets
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_GRE_byzantine_themata
 		prerequisite = { focus = SPR_demand_mederna }
 
 		x = -1
@@ -2913,7 +3123,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_sabatoge_and_deceit
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_mex_arrest_general_cedillo
 		prerequisite = { focus = SPR_pin_point_targets }
 
 		x = 0
@@ -2949,7 +3159,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_strike_the_lion
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		prerequisite = { focus = SPR_sabatoge_and_deceit }
 
 		x = 0
@@ -2985,7 +3195,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_wane_the_colonies
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_TUR_treaty_of_saadabad
 		prerequisite = { focus = SPR_demand_mederna }
 
 		x = 1
@@ -3021,7 +3231,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_moblise_the_departments
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_hol_the_foundations_of_defense
 		prerequisite = { focus = SPR_wane_the_colonies }
 
 		x = 0
@@ -3058,7 +3268,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_hit_em_were_it_hurts
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_generic_provoke_border_clashes
 		prerequisite = { focus = SPR_moblise_the_departments }
 
 		x = 0
@@ -3094,7 +3304,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_reclaim_the_colonies
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_YUG_devolved_croatia
 		prerequisite = { focus = SPR_colonial_concern }
 
 		x = -1
@@ -3132,7 +3342,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_let_go_of_south_america
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_BUL_destroy_the_zveno
 		prerequisite = { focus = SPR_colonial_concern }
 
 		x = 1
@@ -3169,7 +3379,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_prepare_defences
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = SPR_reclaim_the_colonies }
 
 		x = 0
@@ -3205,7 +3415,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_ready_to_move
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_GRE_stage_an_incident_in_the_bosporus
 		prerequisite = { focus = SPR_prepare_defences }
 
 		x = 0
@@ -3240,7 +3450,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_sow_discontent
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_continuous_restrict_freedom
 		prerequisite = { focus = SPR_prepare_defences }
 
 		x = -1
@@ -3276,7 +3486,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_understand_our_enemy
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
 		prerequisite = { focus = SPR_sow_discontent }
 
 		x = 0
@@ -3312,7 +3522,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_go_go_go
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_prc_infiltration
 		prerequisite = { focus = SPR_understand_our_enemy }
 
 		x = 0
@@ -3348,7 +3558,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_befriend_the_former_colonies
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_mex_redeem_aztlan
 		prerequisite = { focus = SPR_let_go_of_south_america }
 
 		x = 0
@@ -3384,7 +3594,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_create_the_coalition
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_mex_caudillo_private_armies
 		prerequisite = { focus = SPR_befriend_the_former_colonies }
 
 		x = 0
@@ -3420,7 +3630,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_invite_brazil
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_por_recover_brazil
 		prerequisite = { focus = SPR_create_the_coalition }
 
 		x = 1
@@ -3456,7 +3666,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_invite_la_plata
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_por_recover_latin_america
 		prerequisite = { focus = SPR_create_the_coalition }
 
 		x = -1
@@ -3492,7 +3702,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_convince_gautamala
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_por_recover_latin_america
 		prerequisite = { focus = SPR_invite_brazil }
 		prerequisite = { focus = SPR_invite_la_plata }
 
@@ -3529,7 +3739,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_kuboresha_mahusiano
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_generic_africa_factory
 		prerequisite = { focus = SPR_ethopian_alliance }
 
 		x = 0
@@ -3567,7 +3777,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_improve_relations
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_eng_the_sun_never_sets
 		prerequisite = { focus = SPR_english_alliance }
 
 		x = 0
@@ -3605,8 +3815,8 @@ focus_tree = {
 
 
 	focus = {
-		id = SPR_améliorer_les_relations
-		icon = GFX_goal_generic_air_production
+		id = SPR_ameliorer_les_relations
+		icon = GFX_focus_fra_french_union
 		prerequisite = { focus = SPR_french_alliance }
 
 		x = 0
@@ -3644,7 +3854,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_anglo_spanish_treaty
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_intervention_spain_nationalists
 		prerequisite = { focus = SPR_improve_relations }
 
 		x = 0
@@ -3682,8 +3892,8 @@ focus_tree = {
 
 	focus = {
 		id = SPR_anglo_french_treaty
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = SPR_améliorer_les_relations }
+		icon = GFX_focus_intervention_spain_nationalists
+		prerequisite = { focus = SPR_ameliorer_les_relations }
 
 		x = 0
 		y = 1
@@ -3692,7 +3902,7 @@ focus_tree = {
 			y = 2
 		}
 
-		relative_position_id = SPR_améliorer_les_relations
+		relative_position_id = SPR_ameliorer_les_relations
 
 		cost = 7
 		ai_will_do = {
@@ -3720,7 +3930,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_spainsh_etheopian_treaty
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_intervention_spain_nationalists
 		prerequisite = { focus = SPR_kuboresha_mahusiano }
 
 		x = 0
@@ -3758,7 +3968,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_begin_rearmament
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_continuous_reduce_training_time
 		x = 12
 		y = 1
 		offset = {
@@ -3815,7 +4025,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_defensive_focus
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_generic_fortify_city
 		mutually_exclusive = { focus = SPR_aggressive_focus }
 		x = -1
 		y = 1
@@ -3834,7 +4044,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_methodical_battle
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_generic_cryptologic_bomb
 		x = 0
 		y = 1
 		offset = {
@@ -3900,44 +4110,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#ROOT = { country_event = { id = SPRnce.3 } }
-			#X13 = {
-			#	add_opinion_modifier = {
-			#		target = ROOT
-			#		modifier = SPR_alpine_forts
-			#	}
-			#}
+			735 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
 		}
 	}
-	focus = {
-		id = SPR_extend_the_maginot_line
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SPR_alpine_forts }
-		x = 0
-		y = 1
-		relative_position_id = SPR_alpine_forts
-		cost = 10
 
-		available = {
-			18 = { is_controlled_by = ROOT }
-			29 = { is_controlled_by = ROOT }
-			785 = { is_controlled_by = ROOT }
-			#has_idea = SPR_protected_by_the_maginot_line
-		}
-		completion_reward = {
-			#ROOT = { country_event = { id = SPRnce.2 } }
-			#BEL = {
-			#	add_opinion_modifier = {
-			#		target = ROOT
-			#		modifier = SPR_extend_the_maginot_line_focus_neg
-			#	}
-			#	add_opinion_modifier = {
-			#		target = GER
-			#		modifier = SPR_extend_the_maginot_line_focus_pos
-			#	}
-			#}
-		}
-	}
 
 
 	focus = {
@@ -4081,7 +4267,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = { SPR_air_dominance }
+			add_ideas = SPR_air_dominance
 		}
 	}
 	focus = {
@@ -4176,7 +4362,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = { SPR_flying_artillery }
+			hidden_effect = {
+				load_oob = "unlock_flying_artillery"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			custom_effect_tooltip = "Flying Artillery! Literally!"
 		}
 	}
 	focus = {
@@ -4185,7 +4375,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SPR_light_medium_armor
 			# focus = SPR_heavy_armor_focus
-			focus = SPR_extend_the_maginot_line
+			focus = SPR_alpine_forts
 			focus = SPR_flying_artillery
 		}
 		x = -1
@@ -4196,11 +4386,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			NOT = { has_idea = SPR_disjointed_government }
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			remove_ideas = SPR_victors_of_wwi
+			# remove_ideas = SPR_victors_of_wwi
 			army_experience = 10
 			add_tech_bonus = {
 				name = SPR_army_reform

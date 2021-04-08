@@ -39,9 +39,11 @@ news_event = {
 	picture = GFX_news_event_mex_civil_war
 	fire_only_once = no
 	major = yes
+	# is_triggered_only = yes
 	
 	trigger = {
 		AND = {
+			date > 1936.12.12
 			X20 = { has_war_with = GUA }
 			GUA = { surrender_progress > 0.5 }
 			NOT = { GUA = { has_country_flag = alliance_break } }

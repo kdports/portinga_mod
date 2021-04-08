@@ -100,7 +100,6 @@ add_opinion_modifier = { target = TUR modifier = negative_10 }
 add_opinion_modifier = { target = WGR modifier = positive_200 }
 add_opinion_modifier = { target = X03 modifier = negative_16 }
 add_opinion_modifier = { target = X04 modifier = negative_10 }
-add_opinion_modifier = { target = X05 modifier = negative_10 }
 add_opinion_modifier = { target = X06 modifier = negative_30 }
 add_opinion_modifier = { target = X10 modifier = negative_15 }
 add_opinion_modifier = { target = X12 modifier = negative_30 }

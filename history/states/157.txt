@@ -2,7 +2,7 @@
 state={
 	id=157
 	name="STATE_157"
-	impassable = yes
+	# impassable = yes
 
 	history={
 		owner = ETH

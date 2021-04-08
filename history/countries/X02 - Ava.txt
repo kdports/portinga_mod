@@ -95,7 +95,6 @@ add_opinion_modifier = { target = SOV modifier = positive_57 }
 add_opinion_modifier = { target = TUR modifier = negative_10 }
 add_opinion_modifier = { target = WGR modifier = negative_15 }
 add_opinion_modifier = { target = X03 modifier = negative_30 }
-add_opinion_modifier = { target = X05 modifier = positive_40 }
 add_opinion_modifier = { target = X06 modifier = negative_51 }
 add_opinion_modifier = { target = X08 modifier = negative_50 }
 add_opinion_modifier = { target = X10 modifier = negative_20 }

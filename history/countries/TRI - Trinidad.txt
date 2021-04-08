@@ -88,7 +88,6 @@ add_opinion_modifier = { target = X00 modifier = positive_15 }
 add_opinion_modifier = { target = X01 modifier = positive_15 }
 add_opinion_modifier = { target = X03 modifier = positive_15 }
 add_opinion_modifier = { target = X04 modifier = negative_20 }
-add_opinion_modifier = { target = X05 modifier = negative_20 }
 add_opinion_modifier = { target = X13 modifier = negative_20 }
 add_opinion_modifier = { target = X15 modifier = positive_15 }
 add_opinion_modifier = { target = X16 modifier = negative_200 }

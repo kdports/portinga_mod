@@ -173,3 +173,88 @@ country_event = { #Dub against USA
 		name = kev_england.6.b
 	}
 }
+
+country_event = {
+	id = kev_england.7
+	title = kev_england.7.t
+	desc = kev_england.7.d
+	picture = GFX_report_event_eng_mosley_mussolini
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = kev_england.7.a
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = {
+				id = kev_england.8
+				days = 16
+			}
+		}
+	}
+}
+
+country_event = {
+	id = kev_england.8
+	title = kev_england.8.t
+	desc = kev_england.8.d
+	picture = GFX_report_event_eng_mosley_mussolini
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = kev_england.8.a
+		add_stability = -0.15
+	}
+	option = { #
+		name = kev_england.8.b
+		create_country_leader = {
+			name = "General Council"
+			desc = "Made up of Mosley, Montgomery, Yezhov, and a few key generals, the General Council rules England with an iron fist. The rights to assembly and speech have been suspended, and any protests have been crushed with an iron fist."
+			picture = "gfx/leaders/Armenian_Council.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				dictator
+			}
+		}
+		set_party_name = { 
+			ideology = fascism
+			long_name = "British Security Committee"
+			name = "Security Committee"
+		}
+		set_politics = {
+			ruling_party = fascism
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+		}
+		set_cosmetic_tag = GEN_GOV
+		hidden_effect = {
+			set_popularities = {
+				democratic = 0
+				neutrality = 0
+				fascism = 100
+				communism = 0
+			}
+			news_event = {
+				id = kev_england.9
+			}
+		}
+	}
+}
+
+news_event = {
+	id = kev_england.9
+	title = kev_england.9.t
+	desc = kev_england.9.d
+	picture = GFX_news_event_038
+	fire_only_once = no
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {
+		name = kev_england.9.a
+	}
+}
