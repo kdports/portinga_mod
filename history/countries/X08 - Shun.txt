@@ -63,22 +63,22 @@ if = {
 	}
 }
 # Research Bonuses
-add_tech_bonus = { name = land_doc_bonus bonus = 0.90 uses = 1 category = land_doctrine }
+add_tech_bonus = { name = land_doc_bonus bonus = 0.90 uses = 2 category = land_doctrine }
 set_convoys = 5
 
 
 set_politics = {
     ruling_party = democratic
-    last_election = "1935.5.3"
+    last_election = "1931.5.3"
     election_frequency = 48
     elections_allowed = yes
 }
 
 set_popularities = {
-	absolutist = 9
+	absolutist = 26
 	communism = 1
-	democratic = 74
-	fascism = 10
+	democratic = 64
+	fascism = 3
 	neutrality = 5
 	radical = 1
 }
@@ -120,12 +120,12 @@ add_opinion_modifier = { target = YUN modifier = positive_57 }
 
 
 add_ideas = {
-	volunteer_only
+	service_by_requirement
 	civilian_economy
 	export_focus
 	culture_beifaren
 }
-set_stability = 0.60
+set_stability = 0.10
 set_war_support = 0.59
 create_country_leader = {
     name = "Xie Fang"

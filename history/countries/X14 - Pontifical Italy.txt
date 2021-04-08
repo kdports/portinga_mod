@@ -153,6 +153,15 @@ add_ideas = {
 set_stability = 0.60
 set_war_support = 0.69
 create_country_leader = {
+    name = "Il Duce Scorza"
+    desc = ""
+    picture = "gfx/leaders/ITA/Portrait_Italy_Ubaldo_Soddu.dds"
+    expire = "1965.1.1"
+    ideology = fascism_ideology
+    traits = {
+    }
+}
+create_country_leader = {
     name = "Francesco Saletta"
     desc = "POLITICS_FRANCESCO_SALETTA_DESC"
     picture = "gfx/leaders/OC/Portrait_ITA_Gabriele_Anunnzio.tga"

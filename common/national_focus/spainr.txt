@@ -2707,7 +2707,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_stability = .1
+			add_ideas = SPR_dont_give_in
 		}
 	}
 
@@ -2743,7 +2744,34 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_stability = 0.1
+			start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 594
+				num_provinces = 6
+				on_win = SPR_events.9
+				on_lose = SPR_events.10
+				
+			}
+				
+			defender = {
+				state = 243
+				num_provinces = 4
+				on_win = SPR_event.9
+				on_lose = SPR_event.10
+				
+				}
+			}
+			set_border_war_data = {
+				attacker = 594
+				defender = 243
+				attacker_modifier = 0.25
+				
+			}
+			add_timed_idea = {
+			idea = SPR_french_scum
+			days = 30
+			}
 		}
 	}
 
@@ -2800,7 +2828,7 @@ focus_tree = {
 
 		relative_position_id = SPR_demand_compensation
 
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -2818,9 +2846,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			FRA = {
+				add_timed_idea = {
+				idea = SPR_spanish_panic
+				days = 270
+			}
 		}
 	}
+}
 
 	focus = {
 		id = SPR_unclaimed_lands
@@ -2836,7 +2869,7 @@ focus_tree = {
 
 		relative_position_id = SPR_demand_compensation
 
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -2854,7 +2887,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_state_claim = 243
+			add_state_claim = 242
+			add_state_claim = 244
 		}
 	}
 

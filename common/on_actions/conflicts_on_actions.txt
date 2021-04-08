@@ -2,15 +2,15 @@ on_actions = {
 	on_startup = {
 		effect = {
 			YUN = {
-				news_event = {
+				news_event = { # Iraqi War
 					id = kev_mideast.1
 					days = 165
 				}
-				news_event = {
+				news_event = { # Mexico Civil War
 					id = kev_mexwar.1
 					days = 430
 				}
-				every_state = {
+				every_state = { # Strengthens X08
 					limit = {
 						controller = {
 							OR = {
@@ -22,8 +22,21 @@ on_actions = {
 					}
 					add_core_of = X08
 				}
+				every_state = { # Weakens FWA
+					limit = {
+						controller = { 
+							tag = FWA
+						}
+					}
+					remove_core_of = FWA
+				}
 			}
-			ENG = {
+			FWA = { # Keeps capital as core
+				capital_scope = {
+					add_core_of = FWA
+				}
+			}
+			ENG = { # GG Coup
 				country_event = {
 					id = kev_england.7
 					days = 752

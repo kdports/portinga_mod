@@ -218,4 +218,108 @@ country_event = {
 	option = { # No
 		name = "Spain is Sus, not quite yet hombre espeluznante"
 		}
+	}
+
+
+	country_event = {
+	id = SPR_events.9
+	title = "Victory!"
+	desc = "We have beaten back the sorry french from our lands and now reap the rewards of our victory!"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = "A Well Deserved Win"
+		trigger = {
+			tag = SPR
+		}
+			SPR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 3750
+					producer = FRA
+					}
+				add_war_support = 0.25
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2000
+					producer = FRA
+					}
+				
+					
+				
+			}
+		}
+		option = { # Ok
+		name = "A Well Deserved Win"
+		trigger = {
+			tag = FRA
+		}
+			FRA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 3750
+					producer = SPR
+					}
+				add_war_support = 0.25
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2000
+					producer = SPR
+					}
+				
+					
+				
+			}
+		}
+	}
+	
+country_event = {
+	id = SPR_events.10
+	title = "Defeat"
+	desc = "The enemy has taken many lives, we repay them two fold tommorrow"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = "Damn"
+		trigger = {
+			tag = FRA
+		}
+		FRA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2750
+				
+				}
+				add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -1500
+				
+				}
+			
+		}
+	}
+	option = { # Ok
+		name = "Damn"
+		trigger = {
+			tag = SPR
+		}
+		SPR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2750
+				
+				}
+				add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -1500
+				
+				}
+			
+		}
+	}
 }
+	
