@@ -1,0 +1,8 @@
+mandate_category = {
+	icon = generic_propaganda
+	priority = 35
+	available = {
+		original_tag = X08
+		is_ai = no
+	}
+}

@@ -360,3 +360,5 @@ if = {
 		}
 	}
 }
+
+set_variable = { shun_mandate = 0 }

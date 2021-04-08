@@ -11,11 +11,56 @@ focus_tree = {
 	}
 	
 	default = no
-	
-	shared_focus = army_effort
-	shared_focus = aviation_effort
-	shared_focus = naval_effort
-	shared_focus = industrial_effort
-	shared_focus = political_effort
+	focus = {
+		id = X08_focus1
+		icon = GFX_focus_chi_whampoa_military_academy
 
+		x = 4
+		y = 0
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = shun.1 }
+		}
+	}
+	focus = {
+		id = X08_focus2
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = 0
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus1
+		prerequisite = { focus = X08_focus1 }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = shun.2 }
+		}
+	}
+	focus = {
+		id = X08_focus3
+		icon = GFX_focus_usa_tank_destroyer_doctrine
+
+		x = 0
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus2
+		prerequisite = { focus = X08_focus2 }
+
+		available_if_capitulated = no
+		# §
+		completion_reward = {
+			country_event = { id = shun.3 }
+		}
+	}
 }
