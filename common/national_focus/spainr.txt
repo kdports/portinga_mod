@@ -2498,7 +2498,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+				country_event = {
+					id = SPR_events.11
+				}
 		}
 	}
 
