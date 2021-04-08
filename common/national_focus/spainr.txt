@@ -2893,49 +2893,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SPR_coordinated_strike
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = SPR_insight_painic }
-		prerequisite = { focus = SPR_unclaimed_lands }
-
-		x = -1
-		y = 1
-		offset = {
-			x = 0
-			y = 2
-		}
-
-		relative_position_id = SPR_insight_painic
-		relative_position_id = SPR_unclaimed_lands
-
-
-		cost = 7
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-
-		}
-	}
+	
 
 	focus = {
 		id = SPR_war
 		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = SPR_coordinated_strike }
+		prerequisite = { focus = SPR_unclaimed_lands focus = SPR_insight_panic } 
 
 		x = 0
 		y = 1
@@ -2944,7 +2907,7 @@ focus_tree = {
 			y = 2
 		}
 
-		relative_position_id = SPR_coordinated_strike
+		relative_position_id = SPR_unclaimed_lands
 
 		cost = 7
 		ai_will_do = {
@@ -2964,7 +2927,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			create_wargoal = {
+    				type = annex_everything
+  				  target = FRA
+			}
 		}
 	}
 
