@@ -1,0 +1,101 @@
+mandate_category = {
+	countdown_to_yunnan = {
+		allowed = {
+			original_tag = X08
+		}
+		available = {
+			NOT = { country_exists = YUN }
+		}
+		activation = {
+			has_completed_focus = X08_focus1
+		}
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 100  # Change number of days until climax
+		timeout_effect = {
+			custom_effect_tooltip = yunnan_tt
+			if = {
+				limit = {
+					check_variable = { shun_mandate > 19 } # Change this to switch min mandate
+				}
+				annex_country = {
+					target = YUN
+					transfer_troops = no
+				}
+			}
+			else = {
+				declare_war_on = {
+					target = YUN
+					type = annex_everything
+				}
+			}
+		}
+	}
+	countdown_to_shu = {
+		allowed = {
+			original_tag = X08
+		}
+		available = {
+			NOT = { country_exists = X29 }
+		}
+		activation = {
+			has_completed_focus = X08_focus1
+		}
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 400 # Change number of days until climax
+		timeout_effect = {
+			custom_effect_tooltip = shu_tt
+			if = {
+				limit = {
+					check_variable = { shun_mandate > 49 } # Change this to switch min mandate
+				}
+				annex_country = {
+					target = X29
+					transfer_troops = no
+				}
+			}
+			else = {
+				declare_war_on = {
+					target = X29
+					type = annex_everything
+				}
+			}
+		}
+	}
+	countdown_to_yue = {
+		allowed = {
+			original_tag = X08
+		}
+		available = {
+			NOT = { country_exists = X41 }
+		}
+		activation = {
+			has_completed_focus = X08_focus1
+		}
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 800 # Change number of days until climax
+		timeout_effect = {
+			custom_effect_tooltip = yue_tt
+			if = {
+				limit = {
+					check_variable = { shun_mandate > 79 } # Change this to switch min mandate
+				}
+				annex_country = {
+					target = X41
+					transfer_troops = no
+				}
+			}
+			else = {
+				declare_war_on = {
+					target = X41
+					type = annex_everything
+				}
+			}
+		}
+	}
+}

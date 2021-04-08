@@ -1,3 +1,15 @@
 ﻿l_english:
   #Decision Categories
+  mandate_category: "The Mandate of Heaven"
+  mandate_category_desc: "We are the chosen - the empire fated to reunify China. As it is written, a divided China must unite into a state capable of dominating the world as the true Middle Kingdom. High mandate will allow for us to reunify without conflict, while low mandate makes war between ourselves and our neighbors a possibility.\n\nOur current §OMandate§! is [?shun_mandate|G0]"
   
+  
+  #Countdowns
+  countdown_to_yunnan: "Confrontation with Yunnan"
+  yunnan_tt: "20 §OMandate§! is needed to peacefully unify!"
+  
+  countdown_to_shu: "The Shu Attack"
+  shu_tt: "50 §OMandate§! is needed to peacefully unify!"
+  
+  countdown_to_yue: "Yue's Belligerence"
+  yue_tt: "80 §OMandate§! is needed to peacefully unify!"

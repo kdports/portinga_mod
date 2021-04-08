@@ -336,7 +336,7 @@ ideas = {
 				original_tag = SPR
 			}
 			available = {
-				SPR_aggressive_focus
+				has_completed_focus = SPR_aggressive_focus
 			}
 
 			cost = 50
