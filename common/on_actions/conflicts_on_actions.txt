@@ -23,6 +23,12 @@ on_actions = {
 					add_core_of = X08
 				}
 			}
+			ENG = {
+				country_event = {
+					id = kev_england.7
+					days = 752
+				}
+			}
 		}
 	}
 }
