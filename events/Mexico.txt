@@ -41,9 +41,11 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		X20 = { has_war_with = GUA }
-		GUA = { surrender_progress > 0.5 }
-		NOT = { GUA = { has_country_flag = alliance_break } }
+		AND = {
+			X20 = { has_war_with = GUA }
+			GUA = { surrender_progress > 0.5 }
+			NOT = { GUA = { has_country_flag = alliance_break } }
+		}
 	}
 
 	immediate = {

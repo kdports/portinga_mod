@@ -30,7 +30,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = SPR_backround_2
+			has_completed_focus = SPR_background_2
 		}
 
 		bypass = {
@@ -460,7 +460,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_completed_focus = SPR_backround_2
+			has_completed_focus = SPR_background_2
 		}
 
 		bypass = {
@@ -473,7 +473,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_ideas = SPR_air_control
 		}
 	}
 
@@ -845,7 +845,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+				add_equipment_to_stockpile = {
+					type = tac_bomber_equipment
+					amount = 150
+					producer = SPR
+				}
 		}
 	}
 
@@ -883,12 +887,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_equipment_to_stockpile = {
+					type = fighter_equipment
+					amount = 225
+					producer = SPR
+				}
 		}
 	}
 
 	focus = {
-		id = SPR_backround_1
+		id = SPR_background_1
 		icon = GFX_goal_generic_air_production
 
 
@@ -923,9 +931,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPR_backround_2
+		id = SPR_background_2
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = SPR_backround_1 }
+		prerequisite = { focus = SPR_background_1 }
 
 		x = 0
 		y = 1
@@ -935,7 +943,7 @@ focus_tree = {
 			y = 0
 		}
 
-		relative_position_id = SPR_backround_1
+		relative_position_id = SPR_background_1
 
 		cost = 1
 		ai_will_do = {
@@ -962,7 +970,7 @@ focus_tree = {
 	focus = {
 		id = SPR_the_faliure_of_the_royal_family
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = SPR_backround_2 }
+		prerequisite = { focus = SPR_background_2 }
 
 		x = 2
 		y = 1
@@ -971,7 +979,7 @@ focus_tree = {
 			y = 0
 		}
 
-		relative_position_id = SPR_backround_2
+		relative_position_id = SPR_background_2
 
 		cost = 5
 		ai_will_do = {
@@ -998,7 +1006,7 @@ focus_tree = {
 	focus = {
 		id = SPR_stick_to_the_crown
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = SPR_backround_2 }
+		prerequisite = { focus = SPR_background_2 }
 
 		x = -2
 		y = 2
@@ -1007,7 +1015,7 @@ focus_tree = {
 			y = 0
 		}
 
-		relative_position_id = SPR_backround_1
+		relative_position_id = SPR_background_1
 
 		cost = 5
 		ai_will_do = {
@@ -1173,8 +1181,8 @@ focus_tree = {
 		id = SPR_purge_the_remants_of_the_crown
 		icon = GFX_goal_tfv_burn_the_royal_portraits
 		prerequisite = { focus = SPR_embrace_marxism }
-		x = -2
-		y = 0
+		x = -3
+		y = 1
 		relative_position_id = SPR_embrace_marxism
 
 		cost = 10
@@ -1282,7 +1290,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = { is_subject_of = ROOT }
 		}
 
 		bypass = {
@@ -1569,7 +1576,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_equipment_to_stockpile = {
+					type = fighter_equipment
+					amount = 350
+					producer = SPR
+				}
 		}
 	}
 
@@ -1605,7 +1616,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_equipment_to_stockpile = {
+					type = tac_bomber_equipment
+					amount = 250
+					producer = SPR
+				}
 		}
 	}
 
@@ -1622,7 +1637,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = SPR_backround_2
+			has_completed_focus = SPR_background_2
 		}
 
 		bypass = {
@@ -2541,7 +2556,7 @@ focus_tree = {
 
 		relative_position_id = SPR_french_scum
 
-		cost = 7
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -2559,7 +2574,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_opinion_modifier = {
+				target = ENG
+				modifier = positive_50 = {
+					value = 50
+				}
+			}
 		}
 	}
 
@@ -2724,7 +2744,7 @@ focus_tree = {
 
 		relative_position_id = SPR_french_scum
 
-		cost = 7
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -2742,7 +2762,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_opinion_modifier = {
+				target = FRA
+				modifier = positive_50 = {
+					value = 50
+				}
+			}
 		}
 	}
 
@@ -2760,7 +2785,7 @@ focus_tree = {
 
 		relative_position_id = SPR_french_scum
 
-		cost = 7
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -2778,7 +2803,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_opinion_modifier = {
+				target = ETH
+				modifier = positive_50 = {
+					value = 50
+				}
+			}
 		}
 	}
 
@@ -2814,7 +2844,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_stability = 0.1
+			custom_effect_tooltip = "Subtracts 10 Prestige"
+			subtracts_from_variable = { country_prestige_num = 10 }
 		}
 	}
 
@@ -3520,7 +3552,7 @@ focus_tree = {
 
 		relative_position_id = SPR_ethopian_alliance
 
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -3538,7 +3570,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			country_event = {
+				id = SPR_events.2
+			}
 		}
 	}
 
@@ -3556,7 +3590,7 @@ focus_tree = {
 
 		relative_position_id = SPR_english_alliance
 
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -3574,7 +3608,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			country_event = {
+				id = SPR_events.3
+			}
 		}
 	}
 
@@ -3593,7 +3629,7 @@ focus_tree = {
 
 		relative_position_id = SPR_french_alliance
 
-		cost = 7
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -3611,7 +3647,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			country_event = {
+				id = SPR_events.1
+			}
 		}
 	}
 
@@ -3647,7 +3685,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			country_event = {
+				id = SPR_events.7
+			}
 		}
 	}
 
@@ -3683,7 +3723,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			country_event = {
+				id = SPR_events.8
+			}
 		}
 	}
 
@@ -3719,7 +3761,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			country_event = {
+				id = SPR_events.4
+			}
 		}
 	}
 
@@ -3742,7 +3786,7 @@ focus_tree = {
 
 		available = {
 			has_war_support > 0.12
-			has_completed_focus = SPR_backround_2
+			has_completed_focus = SPR_background_2
 		}
 
 		bypass = {

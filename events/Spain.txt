@@ -1,1 +1,221 @@
-﻿
+﻿add_namespace = SPR_events
+
+# French Relations
+country_event = {
+	id = SPR_events.1
+	title = "French Relations"
+	desc = "Its time to do this and is for the mother land bla bla bla"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Offer Equipment
+		name = "Offer Equipment"
+			FRA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 750
+					producer = SPR
+					}
+				country_event = {
+					id = SPR_events.5
+				}
+			}
+		}
+	
+
+	option = { # Joe Biden?????? 
+		name = "Joe Biden?????"
+		FRA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 750
+				producer = VEN
+				}
+			country_event = {
+				id = SPR_events.5
+			}
+		}
+		}
+	
+	}
+	
+# Ethopian Relations
+country_event = {
+	id = SPR_events.2
+	title = "Ethopian Relations"
+	desc = "Its time to do this and is for the mother land bla bla bla"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Offer Equipment
+		name = "Offer Equipment"
+		ETH = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 750
+				producer = SPR
+			}
+			country_event = {
+				id = SPR_events.5
+			}
+		}
+	}
+	
+
+	option = { # Joe Biden?????? 
+		name = "Joe Boden??????"
+		ETH = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 750
+				producer = VEN
+				}
+			country_event = {
+				id = SPR_events.5
+			}
+		}
+	}
+
+}
+	
+# Anglo Relations
+country_event = {
+	id = SPR_events.3
+	title = "Anglo Relations"
+	desc = "Its time to do this and is for the mother land bla bla bla"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Offer Equipment
+		name = "Offer Equipment"
+			ENG = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 750
+					producer = SPR
+					}
+				country_event = {
+					id = SPR_events.5
+				}
+			}
+		}
+	
+
+	option = { # Joe Biden?????? 
+		name = "Joe Bident???????"
+		ENG = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 750
+				producer = VEN
+			}
+			country_event = {
+				id = SPR_events.5
+			}
+		}
+	}
+
+}
+	
+# New Friendships <3
+country_event = { 
+	id = SPR_events.4
+	title = "New Friendships <3"
+	desc = "THIS WILL DECLARE WAR ON ETHOPIA, BEWARE"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Negotiate Military Access With Ethopia
+		name = "Negotiate Military Access With Ethopia"
+			ETH = {
+			country_event = {
+					id = SPR_events.6
+			}
+		}
+	}
+}
+	
+# New Friendships <3
+country_event = { 
+	id = SPR_events.7
+	title = "New Friendships <3"
+	desc = "THIS WILL DECLARE WAR ON ETHOPIA, BEWARE"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Negotiate Military Access With Ethopia
+		name = "Negotiate Military Access With England"
+			ENG = {
+			country_event = {
+					id = SPR_events.6
+			}
+		}
+	}
+}
+	
+# New Friendships <3
+country_event = { 
+	id = SPR_events.8
+	title = "New Friendships <3"
+	desc = "THIS WILL DECLARE WAR ON ETHOPIA, BEWARE"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Negotiate Military Access With Ethopia
+		name = "Negotiate Military Access With France"
+			FRA = {
+			country_event = {
+					id = SPR_events.6
+			}
+		}
+	}
+}
+	
+
+# Gift From Spain
+country_event = { 
+	id = SPR_events.5
+	title = "Gift From Spain!"
+	desc = "750 infantry equipment was devilired to us last tuesday, hi riely."
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # What Friends Are For
+		name = "What Friends Are For!"
+		}
+	
+
+	}
+	
+
+	
+
+# Military Access With Spain
+country_event = { 
+	id = SPR_events.6
+	title = "Offer From Spain"
+	desc = "Spain has offered military access both from and to us"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Yes
+		name = "Spain Has Been There For Us, We Shall Accept"
+			give_military_access = SPR
+			SPR = {
+			give_military_access = PREV
+			}
+		}
+	
+	
+	option = { # No
+		name = "Spain is Sus, not quite yet hombre espeluznante"
+		}
+}
