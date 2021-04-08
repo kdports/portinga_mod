@@ -64,6 +64,30 @@ ideas = {
 				
 			}
 		}
+		SPR_blood_in_the_water = {
+			 
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				BRA = {
+				attack_bonus_against = .15
+				}
+				army_experience = 15
+				add_manpower = 100000
+				add_war_support = 0.10
+			}
+		}
 		SPR_air_control = {
 
 			allowed = {
