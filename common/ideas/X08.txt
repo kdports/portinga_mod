@@ -17,11 +17,18 @@ ideas = {
 		X08_IDEA_TRADITIONAL_MILITARY = {
 			picture = generic_reserve_divisions
 			modifier = {
-			air_superiority_bonus_in_combat = -0.2
+			air_superiority_bonus_in_combat = -0.25
 			army_infantry_attack_factor = 0.1
-			air_attack_factor = -0.2
+			air_attack_factor = -0.3
 			air_mission_efficiency = -0.2
-			army_armor_attack_factor = -0.1
+			army_armor_attack_factor = -0.25
+			}
+		}
+		X08_IDEA_MIC_CHILDREN = {
+			picture = generic_production_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 	}
