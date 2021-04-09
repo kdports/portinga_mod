@@ -224,7 +224,7 @@ country_event = {
 	country_event = {
 	id = SPR_events.9
 	title = "Victory!"
-	desc = "We have beaten back the sorry french from our lands and now reap the rewards of our victory!"
+	desc = "We have beaten back the sorry enemy from our lands and now reap the rewards of our victory!"
 	picture = GFX_report_event_ast_navy
 	fire_only_once = no
 	is_triggered_only = yes
@@ -319,4 +319,152 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = SPR_events.11
+	title = "Colonial Concern"
+	desc = "It is time to decide the fate of South America, whether to attack or protect."
+	picture = GFX_report_event_felix_eboue
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # attack
+		name = "We Shall Strike"
+		trigger = {
+			tag = SPR
+		}
+		SPR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = SPR
+				}
+			add_war_support = 0.25
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 250
+				producer = SPR
+				}
+			add_war_support = .10
+			add_manpower = 60000
+			
+				
+			
+		}
+	}
+	option = { # protect
+		name = "Bring Them Into The Fold"
+		trigger = {
+			tag = SPR
+		}
+		SPR = {
+			add_stability = .20
+			consumer_goods_factor = -0.05
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				add_extra_state_shared_building_slots = 2
+				}
+		}
+	}
+}
+country_event = {
+	id = SPR_events.12
+	title = "Victory!"
+	desc = "We have beaten back the sorry enemy from our lands and now reap the rewards of our victory!"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = "A Well Deserved Win"
+		trigger = {
+			tag = SPR
+		}
+		SPR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2750
+				producer = BRA
+				}
+			add_war_support = 0.25
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+				producer = BRA
+				}
+			
+				
+			
+		}
+	}
+	option = { # Ok
+		name = "A Well Deserved Win"
+		trigger = {
+			tag = BRA
+		}
+		BRA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2750
+				producer = SPR
+			}
+			add_war_support = 0.25
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+				producer = SPR
+			}
+		}
+	}
+}
+country_event = {
+	id = SPR_events.13
+	title = "Defeat"
+	desc = "The enemy has taken many lives, we repay them two fold tommorrow"
+	picture = GFX_report_event_ast_navy
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = "Damn"
+		trigger = {
+			tag = BRA
+		}
+		BRA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1750
+				
+				}
+				add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -750
+				
+				}
+			
+		}
+	}
+	option = { # Ok
+		name = "Damn"
+		trigger = {
+			tag = SPR
+		}
+		SPR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1750
+				
+				}
+				add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -750
+				
+				}
+			
+		}
+	}
+}
+
+
 	

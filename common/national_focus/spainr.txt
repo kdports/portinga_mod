@@ -973,6 +973,7 @@ focus_tree = {
 		}
 
 		relative_position_id = SPR_background_2
+		mutually_exclusive = { focus = SPR_stick_to_the_crown}
 
 		cost = 5
 		ai_will_do = {
@@ -1009,6 +1010,7 @@ focus_tree = {
 		}
 
 		relative_position_id = SPR_background_1
+		mutually_exclusive = { focus = SPR_the_faliure_of_the_royal_family}
 
 		cost = 5
 		ai_will_do = {
@@ -2066,7 +2068,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			
 		}
 	}
 
@@ -2367,43 +2369,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SPR_english_menace
-		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
-		prerequisite = { focus = SPR_enemies_at_our_door }
-
-		x = 3
-		y = 1
-		offset = {
-			x = 0
-			y = 2
-		}
-
-		relative_position_id = SPR_enemies_at_our_door
-		mutually_exclusive = { focus = SPR_french_scum }
-		mutually_exclusive = { focus = SPR_colonial_concern }
-
-		cost = 7
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-
-		}
-	}
+	
 
 	focus = {
 		id = SPR_french_scum
@@ -2469,8 +2435,8 @@ focus_tree = {
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = { focus = SPR_enemies_at_our_door }
 
-		x = 0
-		y = 2
+		x = 3
+		y = 1
 		offset = {
 			x = 0
 			y = 2
@@ -2719,7 +2685,7 @@ focus_tree = {
 		icon = GFX_focus_generic_air_defense
 		prerequisite = { focus = SPR_dont_give_in }
 
-		x = -2
+		x = 0
 		y = 1
 		offset = {
 			x = 0
@@ -2902,7 +2868,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = SPR_unclaimed_lands focus = SPR_insight_painic } 
 
-		x = 0
+		x = -1
 		y = 1
 		offset = {
 			x = 0
@@ -2940,6 +2906,8 @@ focus_tree = {
 		id = SPR_french_alliance
 		icon = GFX_focus_chi_reach_out_to_france
 		prerequisite = { focus = SPR_friends_elsewhere }
+		mutually_exclusive = { focus = SPR_english_alliance}
+		mutually_exclusive = { focus = SPR_ethopian_alliance}
 
 		x = -7
 		y = 2
@@ -2979,6 +2947,8 @@ focus_tree = {
 		id = SPR_ethopian_alliance
 		icon = GFX_focus_chi_proclaim_rival_government
 		prerequisite = { focus = SPR_friends_elsewhere }
+		mutually_exclusive = { focus = SPR_english_alliance}
+		mutually_exclusive = { focus = SPR_french_alliance}
 
 		x = -9
 		y = 2
@@ -3347,8 +3317,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPR_let_go_of_south_america
-		icon = GFX_focus_BUL_destroy_the_zveno
+		id = SPR_spread_our_influence
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		prerequisite = { focus = SPR_colonial_concern }
 
 		x = 1
@@ -3379,55 +3349,50 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+		BRA = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.45
+				}
+				add_timed_idea =  { 
+				idea = SPR_spanish_influence
+				days = 270
+				}
+			}
+		COS = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.45
+				}
+				add_timed_idea =  { 
+				idea = SPR_spanish_influence
+				days = 270
+				}
+			}
+		X16 = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.45
+				}
+				add_timed_idea =  { 
+				idea = SPR_spanish_influence
+				days = 270
+				}
+			}
 		}
 	}
 
-	focus = {
-		id = SPR_prepare_defences
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = SPR_reclaim_the_colonies }
-
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 2
-		}
-
-		relative_position_id = SPR_reclaim_the_colonies
-
-		cost = 7
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-
-		}
-	}
+	
 
 	focus = {
 		id = SPR_ready_to_move
 		icon = GFX_focus_GRE_stage_an_incident_in_the_bosporus
-		prerequisite = { focus = SPR_prepare_defences }
+		prerequisite = { focus = SPR_reclaim_the_colonies }
 
-		x = 0
-		y = 1
+		x = 5
+		y = 0
 		offset = {
-			x = 0
+			x = 2
 			y = 2
 		}
 
@@ -3451,13 +3416,30 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 627
+					num_provinces = 3
+					on_win = SPR_events.12
+					on_lose = SPR_events.13
+					
+    }
+				
+    defender = {
+        state = 30
+        num_provinces = 1
+			on_win = SPR_events.12
+			on_lose = SPR_events.13
+			
+    }
+}
 		}
 	}
 	focus = {
 		id = SPR_sow_discontent
 		icon = GFX_goal_continuous_restrict_freedom
-		prerequisite = { focus = SPR_prepare_defences }
+		prerequisite = { focus = SPR_ready_to_move }
 
 		x = -1
 		y = 1
@@ -3466,7 +3448,7 @@ focus_tree = {
 			y = 2
 		}
 
-		relative_position_id = SPR_prepare_defences
+		relative_position_id = SPR_ready_to_move
 
 		cost = 7
 		ai_will_do = {
@@ -3486,13 +3468,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			BRA = {
+				add_timed_idea = {
+				idea = SPR_spanish_panic
+				days = 270
+			}
 		}
 	}
+}
 
 	focus = {
-		id = SPR_understand_our_enemy
-		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
+		id = SPR_control_the_sea
+		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = SPR_sow_discontent }
 
 		x = 0
@@ -3522,14 +3509,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_ideas = SPR_navy_domination
 		}
 	}
 
 	focus = {
 		id = SPR_go_go_go
 		icon = GFX_focus_prc_infiltration
-		prerequisite = { focus = SPR_understand_our_enemy }
+		prerequisite = { focus = SPR_control_the_sea }
 
 		x = 0
 		y = 1
@@ -3538,8 +3525,7 @@ focus_tree = {
 			y = 2
 		}
 
-		relative_position_id = SPR_understand_our_enemy
-
+		relative_position_id = SPR_control_the_sea
 		cost = 7
 		ai_will_do = {
 			factor = 1
@@ -3558,14 +3544,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			create_wargoal = {
+				type = annex_everything
+				target = BRA
+			}
 		}
 	}
 
 	focus = {
 		id = SPR_befriend_the_former_colonies
 		icon = GFX_focus_mex_redeem_aztlan
-		prerequisite = { focus = SPR_let_go_of_south_america }
+		prerequisite = { focus = SPR_spread_our_influence }
 
 		x = 0
 		y = 1
@@ -3574,7 +3563,7 @@ focus_tree = {
 			y = 2
 		}
 
-		relative_position_id = SPR_let_go_of_south_america
+		relative_position_id = SPR_spread_our_influence
 
 		cost = 7
 		ai_will_do = {
@@ -3630,20 +3619,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			create_faction = "Spanish Alliance"
 		}
 	}
 
 	focus = {
 		id = SPR_invite_brazil
 		icon = GFX_focus_por_recover_brazil
-		prerequisite = { focus = SPR_create_the_coalition }
+		prerequisite = { focus = SPR_invite_la_plata }
+		prerequisite = { focus = SPR_convince_gautamala}
 
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		offset = {
-			x = 0
-			y = 2
+			x = 1
+			y = -2
 		}
 
 		relative_position_id = SPR_create_the_coalition
@@ -3666,7 +3656,129 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			SPR = { add_to_faction = BRA }
+			give_guarantee = BRA
+			set_country_flag = secret
+			mark_focus_tree_layout_dirty = yes
+			add_ideas = SPR_united_south_america
+		}
+	}
+	focus = {
+		id = SPR_conquer_from_within
+		icon = GFX_focus_por_latin_american_communism
+		prerequisite = { focus = SPR_invite_brazil }
+		
 
+		x = 0
+		y = 2
+		offset = {
+			x = 1
+			y = -2
+		}
+
+		relative_position_id = SPR_invite_brazil
+
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		allow_branch = {
+		has_country_flag = secret
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			puppet = BRA
+			
+		}
+	}
+	focus = {
+		id = SPR_take_costa_rica
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = SPR_invite_brazil }
+		
+
+		x = 1
+		y = 1
+		offset = {
+			x = 1
+			y = -2
+		}
+
+		relative_position_id = SPR_invite_brazil
+
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		allow_branch = {
+		has_country_flag = secret
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			puppet = COS
+		}
+	}
+	focus = {
+		id = SPR_take_la_plata
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = SPR_invite_brazil }
+		
+
+		x = -1
+		y = 1
+		offset = {
+			x = 1
+			y = -2
+		}
+
+		relative_position_id = SPR_invite_brazil
+
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+		allow_branch = {
+		has_country_flag = secret
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			puppet = X16
 		}
 	}
 
@@ -3702,21 +3814,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			SPR = { add_to_faction = X16 }
+			give_guarantee = X16
 		}
 	}
 
 	focus = {
 		id = SPR_convince_gautamala
 		icon = GFX_focus_por_recover_latin_america
-		prerequisite = { focus = SPR_invite_brazil }
-		prerequisite = { focus = SPR_invite_la_plata }
+		prerequisite = { focus = SPR_create_the_coalition }
+		
 
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		offset = {
-			x = 0
-			y = 2
+			x = 2
+			y = 0
 		}
 
 		relative_position_id = SPR_create_the_coalition
@@ -3739,7 +3852,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			SPR = { add_to_faction = COS }
+			give_guarantee = COS
 		}
 	}
 

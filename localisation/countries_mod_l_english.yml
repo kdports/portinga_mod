@@ -1527,3 +1527,7 @@
  GEN_GOV_fascism:10 "General Government"
  GEN_GOV_fascism_ADJ:10 "British"
  GEN_GOV_fascism_DEF:10 "the General Government"
+ 
+ USSA_communism:10 "United Spanish South America"
+ USSA_communism_ADJ:10 "Spanish"
+ USSA_communism_DEF:10 "the Spanish Government"

@@ -10,3 +10,7 @@ GEN_GOV = {
 	color = rgb { 133 42 47 }
 	color_ui = rgb { 115 115 115 }
 }
+USSA = {
+	color = rgb { 201 20 20 }
+	color_ui = rgb { 115 115 115 }
+}

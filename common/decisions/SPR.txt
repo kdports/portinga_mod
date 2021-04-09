@@ -1,1 +1,37 @@
-# Not available
+prestige_counter = {
+	SPR_united_spanish_south_america = {
+		allowed = {
+			tag = SPR
+		}
+		available = {
+		OR = {
+				AND = {
+					BRA = {
+					is_puppet_of = SPR
+					}
+					COS = {
+					is_puppet_of = SPR
+					}
+					X16 = {
+					is_puppet_of = SPR
+					}
+				}
+				AND = {
+				controls_state = 37
+				controls_state = 60
+				controls_state = 418
+				}
+			}
+		}
+		visible = {
+		tag = SPR 
+		
+		}
+		
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_cosmetic_tag = USSA
+		}
+	}
+}
