@@ -177,7 +177,7 @@ create_country_leader = {
     desc = "POLITICS_KARL_VON RAVENSBERG_DESC"
     picture = "GFX_portrait_ger_wilhelm_ii"
     expire = "1965.1.1"
-    ideology = theocracy
+    ideology = fascism_ideology
     traits = {
     }
 }

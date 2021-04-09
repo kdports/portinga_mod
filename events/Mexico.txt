@@ -49,6 +49,10 @@ news_event = {
 			NOT = { GUA = { has_country_flag = alliance_break } }
 		}
 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
 
 	immediate = {
 		hidden_effect = {

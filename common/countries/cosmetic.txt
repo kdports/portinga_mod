@@ -2,6 +2,10 @@ GER = {
 	color = rgb { 67 43 37 }
 	color_ui = rgb { 115 115 115 }
 }
+CHI = {
+	color = rgb { 224 212 38 }
+	color_ui = rgb { 115 115 115 }
+}
 GEN_GOV = {
 	color = rgb { 133 42 47 }
 	color_ui = rgb { 115 115 115 }

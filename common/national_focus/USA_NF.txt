@@ -57,78 +57,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_anschluss_GUA
-		icon = GFX_goal_anschluss
-		text = _anschluss_GUA
-		prerequisite = { focus = mil_marchUSA }
-		x = 28
-		y = 2
-		cost = 10
-		available = {
-			GUA = {
-				is_in_faction = no
-			}
-			is_puppet = no
-			date > 1937.7.8
-		}
-		completion_reward = {
-			add_named_threat = { threat = 2 name = "Union with Guatemala" }
-			army_experience = 10
-			if = {
-				limit = {
-					country_exists = GUA
-				}
-				GUA = {
-					country_event = NFEvents.3
-				}
-			}
-		}
-		ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			date < 1937.6.6
-		}
-	}
-	}
-
-	focus = {
-		id = USA_anschluss_X22
-		icon = GFX_goal_anschluss
-		text = _anschluss_X22
-		prerequisite = { focus = mil_marchUSA }
-		x = 30
-		y = 2
-		cost = 10
-		available = {
-			X22 = {
-				is_in_faction = no
-			}
-			is_puppet = no
-			date > 1937.10.6
-		}
-		completion_reward = {
-			add_named_threat = { threat = 2 name = "Union with Navajo" }
-			army_experience = 10
-			if = {
-				limit = {
-					country_exists = X22
-				}
-				X22 = {
-					country_event = NFEvents.6
-				}
-			}
-		}
-		ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			date < 1937.6.6
-		}
-	}
-	}
-
-	focus = {
 		id = expand_the_reichUSA
 		icon = GFX_goal_generic_political_pressure
 		text = expand_the_reich
@@ -158,6 +86,7 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			date > 1938.2.5
+			X23 = { is_in_faction = no }
 		}
 		completion_reward = {
 			add_named_threat = { threat = 2 name = "Demand Territory from Newfoundland" }

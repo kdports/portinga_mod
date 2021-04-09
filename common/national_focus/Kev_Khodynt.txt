@@ -2204,6 +2204,20 @@ focus_tree = {
 					target = X13
 					modifier = positive_100
 				}
+				capital_scope = {
+					add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 8
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
 			}
 			X13 = {
 				add_to_faction = JAP
@@ -2282,6 +2296,20 @@ focus_tree = {
 					target = X13
 					modifier = positive_100
 				}
+				capital_scope = {
+					add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 8
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
 			}
 			X13 = {
 				add_to_faction = PHI
@@ -2329,6 +2357,20 @@ focus_tree = {
 				add_opinion_modifier = {
 					target = X13
 					modifier = positive_100
+				}
+				capital_scope = {
+					add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 8
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
 				}
 			}
 			X13 = {
@@ -2383,6 +2425,20 @@ focus_tree = {
 					target = X13
 					modifier = positive_100
 				}
+				capital_scope = {
+					add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 8
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
 			}
 			X13 = {
 				add_to_faction = AST
@@ -2430,6 +2486,20 @@ focus_tree = {
 				add_opinion_modifier = {
 					target = X13
 					modifier = positive_100
+				}
+				capital_scope = {
+					add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 8
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
 				}
 			}
 			X13 = {
@@ -2542,7 +2612,7 @@ focus_tree = {
 
 		completion_reward = {
 			declare_war_on = {
-				target = BRM
+				target = MAL
 				type = annex_everything
 			}
 		}
@@ -2623,6 +2693,95 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { country_prestige_num = 40 }
 			custom_effect_tooltip = 8_FRA_pres_tt
+		}
+	}
+	
+	focus = {
+		id = KEV_X13_french_islands
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 6
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+
+		relative_position_id = KEV_X13_beria_win
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_global_flag = crisis_ongoing
+			}
+			NOT = {
+				has_war_with = FRA
+			}
+			date > 1939.8.1
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			custom_effect_tooltip = 5_X13_crisis_tt
+			set_global_flag = crisis_ongoing
+			set_global_flag = islands_crisis
+			set_country_flag = crisis_head_one
+			FRA = {
+				set_country_flag = crisis_head_two
+			}
+		}
+	}
+	focus = {
+		id = KEV_X13_french_malaysia
+		icon = GFX_focus_usa_focus_on_asia
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+
+		relative_position_id = KEV_X13_french_islands
+		prerequisite = { focus = KEV_X13_french_islands }
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_global_flag = crisis_ongoing
+			}
+			NOT = {
+				has_war_with = FRA
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			custom_effect_tooltip = 6_X13_crisis_tt
+			set_global_flag = crisis_ongoing
+			set_global_flag = malaysia_crisis
+			set_country_flag = crisis_head_one
+			FRA = {
+				set_country_flag = crisis_head_two
+			}
 		}
 	}
 }

@@ -2747,21 +2747,21 @@ focus_tree = {
 
 		completion_reward = {
 			start_border_war = {
-			change_state_after_war = no
-			attacker = {
-				state = 594
-				num_provinces = 6
-				on_win = SPR_events.9
-				on_lose = SPR_events.10
-				
-			}
-				
-			defender = {
-				state = 243
-				num_provinces = 4
-				on_win = SPR_event.9
-				on_lose = SPR_event.10
-				
+				change_state_after_war = no
+				attacker = {
+					state = 594
+					num_provinces = 6
+					on_win = SPR_events.9
+					on_lose = SPR_events.10
+					
+				}
+					
+				defender = {
+					state = 243
+					num_provinces = 4
+					on_win = SPR_event.9
+					on_lose = SPR_event.10
+					
 				}
 			}
 			set_border_war_data = {
@@ -2771,8 +2771,8 @@ focus_tree = {
 				
 			}
 			add_timed_idea = {
-			idea = SPR_french_scum
-			days = 30
+				idea = SPR_french_scum
+				days = 30
 			}
 		}
 	}
@@ -3342,9 +3342,7 @@ focus_tree = {
 			army_experience = 15
 			add_manpower = 100000
 			add_war_support = 0.10
-			country_event = {
-				id = SPR_blood_in_the_water
-			}
+			add_ideas = SPR_blood_in_the_water
 		}
 	}
 

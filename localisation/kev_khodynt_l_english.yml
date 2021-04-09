@@ -137,6 +137,11 @@
   KEV_X13_attack_formosa_desc:0 ""
   KEV_X13_no_dream:0 "We Don't Have to Dream..."
   KEV_X13_no_dream_desc:0 ""
+  
+  KEV_X13_french_islands: "The French Islands"
+  KEV_X13_french_islands_desc: ""
+  KEV_X13_french_malaysia: "Their Final Ports"
+  KEV_X13_french_malaysia_desc: ""
 
   ## Ideas
   X13_build_fast:0 "Expedited Armor Production"
@@ -150,6 +155,18 @@
 
   khodynt_coup_cat:0 "Leadup to Beria's Coup"
   khodynt_coup_cat_desc:0 "Beria's ambitions have placed both himself and Kerensky in a bitter struggle for power. Having set events in motion, Beria is now counting down the days until his coup attempt, a coup that will execute §!regardless of if he is fully prepared§!.\n\nKerensky's Level of Support: [?kerensky_support_num|C0]\n\nBeria's Level of Support: [?beria_support_num|O0]"
+
+  countdown_to_coup: "Countdown to Midnight"
+  
+  kerensky_ask_for_help: "Seek Foriegn Aid"
+  kerensky_back_officers: "Raise Military Support"
+  kerensky_discredit_enemy: "Discredit Beria"
+  kerensky_tighten_security: "Tighten Presidential Security"
+  
+  beria_ask_for_help: "Court Foriegn Influence"
+  beria_back_officers: "Secure Military Backing"
+  beria_discredit_enemy: "Discredit the System"
+  beria_loosen_security: "Loosen Presidential Security"
 
   crisis_category:0 "Great Power Crisis!"
   countdown_to_crisis_war:0 "Countdown to Escalation"
@@ -211,6 +228,8 @@
   2_X13_crisis_tt:0 "The §CFormosa§! §Rcrisis§! will begin."
   3_X13_crisis_tt:0 "The §CWest African§! §Rcrisis§! will begin."
   4_X13_crisis_tt:0 "The §CHolland§! §Rcrisis§! will begin."
+  5_X13_crisis_tt:0 "The §CMarshall Islands§! §Rcrisis§! will begin."
+  6_X13_crisis_tt:0 "The §CMalaysia§! §Rcrisis§! will begin."
 
   # Flags
   nuke_share_yes:0 "We've decided that cooperation holds the secrets of the atom."

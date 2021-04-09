@@ -61,6 +61,7 @@ crisis_category = {
 					type = annex_everything
 				}
 			}
+			clr_global_flag = crisis_ongoing
 		}
 	}
 
@@ -94,8 +95,8 @@ crisis_category = {
 				limit = {
 					has_country_flag = crisis_head_two
 				}
-				add_to_variable = { country_prestige_num = -5 }
-				custom_effect_tooltip = 9_FRA_pres_tt
+				add_to_variable = { country_prestige_num = -15 }
+				custom_effect_tooltip = 2_FRA_pres_tt
 
 				if = {
 					limit = {
@@ -103,6 +104,33 @@ crisis_category = {
 					}
 					X13 = {
 						transfer_state = 253
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = islands_crisis
+					}
+					X13 = {
+						transfer_state = 290
+						transfer_state = 277
+						transfer_state = 275
+						transfer_state = 276
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = malaysia_crisis
+					}
+					X13 = {
+						transfer_state = 249
+						transfer_state = 660
+						transfer_state = 297
+						transfer_state = 250
+						transfer_state = 247
+						transfer_state = 248
+						transfer_state = 251
+						transfer_state = 252
+						transfer_state = 324
 					}
 				}
 				if = {
@@ -142,6 +170,7 @@ crisis_category = {
 				}
 			}
 			every_country = {
+				custom_effect_tooltip = "The crisis is resolved!"
 				clr_country_flag = crisis_head_one
 				clr_country_flag = crisis_head_two
 				clr_country_flag = crisis_team_one
@@ -189,6 +218,10 @@ crisis_category = {
 		fire_only_once = no
 		#days_remove = 30
 		complete_effect = {
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
+			add_war_support = 0.1
+			add_manpower = 10000
 			set_country_flag = crisis_team_one
 			news_event = {
 				id = crisis.1
@@ -235,6 +268,10 @@ crisis_category = {
 		fire_only_once = no
 		#days_remove = 30
 		complete_effect = {
+			add_to_variable = { country_prestige_num = 5 }
+			custom_effect_tooltip = 1_FRA_pres_tt
+			add_war_support = 0.1
+			add_manpower = 10000
 			set_country_flag = crisis_team_two
 			news_event = {
 				id = crisis.1

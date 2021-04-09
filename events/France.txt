@@ -560,7 +560,7 @@ country_event = { #X14 Instability
 	option = { #
 		name = kev_france.18.a
 		start_civil_war = {
-			ruling_party = absolutism
+			ruling_party = absolutist
 			ideology = fascism
 			size = 0.5
 		}

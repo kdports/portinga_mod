@@ -9,41 +9,35 @@ bookmarks = {
 		FRA= {
 			history = "democratic_GP_CONV_DESC"
 			ideology = democratic
-			ideas = { great_power }
+			ideas = { great_power culture_french }
 		}
 		X13= {
 			history = "democratic_GP_CONV_DESC"
 			ideology = democratic
-			ideas = { }
+			ideas = { culture_yakut }
 		}
 		SPR= {
 			history = "democratic_GP_CONV_DESC"
 			ideology = communism
-			ideas = { }
+			ideas = { JAP_the_unthinkable_option }
 		}
 		ENG= {
 			history = "democratic_GP_CONV_DESC"
 			ideology = democratic
-			ideas = { great_power }
+			ideas = { great_power ENG_ireland_converted ENG_greenland_lost }
 		}
 		ETH= {
 			history = "fascism_GP_CONV_DESC"
-			ideology = theocracy
-			ideas = { great_power }
+			ideology = absolutist
+			ideas = { great_power slavery_idea_1a }
 		}
 		X08= {
 			history = "democratic_GP_CONV_DESC"
 			ideology = democratic
-			ideas = { great_power }
+			ideas = { great_power X08_IDEA_IMPERIAL_WAR }
 		}
 		"---"= {
 			history = "OTHER_GATHERING_STORM_DESC"
-		}
-		CRO = {
-			minor = yes
-			history = "democratic_SP_CONV_DESC"
-			ideology = democratic
-			ideas = { }
 		}
 		effect = {
 			randomize_weather = 22345 # <-Obligatory in every bookmark !

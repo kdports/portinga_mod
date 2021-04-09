@@ -537,38 +537,6 @@ ideas = {
 				rocketry = -0.1
 			}
 		}
-
-		lkab = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea lkab"}
-			allowed = { original_tag = ETH }
-			available = { has_completed_focus = ETH_lkab_investments }
-			traits = { industrial_manufacturer }
-			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
-			}
-			research_bonus = {
-				industry = 0.1
-			}
-		}
-
-		ericsson = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ericsson"}
-			allowed = {original_tag = ETH }
-			traits = {electronics_manufacturer }
-			research_bonus = {
-				electronics = 0.1
-			}
-		}
-
-		aga = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea aga"}
-			allowed = {original_tag = ETH }
-			traits = {chemical_producer }
-			research_bonus = {
-				synth_resources = 0.1
-			}
-		}
 		
 		# Don't think about this too hard
 		BUL_army_restrictions = {
@@ -644,7 +612,6 @@ ideas = {
 		asea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea asea"}
 			allowed = { original_tag = ETH }
-			traits = { heavy_tank_producer_defense_1 }
 			research_bonus = {
 				armor = 0.1
 			}
@@ -653,7 +620,6 @@ ideas = {
 		ETH_landsverk = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ETH_landsverk"}
 			allowed = { original_tag = ETH }
-			traits = { medium_tank_producer_offense_2 }
 			research_bonus = {
 				armor = 0.1
 			}
@@ -662,7 +628,6 @@ ideas = {
 		tidaholms_bruk = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea tidaholms_bruk"}
 			allowed = { original_tag = ETH }
-			traits = { medium_tank_producer_mass_0 }
 			research_bonus = {
 				armor = 0.1
 			}
@@ -671,7 +636,6 @@ ideas = {
 		hagglunds = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hagglunds"}
 			allowed = { original_tag = ETH }
-			traits = { small_tank_producer_offense_1 }
 			research_bonus = {
 				armor = 0.1
 			}
@@ -685,7 +649,6 @@ ideas = {
 		gotaverken = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea gotaverken"}
 			allowed = { original_tag = ETH }
-			traits = { capital_ship_producer_defense_1 }
 			research_bonus = {
 				naval_equipment = 0.1
 			}
@@ -694,7 +657,6 @@ ideas = {
 		kockums = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kockums"}
 			allowed = { original_tag = ETH }
-			traits = { cruiser_producer_offense_1 }
 			research_bonus = {
 				naval_equipment = 0.1
 			}
@@ -703,7 +665,6 @@ ideas = {
 		lindholmen = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea lindholmen"}
 			allowed = { original_tag = ETH }
-			traits = { small_ship_producer_mass_1 }
 			research_bonus = {
 				naval_equipment = 0.1
 			}
@@ -720,7 +681,6 @@ ideas = {
 			available = {
 				has_completed_focus = ETH_saab_focus
 			}
-			traits = { fighter_producer_offense_2 }
 			research_bonus = {
 				air_equipment = 0.1
 			}
@@ -729,7 +689,6 @@ ideas = {
 		thulinverken = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea thulinverken"}
 			allowed = { original_tag = ETH }
-			traits = { nav_cas_producer_defense_1 }
 			research_bonus = {
 				air_equipment = 0.1
 			}
@@ -741,7 +700,6 @@ ideas = {
 				has_completed_focus = ETH_douglas_plan
 			}
 			allowed = { original_tag = ETH }
-			traits = { bomber_producer_mass_1 }
 			research_bonus = {
 				air_equipment = 0.1
 			}

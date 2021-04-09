@@ -44,4 +44,33 @@ on_actions = {
 			}
 		}
 	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = X31 } # If Turkestan capitulates
+					FROM = { tag = X27 } # To Iraq
+				}
+				FROM = {
+					white_peace = SOV # War ends, Russia has no reason to stay
+					white_peace = X13
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { tag = X27 } # If Iraq capitulates
+					FROM = { 
+						OR = {
+							tag = X31 
+							tag = SOV
+							tag = X13
+						}
+					} # To Turkestan or Russia or Khodynt
+				}
+				SOV = {
+					puppet = X31 # Turkestan becomes a Russian puppet
+				}
+			}
+		}
+	}
 }

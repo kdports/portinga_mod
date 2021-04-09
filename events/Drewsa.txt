@@ -65,6 +65,10 @@ country_event = {
 		}
 	}
 	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
 	option = {   
 		name = drewsa.1.a
 		add_political_power = 50	

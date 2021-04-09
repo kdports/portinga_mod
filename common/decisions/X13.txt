@@ -113,7 +113,7 @@ khodynt_coup_cat = {
 	}
 
 	#Prestige for Enemy Loss
-	kerensky_discredit_enemy= {
+	kerensky_discredit_enemy = {
 		visible = {
 			tag = X13
 			has_country_flag = kerensky_support

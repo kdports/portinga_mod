@@ -2380,7 +2380,7 @@ focus_tree = {
 		id = KEV_FRA_italy_start
 		icon = GFX_focus_generic_italy_first
 		x = 9
-		y = 1
+		y = 2
 		offset = {
 			x = 0
 			y = 0
@@ -3460,127 +3460,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = KEV_FRA_malaya_start
-		icon = GFX_goal_MAL_malaysia
-		x = -8
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { focus = KEV_FRA_politics_start }
-		relative_position_id = KEV_FRA_politics_start
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				has_country_leader = {
-					name = "François de Castellane"
-					ruling_only = yes
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			add_political_power = 75
-			custom_effect_tooltip = 1_FRA_crisis_tt
-		}
-	}
-
-	focus = {
-		id = KEV_FRA_dutch_start
-		icon = GFX_focus_eng_the_sun_never_sets
-		x = -5
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { focus = KEV_FRA_politics_start }
-		relative_position_id = KEV_FRA_politics_start
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				has_country_leader = {
-					name = "François de Castellane"
-					ruling_only = yes
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			add_political_power = 75
-			custom_effect_tooltip = 1_FRA_crisis_tt
-		}
-	}
-
-	focus = {
-		id = KEV_FRA_nafrica_start
-		icon = GFX_goal_ETH_kingdom_of_judah
-		x = 3
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { focus = KEV_FRA_politics_start }
-		relative_position_id = KEV_FRA_politics_start
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				has_country_leader = {
-					name = "François de Castellane"
-					ruling_only = yes
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			add_political_power = 75
-			custom_effect_tooltip = 1_FRA_crisis_tt
-		}
-	}
-
-	focus = {
 		id = KEV_FRA_nukes_start
 		icon = GFX_focus_wonderweapons
-		x = -12
-		y = 3
+		x = -5
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -3693,8 +3576,8 @@ focus_tree = {
 	focus = {
 		id = KEV_FRA_germany_start
 		icon = GFX_focus_ger_revive_kaiserreich
-		x = 17
-		y = 2
+		x = 3
+		y = 1
 		offset = {
 			x = 0
 			y = 0
