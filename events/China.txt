@@ -1,1 +1,26 @@
-﻿
+﻿add_namespace = shun
+# The Future of Slavery
+country_event = {
+		id = shun.1
+		title = shun.1.t
+		desc = shun.1.d
+		picture = GFX_report_event_por_estado_novo
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = shun.1.1
+			remove_ideas = X08_IDEA_IMPERIAL_WAR
+			add_stability = 0.1
+			add_popularity = {
+				ideology = absolutist
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = absolutist
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+	}

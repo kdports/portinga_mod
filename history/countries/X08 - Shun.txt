@@ -71,7 +71,7 @@ set_politics = {
     ruling_party = democratic
     last_election = "1931.5.3"
     election_frequency = 48
-    elections_allowed = yes
+    elections_allowed = no
 }
 
 set_popularities = {
@@ -124,16 +124,29 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_beifaren
+	X08_IDEA_IMPERIAL_WAR
+	X08_IDEA_LOW_GOVERNMENT_AUTHORITY
+	X08_IDEA_TRADITIONAL_MILITARY
 }
 set_stability = 0.10
 set_war_support = 0.59
 create_country_leader = {
-    name = "Xie Fang"
+    name = "Mao Zedong"
     desc = "POLITICS_XIE_FANG_DESC"
-    picture = "GFX_CHI_Sun_Fo"
+    picture = "GFX_portrait_prc_mao_zedong"
     expire = "1965.1.1"
     ideology = liberalism
     traits = {
+    }
+	}
+create_country_leader = {
+    name = "Xie_Shun"
+    desc = "POLITICS_XIE_SHUN_DESC"
+    picture = "GFX_Portrait_China_weng_wenhao"
+    expire = "1965.1.1"
+    ideology = absolute_monarchy
+    traits = {
+	autocratic_imperialist
     }
 }
 
@@ -141,33 +154,33 @@ create_corps_commander = {
 	name = "Liu Wu"
 	picture = ""
 	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 6
+	attack_skill = 6
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 6
 }
 
 create_corps_commander = {
 	name = "Ma Hu"
 	picture = ""
 	traits = { }
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "Huang Shen"
 	picture = ""
 	traits = { }
-	skill = 1
+	skill = 4
 	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {

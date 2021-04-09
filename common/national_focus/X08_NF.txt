@@ -15,9 +15,9 @@ focus_tree = {
 		id = X08_focus1
 		icon = GFX_focus_chi_whampoa_military_academy
 
-		x = 4
+		x = 20
 		y = 0
-		cost = 7
+		cost = 1
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -33,7 +33,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 7
+		cost = 1
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		relative_position_id = X08_focus1
@@ -51,7 +51,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 7
+		cost = 1
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		relative_position_id = X08_focus2
@@ -63,4 +63,46 @@ focus_tree = {
 			country_event = { id = shun.3 }
 		}
 	}
+	focus = {
+		id = X08_focus_dynastic_restoration
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = 0
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus3
+		prerequisite = { focus = X08_focus3 }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = X08_IDEA_LOW_GOVERNMENT_AUTHORITY
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.5
+			}
+		}
+	}
+	focus = {
+		id = X08_focus_dragon
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = -3
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_dynastic_restoration
+		prerequisite = { focus = X08_focus_dynastic_restoration }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			army_experience = 25
+		}
+	}
+	
 }

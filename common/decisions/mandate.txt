@@ -15,21 +15,14 @@ mandate_category = {
 		days_mission_timeout = 100  # Change number of days until climax
 		timeout_effect = {
 			custom_effect_tooltip = yunnan_tt
-			if = {
-				limit = {
-					check_variable = { shun_mandate > 19 } # Change this to switch min mandate
-				}
+			country_event = {
+				id = X08_EVENT_ANNEX_YUNNAN
+			}
 				annex_country = {
 					target = YUN
 					transfer_troops = no
 				}
-			}
-			else = {
-				declare_war_on = {
-					target = YUN
-					type = annex_everything
-				}
-			}
+			
 		}
 	}
 	countdown_to_shu = {

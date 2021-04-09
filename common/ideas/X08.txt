@@ -1,4 +1,30 @@
 ideas = {
+	country = {
+		X08_IDEA_LOW_GOVERNMENT_AUTHORITY = {
+			picture = anti_soviet_pact
+			modifier = {
+				political_power_cost = 1
+				research_speed_factor = -0.2
+			}
+		}
+		X08_IDEA_IMPERIAL_WAR = {
+			picture = generic_acquire_tanks
+			modifier = {
+				stability_weekly = -0.01
+				absolutism_drift = 0.15
+			}
+		}
+		X08_IDEA_TRADITIONAL_MILITARY = {
+			picture = generic_reserve_divisions
+			modifier = {
+			air_superiority_bonus_in_combat = -0.2
+			army_infantry_attack_factor = 0.1
+			air_attack_factor = -0.2
+			air_mission_efficiency = -0.2
+			army_armor_attack_factor = -0.1
+			}
+		}
+	}
 	political_advisor = {
 		X08_absolutist_advisor = {
 			allowed = {
