@@ -14,9 +14,12 @@ mandate_category = {
 		fire_only_once = yes
 		days_mission_timeout = 100  # Change number of days until climax
 		timeout_effect = {
+			add_to_variable = {
+				mandate = 10
+			}
 			custom_effect_tooltip = yunnan_tt
 			country_event = {
-				id = X08_EVENT_ANNEX_YUNNAN
+				id = shun.1
 			}
 				annex_country = {
 					target = YUN
