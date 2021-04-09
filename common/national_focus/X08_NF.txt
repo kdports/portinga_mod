@@ -366,4 +366,27 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = X08_focus_strengthen_dynasty
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		mutually_exclusive = {
+			focus = X08_focus_dragon
+		}
+		x = 0
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_mining_operations
+		prerequisite = { focus = X08_focus_mining_operations }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = { Adds 25 mandate to Shun }
+			add_to_variable = {
+				mandate = 25
+			}
+		}
+	}
 }
