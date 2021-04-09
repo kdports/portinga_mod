@@ -88,8 +88,10 @@ focus_tree = {
 	focus = {
 		id = X08_focus_dragon
 		icon = GFX_focus_prc_proclaim_the_peoples_republic
-
-		x = -3
+		mutually_exclusive = {
+			focus = X08_focus_dog
+		}
+		x = -2
 		y = 1
 		cost = 10
 
@@ -180,16 +182,188 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 7
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		relative_position_id = X08_focus_prepare_air
-		prerequisite = { focus = X08_focus_prepare_air }
+		relative_position_id = X08_focus_child_labor
+		prerequisite = { focus = X08_focus_child_labor }
 
 		available_if_capitulated = no
 
 		completion_reward = {
 			remove_ideas = X08_IDEA_TRADITIONAL_MILITARY
+		}
+	}
+	focus = {
+		id = X08_focus_snake
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = 0
+		y = 2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_dynastic_restoration
+		prerequisite = { 
+		focus = X08_focus_dynastic_restoration 
+		has_intelligence_agency = yes
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			upgrade_intelligence_agency = upgrade_form_department
+			upgrade_intelligence_agency = upgrade_civilian_department
+		}
+	}
+	focus = {
+		id = X08_military_intel
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_snake
+		prerequisite = { focus = X08_focus_snake }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			upgrade_intelligence_agency = upgrade_navy_department
+			upgrade_intelligence_agency = upgrade_army_department
+		}
+	}
+	focus = {
+		id = X08_focus_codebreakers
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_military_intel
+		prerequisite = { focus = X08_military_intel }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = X08_IDEA_EXPERT_CODEBREAKERS
+		}
+	}
+	focus = {
+		id = X08_focus_eyes_walls
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = 0
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_codebreakers
+		prerequisite = { focus = X08_focus_codebreakers }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = X08_IDEA_EXPERT_CODEBREAKERS
+				add_idea = X08_IDEA_EXPERT_CODEBREAKERS2
+			}
+		}
+	}
+	focus = {
+		id = X08_focus_dog
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		mutually_exclusive = {
+			focus = X08_focus_dragon
+		}
+		x = 2
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_dynastic_restoration
+		prerequisite = { focus = X08_focus_dynastic_restoration }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = X08_focus_imperial_broadcasting
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		mutually_exclusive = {
+			focus = X08_focus_dragon
+		}
+		x = 0
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_dog
+		prerequisite = { focus = X08_focus_dog }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+    				ideology = absolutist
+   				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = X08_focus_industry
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		mutually_exclusive = {
+			focus = X08_focus_dragon
+		}
+		x = 0
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_imperial_broadcasting
+		prerequisite = { focus = X08_focus_imperial_broadcasting }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_offsite_building = { type = civilian_factory level = 2 }
+		}
+	}
+	focus = {
+		id = X08_focus_mining_operations
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		mutually_exclusive = {
+			focus = X08_focus_dragon
+		}
+		x = 0
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_industry
+		prerequisite = { focus = X08_focus_industry }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_resource = {
+    				type = oil
+  				amount = 15
+   				state = 77
+			}
+			add_resource = {
+    				type = aluminum
+  				amount = 12
+   				state = 74
+			}
 		}
 	}
 }
