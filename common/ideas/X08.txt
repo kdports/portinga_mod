@@ -31,6 +31,21 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
+		X08_IDEA_EXPERT_CODEBREAKERS = {
+			picture = generic_spy_coup
+			modifier = {
+				decryption = 1
+				encryption = 1
+			}
+		}
+		X08_IDEA_EXPERT_CODEBREAKERS2 = {
+			picture = generic_spy_coup
+			modifier = {
+				decryption = 1
+				encryption = 1
+				operative_slot = 1
+			}
+		}
 	}
 	political_advisor = {
 		X08_absolutist_advisor = {
