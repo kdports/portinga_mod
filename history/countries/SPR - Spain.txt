@@ -120,11 +120,11 @@ add_ideas = {
 set_stability = 0.45
 set_war_support = 0.25
 create_country_leader = {
-    name = "Juan Bautista RodrÃ­guez"
+    name = "Juan Bautista Rodriguez"
     desc = "POLITICS_JUAN BAUTISTA_RODRÃ­GUEZ_DESC"
     picture = "gfx/leaders/SPR/Portrait_Spain_Manuel_Azana.dds"
     expire = "1965.1.1"
-    ideology = liberalism
+    ideology = absolute_monarchy
     traits = {
     }
 }

@@ -79,13 +79,9 @@ ideas = {
 
 			removal_cost = -1
 
-			modifier = {
-				BRA = {
-				attack_bonus_against = .15
-				}
-				army_experience = 15
-				add_manpower = 100000
-				add_war_support = 0.10
+			targeted_modifier = {
+				tag = BRA
+				attack_bonus_against = 0.15
 			}
 		}
 		SPR_air_control = {

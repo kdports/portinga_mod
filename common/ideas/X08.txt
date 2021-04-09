@@ -11,7 +11,7 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				stability_weekly = -0.01
-				absolutism_drift = 0.15
+				absolutist_drift = 0.15
 			}
 		}
 		X08_IDEA_TRADITIONAL_MILITARY = {
