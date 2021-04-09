@@ -19,7 +19,7 @@ mandate_category = {
 			}
 			custom_effect_tooltip = yunnan_tt
 			country_event = {
-				id = X08_EVENT_ANNEX_YUNNAN
+				id = shun.1
 			}
 				annex_country = {
 					target = YUN
