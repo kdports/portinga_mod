@@ -91,7 +91,7 @@ focus_tree = {
 
 		x = -3
 		y = 1
-		cost = 7
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		relative_position_id = X08_focus_dynastic_restoration
@@ -104,5 +104,92 @@ focus_tree = {
 			army_experience = 25
 		}
 	}
-	
+	focus = {
+		id = X08_focus_fear_us
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = -1
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_dragon
+		prerequisite = { focus = X08_focus_dragon }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_offsite_building = { 
+				type = arms_factory 
+				level = 2 
+			}
+		}
+	}
+	focus = {
+		id = X08_focus_prepare_air
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = 0
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_fear_us
+		prerequisite = { focus = X08_focus_fear_us }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			77 = {
+				add_building_construction = {
+    					type = airfield
+    					level = 5
+					instant_build = yes
+    				}
+			}
+			74 = {
+				add_building_construction = {
+    					type = airfield
+    					level = 5
+					insant_build = yes
+    				}
+			}
+		}
+	}
+	focus = {
+		id = X08_focus_child_labor
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = 0
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_prepare_air
+		prerequisite = { focus = X08_focus_prepare_air }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = X08_IDEA_MIC_CHILDREN
+		}
+	}
+	focus = {
+		id = X08_focus_modernize_military
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+
+		x = 0
+		y = 1
+		cost = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = X08_focus_prepare_air
+		prerequisite = { focus = X08_focus_prepare_air }
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = X08_IDEA_TRADITIONAL_MILITARY
+		}
+	}
 }
