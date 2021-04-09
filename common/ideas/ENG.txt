@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		ENG_ireland_converted = {
-			#picture = generic_coastal_defense_ships
+			picture = can_defence_of_canada_regulations_democratic
 			allowed = {
 				always = no
 			}
@@ -14,7 +14,7 @@ ideas = {
 			}
 		}
 		ENG_scotland_converted = {
-			#picture = generic_coastal_defense_ships
+			picture = can_defence_of_canada_regulations_democratic
 			allowed = {
 				always = no
 			}
@@ -27,7 +27,7 @@ ideas = {
 			}
 		}
 		ENG_denmark_converted = {
-			#picture = generic_coastal_defense_ships
+			picture = can_defence_of_canada_regulations_democratic
 			allowed = {
 				always = no
 			}
@@ -40,7 +40,7 @@ ideas = {
 			}
 		}
 		ENG_greenland_converted = {
-			#picture = generic_coastal_defense_ships
+			picture = can_defence_of_canada_regulations_democratic
 			allowed = {
 				always = no
 			}
@@ -53,7 +53,7 @@ ideas = {
 			}
 		}
 		ENG_netherlands_converted = {
-			#picture = generic_coastal_defense_ships
+			picture = can_defence_of_canada_regulations_democratic
 			allowed = {
 				always = no
 			}
@@ -66,7 +66,7 @@ ideas = {
 			}
 		}
 		ENG_inuit_converted = {
-			#picture = generic_coastal_defense_ships
+			picture = can_defence_of_canada_regulations_democratic
 			allowed = {
 				always = no
 			}
@@ -79,7 +79,7 @@ ideas = {
 			}
 		}
 		ENG_navajo_converted = {
-			#picture = generic_coastal_defense_ships
+			picture = can_defence_of_canada_regulations_democratic
 			allowed = {
 				always = no
 			}
@@ -92,7 +92,7 @@ ideas = {
 			}
 		}
 		ENG_sweden_converted = {
-			#picture = generic_coastal_defense_ships
+			picture = can_defence_of_canada_regulations_democratic
 			allowed = {
 				always = no
 			}
@@ -105,7 +105,7 @@ ideas = {
 			}
 		}
 		ENG_estonia_converted = {
-			#picture = generic_coastal_defense_ships
+			picture = can_defence_of_canada_regulations_democratic
 			allowed = {
 				always = no
 			}
@@ -118,7 +118,7 @@ ideas = {
 			}
 		}
 		ENG_greenland_lost = {
-			#picture = generic_coastal_defense_ships
+			picture = FRA_scw_intervention_nationalists_focus
 			allowed = {
 				always = no
 			}
@@ -132,7 +132,7 @@ ideas = {
 			}
 		}
 		ENG_netherlands_lost = {
-			#picture = generic_coastal_defense_ships
+			picture = FRA_scw_intervention_nationalists_focus
 			allowed = {
 				always = no
 			}
@@ -145,7 +145,7 @@ ideas = {
 			}
 		}
 		ENG_sweden_unhappy= {
-			#picture = generic_coastal_defense_ships
+			picture = FRA_scw_intervention_nationalists_focus
 			allowed = {
 				always = no
 			}
@@ -159,7 +159,7 @@ ideas = {
 			}
 		}
 		ENG_estonia_unhappy= {
-			#picture = generic_coastal_defense_ships
+			picture = FRA_scw_intervention_nationalists_focus
 			allowed = {
 				always = no
 			}
@@ -173,7 +173,7 @@ ideas = {
 			}
 		}
 		ENG_inuit_unhappy= {
-			#picture = generic_coastal_defense_ships
+			picture = FRA_scw_intervention_nationalists_focus
 			allowed = {
 				always = no
 			}
@@ -187,7 +187,7 @@ ideas = {
 			}
 		}
 		ENG_navajo_unhappy= {
-			#picture = generic_coastal_defense_ships
+			picture = FRA_scw_intervention_nationalists_focus
 			allowed = {
 				always = no
 			}
@@ -201,7 +201,7 @@ ideas = {
 			}
 		}
 		ENG_revanchism = {
-			#picture = generic_coastal_defense_ships
+			picture = raj_indian_gentlemen_officers
 			allowed = {
 				always = no
 			}
@@ -214,7 +214,7 @@ ideas = {
 			}
 		}
 		ENG_invasion_boost = {
-			#picture = generic_coastal_defense_ships
+			picture = generic_navy_bonus
 			allowed = {
 				always = no
 			}
