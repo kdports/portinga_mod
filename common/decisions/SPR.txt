@@ -31,6 +31,31 @@ prestige_counter = {
 		fire_only_once = yes
 		cost = 0
 		complete_effect = {
+			if = {
+				limit = {
+					BRA = {
+					is_puppet_of = SPR
+					}
+					COS = {
+					is_puppet_of = SPR
+					}
+					X16 = {
+					is_puppet_of = SPR
+					}
+				}
+				annex_country = {
+					target = BRA
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = COS
+					transfer_troops = yes
+				}
+				annex_country = {
+					target = X16
+					transfer_troops = yes
+				}
+			}
 			set_cosmetic_tag = USSA
 		}
 	}

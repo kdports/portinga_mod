@@ -25,6 +25,7 @@
   SPR_background_2: "The History Of Spain II"
   SPR_the_faliure_of_the_royal_family: "The Failure Of The Royal Family"
   SPR_stick_to_the_crown: "Stick To The Crown"
+  SPR_stick_to_the_crown_desc: "Dont Pick This Please"
   SPR_begin_talks_with_the_unions: "Begin Talks With The Unions"
   SPR_approach_the_working_class: "Approach The Working Class"
   SPR_expand_urban_areas: "Develop Urban Areas"
@@ -112,6 +113,7 @@
   SPR_take_costa_rica: "Take Costa Rica"
   SPR_conquer_from_within: "Conquer From Within"
   SPR_take_la_plata: "Take La Plata"
+  SPR_invite_foreign_researchers: "Invite Foreign Researchers"
 
 
   SPR_spanish_panic: "Spanish Panic"
@@ -119,3 +121,5 @@
   SPR_dont_give_in: "Don't Give In"
   SPR_united_south_america: "United Spanish South America"
   SPR_spanish_influence: "Spanish Influence"
+  SPR_consumer_goods_increase: "Consumer Goods Increase"
+  SPR_enemies_at_our_doors: "Enemies At Our Doors"

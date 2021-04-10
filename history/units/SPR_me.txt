@@ -1,0 +1,73 @@
+﻿
+units = {
+	division = {
+		name = "1. Flying Artillery"
+		location = 3816
+		division_template = "Flying Artillery"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2. Flying Artillery"
+		location = 3816
+		division_template = "Flying Artillery"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3. Flying Artillery"
+		location = 3816
+		division_template = "Flying Artillery"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4. Flying Artillery"
+		location = 3816
+		division_template = "Flying Artillery"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "5. Flying Artillery"
+		location = 3816
+		division_template = "Flying Artillery"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6. Flying Artillery"
+		location = 3816
+		division_template = "Flying Artillery"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1. Flying Artillery"
+		location = 3816
+		division_template = "Flying Artillery"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2. Flying Artillery"
+		location = 3816
+		division_template = "Flying Artillery"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1. Flying Artillery"
+		location = 3816
+		division_template = "Flying Artillery"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1. Flying Artillery"
+		location = 3816
+		division_template = "Flying Artillery"
+		start_experience_factor = 1
+		start_equipment_factor = 0.7
+	}
+}

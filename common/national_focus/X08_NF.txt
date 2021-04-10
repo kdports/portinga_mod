@@ -153,7 +153,7 @@ focus_tree = {
 				add_building_construction = {
     					type = airfield
     					level = 5
-					insant_build = yes
+					instant_build = yes
     				}
 			}
 		}
@@ -206,14 +206,17 @@ focus_tree = {
 		relative_position_id = X08_focus_dynastic_restoration
 		prerequisite = { 
 		focus = X08_focus_dynastic_restoration 
-		has_intelligence_agency = yes
+		}
+		
+		available = {
+			has_intelligence_agency = yes
 		}
 
 		available_if_capitulated = no
 
 		completion_reward = {
 			upgrade_intelligence_agency = upgrade_form_department
-			upgrade_intelligence_agency = upgrade_civilian_department
+			upgrade_intelligence_agency = upgrade_economy_civilian
 		}
 	}
 	focus = {
@@ -231,7 +234,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			upgrade_intelligence_agency = upgrade_navy_department
+			upgrade_intelligence_agency = upgrade_naval_department
 			upgrade_intelligence_agency = upgrade_army_department
 		}
 	}
@@ -297,9 +300,7 @@ focus_tree = {
 	focus = {
 		id = X08_focus_imperial_broadcasting
 		icon = GFX_focus_prc_proclaim_the_peoples_republic
-		mutually_exclusive = {
-			focus = X08_focus_dragon
-		}
+
 		x = 0
 		y = 1
 		cost = 7
@@ -320,9 +321,7 @@ focus_tree = {
 	focus = {
 		id = X08_focus_industry
 		icon = GFX_focus_prc_proclaim_the_peoples_republic
-		mutually_exclusive = {
-			focus = X08_focus_dragon
-		}
+
 		x = 0
 		y = 1
 		cost = 7
@@ -340,9 +339,7 @@ focus_tree = {
 	focus = {
 		id = X08_focus_mining_operations
 		icon = GFX_focus_prc_proclaim_the_peoples_republic
-		mutually_exclusive = {
-			focus = X08_focus_dragon
-		}
+
 		x = 0
 		y = 1
 		cost = 7
@@ -355,12 +352,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_resource = {
-    				type = oil
+				type = oil
   				amount = 15
    				state = 77
 			}
 			add_resource = {
-    				type = aluminum
+				type = aluminium
   				amount = 12
    				state = 74
 			}
@@ -369,9 +366,7 @@ focus_tree = {
 	focus = {
 		id = X08_focus_strengthen_dynasty
 		icon = GFX_focus_prc_proclaim_the_peoples_republic
-		mutually_exclusive = {
-			focus = X08_focus_dragon
-		}
+
 		x = 0
 		y = 1
 		cost = 7
@@ -383,9 +378,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = { Adds 25 mandate to Shun }
+			custom_effect_tooltip = "Adds 25 Mandate to Shun"
 			add_to_variable = {
-				mandate = 25
+				shun_mandate = 25
 			}
 		}
 	}

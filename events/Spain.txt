@@ -161,8 +161,8 @@ country_event = {
 # New Friendships <3
 country_event = { 
 	id = SPR_events.8
-	title = "New Friendships <3"
-	desc = "THIS WILL DECLARE WAR ON ETHOPIA, BEWARE"
+	title = "New Friendships"
+	desc = ""
 	picture = GFX_report_event_ast_navy
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -189,6 +189,22 @@ country_event = {
 
 	option = { # What Friends Are For
 		name = "What Friends Are For!"
+		}
+	
+
+	}
+	# news event spain wakes
+news_event = { 
+	id = SPR_events.16
+	title = "Spain Begins Rearmament"
+	desc = "Spain has drastically increaed in military and consumer output in the last couple years. In is enevtable that they will return to the world stage in some way or another."
+	picture = GFX_news_event_german_soldiers
+	fire_only_once = no
+	is_triggered_only = yes
+	major = yes
+
+	option = { # ok, i guess
+		name = "We Will Have To Keep An Eye On Them"
 		}
 	
 
@@ -358,13 +374,25 @@ country_event = {
 		}
 		SPR = {
 			add_stability = .20
-			consumer_goods_factor = -0.05
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-				add_extra_state_shared_building_slots = 2
+			add_timed_ideas = {
+			idea = SPR_consumer_goods_increase
+			days = 180
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = BRA
+						is_owned_by = X16
+						is_owned_by = COS
+					}
 				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 }
@@ -465,7 +493,73 @@ country_event = {
 		}
 	}
 }
+country_event = {
+id = SPR_events.14
+	title = "History Of Spain"
+	desc = "Our country has fallen from its past place in this world. Becuase of the constant rebelious attacks, our industrys are destoryed and country is at the brink of political disaster "
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # ok, mil
+		name = "Focus On The Military"
+		trigger = {
+			tag = SPR
+		}
+		SPR = {
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+			
+				
+			
+		}
+	}
+	option = { # ok, civ
+		name = "Rebuild Our Consumer Factorys"
+		trigger = {
+			tag = SPR
+		}
+		SPR = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+				}
+		}
+	}
+}
+country_event = {
+id = SPR_events.15
+	title = "History Of Spain II"
+	desc = "We must now decide between our King, who had lost the support of the people, or the communist rebels. We have recently invented a new weapon, one that our engineers hope can shift the tide of the Spanish Empire. We also must rule the skys as our step up from other countrys. "
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { # wonderful news
+		name = "We Will Overcome This"
+		trigger = {
+			tag = SPR
+		}
+		SPR = {
+			hidden_effect = {
+				load_oob = "SPR_me"
+			}
+				custom_effect_tooltip = "10 Units Of Flying Artillery Will Spawn In [594.GetName]"
+				
+				
+			
+				
+			
+		}
+	}
+	
+}
 
 
 	
 # hi drew
+# hi

@@ -75,7 +75,7 @@ sub_units = {
 	}
 	
 	flying_artillery_brigade = {
-		sprite = artillery
+		sprite = "artillery"
 		map_icon_category = infantry
 		priority = 1198
 		ai_priority = 100
