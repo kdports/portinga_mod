@@ -144,14 +144,14 @@ focus_tree = {
 		completion_reward = {
 			77 = {
 				add_building_construction = {
-    					type = airfield
+    					type = air_base
     					level = 5
 					instant_build = yes
     				}
 			}
 			74 = {
 				add_building_construction = {
-    					type = airfield
+    					type = air_base
     					level = 5
 					instant_build = yes
     				}
@@ -333,7 +333,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_offsite_building = { type = civilian_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 2 }
 		}
 	}
 	focus = {
