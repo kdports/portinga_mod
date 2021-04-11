@@ -5,6 +5,7 @@ khodynt_coup_cat = {
 			tag = X13
 		}
 		available = {
+			always = no
 		}
 		activation = {
 			tag = X13

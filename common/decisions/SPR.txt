@@ -60,3 +60,89 @@ prestige_counter = {
 		}
 	}
 }
+SPR_spread_our_influence = {
+	SPR_french_commune = {
+		allowed = {
+			tag = SPR
+			# always = no
+		}
+		available = {
+			has_completed_focus = SPR_spread_the_revolution
+		}
+		visible = {
+			tag = SPR 
+		
+		}
+		
+		fire_only_once = yes
+		cost = 75
+		complete_effect = {
+			FRA = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+					}
+					add_timed_idea = {
+					idea = SPR_spanish_influence
+					days = 180
+					}
+				}
+			}
+		}
+	SPR_spanish_nelson_mandela = {
+		allowed = {
+			tag = SPR
+			# always = no
+		}
+		available = {
+			has_completed_focus = SPR_spread_the_revolution
+		}
+		visible = {
+			# tag = SPR 
+		
+		}
+		
+		fire_only_once = yes
+		cost = 75
+		complete_effect = {
+			ETH = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+					}
+					add_timed_idea = {
+					idea = SPR_spanish_influence
+					days = 180
+					}
+				}
+			}
+		}
+		SPR_commies_in_the_government = {
+		allowed = {
+			tag = SPR
+			# always = no
+		}
+		available = {
+			has_completed_focus = SPR_spread_the_revolution
+		}
+		visible = {
+			# tag = SPR 
+		
+		}
+		
+		fire_only_once = yes
+		cost = 75
+		complete_effect = {
+			ENG = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+					}
+					add_timed_idea = {
+					idea = SPR_spanish_influence
+					days = 180
+					}
+				}
+			}
+		}
+}

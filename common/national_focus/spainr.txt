@@ -224,7 +224,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_rebuild_the_civil_service }
 		x = -1
 		y = 1
-		relative_position_id = SPR_correct_royal_misgivings
+		relative_position_id = SPR_rebuild_the_civil_service
 
 		cost = 7
 
@@ -2124,6 +2124,7 @@ focus_tree = {
 				days = 180
 			}
 			add_political_power = 75
+			activate_decision = SPR_french_commune
 		}
 	}
 

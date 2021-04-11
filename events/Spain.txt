@@ -203,12 +203,29 @@ news_event = {
 	is_triggered_only = yes
 	major = yes
 
-	option = { # ok, i guess
-		name = "We Will Have To Keep An Eye On Them"
+	option = { # spanish answer
+		trigger = {
+		tag = SPR
+		}
+		
+		name = "Time To Return Spain To Its Rightful Place"
 		}
 	
 
+	
+	option = { # ok i guess
+		trigger = {
+		
+		NOT = {
+			tag = SPR
+			}
+		}
+		name = "We Will Have To Keep An Eye On Them"
+		
+	
 	}
+}
+	
 	
 
 	

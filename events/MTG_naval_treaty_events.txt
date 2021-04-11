@@ -229,11 +229,15 @@ country_event = {
 				factor = 0.25
 			}
 		}
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = FROM
-		}
-		
+		if = {
+			limit = {
+				is_ai = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FROM
+			}
+		}	
 	}
 	option = {# fine
 		name = MTG_naval_treaty.6.b 
