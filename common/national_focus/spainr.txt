@@ -1040,7 +1040,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_political_power = 50
+			add_stability = -0.10
+			news_event = SPR_events.17
 		}
 	}
 
@@ -1223,7 +1225,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Miguel De Leon"
 				desc = "Socialist Leader"
-				picture = "Portriats_Italy_Generic_3"
+				picture = "portrait_VAT_Boniface_II.dds"
 				expire = "1942.5.2"
 				ideology = leninism
 				traits = {
@@ -2524,9 +2526,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-				country_event = {
-					id = SPR_events.11
-				}
+				country_event = SPR_events.11 
+					 
+				
 		}
 	}
 

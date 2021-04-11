@@ -39,6 +39,34 @@ country_event = {
 		}
 	
 	}
+	# Royal Failure
+news_event = {
+	id = SPR_events.17
+	title = "Spain Abandons The Monarchy"
+	desc = "The Spanish people said enough yesterday as rioters stormed the palace in Madrid. There are unknownm casulaites but both the King and Queen are missing."
+	picture = GFX_news_event_eng_decolonization
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Interesting
+		name = "What Had To Be Done"
+			trigger = { 
+			tag = SPR
+			}
+		}
+	option = { # Interesting
+		trigger = {
+			NOT = {
+			tag = SPR
+			}
+		}
+		name = "Interesting"
+			
+		}
+		}
+	
+
+	
 	
 # Ethopian Relations
 country_event = {
