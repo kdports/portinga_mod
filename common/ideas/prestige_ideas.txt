@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		max_prestige = {
-			picture = GFX_idea_chi_war_of_resistance3
+			picture = chi_war_of_resistance3
 
 			allowed = {
 				always = no
@@ -21,7 +21,7 @@ ideas = {
 			}
 		}
 		high_prestige = {
-			picture = GFX_idea_chi_war_of_resistance3
+			picture = chi_war_of_resistance3
 
 			allowed = {
 				always = no
@@ -41,7 +41,7 @@ ideas = {
 			}
 		}
 		med_prestige = {
-			picture = GFX_idea_chi_war_of_resistance3
+			picture = chi_war_of_resistance3
 
 			allowed = {
 				always = no
@@ -60,7 +60,7 @@ ideas = {
 			}
 		}
 		low_prestige = {
-			picture = GFX_idea_chi_war_of_resistance3
+			picture = chi_war_of_resistance3
 
 			allowed = {
 				always = no
@@ -81,7 +81,7 @@ ideas = {
 			}
 		}
 		disaster_prestige = {
-			picture = GFX_idea_chi_war_of_resistance3
+			picture = chi_war_of_resistance3
 
 			allowed = {
 				always = no

@@ -35,7 +35,7 @@ ita_fra_war = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 130
+		days_mission_timeout = 180
 		timeout_effect = {
 			X14 = {
 				declare_war_on = {
@@ -144,6 +144,12 @@ germany_wars = {
 		selectable_mission = no
 		days_mission_timeout = 100
 		timeout_effect = {
+			add_stability = -0.2
+			add_war_support = -0.3
+			subtract_from_variable = {
+				country_prestige_num = 25
+			}
+			custom_effect_tooltip = 3_FRA_pres_tt
 			white_peace = WGR
 			WGR = {
 				clr_country_flag = WGR_defend_wallonie
@@ -195,7 +201,10 @@ germany_wars = {
 		available = {
 			has_war = no
 			country_exists = WGR
-			date > 1939.4.1
+			date > 1938.11.11
+		}
+		ai_will_do = {
+			base = 100
 		}
 		war_with_on_complete = WGR
 		remove_effect = {

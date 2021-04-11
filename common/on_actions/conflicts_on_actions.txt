@@ -1,7 +1,7 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			YUN = {
+			FRA = {
 				news_event = { # Iraqi War
 					id = kev_mideast.1
 					days = 165
