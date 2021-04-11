@@ -215,6 +215,7 @@
   KEV_X14_getting_subsidies:0 "Getting Subsidies"
   KEV_FRA_more_men:0 "All Shall Do Their Duty"
   FWA_racial_divide:0 "Entrenched Racial Divide"
+  FRA_grand_empire: "The Grand Empire"
 
   # Tooltips
   1_FRA_pres_tt:0 "Adds §G5 Prestige§! to your country's total."
@@ -235,6 +236,14 @@
   1_FRA_crisis_tt:0 "Unlocks §Ydecisions§! to deal with this crisis."
 
   1_FRA_nukes_tt:0 "We'll ask around to see if anyone wants to combine their efforts."
+
+  # Decisions
+  countdown_to_war_ita: "Italy Prepares for War"
+  ita_fra_war: "The Last Crusade"
+  countdown_to_peace_ita: "The Offensive Stalls"
+  countdown_to_loss_ita: "The Italians Hold"
+  germany_wars: "The German Unification Wars"
+  countdown_to_peace_fra_wgr: "A Truce is Signed"
 
   # Flags
   X14_wants_piedmont:0 "Italy has declared their ambitions!"

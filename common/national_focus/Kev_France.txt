@@ -3702,7 +3702,7 @@ focus_tree = {
 			send_equipment = {
 				equipment = fighter_equipment
 				amount = 100
-				target = GER
+				target = WGR
 			}
 			WGR = {
 				add_offsite_building = { type = arms_factory level = 2 }

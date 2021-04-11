@@ -13,3 +13,18 @@ news_event = {
 		name = "Interesting"
 	}
 }
+
+country_event = {
+	id = crisis.2
+	title = "[Root.GetName] Agrees to Our Demand"
+	desc = "[Root.GetName] has agreed to our demands in the crisis negotiations. However, the crisis is still ongoing."
+	picture = news_event_generic_sign_treaty1
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Good."
+	}
+}

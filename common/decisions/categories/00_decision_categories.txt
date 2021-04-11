@@ -15,7 +15,7 @@ propaganda_efforts = {
 MTG_naval_treaties = {
 	picture = GFX_decision_cat_picture_naval_treaties
 	allowed = {
-		has_dlc = "Man the Guns"
+		always = no
 	}
 	visible = {
 		OR = {
