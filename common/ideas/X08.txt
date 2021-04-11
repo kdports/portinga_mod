@@ -46,6 +46,15 @@ ideas = {
 				operative_slot = 1
 			}
 		}
+		X08_IDEA_MANDATE_OF_HEAVEN = {
+			picture = ast_abandon_the_westminster_system
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.5
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+			}
+		}
 	}
 	political_advisor = {
 		X08_absolutist_advisor = {
