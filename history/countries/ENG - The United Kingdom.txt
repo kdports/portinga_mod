@@ -205,7 +205,6 @@ give_guarantee = X10
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	add_ideas = MTG_naval_treaty_adherent
 }
 add_ideas = {
 	great_power
