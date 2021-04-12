@@ -3325,6 +3325,48 @@ focus_tree = {
 				type = annex_everything
 				target = BRA
 			}
+			country_event = 
+		}
+	}
+	focus = {
+		id = SPR_finish_the_job
+		icon = GFX_focus_por_recover_latin_america
+		prerequisite = { focus = SPR_go_go_go }
+
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
+
+		relative_position_id = SPR_go_go_go
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = X16
+			}
+			add_autonomy_score = {
+				value = 10000
+				localization = SPR_finish_the_job
+			}
 		}
 	}
 

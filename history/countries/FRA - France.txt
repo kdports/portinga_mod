@@ -5,7 +5,7 @@ oob = "FRA_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FRA_1936_naval_mtg"
-	else = { 
+	else = {
 		set_naval_oob = "FRA_1936_naval_legacy"
 	}
 }
@@ -93,7 +93,7 @@ if = {
 		target = FWA
 		autonomous_state = autonomy_puppet
 		freedom_level = 0.009
-	}	
+	}
     else = {
     }
 }
@@ -108,7 +108,7 @@ set_politics = {
     ruling_party = democratic
     last_election = "1932.10.19"
     election_frequency = 48
-    elections_allowed = yes
+    elections_allowed = no
 }
 
 set_popularities = {
@@ -202,6 +202,7 @@ add_ideas = {
 	low_economic_mobilisation
 	export_focus
 	culture_french
+	FRA_grand_empire
 }
 set_stability = 0.60
 set_war_support = 0.60

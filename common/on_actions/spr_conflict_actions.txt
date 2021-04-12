@@ -1,0 +1,22 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = BRA } # If Iraq capitulates
+					FROM = { 
+						OR = {
+							tag = SPR 
+						}
+					} # To Turkestan or Russia or Khodynt
+				}
+				SPR = {
+				country_event = {
+				id = SPR_events.17
+				days = 15
+				}
+				}
+				}
+			}
+		}
+	}

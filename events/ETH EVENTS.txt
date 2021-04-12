@@ -33,6 +33,10 @@ country_event = {
 		picture = GFX_report_event_quit_india_movement
 		fire_only_once = no
 		is_triggered_only = no
+
+		trigger = {
+			tag = ETH
+		}
 		mean_time_to_happen = {
 			days = 900
 			modifier = {
@@ -134,7 +138,7 @@ country_event = {
 		add_stability = 0.1
 		add_political_power = 100
 	}
-	option = { 
+	option = {
 		name = ethiopia.6.3
 		add_stability = 0.05
 		add_to_variable = {

@@ -64,6 +64,33 @@ news_event = {
 			
 		}
 		}
+		# Costa Rica Surrenders
+country_event = {
+	id = SPR_events.18
+	title = "Costa Rican Diplomats"
+	desc = "The Costa Rican abassador has recently reached out to us regarding our recent victory over Brazil. They hope to avoid the tragic outcome of Brazil, and are offering their support."
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Interesting
+		name = "Their Smart"
+			 = COS
+			add_autonomy_score = {
+				value = 1000
+				localization = SPR_finish_the_job
+				}
+		}
+	option = { # Interesting
+		
+	create_wargoal = {
+				type = annex_everything
+				target = COS
+			}
+		name = "Fools"
+			
+		}
+		}
 	
 
 	
