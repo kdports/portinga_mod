@@ -3363,9 +3363,9 @@ focus_tree = {
 				type = annex_everything
 				target = X16
 			}
-			add_autonomy_score = {
-				value = 10000
-				localization = SPR_finish_the_job
+			release_autonomy = {
+				target = COS
+				autonomy_state = autonomy_supervised_state``
 			}
 		}
 	}
