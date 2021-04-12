@@ -45,7 +45,7 @@ news_event = {
 	title = "Spain Abandons The Monarchy"
 	desc = "The Spanish people said enough yesterday as rioters stormed the palace in Madrid. There are unknownm casulaites but both the King and Queen are missing."
 	picture = GFX_news_event_eng_decolonization
-	fire_only_once = yes
+	fire_only_once = no
 	is_triggered_only = yes
 	major = yes
 
