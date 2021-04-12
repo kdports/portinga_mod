@@ -97,3 +97,19 @@ news_event = {
 		custom_effect_tooltip = tur_hungary_event
 	}
 }
+
+# New Master Chosen!
+news_event = {
+	id = kev_turkey.3
+	title = kev_turkey.3.t
+	desc = kev_turkey.3.d
+	picture = GFX_news_event_generic_sign_treaty2
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = { #Good for them
+		name = kev_turkey.3.a
+	}
+}

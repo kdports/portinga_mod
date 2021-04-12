@@ -55,3 +55,8 @@
   kev_turkey.2.t:0 "The Treaty On The Danube"
   kev_turkey.2.d:0 "Shocking news from the Balkans today, as delegates from Hungary’s previously illegal Congress of Independence have announced a landmark deal with the Sublime Porte. The deal, reached after months of quiet negotiations with President Halil Bey, guarantees near-autonomous self rule for the various European territories of the Turkish Republic in exchange for serious economic reperations and pacts of mutual nonaggression. However, despite the treaty's insistance on the supremacy of the Sublime Porte in these new territories, the various great powers have already begun to exert influence over them. The Balkans, it seems, is now the center of a worldwide scramble for influence."
   kev_turkey.2.a:0 "Now, the sharks are circling."
+
+  kev_turkey.3.t: "Blank Declares Independence!"
+  kev_turkey.3.d: "They had var:global.support_winner [?var:global.support_winner] target index with weight var:global.winner_score [?var:global.winner_score]"
+  kev_turkey.3.a: "Next time."
+
