@@ -4,13 +4,159 @@ country_event = {
 		id = shun.1
 		title = shun.1.t
 		desc = shun.1.d
-		picture = GFX_report_event_por_estado_novo
+		picture = GFX_report_event_german_troops
 		fire_only_once = yes
 		is_triggered_only = yes
 
 		option = {
 			name = shun.1.1
-			
+			kill_ideology_leader = democratic
+			set_politics = {
+				ruling_party = absolutist
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+			add_popularity = {
+				ideology = absolutist
+				popularity = 0.2
+			}
+		}
+	}
+country_event = {
+		id = shun.2
+		title = shun.2.t
+		desc = shun.2.d
+		picture = GFX_report_event_czech_soldiers_02
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = shun.2.mandate
+			add_to_variable = {
+				shun_mandate = 10
+			}
+		}
+		option = {
+			name = shun.2.pp
+			add_political_power = 10
+		}
+	}
+	country_event = {
+		id = shun.3
+		title = shun.3.t
+		desc = shun.3.d
+		picture = GFX_report_event_hitler_china
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = shun.3.mandate
+			add_to_variable = {
+				shun_mandate = 10
+			}
+		}
+		option = {
+			name = shun.3.arms_factory
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+	}
+	country_event = {
+		id = shun.4
+		title = shun.4.t
+		desc = shun.4.d
+		picture = GFX_report_event_hitler_china
+		fire_only_once = yes
+		is_triggered_only = no
+		mean_time_to_happen = {
+		days = 150
+		}
+
+		option = {
+			name = shun.4.mandate
+			add_to_variable = {
+				shun_mandate = 10
+			}
+		}
+		option = {
+			name = shun.4.civ_factory
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+	country_event = {
+		id = shun.5
+		title = shun.5.t
+		desc = shun.5.d
+		picture = GFX_report_event_hitler_china
+		fire_only_once = yes
+		is_triggered_only = no
+		mean_time_to_happen = {
+		days = 400
+		}
+
+		option = {
+			name = shun.5.mandate
+			add_to_variable = {
+				shun_mandate = 10
+			}
+			add_stability = -0.1
+		}
+		option = {
+			name = shun.5.nothing
+		}
+	}
+	country_event = {
+		id = shun.6
+		title = shun.6.t
+		desc = shun.6.d
+		picture = GFX_report_event_hitler_china
+		fire_only_once = yes
+		is_triggered_only = no
+		trigger = {
+			original_tag = X08
+			AND = {
+				date > 1937.7.20
+			}
+		}
+
+		option = {
+			name = shun.6.mandate
+			add_to_variable = {
+				shun_mandate = 10
+			}
+			add_stability = -0.05
+		}
+		option = {
+			name = shun.6.stability
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	country_event = {
+		id = shun.7
+		title = shun.7.t
+		desc = shun.7.d
+		picture = GFX_report_event_hitler_china
+		fire_only_once = yes
+		is_triggered_only = no
+		trigger = {
+			original_tag = X08
+			AND = {
+				date > 1938.1.3
+			}
+		}
+
+		option = {
+			name = shun.7.mandate
+			add_to_variable = {
+				shun_mandate = 20
+			}
+			add_stability = -0.15
+		}
+		option = {
+			name = shun.7.stability
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 country_event = {

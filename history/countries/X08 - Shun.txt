@@ -140,7 +140,7 @@ create_country_leader = {
     }
 	}
 create_country_leader = {
-    name = "Xie_Shun"
+    name = "Xie Shun"
     desc = "POLITICS_XIE_SHUN_DESC"
     picture = "GFX_Portrait_China_weng_wenhao"
     expire = "1965.1.1"
