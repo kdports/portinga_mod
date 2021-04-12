@@ -12,10 +12,10 @@ on_actions = {
 				}
 				SPR = {
 				country_event = {
-				id = SPR_events.17
-				days = 15
+				id = SPR_events.18
+				days = 0
 				}
-				}
+			}
 				}
 			}
 		}
