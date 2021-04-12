@@ -22,9 +22,9 @@ country_event = {
 				}
 			}
 		}
-	
 
-	option = { # Joe Biden?????? 
+
+	option = { # Joe Biden??????
 		name = "Joe Biden?????"
 		FRA = {
 			add_equipment_to_stockpile = {
@@ -37,7 +37,7 @@ country_event = {
 			}
 		}
 		}
-	
+
 	}
 	# Royal Failure
 news_event = {
@@ -47,24 +47,24 @@ news_event = {
 	picture = GFX_news_event_eng_decolonization
 	fire_only_once = yes
 	is_triggered_only = yes
+	major = yes
 
 	option = { # Interesting
 		name = "What Had To Be Done"
-			trigger = { 
+		trigger = {
 			tag = SPR
-			}
 		}
+	}
 	option = { # Interesting
 		trigger = {
 			NOT = {
-			tag = SPR
+				tag = SPR
 			}
 		}
 		name = "Interesting"
-			
-		}
-		}
-		# Costa Rica Surrenders
+	}
+}
+# Costa Rica Surrenders
 country_event = {
 	id = SPR_events.18
 	title = "Costa Rican Diplomats"
@@ -76,22 +76,22 @@ country_event = {
 	option = { # Interesting
 		name = "Their Smart"
 			puppet = COS
-			
+
 		}
 	option = { # Interesting
-		
+
 	create_wargoal = {
 				type = annex_everything
 				target = COS
 			}
 		name = "Fools"
-			
-		}
-		}
-	
 
-	
-	
+		}
+		}
+
+
+
+
 # Ethopian Relations
 country_event = {
 	id = SPR_events.2
@@ -114,9 +114,9 @@ country_event = {
 			}
 		}
 	}
-	
 
-	option = { # Joe Biden?????? 
+
+	option = { # Joe Biden??????
 		name = "Joe Boden??????"
 		ETH = {
 			add_equipment_to_stockpile = {
@@ -131,7 +131,7 @@ country_event = {
 	}
 
 }
-	
+
 # Anglo Relations
 country_event = {
 	id = SPR_events.3
@@ -154,9 +154,9 @@ country_event = {
 				}
 			}
 		}
-	
 
-	option = { # Joe Biden?????? 
+
+	option = { # Joe Biden??????
 		name = "Joe Bident???????"
 		ENG = {
 			add_equipment_to_stockpile = {
@@ -171,9 +171,9 @@ country_event = {
 	}
 
 }
-	
+
 # New Friendships <3
-country_event = { 
+country_event = {
 	id = SPR_events.4
 	title = "New Friendships <3"
 	desc = "THIS WILL DECLARE WAR ON ETHOPIA, BEWARE"
@@ -190,9 +190,9 @@ country_event = {
 		}
 	}
 }
-	
+
 # New Friendships <3
-country_event = { 
+country_event = {
 	id = SPR_events.7
 	title = "New Friendships <3"
 	desc = "THIS WILL DECLARE WAR ON ETHOPIA, BEWARE"
@@ -209,9 +209,9 @@ country_event = {
 		}
 	}
 }
-	
+
 # New Friendships <3
-country_event = { 
+country_event = {
 	id = SPR_events.8
 	title = "New Friendships"
 	desc = ""
@@ -228,10 +228,10 @@ country_event = {
 		}
 	}
 }
-	
+
 
 # Gift From Spain
-country_event = { 
+country_event = {
 	id = SPR_events.5
 	title = "Gift From Spain!"
 	desc = "750 infantry equipment was devilired to us last tuesday, hi riely."
@@ -242,11 +242,11 @@ country_event = {
 	option = { # What Friends Are For
 		name = "What Friends Are For!"
 		}
-	
+
 
 	}
 	# news event spain wakes
-news_event = { 
+news_event = {
 	id = SPR_events.16
 	title = "Spain Begins Rearmament"
 	desc = "Spain has drastically increaed in military and consumer output in the last couple years. In is enevtable that they will return to the world stage in some way or another."
@@ -259,31 +259,31 @@ news_event = {
 		trigger = {
 		tag = SPR
 		}
-		
+
 		name = "Time To Return Spain To Its Rightful Place"
 		}
-	
 
-	
+
+
 	option = { # ok i guess
 		trigger = {
-		
+
 		NOT = {
 			tag = SPR
 			}
 		}
 		name = "We Will Have To Keep An Eye On Them"
-		
-	
+
+
 	}
 }
-	
-	
 
-	
+
+
+
 
 # Military Access With Spain
-country_event = { 
+country_event = {
 	id = SPR_events.6
 	title = "Offer From Spain"
 	desc = "Spain has offered military access both from and to us"
@@ -298,8 +298,8 @@ country_event = {
 			give_military_access = PREV
 			}
 		}
-	
-	
+
+
 	option = { # No
 		name = "Spain is Sus, not quite yet hombre espeluznante"
 		}
@@ -331,9 +331,9 @@ country_event = {
 				amount = 2000
 				producer = FRA
 				}
-			
-				
-			
+
+
+
 		}
 	}
 	option = { # Ok
@@ -356,7 +356,7 @@ country_event = {
 		}
 	}
 }
-	
+
 country_event = {
 	id = SPR_events.10
 	title = "Defeat"
@@ -374,14 +374,14 @@ country_event = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -2750
-				
+
 				}
 				add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = -1500
-				
+
 				}
-			
+
 		}
 	}
 	option = { # Ok
@@ -393,14 +393,14 @@ country_event = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -2750
-				
+
 				}
 				add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = -1500
-				
+
 				}
-			
+
 		}
 	}
 }
@@ -431,9 +431,9 @@ country_event = {
 				}
 			add_war_support = .10
 			add_manpower = 60000
-			
-				
-			
+
+
+
 		}
 	}
 	option = { # protect
@@ -490,9 +490,9 @@ country_event = {
 				amount = 1000
 				producer = BRA
 				}
-			
-				
-			
+
+
+
 		}
 	}
 	option = { # Ok
@@ -532,14 +532,14 @@ country_event = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -1750
-				
+
 				}
 				add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = -750
-				
+
 				}
-			
+
 		}
 	}
 	option = { # Ok
@@ -551,14 +551,14 @@ country_event = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -1750
-				
+
 				}
 				add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = -750
-				
+
 				}
-			
+
 		}
 	}
 }
@@ -619,17 +619,17 @@ id = SPR_events.15
 				load_oob = "SPR_me"
 			}
 				custom_effect_tooltip = "10 Units Of Flying Artillery Will Spawn In [594.GetName]"
-				
-				
-			
-				
-			
+
+
+
+
+
 		}
 	}
-	
+
 }
 
 
-	
+
 # hi drew
 # hi
