@@ -6,6 +6,7 @@ ideas = {
 			}
 		}
 		slavery_idea_1a = {
+			picture = service_by_requirement
 			modifier = {
 				production_speed_buildings_factor = 0.2
 				research_speed_factor = -0.2
@@ -15,7 +16,7 @@ ideas = {
 		}
 		ETH_conservative_army_idea_1 = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ETH_conservative_army_idea_1"}
-			picture = ETH_conservative_army_idea
+			picture = generic_infantry_equipment_manufacturer_2
 			modifier = {
 				experience_gain_factor = -0.1
 			}
@@ -25,6 +26,7 @@ ideas = {
 		}
 
 		slavery_idea_1b = {
+		picture = hol_expand_the_colonial_army
 			modifier = {
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = -0.1
@@ -34,6 +36,7 @@ ideas = {
 
 
 		slavery_idea_1c = {
+		picture = hol_de_vaarplicht
 			modifier = {
 				production_speed_buildings_factor = 0.25
 				research_speed_factor = -0.2
@@ -43,6 +46,7 @@ ideas = {
 		}
 
 		slavery_idea_1d = {
+		picture = SPA_national_recovery
 			modifier = {
 				research_speed_factor = -0.07
 				conscription = 0.005
@@ -50,6 +54,7 @@ ideas = {
 		}
 
 		slavery_idea_1e = {
+		picture = por_volunteers_in_the_war2
 			modifier = {
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = -0.1
@@ -57,6 +62,7 @@ ideas = {
 			}
 		}
 		slavery_idea_1f = {
+		picture = tur_tuz_golu_training_facility
 			modifier = {
 				production_speed_buildings_factor = 0.25
 				research_speed_factor = -0.2
@@ -73,24 +79,28 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.15
 				industry_free_repair_factor = 0.1
 			}
+			picture = bul_national_industry
 		}
 		ETH_IDEA_EDUCATED_WORKFORCE = {
 			modifier = {
 				research_speed_factor = 0.05
 				conscription = 0.005
 			}
+			picture = gre_royal_hellenic_naval_shipyard
 		}
 		ETH_IDEA_HARD_WORKERS = {
 			modifier = {
 				production_speed_buildings_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.15
 			}
+			picture = por_volunteers_in_the_war2
 		}
 		ETH_IDEA_NONCORE_WORKFORCE = {
 			modifier = {
 				conscription = 0.015
 				production_speed_arms_factory_factor = 0.15
 			}
+			picture = SPA_la_division_azul
 		}
 		ETH_IDEA_ZULU_UPRISING = {
 			modifier = {
@@ -98,54 +108,64 @@ ideas = {
 				stability_factor = -0.10
 				local_resources_factor = -0.15
 			}
+			picture = chi_war_of_resistance3
 		}
 		ETH_IDEA_RESISTANCE_DEFENSE = {
 			modifier = {
 				compliance_gain = 0.5
 			}
+			picture = chi_war_of_resistance2
 		}
 		ETH_IDEA_EXPANDED_SPYFORCE = {
 			modifier = {
 				operative_slot = 1
 			}
+			picture = generic_spy_coup
 		}
 		ETH_IDEA_SKILLED_OPERATIVES = {
 			modifier = {
 				resistance_damage_to_garrison = -0.1
 				intel_network_gain = 0.7
 			}
+			picture = generic_spy_political
 		}
 		ETH_IMPERIAL_DRIFT = {
 			modifier = {
 				absolutist_drift = 0.20
 			}
+			picture = generic_intel_bonus
 		}
 		ETH_POWER_VACUUM = {
 			modifier = {
-				stability_factor = -0.10
+				stability_factor = -0.50
 			}
+			picture = generic_volunteer_expedition_bonus
 		}
 		ETH_DISJOINTED_GOVERNMENT = {
 			modifier = {
 				political_power_gain = -0.8
 			}
+			picture = generic_deal_with_the_devil2
 		}
 		ETH_IDEA_GLORY_TO_EMPEROR = {
 			modifier = {
 				conscription = 0.02
 				army_core_defence_factor = 0.1
 			}
+			picture = HUN_hungarian_monarchy
 		}
 		ETH_IDEA_ESTATE_LOYALTY = {
 			modifier = {
 				research_speed_factor = 0.1
 			}
+			picture = ROM_king_carol_ii_hedonist
 		}
 		ETH_IDEA_ESTATE_LOYALTY2 = {
 			modifier = {
 				research_speed_factor = 0.1
 				production_speed_buildings_factor = 0.1
 			}
+			picture = ROM_iron_guard
 		}
 		ETH_IDEA_ESTATE_LOYALTY3 = {
 			modifier = {
@@ -153,21 +173,25 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				conscription_factor = 0.2
 			}
+			picture = usa_desegregation_2
 		}
 		ETH_IDEA_INTERNAL_FOCUS = {
 			modifier = {
 				production_speed_buildings_factor = 0.1
 			}
+			picture = general_electric
 		}
 		ETH_IDEA_BREAD_WINE = {
 			modifier = {
 				MONTHLY_POPULATION = 0.3
 			}
+			picture = chi_hyper_inflation2
 		}
 		ETH_NEW_TECH = {
 			modifier = {
 				research_speed_factor = 0.1
 			}
+			picture = jap_supremacy_of_technology
 		}
 		ETH_IDEA_PREPARE_WAR = {
 			modifier = {
@@ -175,18 +199,21 @@ ideas = {
 				planning_speed = 0.10
 				max_planning = 0.15
 			}
+			picture = low_economic_mobilisation
 		}
 		ETH_IDEA_REARM = {
 			modifier = {
 				industrial_capacity_factory = 0.15
 				production_factory_max_efficiency_factor = 0.1
 			}
+			picture = usa_desegregation_1
 		}
 		ETH_hotellockout = {
 			picture = trotskyite_plot
 			modifier = {
 				consumer_goods_factor = 0.2
 			}
+			picture = albert_kesselring
 		}
 
 		ETH_idea_agricultural_production_board = {
@@ -195,11 +222,13 @@ ideas = {
 				monthly_population = 0.1
 				out_of_supply_factor = -0.2
 			}
+			picture = office_of_strategic_services
 		}
 		ETH_kth_idea = {
 			modifier = {
 				research_speed_factor = 0.05
 			}
+			picture = ast_all_in
 		}
 
 		ETH_landstormen_idea = {
@@ -208,6 +237,7 @@ ideas = {
 				conscription_factor = 0.15
 				conscription = 0.01
 			}
+			picture = raj_all_india_forward_bloc_communism
 		}
 
 		ETH_landstormen_idea_1 = {
