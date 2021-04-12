@@ -5,6 +5,9 @@ tur_freedom_cat = {
 			NOT = {
 				has_global_flag = succession_ongoing
 			}
+			any_country = {
+				is_puppet_of = TUR
+			}
 		}
 
 		target_trigger = {
@@ -20,7 +23,12 @@ tur_freedom_cat = {
 		complete_effect = {
 			set_global_flag = succession_ongoing
 			FROM = {
-				set_country_flag = breaking_free
+				if = {
+					limit = {
+						is_puppet_of = TUR
+					}
+					set_country_flag = breaking_free
+				}
 			}
 			ROOT = {
 				set_variable = {
@@ -28,13 +36,53 @@ tur_freedom_cat = {
 				}
 			}
 			custom_effect_tooltip = freesupport_start
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					activate_targeted_decision = {
+						target = FROM
+						decision = countdown_to_breakoff
+					}
+					activate_targeted_decision = {
+						target = FROM
+						decision = support_freedom_pp
+					}
+					activate_targeted_decision = {
+						target = FROM
+						decision = support_freedom_cmp
+					}
+					activate_targeted_decision = {
+						target = FROM
+						decision = support_freedom_guns
+					}
+					activate_targeted_decision = {
+						target = FROM
+						decision = support_freedom_planes
+					}
+					activate_targeted_decision = {
+						target = FROM
+						decision = support_freedom_prestige
+					}
+					activate_targeted_decision = {
+						target = FROM
+						decision = freedom_demand_prestige
+					}
+				}
+			}
 		}
 	}
 
 	# Send Political Power
 	support_freedom_pp = {
+		allowed = {
+			always = no
+		}
 		visible = {
-			has_global_flag = succession_ongoing
+			FROM = {
+				has_country_flag = breaking_free
+			}
 		}
 
 		target_trigger = {
@@ -48,17 +96,26 @@ tur_freedom_cat = {
 		fire_only_once = no
 		days_remove = 40
 		remove_effect = {
-			add_to_variable = {
-				freesupport = 15
+			if = {
+				limit = {
+					FROM = {
+						has_country_flag = breaking_free
+					}
+				}
+				add_to_variable = {
+					freesupport = 0.15
+				}
+				custom_effect_tooltip = 1_TUR_sup_tt
 			}
-			custom_effect_tooltip = 1_TUR_sup_tt
 		}
 	}
 
 	# Send Command Power
 	support_freedom_cmp = {
+		allowed = {
+			always = no
+		}
 		visible = {
-			has_global_flag = succession_ongoing
 		}
 
 		target_trigger = {
@@ -79,17 +136,26 @@ tur_freedom_cat = {
 			add_command_power = -25
 		}
 		remove_effect = {
-			add_to_variable = {
-				freesupport = 10
+			if = {
+				limit = {
+					FROM = {
+						has_country_flag = breaking_free
+					}
+				}
+				add_to_variable = {
+					freesupport = 0.10
+				}
+				custom_effect_tooltip = 2_TUR_sup_tt
 			}
-			custom_effect_tooltip = 2_TUR_sup_tt
 		}
 	}
 
 	# Send Guns
 	support_freedom_guns = {
+		allowed = {
+			always = no
+		}
 		visible = {
-			has_global_flag = succession_ongoing
 		}
 
 		target_trigger = {
@@ -101,7 +167,7 @@ tur_freedom_cat = {
 		cost = 0
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 999
+				infantry_equipment > 499
 			}
 		}
 
@@ -113,22 +179,31 @@ tur_freedom_cat = {
 		complete_effect = {
 			send_equipment = {
 				equipment = infantry_equipment
-				amount = 1000
+				amount = 500
 				target = FROM
 			}
 		}
 		remove_effect = {
-			add_to_variable = {
-				freesupport = 10
+			if = {
+				limit = {
+					FROM = {
+						has_country_flag = breaking_free
+					}
+				}
+				add_to_variable = {
+					freesupport = 0.10
+				}
+				custom_effect_tooltip = 2_TUR_sup_tt
 			}
-			custom_effect_tooltip = 2_TUR_sup_tt
 		}
 	}
 
 	# Send Planes
 	support_freedom_planes = {
+		allowed = {
+			always = no
+		}
 		visible = {
-			has_global_flag = succession_ongoing
 		}
 
 		target_trigger = {
@@ -140,7 +215,7 @@ tur_freedom_cat = {
 		cost = 0
 		custom_cost_trigger = {
 			has_equipment = {
-				fighter_equipment > 99
+				fighter_equipment > 49
 			}
 		}
 
@@ -152,22 +227,31 @@ tur_freedom_cat = {
 		complete_effect = {
 			send_equipment = {
 				equipment = fighter_equipment
-				amount = 100
+				amount = 50
 				target = FROM
 			}
 		}
 		remove_effect = {
-			add_to_variable = {
-				freesupport = 10
+			if = {
+				limit = {
+					FROM = {
+						has_country_flag = breaking_free
+					}
+				}
+				add_to_variable = {
+					freesupport = 0.10
+				}
+				custom_effect_tooltip = 2_TUR_sup_tt
 			}
-			custom_effect_tooltip = 2_TUR_sup_tt
 		}
 	}
 
 	# Send Prestige
 	support_freedom_prestige = {
+		allowed = {
+			always = no
+		}
 		visible = {
-			has_global_flag = succession_ongoing
 		}
 
 		target_trigger = {
@@ -195,17 +279,26 @@ tur_freedom_cat = {
 			custom_effect_tooltip = 9_FRA_pres_tt
 		}
 		remove_effect = {
-			add_to_variable = {
-				freesupport = 5
+			if = {
+				limit = {
+					FROM = {
+						has_country_flag = breaking_free
+					}
+				}
+				add_to_variable = {
+					freesupport = 0.05
+				}
+				custom_effect_tooltip = 3_TUR_sup_tt
 			}
-			custom_effect_tooltip = 3_TUR_sup_tt
 		}
 	}
 
 	# Demand Prestige
 	freedom_demand_prestige = {
+		allowed = {
+			always = no
+		}
 		visible = {
-			has_global_flag = succession_ongoing
 		}
 
 		target_trigger = {
@@ -229,18 +322,16 @@ tur_freedom_cat = {
 	#Independence Mission
 	countdown_to_breakoff = {
 		allowed = {
-		#	always = no
+			always = no
 		}
 		available = {
 			always = no
 		}
 		visible = {
 			is_ai = no
-		}
-		activation = {
-			has_global_flag = succession_ongoing
-			any_country = {
+			FROM = {
 				has_country_flag = breaking_free
+				is_puppet_of = TUR
 			}
 		}
 
@@ -254,15 +345,45 @@ tur_freedom_cat = {
 		target_trigger = {
 			FROM = {
 				has_country_flag = breaking_free
+				is_puppet_of = TUR
 			}
 		}
 
-		is_good = no
+		is_good = yes
 		selectable_mission = no
-		days_mission_timeout = 90
+		fire_only_once = yes
+		days_mission_timeout = 9 #0
 		timeout_effect = {
 			clr_global_flag = succession_ongoing
-			FROM = {
+			every_country = {
+				remove_targeted_decision = {
+					target = FROM
+					decision = countdown_to_breakoff
+				}
+				remove_targeted_decision = {
+					target = FROM
+					decision = support_freedom_pp
+				}
+				remove_targeted_decision = {
+					target = FROM
+					decision = support_freedom_cmp
+				}
+				remove_targeted_decision = {
+					target = FROM
+					decision = support_freedom_guns
+				}
+				remove_targeted_decision = {
+					target = FROM
+					decision = support_freedom_planes
+				}
+				remove_targeted_decision = {
+					target = FROM
+					decision = support_freedom_prestige
+				}
+				remove_targeted_decision = {
+					target = FROM
+					decision = freedom_demand_prestige
+				}
 				clr_country_flag = breaking_free
 			}
 			TUR = {
@@ -285,7 +406,7 @@ tur_freedom_cat = {
 					}
 					add_to_array = {
 						array = support_influence_array
-						value = THIS
+						value = THIS.id
 					}
 					add_to_array = {
 						array = support_influence_array_scores
@@ -296,13 +417,15 @@ tur_freedom_cat = {
 
 			find_highest_in_array = {
 				array = support_influence_array_scores
+				index = target_index
 			}
-			set_variable = { support_winner = support_influence_array^i }
+			log = "[?support_influence_array^target_index] target index with weight [?support_influence_array_scores^target_index]"
+			set_variable = { support_winner = support_influence_array^target_index }
 
 			every_country = {
 				if = {
 					limit = {
-						TAG = support_winner
+						tag = var:support_winner
 					}
 					set_autonomy = {
 						target = FROM

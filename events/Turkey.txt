@@ -11,7 +11,7 @@ country_event = {
 
 	trigger = {
 		tag = HUN
-		date > 1937.11.1 #Final will be 1937.11.1
+		date > 1936.1.1 #Final will be 1937.11.1
 	}
 
 	immediate = {
@@ -73,10 +73,7 @@ country_event = {
 
 	option = { #oh cool
 		name = kev_turkey.1.a
-		every_country = {
-			limit = {
-				is_ai = no
-			}
+		TUR = {
 			news_event = {
 				id = kev_turkey.2
 			}
